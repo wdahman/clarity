@@ -12,7 +12,6 @@ import { TestContext } from '../../data/datagrid/helpers.spec';
 import { IfOpenService } from '../../utils/conditional/if-open.service';
 import { DOWN_ARROW, LEFT_ARROW, RIGHT_ARROW, UP_ARROW } from '../../utils/key-codes/key-codes';
 
-import { DateIOService } from './providers/date-io.service';
 import { DateNavigationService } from './providers/date-navigation.service';
 import { DatepickerFocusService } from './providers/datepicker-focus.service';
 import { LocaleHelperService } from './providers/locale-helper.service';
@@ -44,7 +43,6 @@ export default function() {
           IfOpenService,
           { provide: DateNavigationService, useValue: dateNavigationService },
           LocaleHelperService,
-          DateIOService,
           ClrCommonStringsService,
         ]);
       });
@@ -233,7 +231,6 @@ export default function() {
           IfOpenService,
           { provide: DateNavigationService, useValue: dateNavigationService },
           LocaleHelperService,
-          DateIOService,
           ClrCommonStringsService,
         ]);
       });
@@ -340,7 +337,6 @@ export default function() {
           IfOpenService,
           { provide: DateNavigationService, useValue: dateNavigationService },
           LocaleHelperService,
-          DateIOService,
           ClrCommonStringsService,
         ]);
       }

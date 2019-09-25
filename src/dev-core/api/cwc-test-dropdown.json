@@ -1,0 +1,67 @@
+{
+  "version": 2,
+  "tags": [
+    {
+      "name": "cwc-test-dropdown",
+      "description": "Dropdown, example test component. Do not use in production.",
+      "jsDoc":
+        "/**\n * Dropdown, example test component. Do not use in production.\n *\n * @noInheritDoc\n * @element cwc-test-dropdown\n * @slot default - Content slot for dropdown content\n * @attr outline - Apply outline style.\n * @event openChange - notify open state change of dropdown\n * @cssprop --clr-test-border-color\n * @cssprop --clr-test-button-background-color\n * @cssprop --clr-test-button-text-color\n */",
+      "attributes": [
+        {
+          "name": "outline",
+          "description": "Apply outline style.",
+          "type": "any"
+        },
+        {
+          "name": "open",
+          "description": "Set open to open or close the dropdown",
+          "jsDoc": "/** Set open to open or close the dropdown */",
+          "type": "boolean"
+        },
+        {
+          "name": "title",
+          "description": "Set the dropdown button text",
+          "jsDoc": "/** Set the dropdown button text */",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "open",
+          "description": "Set open to open or close the dropdown",
+          "jsDoc": "/** Set open to open or close the dropdown */",
+          "type": "boolean"
+        },
+        {
+          "name": "title",
+          "description": "Set the dropdown button text",
+          "jsDoc": "/** Set the dropdown button text */",
+          "type": "string"
+        }
+      ],
+      "events": [
+        {
+          "name": "openChange",
+          "description": "notify open state change of dropdown"
+        }
+      ],
+      "slots": [
+        {
+          "name": "default",
+          "description": "Content slot for dropdown content"
+        }
+      ],
+      "cssProperties": [
+        {
+          "name": "--clr-test-button-text-color"
+        },
+        {
+          "name": "--clr-test-button-background-color"
+        },
+        {
+          "name": "--clr-test-border-color"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "version": 2,
+  "tags": [
+    {
+      "name": "cwc-icon",
+      "description": "Icon web component that renders svg shapes that can be customized with CSS classnames.",
+      "jsDoc":
+        "/**\n * Icon web component that renders svg shapes that can be customized with CSS classnames.\n *\n * @noInheritDoc\n * @element cwc-icon\n * @attr size - Apply numerical width-height or a t-shirt-sized CSS classname\n * @attr dir - Rotate icon 90° with the top of the icon pointing in the specified direction.\n * @attr flip - Reverse the orientation of the icon vertically or horizontally.\n * @cssprop --clr-icon-color-default\n * @cssprop --clr-icon-color-success\n * @cssprop --clr-icon-color-danger\n * @cssprop --clr-icon-color-warning\n * @cssprop --clr-icon-color-error\n * @cssprop --clr-icon-color-info\n * @cssprop --clr-icon-color-inverse\n * @cssprop --clr-icon-color-highlight\n */",
+      "attributes": [
+        {
+          "name": "shape",
+          "description":
+            "Changes the svg glyph displayed in the icon component. Defaults to the 'unknown' icon if\nthe specified icon cannot be found in the icon registry.",
+          "jsDoc":
+            "/**\n   * Changes the svg glyph displayed in the icon component. Defaults to the 'unknown' icon if\n   * the specified icon cannot be found in the icon registry.\n   */",
+          "type": "string"
+        },
+        {
+          "name": "size",
+          "description": "Apply numerical width-height or a t-shirt-sized CSS classname",
+          "type": "string"
+        },
+        {
+          "name": "title",
+          "description": "If present, customizes the aria-label for the icon for accessibility.",
+          "jsDoc": "/** If present, customizes the aria-label for the icon for accessibility. */",
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "description": "If present, determines the id of the icon. Uses a generated unique id otherwise.",
+          "jsDoc": "/** If present, determines the id of the icon. Uses a generated unique id otherwise. */",
+          "type": "string"
+        },
+        {
+          "name": "dir",
+          "description": "Rotate icon 90° with the top of the icon pointing in the specified direction.",
+          "type": "string"
+        },
+        {
+          "name": "flip",
+          "description": "Reverse the orientation of the icon vertically or horizontally.",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "shape",
+          "description":
+            "Changes the svg glyph displayed in the icon component. Defaults to the 'unknown' icon if\nthe specified icon cannot be found in the icon registry.",
+          "jsDoc":
+            "/**\n   * Changes the svg glyph displayed in the icon component. Defaults to the 'unknown' icon if\n   * the specified icon cannot be found in the icon registry.\n   */",
+          "type": "string"
+        },
+        {
+          "name": "size",
+          "description": "Apply numerical width-height or a t-shirt-sized CSS classname",
+          "type": "string"
+        },
+        {
+          "name": "title",
+          "description": "If present, customizes the aria-label for the icon for accessibility.",
+          "jsDoc": "/** If present, customizes the aria-label for the icon for accessibility. */",
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "description": "If present, determines the id of the icon. Uses a generated unique id otherwise.",
+          "jsDoc": "/** If present, determines the id of the icon. Uses a generated unique id otherwise. */",
+          "type": "string"
+        },
+        {
+          "name": "dir",
+          "description": "Rotate icon 90° with the top of the icon pointing in the specified direction.",
+          "type": "string"
+        },
+        {
+          "name": "flip",
+          "description": "Reverse the orientation of the icon vertically or horizontally.",
+          "type": "string"
+        }
+      ],
+      "cssProperties": [
+        {
+          "name": "--clr-icon-color-highlight"
+        },
+        {
+          "name": "--clr-icon-color-inverse"
+        },
+        {
+          "name": "--clr-icon-color-info"
+        },
+        {
+          "name": "--clr-icon-color-error"
+        },
+        {
+          "name": "--clr-icon-color-warning"
+        },
+        {
+          "name": "--clr-icon-color-danger"
+        },
+        {
+          "name": "--clr-icon-color-success"
+        },
+        {
+          "name": "--clr-icon-color-default"
+        }
+      ]
+    }
+  ]
+}
