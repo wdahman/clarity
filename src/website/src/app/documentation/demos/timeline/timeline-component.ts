@@ -23,9 +23,9 @@ export class TimelineComponentDemo {
   stepProps = [
     {
       name: '[clrState]',
-      values: 'ClrTimelineStepState',
-      defaultValue: 'NOT_STARTED',
-      description: 'Define the symbol (icon or spinner) to use to decorate the step',
+      values: 'not-started | success | error | current | processing',
+      defaultValue: 'not-started',
+      description: 'Set the state of the step and render the corresponding icon in the UI.',
     },
   ];
 }

@@ -129,7 +129,7 @@ const code = {
       <button class="btn btn-sm">Action</button>
     </clr-timeline-step-description>
   </clr-timeline-step>
-  <clr-timeline-step class="gemini-ignore" clrState="processing">
+  <clr-timeline-step clrState="processing">
     <clr-timeline-step-header>11:59 am</clr-timeline-step-header>
     <clr-timeline-step-title>Make vCenter trust KMS</clr-timeline-step-title>
     <clr-timeline-step-description>
@@ -167,7 +167,7 @@ const code = {
       <img src="assets/placeholder_350x150.png" alt="Example of an Image in a Card" />
     </clr-timeline-step-description>
   </clr-timeline-step>
-  <clr-timeline-step class="gemini-ignore" clrState="processing">
+  <clr-timeline-step clrState="processing">
     <clr-timeline-step-header>11:59 am</clr-timeline-step-header>
     <clr-timeline-step-title>Make vCenter trust KMS</clr-timeline-step-title>
     <clr-timeline-step-description>
@@ -193,7 +193,7 @@ const code = {
 };
 
 @Component({
-  selector: 'clr-timeline-full-demo',
+  selector: 'clr-timeline-demos',
   templateUrl: './timeline-full-demo.component.html',
   host: {
     '[class.content-area]': 'true',

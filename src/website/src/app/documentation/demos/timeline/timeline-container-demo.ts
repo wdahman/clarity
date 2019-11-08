@@ -18,6 +18,18 @@ const horizontal = `
 </ul>
 `;
 
+const ngHorizontal = `
+<clr-timeline>
+    ...
+</clr-timeline>
+`;
+
+const ngVertical = `
+<clr-timeline clrLayout="vertical">
+    ...
+</clr-timeline>
+`;
+
 @Component({
   selector: 'clr-timeline-container-demo',
   templateUrl: './timeline-container.demo.html',
@@ -25,4 +37,6 @@ const horizontal = `
 export class TimelineContainerDemo {
   vertical = vertical;
   horizontal = horizontal;
+  ngHorizontal = ngHorizontal;
+  ngVertical = ngVertical;
 }

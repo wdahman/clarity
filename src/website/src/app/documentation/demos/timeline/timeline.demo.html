@@ -1,8 +1,8 @@
 <clr-doc-wrapper [ng]="ng" [ui]="ui" [title]="title" [newLayout]="newLayout">
   <article>
     <h5 class="component-summary" id="timeline-summary">
-      A timeline is a visual indicator that shows progress and might guide the user through specific processes or
-      pre-defined steps while also showing current progress.
+      A timeline is a visual indicator showing progress that guides the user through a specific processes or set of
+      pre-defined steps.
     </h5>
 
     <div id="design-guidelines">
@@ -187,22 +187,29 @@
     <div id="code-examples">
       <h3 id="examples">Code &amp; Examples</h3>
       <h4>Structure</h4>
-      <p>A Timeline is structured as a container component with classes placed on the correct DOM structure to target
-        elements for timeline specific style and layout. Te first container element is an unordered list element with
-        <code class="clr-code">.clr-timeline</code> class. Each list item corresponds to a step that has the
-        <code class="clr-code">.clr-timeline-step</code> class on it. Steps are composed with several children elements.
+      <p>
+        Both the Angular and static compontents have a structure that describes the parts of each timeline step. In the
+        the static case the css classes and the correct DOM structure are important to achieve the timeline style and
+        layout.
+      </p>
+      <p>
         Timelines can be either horizontal or vertical and it is specified by the css class declared with the
-        <code class="clr-code">.clr-timeline</code>element.</p>
-      <p>Each timeline step can have three children elements:</p>
+        <code class="clr-code">.clr-timeline</code>element or by setting the <code class="clr-code">clrLayout</code>
+        input on the <code class="clr-code">clr-timeline</code> element.
+      </p>
+      <p>
+        A time line is composed of a list of defined steps and each step has several elements that inform the user
+        about when the step was (or will be) completed, the current status of the step and relevant details
+        related to the step. Each timeline step is made up from the following:
+      </p>
 
       <ol class="list">
         <li>
-          An optional header (<code class="clr-code">.clr-timeline-step-header</code>) that appears above the timeline
+          An optional header (<code class="clr-code">clr-timeline-step-header</code>) that appears above the timeline
           when its horizontal and to the left of the timeline when its vertical. In the demos they are populated with
           times. e.g 11:59am.
         </li>
-        <li>An icon shape that corresponds to the correct step state
-          (note usage of <code class="clr-code">aria-label</code> for accessibility):
+        <li>A step state corresponds to the icon visually represeting the state of the whole step:
           <ul>
             <li>
               <clr-icon size="18" class="is-success" shape="success-standard" aria-label="step complete"></clr-icon>
@@ -232,117 +239,109 @@
           </ul>
         </li>
         <li>
-          A container element for the <code class="clr-code">.clr-timeline-step-body</code> that contains two children
-          elements:
-          <ul>
-            <li>
-              A <code class="clr-code">.clr-timeline-step-title</code> for calling out the step title below the step
-              icon when horizontal and on the right at the top of the step when it is vertical
-            </li>
-            <li>
-              A <code class="clr-code">.clr-timeline-step-description</code></li> to put a longer description that wraps
-            with the width of the step container. This is also where (optional) action buttons will be placed.
-          </ul>
+          A <code class="clr-code">clr-timeline-step-title</code> for calling out the step title below the step
+          icon when horizontal and on the right at the top of the step when it is vertical
+        </li>
+        <li>
+          A <code class="clr-code">.clr-timeline-step-description</code> to put a longer description that wraps
+          with the width of the step container. This is also where (optional) action buttons will be placed.
         </li>
       </ol>
 
-      <h4>CSS Classes (for Clarity UI static implementation)</h4>
-      <table class="table">
-        <thead>
-         <tr>
-           <th width="288px">Classname</th>
-           <th class="left">Description</th>
-         </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <code class="clr-code">.clr-timeline</code>
-            </td>
-            <td class="left">
-              Designates the timeline container element and is used on an unordered list
-              <code class="clr-code">ul</code>. This class should only contain <code class="clr-code">li</code> children
-              with the <code class="clr-code">clr-timeline-step</code> class.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <code class="clr-code">.clr-timeline-vertical</code>
-            </td>
-            <td class="left">
-              Used in conjunction with <code class="clr-code">clr-timeline</code> class to designate a vertical
-              timeline.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <code class="clr-code">.clr-timeline-step</code>
-            </td>
-            <td class="left">
-              A class to designate a step container. It should be placed on an <code class="clr-code">li</code> element
-              as a child of the <code class="clr-code">clr-timeline</code> class.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <code class="clr-code">.clr-timeline-step-header</code>
-            </td>
-            <td class="left">
-              Used to display information like a time or a date. This element will appear
-              <strong>above</strong> the <a routerLink="/icons">ClarityIcon</a> used in the time line step when its a horizontal timeline
-              and to the <strong>left</strong> when it is a vertical timeline.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <code class="clr-code">clr-timeline-step-body</code>
-            </td>
-            <td class="left">
-              This is a container class used to group the <code class="clr-code">.clr-timeline-step-title</code>
-              and <code class="clr-code">.clr-timeline-step-description</code> elements. This element will appear
-              <strong>below</strong> the <a routerLink="/icons">ClarityIcon</a> used in the timeline step when its a
-              horizontal timeline and to the <strong>right</strong> when it is a vertical timeline.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <code class="clr-code">.clr-timeline-step-title</code>
-            </td>
-            <td class="left">
-              Used inside of the <code class="clr-code">clr-timeline-step-body</code> container this is a
-              bolded title that describes the step.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <code class="clr-code">.clr-timeline-step-description</code>
-            </td>
-            <td class="left">This element contains a longer description and details about the step it is used on. This
-            is also where consumers should place any action buttons that may be used in <strong>this</strong> step.</td>
-          </tr>
-        </tbody>
-      </table>
-      <h4>Examples</h4>
-      <p>Lets look at some of the elements in isolation and then put everything together at the bottom of the page.</p>
+      <h4>Angular and static demos</h4>
+      <clr-timeline-demos></clr-timeline-demos>
 
-<!--      includes vertical and horizontal code snippets-->
-      <h3>Timeline</h3>
-      <clr-timeline-container-demo></clr-timeline-container-demo>
+      <h3>Summary of Options</h3>
+      <clr-tabs>
+        <clr-tab>
+          <button clrTabLink>Anglular options</button>
+          <clr-tab-content *clrIfActive>
+            <clr-timeline-component></clr-timeline-component>
+          </clr-tab-content>
+        </clr-tab>
 
-<!--      includes optional header, clr icon and step-body-->
-      <h3>Timeline Step</h3>
-      <clr-timeline-step-demo></clr-timeline-step-demo>
-
-<!--      includes body elements title and description (multiple descriptions with -->
-<!--      title description, desc +button, desc + button link-->
-      <h3>Timeline Step Body</h3>
-      <clr-timeline-body-demo></clr-timeline-body-demo>
-
-      <h4>Summary of Options (for Angular implementation)</h4>
-      <clr-timeline-component></clr-timeline-component>
-
-      <h3>Full Demo</h3>
-      <clr-timeline-full-demo></clr-timeline-full-demo>
+        <clr-tab>
+          <button clrTabLink>CSS classes</button>
+          <clr-tab-content *clrIfActive>
+            <h4>CSS Classes (for Clarity UI static implementation)</h4>
+            <table class="table">
+              <thead>
+              <tr>
+                <th width="288px">Classname</th>
+                <th class="left">Description</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>
+                  <code class="clr-code">.clr-timeline</code>
+                </td>
+                <td class="left">
+                  Designates the timeline container element and is used on an unordered list
+                  <code class="clr-code">ul</code>. This class should only contain <code class="clr-code">li</code> children
+                  with the <code class="clr-code">clr-timeline-step</code> class.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code class="clr-code">.clr-timeline-vertical</code>
+                </td>
+                <td class="left">
+                  Used in conjunction with <code class="clr-code">clr-timeline</code> class to designate a vertical
+                  timeline.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code class="clr-code">.clr-timeline-step</code>
+                </td>
+                <td class="left">
+                  A class to designate a step container. It should be placed on an <code class="clr-code">li</code> element
+                  as a child of the <code class="clr-code">clr-timeline</code> class.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code class="clr-code">.clr-timeline-step-header</code>
+                </td>
+                <td class="left">
+                  Used to display information like a time or a date. This element will appear
+                  <strong>above</strong> the <a routerLink="/icons">ClarityIcon</a> used in the time line step when its a horizontal timeline
+                  and to the <strong>left</strong> when it is a vertical timeline.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code class="clr-code">clr-timeline-step-body</code>
+                </td>
+                <td class="left">
+                  This is a container class used to group the <code class="clr-code">.clr-timeline-step-title</code>
+                  and <code class="clr-code">.clr-timeline-step-description</code> elements. This element will appear
+                  <strong>below</strong> the <a routerLink="/icons">ClarityIcon</a> used in the timeline step when its a
+                  horizontal timeline and to the <strong>right</strong> when it is a vertical timeline.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code class="clr-code">.clr-timeline-step-title</code>
+                </td>
+                <td class="left">
+                  Used inside of the <code class="clr-code">clr-timeline-step-body</code> container this is a
+                  bolded title that describes the step.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code class="clr-code">.clr-timeline-step-description</code>
+                </td>
+                <td class="left">This element contains a longer description and details about the step it is used on. This
+                  is also where consumers should place any action buttons that may be used in <strong>this</strong> step.</td>
+              </tr>
+              </tbody>
+            </table>
+          </clr-tab-content>
+        </clr-tab>
+      </clr-tabs>
     </div>
   </article>
 </clr-doc-wrapper>
