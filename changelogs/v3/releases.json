@@ -1,0 +1,198 @@
+[
+
+  {
+    "version": "3.0.0",
+    "bugs": [
+      "Limit title width to stepper only and not accordion title (#4315)",
+      "Improved accessibility of vertical nav (#3860)",
+      "Improved accessibility of forms (#3830)",
+      "Fix extra spacing between tab and tab content in ie 11 (#3750)",
+      "Don't emit page changes on destroy (#3872)",
+      "Align column header vertically (#3866)",
+      "Fixed Datagrid clrDgFilterOpenChange not firing when open is toggled between true / false (#4000)",
+      "Prevent date input from displaying -1 day for specific timezones on mobile devices (#3993)",
+      "Prevent date from being deleted when selected on mobile (#3992)",
+      "Fixed misspelling of opacity  (#4076)",
+      "Adds min/max date boundries for datepicker  (#1984)",
+      "Adds correct invalid/error style for select input element  (#4036)",
+      "Fix type for clrInitialStep Input  (#4052)",
+      "Prevent date from being deleted when selected on mobile (#3992)",
+      "Select-all checkmark position (#4028)",
+      "Datagrid clrDgFilterOpenChange was not fired (#4000)",
+      "Aria Live service to handle SR for all browsers and OS (#3934)",
+      "Datagrid animation performance issues  (#4050)",
+      "Prevent focus steal, when date-picker is closed (#4069)",
+      "clrDgActionOverflowOpenChange is not fired (#4063)",
+      "Fix datagrid focus trap focus stealing issue (#4027)",
+      "Update smart popover for dynamic content (#4068)",
+      "Fix datagrid-row add aria-expanded & aria-label on open/close (#4089)",
+      "Stop ClrCommonStringsService initializing twice at run-time (#4018)",
+      "Stack-view and stack-block component templates now allow screenreaders to access the projected content and label in the stack-view (#3567)",
+      "Improve comparison of min/max date limits (#4144)",
+      "Fix date picker to set disabled state without needing clrForm container (#4016)",
+      "Fix css class collisions in icon error/danger classes (#4132)",
+      "Make sidenav collapsible group trigger focusable again (#4138)",
+      "Fix style issues in vertical nav (#4139)",
+      "Fixed single action overflow close behavior in Datagrid (#4180)",
+      "Added guards calling an optional date picker service in Datepicker (#4224)",
+      "Added a11y attributes to Datagrid filter button (#4197)",
+      "Added a11y attributes to  StackView (#4142)",
+      "Added optional service in Datalist (#4198)",
+      "Fixed core support typed events with @event  (#4195)",
+      "Fixed auto update attr for prop decorator (#4195)",
+      "Fixed wrong import path for DynamicWrapper in Datalist (#4186)",
+      "Adjustment to Clarity action blue color for a11y(#4248)",
+      "Fix Datepicker input disabled state (#4252)",
+      "Only toggle overflow when button is in overflow menu (#4281)",
+      "Fix order of datagrid filters, sorting buttons (#4296)"
+    ],
+    "breaking": [
+      "Update to Angular 9 (#4232) This release updates to the Angular v9.0.0. Note: The TypeScript version changed between Angular 8 and Angular 9 in a way that made Clarity unable to support both for Clarity 3. The TypeScript version to use with Clarity 3 is: v3.7.5",
+      "Removed the max-height from pre element (#3875)",
+      "SCSS deprecations and base20 rem refactor(#3814) Previously we were using base 24px and rem with browser rounding to render font-sizes this led to sizes like 0.5833333rem which became 13.999992px in browsers setting the base font size to a hard px value broke browser settings that scaled the font.",
+      "SCSS deprecations and CSS custom properties for v3.0(#3892)",
+      "Sticky row actions in Datagrid (#3926) This is a visually breaking change. Row controls for actions like master/detail or select row have been moved into a sticky column and will remain visible when columns scroll horizontally.",
+      "Updated Color Palette (#3995) The Clarity color palette has been updated to use adjusted hsl values. This is a visually breaking change that will affect hues in the palette that are used in Clarity components. You can view the new color palettes here.",
+      "Change Wizard use of h1, h2 and h3 tags for accessibility (#4283)",
+      "clr-tree as a root wrapper is no longer optional but mandatory now. (#3851)"
+    ],
+    "enhancements": [
+      "Datagrid Detail Pane (#3797) We've introduced a new pattern for drilling down into a Datagrid row details called Detail Pane. This will open a panel where applications can place any content they wish inside.",
+      "Range (Slider) form input (#112) We've introduced the range slider form input to Clarity in 3.0. The range input works alongside the rest of our Clarity form components and offers a number of customization options!",
+      "Datalist form input (#3813) Say hello to the datalist input. The datalist works similarly to a select-box but adds autocomplete functionality. For those interested in a \"combo-box\" or autocomplete field in your forms, you should take a look at the datalist!",
+      "Generic Form Control Container  (#4280) Added a new generic form control container to allow you to more easily integrate custom or third party form controls into Clarity's form layout and validation.",
+      "Aria Live Service  (#4310) Made our internal Aria Live service public so applications can more easily make announcements for screeen readers and accessibility."
+    ]
+  },
+  {
+    "version": "3.0.0-rc.1",
+    "bugs": [
+      "feat(alert): core alerts\n     (#4241)",
+      "fix: datepicker input disabled state\n     (#4252)",
+      "fix(button): only toggle overflow when button is in overflow menu\n     (#4281)",
+      "fix(datagrid): change ordere of datagrid filtere, sorting buttons\n     (#4296)"
+    ],
+    "breaking": [
+      "fix(a11y): change how wizard use h1, h2 and h3 tags for accessibility\n     (#4283)"
+    ],
+    "enhancements": []
+  },
+  {
+    "version": "3.0.0-next.8",
+    "bugs": [
+      "Updates for the clr-core icons API usage in alertys and badges (#4237)",
+      "Adjustment to Clarity action blue color for a11y(#4248)"
+    ],
+    "breaking": [
+      "Update to Angular 9 (#4232)\n    This release updates to the Angular v9.0.0. Note: The TypeScript version changed between Angular 8 and Angular 9\n      in a way that made Clarity unable to support both for Clarity 3. The TypeScript version to use with Clarity 3 is:\n      v3.7.5"
+    ],
+    "enhancements": [
+      "Datagrid: Add API for disabling direct page access in pagination component (#4253)\n    \n    Declaring the [clrDgPageInputDisabled]=\"'true'\" input onto the\n      clr-dg-pagination component allows an application to disable user access to the\n      pagination controls."
+    ]
+  },
+  {
+    "version": "3.0.0-next.7",
+    "bugs": [
+      "Fixed single action overflow close behavior in Datagrid (#4180)",
+      "Added guards calling an optional date picker service in Datepicker (#4224)",
+      "Added a11y attributes to Datagrid filter button (#4197)",
+      "Added a11y attributes to  StackView (#4142)",
+      "Added optional service in Datalist (#4198)",
+      "Fixed core support typed events with @event  (#4195)",
+      "Fixed auto update attr for prop decorator (#4195)",
+      "Fixed wrong import path for DynamicWrapper in Datalist (#4186)"
+    ],
+    "breaking": [
+      "Deprecating dir attr in core icons (#4194)\n      We are replacing dir attribute with direction as we have found that using dir as an attribute confuses ltr localization."
+    ],
+    "enhancements": [
+      "Volume 17 Icons\n      Volume 17 icons include: more essential, commerce, and technology icons. (#4218)"
+    ]
+  },
+  {
+    "version": "3.0.0-next.6",
+    "bugs": [
+      "fix: add core @property decorator with defaults\n         (#4164)",
+      "fix: add strictNullCheck support to core\n         (#4140)",
+      "fix: improve performance of @clr/icons web components\n         (#4144)",
+      "fix(a11y): datagrid-row add aria-expanded & aria-label on open/close\n         (#4089)",
+      "fix(a11y): service ClrCommonStringsService initializes twice at run-time\n             (#4018)",
+      "fix(a11y): stack-view and stack-block component templates now allow screenreaders to access the projected content and label in the stack-view\n         (#3567)",
+      "fix(date-picker): improve comparison of min/max date limits\n         (#4144)",
+      "fix(date-picker): set disabled state without needing clrForm container\n         (#4016)",
+      "fix(icons): css class collisions in icon error/danger classes\n         (#4132)",
+      "fix(sidenav): fix: make sidenav collapsible group trigger focusable again\n         (#4138)",
+      "fix(vertical-nav): style issues in vertical nav\n         (#4139)"
+    ],
+    "breaking": [],
+    "enhancements": [
+      "Range (Slider) form input (#112)",
+      "Datalist form input (#3813)"
+    ]
+  },
+  {
+    "version": "3.0.0-next.5",
+    "bugs": [
+      "Date-picker: prevent focus steal, when date-picker is closed\n         (#4069)",
+      "Datagrid: clrDgActionOverflowOpenChange is not fired\n         (#4063)",
+      "Datagrid: focus trap focus stealing issue\n         (#4027)",
+      "Badge: simplify custom properties for variations\n         (#4087)",
+      "Popovers: update smart popover for dynamic content\n         (#4068)"
+    ],
+    "breaking": [],
+    "enhancements": []
+  },
+  {
+    "version": "3.0.0-next.4",
+    "bugs": [
+      "docs: fixed misspelling of opacity  (#4076)",
+      "fix: adds min/max date boundries for datepicker  (#1984)",
+      "fix(select): adds correct invalid/error style for select input element  (#4036)",
+      "docs(stepper): fix type for clrInitialStep Input  (#4052)",
+      "fix(datepicker): prevent date from being deleted when selected on mobile (#3992)",
+      "fix: select-all checkmark position (#4028)",
+      "fix: datagrid clrDgFilterOpenChange was not fired (#4000)",
+      "fix: aria-live.service to handle SR for all browsers and OS (#3934)",
+      "fix: datagrid animation performance issues  (#4050)"
+    ],
+    "breaking": [],
+    "enhancements": []
+  },
+  {
+    "version": "3.0.0-next.3",
+    "bugs": [
+      "Datagrid: Fixed clrDgFilterOpenChange not firing when open is toggled between true / false (#4000)",
+      "Datepicker: Prevent date input from displaying -1 day for specific timezones on mobile devices (#3993)",
+      "Datepicker: Prevent date from being deleted when selected on mobile (#3992)"
+    ],
+    "breaking": [
+      "Sticky row actions in Datagrid (#3926)\n    This is a visually breaking change. Row controls for actions like master/detail or select row have been moved into a sticky column and will remain visible when columns scroll horizontally.",
+      "Updated Color Palette (#3995)\n    The Clarity color palette has been updated to use adjusted hsl values. This is a visually breaking change that will affect hues in the palette that are used in Clarity components. You can view the new color palettes here."
+    ],
+    "enhancements": [
+      "Volume 16 Icons\n    Volume 16 icons include: more social icons and technology icons."
+    ]
+  },
+  {
+    "version": "3.0.0-next.2",
+    "bugs": [
+      "Fix: Extra spacing between tab and tab content in ie 11 (#3750)",
+      "Fix: Don't emit page changes on destroy (#3872)",
+      "Fix: Align column header vertically (#3866)"
+    ],
+    "breaking": [
+      "SCSS deprecations and base20 rem refactor(#3814)\n          \n              Previously we were using base 24px and rem with browser rounding to render font-sizes this led to sizes like 0.5833333rem which\n               became 13.999992px in browsers setting the base font size to a hard px value broke browser settings that scaled the font.",
+      "SCSS deprecations and CSS custom properties for v3.0(#3892)"
+    ],
+    "enhancements": []
+  },
+  {
+    "version": "3.0.0-next.1",
+    "bugs": [
+      "Improved accessibility of vertical nav (#3860)",
+      "Improved accessibility of forms (#3830)"
+    ],
+    "breaking": ["Removed the max-height from pre element (#3875)"],
+    "enhancements": ["Datagrid Detail Pane (#3797)"]
+  }
+]

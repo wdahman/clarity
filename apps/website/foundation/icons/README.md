@@ -1,1 +1,5 @@
+---
+title: Icons
+---
+
 <DocIcons></DocIcons>

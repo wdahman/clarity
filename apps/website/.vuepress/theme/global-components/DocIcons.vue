@@ -1,32 +1,32 @@
 <template>
   <div>
     <div class="searchbar-container">
-      <div class="icons-search-wrapper">
+      <div class="icon-search-wrapper">
         <label for="search-icons-sticky" class="searchbar-label">
-          <cds-icon shape="search" size="24"></cds-icon>
-          <button aria-label="Clear search terms" type="button" class="close">
-            <cds-icon shape="close" size="24"></cds-icon>
-          </button>
-          <input
-            id="search-icons-sticky"
-            placeholder="Search for Clarity Icons..."
-            type="text"
-            class="searchbar-input clr-input"
-          />
+          <cds-icon shape="search" size="20"></cds-icon> Search for an icon
         </label>
+        <input ref="search" id="search-icons-sticky" type="text" class="searchbar-input" v-model="term" />
+        <button
+          aria-label="Clear search terms"
+          type="button"
+          class="close"
+          :style="{ display: term ? 'inline-block' : 'none' }"
+          @click="clear()"
+        >
+          <cds-icon shape="close" size="24"></cds-icon>
+        </button>
         <div class="icon-preview-settings"></div>
       </div>
     </div>
 
-    <h3>Core Shapes</h3>
-    <div class="clr-row">
-      <DocIcon v-for="icon in core" :name="icon[0]"></DocIcon>
-    </div>
-
-    <h3>Commerce Shapes</h3>
-    <div class="clr-row">
-      <DocIcon v-for="icon in commerce" :name="icon[0]"></DocIcon>
-    </div>
+    <template v-for="set in sets">
+      <template v-if="set.shapes.length">
+        <h3>{{ set.title }} Shapes</h3>
+        <div class="clr-row">
+          <DocIcon v-for="shape in set.shapes" :name="shape[0]"></DocIcon>
+        </div>
+      </template>
+    </template>
   </div>
 </template>
 
@@ -43,23 +43,63 @@ import {
   technologyCollectionIcons as technology,
 } from '@clr/core/icon-shapes';
 
+function getIcons() {
+  return [
+    { title: 'Core', shapes: core },
+    { title: 'Chart', shapes: chart },
+    { title: 'Commerce', shapes: commerce },
+    { title: 'Essential', shapes: essential },
+    { title: 'Media', shapes: media },
+    { title: 'Social', shapes: social },
+    { title: 'Travel', shapes: travel },
+    { title: 'Text Edit', shapes: textEdit },
+    { title: 'Technology', shapes: technology },
+  ];
+}
+
 export default {
   name: 'DocIcons',
   data: function () {
-    console.log(core);
     return {
-      core,
-      chart,
-      commerce,
-      essential,
-      media,
-      social,
-      travel,
-      textEdit,
-      technology,
+      term: '',
     };
+  },
+  computed: {
+    sets: function () {
+      const icons = getIcons();
+      if (this.term) {
+        return icons.map(set => {
+          set.shapes = set.shapes.filter(shape => shape[0].indexOf(this.term) > -1);
+          return set;
+        });
+      } else {
+        return icons;
+      }
+    },
+  },
+  methods: {
+    clear: function () {
+      this.term = '';
+      this.$refs.search.focus();
+    },
   },
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.icon-search-wrapper {
+  display: grid;
+  grid-template-columns: 160px auto 36px;
+
+  .searchbar-label {
+    line-height: 36px;
+  }
+
+  input {
+    border: 1px solid #999;
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+}
+</style>
