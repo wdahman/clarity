@@ -120,16 +120,12 @@ export default {
 
 <style scoped lang="scss">
 .icon-item {
-  padding: 1rem;
+  padding: 0.5rem;
 
   .icon-button {
-    position: relative;
-    top: 0.15rem;
     width: 100%;
-    height: 3rem;
     display: flex;
     text-align: left;
-    padding: 0.9rem 0.3rem;
     background-color: transparent;
     border: 0.05rem solid hsla(0, 0%, 83.9%, 0);
     transform: translateZ(0);
