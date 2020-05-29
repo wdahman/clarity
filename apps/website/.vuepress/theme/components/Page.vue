@@ -2,7 +2,6 @@
   <main class="page">
     <slot name="top" />
     <PageSubnav v-bind="{ sidebarItems }" />
-    
 
     <Content class="theme-default-content" />
     <PageEdit />
@@ -25,4 +24,7 @@ export default {
 </script>
 
 <style lang="scss">
+.page {
+  max-width: 50rem;
+}
 </style>

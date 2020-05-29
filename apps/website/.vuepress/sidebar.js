@@ -1,15 +1,8 @@
 const fs = require('fs');
 const path = require('path');
-const markdownItAttrs = require('markdown-it-attrs');
 
-const order = ['code', 'usage', 'demo', 'api', 'accessibility'];
-
-// function getChildren(dir) {
-//   return fs
-//     .readdirSync(path.join(process.cwd(), dir))
-//     .filter(file => file.includes('.md') && !file.includes('README'))
-//     .map(file => `/${dir}/${file.replace('.md', '')}`);
-// }
+// Expected order of tabs
+const order = ['demo', 'code', 'api', 'accessibility'];
 
 function camelCase(str) {
   const parts = str.split('-');
@@ -18,25 +11,39 @@ function camelCase(str) {
 
 function sortChildren(children) {
   return children.sort((a, b) => {
-    const aIndex = order.findIndex(o => a.includes(o));
-    const bIndex = order.findIndex(o => b.includes(o));
+    // Skip comparing children that are not equal
+    if (typeof a !== 'string' || typeof b !== 'string') {
+      return 0;
+    }
+    const aIndex = order.findIndex(o => a.indexOf(o) > -1);
+    const bIndex = order.findIndex(o => b.indexOf(o) > -1);
     return aIndex - bIndex;
   });
 }
 
 function getChildren(dir) {
   const base = path.join(process.cwd(), dir);
-  const components = fs
-    .readdirSync(base)
-    .filter(basename => fs.statSync(path.join(base, basename)).isDirectory())
-    .map(subdir => {
-      return {
-        title: camelCase(subdir),
-        path: `/${dir}/${subdir}`,
-        children: [`/${dir}/${subdir}/`, ...sortChildren(getChildren(`${dir}/${subdir}`))],
-      };
-    });
-  return components;
+  return (
+    fs
+      .readdirSync(base)
+      // README files are already accounted for and assumed
+      .filter(basename => basename !== 'README.md')
+      // Remove any paths that aren't markdown or subdirectories
+      .filter(basename => ['', '.md'].includes(path.extname(basename)))
+      // Remove anything prefixed with _
+      .filter(basename => !basename.startsWith('_'))
+      .map(basename => {
+        if (fs.statSync(path.join(base, basename)).isDirectory()) {
+          return {
+            title: camelCase(basename),
+            path: `/${dir}/${basename}`,
+            children: [`/${dir}/${basename}/`, ...sortChildren(getChildren(`${dir}/${basename}`))],
+          };
+        } else {
+          return `/${dir}/${basename}`;
+        }
+      })
+  );
 }
 
 module.exports = [

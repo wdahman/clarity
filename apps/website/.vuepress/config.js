@@ -1,4 +1,5 @@
 const markdownItAttrs = require('markdown-it-attrs');
+const sidebar = require('./sidebar');
 
 module.exports = {
   title: 'Clarity Design System',
@@ -12,7 +13,7 @@ module.exports = {
     },
     lastUpdated: 'Last Updated',
     search: true,
-    sidebar: require('./sidebar'),
+    sidebar,
   },
   markdown: {
     extendMarkdown: md => {
@@ -27,6 +28,7 @@ module.exports = {
       // permalinkSymbol: '🔗',
     },
   },
+  extraWatchFiles: ['.vuepress/sidebar.js'],
   plugins: [
     'vuepress-plugin-table-of-contents',
     '@vuepress/active-header-links',
