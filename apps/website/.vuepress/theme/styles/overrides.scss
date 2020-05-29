@@ -1,0 +1,7 @@
+.clr-vertical-nav {
+  padding-top: 0;
+
+  & > .nav-link:first-child {
+    margin-top: 1rem;
+  }
+}

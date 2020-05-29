@@ -1,7 +1,7 @@
 # Accessibility
 
-* [Design Guidelines](/documentation/accessibility#top)
-* [Code & Examples](/documentation/accessibility#examples)
+- [Design Guidelines](/documentation/accessibility#top)
+- [Code & Examples](/documentation/accessibility#examples)
 
 ### Accessibility
 
@@ -54,11 +54,7 @@ import { download } from 'my-code';
   providers: [ClrAriaLiveService],
   template: `
     <button (click)="startDownload()">Start download</button>
-    <clr-progress-bar
-      *ngIf="progressValue > 0"
-      clrValue="progressValue"
-      clrMax="100"
-      ></clr-progress-bar>
+    <clr-progress-bar *ngIf="progressValue > 0" clrValue="progressValue" clrMax="100"></clr-progress-bar>
   `,
 })
 class MyComponent implements AfterViewInit {

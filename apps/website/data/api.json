@@ -1,0 +1,96 @@
+{
+  "ClrAlerts": {
+    "bindings": [
+      {
+        "name": "clrCurrentAlertIndex",
+        "accepts": "number",
+        "type": "two-way",
+        "options": "0, 1, 2, 3...",
+        "description": "Sets the current index of alerts in a list",
+        "default": 0
+      },
+      {
+        "name": "clrCurrentAlert",
+        "accepts": "ClrAlert",
+        "type": "two-way",
+        "options": "instance of ClrAlert",
+        "description": "Provides the currently activated ClrAlert instance",
+        "default": "any"
+      }
+    ]
+  },
+  "ClrAlert": {
+    "bindings": [
+      {
+        "name": "clrAlertClosable",
+        "accepts": "boolean",
+        "type": "input",
+        "options": "true, false",
+        "description": "If false, the alert will not be closable by clicking on the top-right \"x\".",
+        "default": true
+      },
+      {
+        "name": "clrAlertClosed",
+        "accepts": "boolean",
+        "type": "two-way",
+        "options": "true, false",
+        "description": "Two-way binding on the state of the alert: opened or closed.",
+        "default": false
+      },
+      {
+        "name": "clrAlertType",
+        "accepts": "string",
+        "type": "input",
+        "options": "info, warning, success, danger",
+        "description": "Sets the type of the alert",
+        "default": "info"
+      },
+      {
+        "name": "clrAlertSizeSmall",
+        "accepts": "boolean",
+        "type": "input",
+        "options": "true, false",
+        "description": "Change the size to a small alert",
+        "default": "false"
+      },
+      {
+        "name": "clrAlertIcon",
+        "accepts": "string",
+        "type": "input",
+        "options": "any icon shape",
+        "description": "Allows you to customize the alert icon using any icon shape name",
+        "default": "varies"
+      },
+      {
+        "name": "clrAlertAppLevel",
+        "accepts": "boolean",
+        "type": "input",
+        "options": "true, false",
+        "description": "Changes the alert to be app level at the top of the page",
+        "default": "false"
+      }
+    ]
+  },
+  "ClrAlertItem": {
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      },
+      {
+        "name": ".alert-actions",
+        "description": "Defines any action buttons or dropdowns for an alert",
+        "host": "div, span",
+        "required": false
+      },
+      {
+        "name": ".alert-action",
+        "description": "Defines a button or dropdown to be styled for inside of an alert",
+        "host": "button, clr-dropdown",
+        "required": true
+      }
+    ]
+  }
+}

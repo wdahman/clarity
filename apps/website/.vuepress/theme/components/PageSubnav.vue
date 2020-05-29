@@ -6,7 +6,7 @@
         <router-link
           :to="item.path"
           class="btn btn-link nav-link"
-          aria-selected="true"
+          v-bind:aria-selected="activePage.path === item.path"
           v-bind:class="{ active: activePage.path === item.path }"
           >{{ item.title }}</router-link
         >
