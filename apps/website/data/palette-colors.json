@@ -1,7 +1,7 @@
 {
   "neutral": {
     "name": "Neutral",
-    "palette": [
+    "colors": [
       { "weight": 0, "h": 198, "s": 0, "l": 100, "bullet": true },
       { "weight": 50, "h": 198, "s": 0, "l": 98, "bullet": true },
       { "weight": 100, "h": 198, "s": 0, "l": 95, "bullet": false },
@@ -18,7 +18,7 @@
   },
   "action": {
     "name": "Action",
-    "palette": [
+    "colors": [
       { "weight": 50, "h": 198, "s": 83, "l": 94, "bullet": false },
       { "weight": 100, "h": 198, "s": 81, "l": 88, "bullet": false },
       { "weight": 200, "h": 198, "s": 78, "l": 78, "bullet": false },
@@ -34,7 +34,7 @@
   },
   "secondary": {
     "name": "Secondary Action",
-    "palette": [
+    "colors": [
       { "weight": 50, "h": 282, "s": 100, "l": 95, "bullet": false },
       { "weight": 100, "h": 282, "s": 59, "l": 87, "bullet": false },
       { "weight": 200, "h": 282, "s": 51, "l": 78, "bullet": false },
@@ -50,7 +50,7 @@
   },
   "danger": {
     "name": "Danger",
-    "palette": [
+    "colors": [
       { "weight": 50, "h": 9, "s": 100, "l": 97, "bullet": false },
       { "weight": 100, "h": 9, "s": 95, "l": 92, "bullet": true },
       { "weight": 200, "h": 9, "s": 91, "l": 86, "bullet": false },
@@ -66,7 +66,7 @@
   },
   "warning": {
     "name": "Warning",
-    "palette": [
+    "colors": [
       { "weight": 50, "h": 48, "s": 100, "l": 95, "bullet": false },
       { "weight": 100, "h": 48, "s": 100, "l": 89, "bullet": true },
       { "weight": 200, "h": 48, "s": 100, "l": 83, "bullet": false },
@@ -82,7 +82,7 @@
   },
   "success": {
     "name": "Success",
-    "palette": [
+    "colors": [
       { "weight": 50, "h": 93, "s": 52, "l": 88, "bullet": false },
       { "weight": 100, "h": 93, "s": 58, "l": 75, "bullet": false },
       { "weight": 200, "h": 93, "s": 76, "l": 49, "bullet": false },
