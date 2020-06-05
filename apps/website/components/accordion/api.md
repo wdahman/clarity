@@ -16,62 +16,55 @@ An accordion allows generic content to be collapsed and allows users to expand t
 ```
 
 #### Properties
-
-| Name                   | Type                           | Description                                                                                                                                                                     |
-| ---------------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| clrAccordionMultiPanel | @Input\<boolean\>              | An input that takes a boolean. Default is false and this only allows one panel open at a time.                                                                                  |
-| panels                 | QueryList\<ClrAccordionPanel\> | A QueryList collection that reflects all ClrAccordionPane's in the DOM. This includes all nested ClrAccordion's as the @ContentChildren decorator uses `{ descendants: true }`. |
-
-{.table .left-cell}
+<DocApiTable object="ClrAccordion" item="bindings" />
 
 ### ClrAccordionContent
+ClrAccordionContent is a child of [ClrAccordionPanel](./api.md#clraccordionpanel)
 
 #### Selector & Basic Usage
 
 ```html
-<clr-accordion-content></clr-accordion-content>
+<clr-accordion>
+  <clr-accordion-panel>
+    <clr-accordion-content *clrIfExpanded>Content 1</clr-accordion-content>
+  </clr-accordion-panel>
+</clr-accordion>
 ```
 
 ### ClrAccordionDescription
-
+ClrAccordionDescription is a child of [ClrAccordionPanel](./api.md#clraccordionpanel)
 #### Selector & Basic Usage
 
 ```html
-<clr-accordion-description></clr-accordion-description>
+<clr-accordion>
+  <clr-accordion-panel [(clrAccordionPanelOpen)]="stepOpen">
+    <clr-accordion-description
+      >The full license information can be found in LICENSE in the root directory.</clr-accordion-description
+    >
+  </clr-accordion-panel>
+</clr-accordion>
 ```
 
 ### ClrAccordionPanel
 
 Use content projection and give the panel a title and content that can be hidden or shown.
+ClrAccordionPanel is a child of [ClrAccordion](./api.md#clraccordion)
 
 #### Selector & Basic Usage
 
 ```html
-<clr-accordion-panel></clr-accordion-panel>
+<clr-accordion>
+  <clr-accordion-panel></clr-accordion-panel>
+</clr-accordion>
 ```
+
 
 #### Properties
 
-| Name                        | Type                                 | Description                                                                                                                       |
-| --------------------------- | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
-| clrAccordionPanelDisabled   | @Input\<boolean\>                    | When true this disables click events from opening / closing the panel.                                                            |
-| clrAccordionPanelOpen       | @Input\<boolean\>                    | Use this to set the open or closed state of the panel. It can be combined with `clrAccordionPanelOpenChange` for two way binding. |
-| clrAccordionPanelOpenChange | @Output\<boolean\>                   | Emits the true (open) / false (closed) state of the panel. It can be combined with `clrAccordionPanelOpen` for two way binding.   |
-| accordionDescription        | QueryList\<ClrAccordionDescription\> | Doesn't seem to be used at first glance.                                                                                          |
-
-{.table .left-cell}
+<DocApiTable object="ClrAccordionPanel" item="bindings" />
 
 #### Methods
-
-| Method Name                  | Arguments: Type            | Return Type | Description                                       |
-| ---------------------------- | -------------------------- | ----------- | ------------------------------------------------- |
-| togglePanel                  | n/a                        | void        | Opens and closes the panel.                       |
-| collapsePanelOnAnimationDone | panel: AccordionPanelModel | void        | Called from the template when the animation ends. |
-| getPanelStateClasses         | panel: AccordionPanelModel | string      | Used in the template.                             |
-| getAccordionContentId        | id: string                 | string      | Used in the template.                             |
-| getAccordionHeaderId         | id: string                 | string      | Used in the template.                             |
-
-{.table .left-cell}
+<DocApiTable object="ClrAccordionPanel" item="methods" />
 
 ### ClrAccordionTitle
 

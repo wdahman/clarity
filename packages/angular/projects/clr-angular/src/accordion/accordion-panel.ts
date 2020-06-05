@@ -37,6 +37,7 @@ import { ClrAccordionDescription } from './accordion-description';
   animations: panelAnimation,
   providers: [IfExpandService, UNIQUE_ID_PROVIDER],
 })
+
 export class ClrAccordionPanel implements OnInit, OnChanges {
   @Input('clrAccordionPanelDisabled') disabled = false;
   @Input('clrAccordionPanelOpen') panelOpen = false;

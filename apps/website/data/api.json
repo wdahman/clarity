@@ -1,4 +1,107 @@
 {
+  "ClrAccordion": {
+    "bindings": [
+      {
+        "name": "clrAccordionMultiPanel",
+        "accepts": "boolean",
+        "type": "input",
+        "options": "true, false",
+        "description": "If true allows multiple panels to be open at the same time.",
+        "default": false
+      }
+    ]
+  },
+  "ClrAccordionPanel": {
+    "bindings": [
+      {
+        "name": "clrAccordionPanelDisabled",
+        "accepts": "boolean",
+        "type": "input",
+        "options": "true, false",
+        "description": "When true this disables click events from opening/closing the panel.",
+        "default": false
+      },
+      {
+        "name": "clrAccordionPanelOpen",
+        "accepts": "boolean",
+        "type": "two-way",
+        "options": "",
+        "description": "Use this to set the open or closed state of the panel. it emits the open (true)/ closed (false) state of the panel",
+        "default": false
+      }
+    ],
+    "methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      },
+      {
+        "name": "getPanelStateClasses",
+        "parameters": [
+          {
+            "name": "panel",
+            "type": "AccordionPanelModel",
+            "description": "A panel of the accordion."
+          }
+        ],
+        "description": "Public accessor used by the template",
+        "returns": "void"
+      },
+      {
+        "name": "getAccordionContentId",
+        "parameters": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "Create a specific id for the panel content."
+          }
+        ],
+        "description": "Public accessor used by the template",
+        "returns": "string"
+      },
+      {
+        "name": "getAccordionHeaderId",
+        "parameters": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "Create a specific id for the panel header."
+          }
+        ],
+        "description": "Public accessor used by the template",
+        "returns": "string"
+      }
+    ]
+  },
+  "ClrAccordionTitle": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ]
+  },
+  "ClrIfExpanded": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ]
+  },
+  "": {},
+  "": {},
+  "": {},
   "ClrAlerts": {
     "bindings": [
       {

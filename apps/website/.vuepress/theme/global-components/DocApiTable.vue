@@ -17,6 +17,36 @@
       </tr>
     </table>
 
+    <section v-if="item === 'methods'">
+      <div class="card" v-for="item in items">
+        <div class="card-block">
+          <h4 class="card-title">{{ item.name }}</h4>
+          <p class="card-text">
+            {{ item.name }}( {{ getParams(item.parameters) }} ):{{ item.returns }}
+          </p>
+        </div>
+        <ul class="list-group" v-if="item.parameters.length > 0">
+          <li class="list-group-item">
+            <table class="table table-noborder" style="margin-top: 0">
+              <tr>
+                <th class="left">Name</th>
+                <th class="left">Type</th>
+                <th class="left">Description</th>
+              </tr>
+              <tr v-for="parameter in item.parameters">
+                <td class="left">{{ parameter.name }}</td>
+                <td class="left">{{ parameter.type }}</td>
+                <td class="left">{{ parameter.description }}</td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+        <div class="card-footer">
+          <strong>Returns</strong> {{ item.returns }}
+        </div>
+      </div>
+    </section>
+
     <table class="table" v-if="item === 'css'">
       <tr>
         <th class="left">CSS Class</th>
@@ -72,6 +102,12 @@ export default {
           break;
       }
     },
+
+    getParams: function (params) {
+      return params.map(function(param) {
+        return `${param.name}: ${param.type}`
+      }).join('; ');
+    }
   },
 };
 </script>
