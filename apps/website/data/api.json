@@ -87,21 +87,6 @@
       }
     ]
   },
-  "ClrIfExpanded": {
-    "bindings": [
-      {
-        "name": "",
-        "accepts": "",
-        "type": "",
-        "options": "",
-        "description": "",
-        "default": 0
-      }
-    ]
-  },
-  "": {},
-  "": {},
-  "": {},
   "ClrAlerts": {
     "bindings": [
       {
@@ -195,5 +180,2217 @@
         "required": true
       }
     ]
+  },
+  "ClrButton": {
+    "bindings": [],
+    "Methods": [],
+    "css": []
+  },
+  "ClrButtonGroup": {
+    "bindings": [],
+    "Methods": [],
+    "css": []
+  },
+  "ClrCheckboxContainer": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrCheckboxWrapper": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrCheckbox": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrControlContainer": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrControlError": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrControlHelper": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrControl": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrDatagrid": {
+    "bindings": [],
+    "Methods": [],
+    "css": []
+  },
+  "ClrDatagridActionBar": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrDatagridActionOverflow": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrDatagridColumn": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrDatagridFilter": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrDatagridRow": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrDatagridCell": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrDgFooter": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrDatagridPagination": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrDatagridPageSize": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrDatagridPlaceholder": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrDatagridDetail": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrDatagridHideableColumn": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrDatagridItems": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrDatagridStateInterface": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrDatagridComparatorInterface": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrDropdown": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrDropdownItem": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrDropdownMenu": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrDropdownTrigger": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrForm": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrHeader": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrIfDetail": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrIfError": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrIfExpanded": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ]
+  },
+  "ClrLabel": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrLayout": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrMainContainer": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrModal": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrModalBody": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrNavLevel": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrProgressBar": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrRecursiveForOf": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrSignpost": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrSignpostContent": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrSignpostTrigger": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrSpinner": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrStackBlock": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrStackContentInput": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrStackHeader": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrStackViewCustomTags": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrStackView": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrTabContent": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrTab": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrTabs": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrTabLink": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrTabOverflowContent": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrTimeline": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrTimelineStep": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrTimelineStepDescription": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrTimelineStepHeader": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrTimelineStepTitle": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrTooltip": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrTooltipContent": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrTooltipTrigger": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrTree": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrTreeNode": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrVerticalNav": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrVerticalNavGroup": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrVerticalNavGroupChildren": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrVerticalNavIcon": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrVerticalNavLink": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrWizardButton": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrWizardCustomTags": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrWizardHeaderAction": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrWizard": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrWizardPage": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrWizardPageButtons": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrWizardPageHeaderActions": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrWizardPageNavTitle": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrWizardPageTitle": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrWizardStepnav": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrWizardStepnavItem": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "Methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
   }
+
 }

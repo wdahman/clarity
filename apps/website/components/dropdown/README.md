@@ -1,3 +1,7 @@
+---
+title: Overview
+---
+
 # Dropdowns
 
 * [Design Guidelines](/documentation/dropdowns#top)
@@ -347,7 +351,7 @@ Effect
 
 **\[clrPosition\]**
 
-Values:  
+Values:
 Direction classnames
 
 Default: "bottom-left"

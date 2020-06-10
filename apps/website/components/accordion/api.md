@@ -5,7 +5,7 @@ toc: true
 
 An accordion allows generic content to be collapsed and allows users to expand to show more detail.
 
-## Classes {.section-header}
+## Components {.section-header}
 
 ### ClrAccordion
 
@@ -16,7 +16,7 @@ An accordion allows generic content to be collapsed and allows users to expand t
 ```
 
 #### Properties
-<DocApiTable object="ClrAccordion" item="bindings" />
+<DocComponentApi component="ClrAccordion" item="bindings" />
 
 ### ClrAccordionContent
 ClrAccordionContent is a child of [ClrAccordionPanel](./api.md#clraccordionpanel)
@@ -59,12 +59,12 @@ ClrAccordionPanel is a child of [ClrAccordion](./api.md#clraccordion)
 ```
 
 
-#### Properties
+#### Bindings
 
-<DocApiTable object="ClrAccordionPanel" item="bindings" />
+<DocComponentApi component="ClrAccordionPanel" item="bindings" />
 
 #### Methods
-<DocApiTable object="ClrAccordionPanel" item="methods" />
+<DocComponentApi component="ClrAccordionPanel" item="methods" />
 
 ### ClrAccordionTitle
 

@@ -1,3 +1,7 @@
+---
+title: Overview
+---
+
 # Labels
 
 * [Design Guidelines](/documentation/labels#top)
@@ -45,8 +49,8 @@ Use all caps in labels
 
 Keep labels to one line of concise text. The use case for labels is to showcase information in a compact format.
 
-LONDON  
-(LOCATION)NABLUS  
+LONDON
+(LOCATION)NABLUS
 (LOCATION)
 
 ###### Don't

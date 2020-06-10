@@ -68,11 +68,11 @@
 import Api from '../../../data/api.json';
 
 export default {
-  name: 'DocApiTable',
-  props: ['object', 'item'],
+  name: 'DocComponentApi',
+  props: ['component', 'item'],
   computed: {
     items: function () {
-      return Api[this.object][this.item];
+      return Api[this.component][this.item];
     },
   },
   methods: {

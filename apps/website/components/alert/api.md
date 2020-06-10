@@ -17,7 +17,7 @@ The `ClrAlert` component displays a single alert.
 
 #### Bindings
 
-<DocApiTable object="ClrAlert" item="bindings" />
+<DocComponentApi component="ClrAlert" item="bindings" />
 
 ### ClrAlerts
 
@@ -29,7 +29,7 @@ The `ClrAlerts` component can host a group of alerts to enable pagination.
 </clr-alerts>
 ```
 
-<DocApiTable object="ClrAlerts" item="bindings" />
+<DocComponentApi component="ClrAlerts" item="bindings" />
 
 ### ClrAlertItem
 
@@ -56,4 +56,4 @@ There are two types of wrappers that be placed inside of the `ClrAlertItem` comp
 </clr-alert-item>
 ```
 
-<DocApiTable object="ClrAlertItem" item="css" />
+<DocComponentApi component="ClrAlertItem" item="css" />

@@ -1,3 +1,7 @@
+---
+title: Overview
+---
+
 # Progress Bars
 
 * [Design Guidelines](/documentation/progress#top)

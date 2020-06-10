@@ -1,3 +1,7 @@
+---
+title: Overview
+---
+
 # Modals
 
 * [Design Guidelines](/documentation/modals#top)
@@ -225,7 +229,7 @@ CancelOk
 
 Here is an example of a backdrop to use behind your modal, when you display it over a page:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ullamcorper nec ex in volutpat. Maecenas consectetur, dui quis accumsan pellentesque, dui sem ultricies nulla, sed auctor magna diam vel neque. Nullam id est vel purus volutpat accumsan non quis enim. Curabitur non turpis eu nunc faucibus venenatis quis ut neque. Integer in mattis tortor, eu sollicitudin sapien. Vestibulum convallis et quam vitae auctor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sagittis facilisis sapien, a malesuada purus. Donec vel dui sit amet orci semper accumsan sit amet non enim. Nulla sit amet commodo justo, ut pellentesque mauris. Pellentesque sollicitudin vestibulum ante eleifend pharetra. Nullam dignissim risus eget feugiat scelerisque. Nullam vehicula porta ex ac hendrerit. Phasellus laoreet felis et lacinia tincidunt. Nullam mattis sit amet est a maximus.  
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ullamcorper nec ex in volutpat. Maecenas consectetur, dui quis accumsan pellentesque, dui sem ultricies nulla, sed auctor magna diam vel neque. Nullam id est vel purus volutpat accumsan non quis enim. Curabitur non turpis eu nunc faucibus venenatis quis ut neque. Integer in mattis tortor, eu sollicitudin sapien. Vestibulum convallis et quam vitae auctor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sagittis facilisis sapien, a malesuada purus. Donec vel dui sit amet orci semper accumsan sit amet non enim. Nulla sit amet commodo justo, ut pellentesque mauris. Pellentesque sollicitudin vestibulum ante eleifend pharetra. Nullam dignissim risus eget feugiat scelerisque. Nullam vehicula porta ex ac hendrerit. Phasellus laoreet felis et lacinia tincidunt. Nullam mattis sit amet est a maximus.
 Ut dolor ipsum
 
 ```html
@@ -279,7 +283,7 @@ Two-way binding on the state of the modal: opened or closed.
 
 **\[clrModalSize\]**
 
-Values:  
+Values:
 "sm", "md", "lg", "xl"
 
 Default: "md"

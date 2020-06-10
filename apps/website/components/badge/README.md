@@ -1,3 +1,6 @@
+---
+title: Overview
+---
 # Badges
 
 * [Design Guidelines](/documentation/badges#top)

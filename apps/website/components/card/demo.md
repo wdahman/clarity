@@ -8,7 +8,7 @@ A `.card` can contain a `.card-header`, `.card-footer`, and one or more `.card-b
 
 <DocDemo>
 
-<<< components/card/\_basic.html
+<<< ./components/card/_basic.html
 
 </DocDemo>
 
@@ -189,7 +189,7 @@ The footer can contain two actions. For more actions, use a [dropdown](/document
           Block
         </div>
         <div class="card-text">
-           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias officiis temporibus quod inventore, minus commodi similique corrupti repellat saepe facere aliquam minima deserunt esse nemo, vel illum optio necessitatibus deleniti. 
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias officiis temporibus quod inventore, minus commodi similique corrupti repellat saepe facere aliquam minima deserunt esse nemo, vel illum optio necessitatibus deleniti.
         </div>
       </div>
       <div class="card-footer">

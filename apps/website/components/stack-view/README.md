@@ -1,3 +1,7 @@
+---
+title: Overview
+---
+
 # Stack View
 
 ![HTML5](assets/images/bugs/badge_html5.svg 'HTML5')![CSS3](assets/images/bugs/badge_css3.svg 'CSS3')![Angular](assets/images/bugs/badge_ng.svg 'Angular')
@@ -328,7 +332,7 @@ Effect
 
 Type: Boolean
 
-Default:  
+Default:
 true if `<clr-stack-block>` children are detected
 
 true, false
