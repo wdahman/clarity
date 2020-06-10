@@ -1,3 +1,7 @@
+---
+title: Overview
+---
+
 # Stepper
 
 * [Design Guidelines](/documentation/stepper#top)

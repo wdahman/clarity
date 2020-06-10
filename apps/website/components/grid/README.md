@@ -1,3 +1,7 @@
+---
+title: Overview
+---
+
 # Grid
 
 ![HTML5](assets/images/bugs/badge_html5.svg 'HTML5')![CSS3](assets/images/bugs/badge_css3.svg 'CSS3')
@@ -71,7 +75,7 @@ Column order
 
 Yes
 
-**Grid Behavior**  
+**Grid Behavior**
 Horizontal for extra-small. All other breakpoints are collapsed to start, then horizontal above the breakpoint.
 
 **Common Properties**
@@ -80,27 +84,27 @@ Horizontal for extra-small. All other breakpoints are collapsed to start, then h
 * Gutter width: 24px (12px on the left and right of column)
 * All columns support nesting, offsets, and column order
 
-Extra small  
+Extra small
 < 576px
 
 `.clr-col-`
 
-Small  
+Small
 ≥ 576px
 
 `.clr-col-sm-`
 
-Medium  
+Medium
 ≥ 768px
 
 `.clr-col-md-`
 
-Large  
+Large
 ≥ 992px
 
 `.clr-col-lg-`
 
-Extra large  
+Extra large
 ≥ 1200px
 
 `.clr-col-xl-`

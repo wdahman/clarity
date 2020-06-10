@@ -1,3 +1,7 @@
+---
+title: Overview
+---
+
 # Vertical Nav
 
 * [Design Guidelines](/documentation/vertical-nav#top)

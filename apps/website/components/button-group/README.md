@@ -1,3 +1,7 @@
+---
+title: Overview
+---
+
 # Button Group
 
 * [Design Guidelines](/documentation/button-group#top)
@@ -474,7 +478,7 @@ Input which determines if the button is in the menu or inline.
 
 **\[clrMenuPosition\]**
 
-Values:  
+Values:
 Direction classnames
 
 Default: "bottom-left"
@@ -487,7 +491,7 @@ Sets the direction in which the menu will open.
 
 **\[name\]**
 
-Values:  
+Values:
 String
 
 N/A
@@ -500,7 +504,7 @@ adds a name attribute with the value specified in the input
 
 **\[type\]**
 
-Values:  
+Values:
 String
 
 submit
@@ -513,7 +517,7 @@ adds a type attribute with the value specified in the input
 
 **\[disabled\]**
 
-Values:  
+Values:
 boolean
 
 false

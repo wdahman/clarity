@@ -1,3 +1,7 @@
+---
+title: Overview
+---
+
 # Range Input
 
 * [Design Guidelines](/documentation/range#top)

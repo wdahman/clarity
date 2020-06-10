@@ -1,3 +1,7 @@
+---
+title: Overview
+---
+
 # Wizards
 
 * [Design Guidelines](/documentation/wizards#top)

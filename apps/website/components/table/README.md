@@ -1,3 +1,7 @@
+---
+title: Overview
+---
+
 # Tables
 
 ![HTML5](assets/images/bugs/badge_html5.svg 'HTML5')![CSS3](assets/images/bugs/badge_css3.svg 'CSS3')
@@ -497,14 +501,14 @@ Left-aligned table cells
 
 .left
 
-Use this classname on a `td` to align its contents to the left edge of the table data cell.  
+Use this classname on a `td` to align its contents to the left edge of the table data cell.
 This is not necessary for vertical tables.
 
 Tables without borders
 
 .table-noborder
 
-This classname will remove borders between table rows as well as the border around the edge of the table.  
+This classname will remove borders between table rows as well as the border around the edge of the table.
 Also removes the background so that the table will be transparent over the background its container has.
 
 Compact tables
@@ -563,14 +567,14 @@ Left-aligned table cells
 
 .left
 
-This classname on a `td` aligns content to the left edge of the table cell.  
+This classname on a `td` aligns content to the left edge of the table cell.
 This is not necessary for vertical tables.
 
 Tables without borders
 
 .table-noborder
 
-This classname removes borders between table rows and the border around the table.  
+This classname removes borders between table rows and the border around the table.
 It also removes the background so that the table is transparent over its container background.
 
 Compact tables
