@@ -276,14 +276,39 @@ If you know a specific node can never become indeterminate, you probably want to
 
 <doc-demo src="/demos/tree-view/checkbox-binding-ng.html" demo="/demos/tree-view/empty-css.html" />
 
-#### Binding typeScript
+#### Binding TypeScript
 
 <doc-demo src="/demos/tree-view/checkbox-binding.ts" demo="/demos/tree-view/empty-css.html" />
 
 ### Recursive tree
 
+If the data you are displaying is recursive or has an unknown depth, you can use our `*clrRecursiveFor` structural directive to recursively iterate over your data. It has the same syntax as `*ngFor`, and accepts an additional `getChildren` parameter that receives a node and should return its children. Please note that it needs to be used inside of a `<clr-tree>` to function properly.
+
+![Recursive Tree](/images/components/tree-view/recursive-tree-demo.png)
+
+#### Recursive element
+
+<doc-demo src="/demos/tree-view/recursive-ng.html" demo="/demos/tree-view/empty-css.html" />
+
+#### Recursive TypeScript
+
+<doc-demo src="/demos/tree-view/recursive-ng.ts" demo="/demos/tree-view/empty-css.html" />
+
 ### Lazy loading child nodes
 
-### Lazy loading and selection
+If your tree is too large to be fully build on initialization or getting the children of a node is an expensive operation like an HTTP request, you might want to lazy-load tree nodes, only loading the ones that are currently displayed. To lazy-load children for a simple tree component, you need to combine several features as follows:
 
-### Lazy loading and recursive trees
+- Use our `<clr-tree>` root component, giving it a `[clrLazy]="true"` input
+- leverage our `*clrIfExpanded` structural directive, it only instantiates children when they are displayed
+- listen to the `(clrIfExpandedChange)` output to fetch the children's data
+- add a `[clrLoading]` boolean input to the node if fetching children is asynchronous, to display a spinner while waiting for the data to be loaded
+
+![Recursive Tree](/images/components/tree-view/lazy-tree.gif)
+
+#### Lazy tree element
+
+<doc-demo src="/demos/tree-view/lazy-ng.html" demo="/demos/tree-view/empty-css.html" />
+
+#### Lazy tree TypeScript
+
+<doc-demo src="/demos/tree-view/lazy-tree.ts" demo="/demos/tree-view/empty-css.html" />

@@ -32,7 +32,6 @@ export default {
         this.codeHTML = Prism.highlight(result.bodyText.trim(), Prism.languages[this.lang], this.lang);
       });
     } else if (this.src.split('.').pop() === 'ts' && this.src) {
-      console.log('do ts highlights');
       this.$http.get(this.src).then(result => {
         // hack for now, I think we need a ts plugin.
         this.codeHTML = Prism.highlight(result.bodyText.trim(), Prism.languages.javascript, 'javascript');
