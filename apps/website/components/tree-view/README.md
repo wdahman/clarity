@@ -190,7 +190,7 @@ The way to load data within the tree is based on the scenario in which the tree 
 
 ## Code & Examples
 
-### Basic Tree
+### Basic tree
 
 A basic tree can be created by simply nesting `clr-tree-node` components at will. To pre-expand a node, you can use the `[clrExpanded]` input.
 
@@ -203,31 +203,31 @@ A basic tree can be created by simply nesting `clr-tree-node` components at will
 ![Basic Tree](/images/components/tree-view/basic-tree-demo.png)
 <doc-demo src="/demos/tree-view/basic-ng.html" demo="/demos/tree-view/empty-css.html"/></doc-demo>
 
-### Tracking Expanded Nodes
+### Tracking expanded nodes
 
 Use two-way binding `[(clrExpanded)]="expanded"` on the [clrExpanded](/components/tree-view/api.html#properties) property to track when a node is expanded or collapsed.
 <doc-demo src="/demos/tree-view/expanded-ng.html" demo="/demos/tree-view/empty-css.html"/></doc-demo>
 
-### Routing With A Tree
+### Routing with a tree
 
 Use the `.clr-treenode-link` class to style content inside of a Tree Node as clickable. Indicate an active Tree Node with the `.active` class combined with the `.clr-treenode-link` class.
 <doc-demo src="/demos/tree-view/routed-ng.html" demo="/demos/tree-view/empty-css.html"/></doc-demo>
 
-### Generating A Tree Dynamically
+### Generating a tree dynamically
 
 When the tree strucutre is large and complex you can use iteration to generate nodes and child nodes based on the structure given to the [ClrTree](/components/tree-view/api.html#clrtree).
 
 ![Dynamically Generated Tree](/images/components/tree-view/dynamic-tree.png)
 
-#### Tree Element
+#### Tree element
 
 <doc-demo src="/demos/tree-view/dynamic.html" demo="/demos/tree-view/empty-css.html" />
 
-#### Tree TypeScript
+#### Tree typeScript
 
 <doc-demo src="/demos/tree-view/dynamic.ts" demo="/demos/tree-view/empty-css.html" />
 
-### Checkbox Tree
+### Checkbox tree
 
 Use checkbox when nodes of the tree need to be selected or unselected by users. There are three parts that are needed to implement a [ClrTree](/components/tree-view/api.html#clrtree) with checkbox controls.
 
@@ -247,20 +247,43 @@ Use checkbox when nodes of the tree need to be selected or unselected by users. 
 </ClrCol>
 </ClrRow>
 
-#### Checkbox Element
+#### Checkbox element
 
 <doc-demo src="/demos/tree-view/checkbox-ng.html" demo="/demos/tree-view/empty-css.html" />
 
-#### Checkbox TypeScript
+#### Checkbox typeScript
 
 <doc-demo src="/demos/tree-view/checkbox.ts" demo="/demos/tree-view/empty-css.html" />
 
-### Binding To A Selection
+### Binding selection to a boolean
 
-### Recursive Tree
+If you know a specific node can never become indeterminate, you probably want to use a boolean property on your node. As mentioned previously, `[(clrSelected)]` always outputs [ClrSelectedState](/components/tree-view/api.html#properties) enum values, making two-way binding with a boolean problematic. The most straightforward solution is to use the de-sugarized syntax of the two-way binding , transforming the output to a boolean directly.
 
-### Lazy Loading Child Nodes
+<ClrRow class="custom-block">
+<ClrCol>
+<!-- cannot project md images here and ClrImage w/ height distorts the image -->
+<img src="/images/components/tree-view/checkbox-binding-demo.png" alt="Checkbox Tree" height="500">
+</ClrCol>
+<ClrCol>
 
-### Lazy Loading And Selection
+#### Checkbox JSON
 
-### Lazy Loading Recursive Trees
+<doc-demo src="/demos/tree-view/checkbox-binding.json" demo="/demos/tree-view/empty-css.html" toggle="false" />
+</ClrCol>
+</ClrRow>
+
+#### Binding element
+
+<doc-demo src="/demos/tree-view/checkbox-binding-ng.html" demo="/demos/tree-view/empty-css.html" />
+
+#### Binding typeScript
+
+<doc-demo src="/demos/tree-view/checkbox-binding.ts" demo="/demos/tree-view/empty-css.html" />
+
+### Recursive tree
+
+### Lazy loading child nodes
+
+### Lazy loading and selection
+
+### Lazy loading and recursive trees
