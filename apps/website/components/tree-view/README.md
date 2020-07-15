@@ -201,17 +201,17 @@ A basic tree can be created by simply nesting `clr-tree-node` components at will
 </cds-alert>
 
 ![Basic Tree](/images/components/tree-view/basic-tree-demo.png)
-<doc-demo src="/demos/tree-view/basic-ng.html" demo="/demos/tree-view/empty-css.html"/></doc-demo>
+<doc-demo src="/demos/tree-view/basic-ng.html"/></doc-demo>
 
 ### Tracking expanded nodes
 
 Use two-way binding `[(clrExpanded)]="expanded"` on the [clrExpanded](/components/tree-view/api.html#properties) property to track when a node is expanded or collapsed.
-<doc-demo src="/demos/tree-view/expanded-ng.html" demo="/demos/tree-view/empty-css.html"/></doc-demo>
+<doc-demo src="/demos/tree-view/expanded-ng.html"/></doc-demo>
 
 ### Routing with a tree
 
 Use the `.clr-treenode-link` class to style content inside of a Tree Node as clickable. Indicate an active Tree Node with the `.active` class combined with the `.clr-treenode-link` class.
-<doc-demo src="/demos/tree-view/routed-ng.html" demo="/demos/tree-view/empty-css.html"/></doc-demo>
+<doc-demo src="/demos/tree-view/routed-ng.html"/></doc-demo>
 
 ### Generating a tree dynamically
 
@@ -221,11 +221,11 @@ When the tree strucutre is large and complex you can use iteration to generate n
 
 #### Tree element
 
-<doc-demo src="/demos/tree-view/dynamic.html" demo="/demos/tree-view/empty-css.html" />
+<doc-demo src="/demos/tree-view/dynamic.html" />
 
 #### Tree typeScript
 
-<doc-demo src="/demos/tree-view/dynamic.ts" demo="/demos/tree-view/empty-css.html" />
+<doc-demo src="/demos/tree-view/dynamic.ts" />
 
 ### Checkbox tree
 
@@ -243,17 +243,17 @@ Use checkbox when nodes of the tree need to be selected or unselected by users. 
 
 #### Checkbox JSON
 
-<doc-demo src="/demos/tree-view/checkbox.json" demo="/demos/tree-view/empty-css.html" toggle="false" />
+<doc-demo src="/demos/tree-view/checkbox.json" />
 </ClrCol>
 </ClrRow>
 
 #### Checkbox element
 
-<doc-demo src="/demos/tree-view/checkbox-ng.html" demo="/demos/tree-view/empty-css.html" />
+<doc-demo src="/demos/tree-view/checkbox-ng.html" />
 
 #### Checkbox typeScript
 
-<doc-demo src="/demos/tree-view/checkbox.ts" demo="/demos/tree-view/empty-css.html" />
+<doc-demo src="/demos/tree-view/checkbox.ts" />
 
 ### Binding selection to a boolean
 
@@ -268,17 +268,17 @@ If you know a specific node can never become indeterminate, you probably want to
 
 #### Checkbox JSON
 
-<doc-demo src="/demos/tree-view/checkbox-binding.json" demo="/demos/tree-view/empty-css.html" toggle="false" />
+<doc-demo src="/demos/tree-view/checkbox-binding.json" />
 </ClrCol>
 </ClrRow>
 
 #### Binding element
 
-<doc-demo src="/demos/tree-view/checkbox-binding-ng.html" demo="/demos/tree-view/empty-css.html" />
+<doc-demo src="/demos/tree-view/checkbox-binding-ng.html" />
 
 #### Binding TypeScript
 
-<doc-demo src="/demos/tree-view/checkbox-binding.ts" demo="/demos/tree-view/empty-css.html" />
+<doc-demo src="/demos/tree-view/checkbox-binding.ts" />
 
 ### Recursive tree
 
@@ -288,11 +288,11 @@ If the data you are displaying is recursive or has an unknown depth, you can use
 
 #### Recursive element
 
-<doc-demo src="/demos/tree-view/recursive-ng.html" demo="/demos/tree-view/empty-css.html" />
+<doc-demo src="/demos/tree-view/recursive-ng.html" />
 
 #### Recursive TypeScript
 
-<doc-demo src="/demos/tree-view/recursive-ng.ts" demo="/demos/tree-view/empty-css.html" />
+<doc-demo src="/demos/tree-view/recursive-ng.ts" />
 
 ### Lazy loading child nodes
 
@@ -307,8 +307,8 @@ If your tree is too large to be fully build on initialization or getting the chi
 
 #### Lazy tree element
 
-<doc-demo src="/demos/tree-view/lazy-ng.html" demo="/demos/tree-view/empty-css.html" />
+<doc-demo src="/demos/tree-view/lazy-ng.html" />
 
 #### Lazy tree TypeScript
 
-<doc-demo src="/demos/tree-view/lazy-tree.ts" demo="/demos/tree-view/empty-css.html" />
+<doc-demo src="/demos/tree-view/lazy-tree.ts" />
