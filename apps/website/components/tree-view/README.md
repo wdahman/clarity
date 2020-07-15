@@ -215,13 +215,21 @@ Use the `.clr-treenode-link` class to style content inside of a Tree Node as cli
 
 ### Checkbox Tree
 
-<ClrRow>
+Use checkbox when nodes of the tree need to be selected or unselected by users. There are three parts that are needed to implement a [ClrTree](/components/tree-view/api.html#clrtree) with checkbox controls.
+
+1. Data structured in a tree hierarchy
+1. The correct declaration on the [ClrTreeNode](/components/tree-view/api.html#clrtree)'s that need to be selectable
+1. A ClrSelectedState for each node that is selectable
+
+<ClrRow class="custom-block">
 <ClrCol>
-<ClrImage height="500" title="Checkbox Tree" src="/images/components/tree-view/checkbox-tree-demo.png" />
+<ClrImage title="Checkbox Tree" src="/images/components/tree-view/checkbox-tree-demo.png" />
 </ClrCol>
 <ClrCol>
+
 #### Checkbox JSON
-<doc-demo src="/demos/tree-view/checkbox-json.html" demo="/demos/tree-view/empty-css.html" toggle="false"/>
+
+<doc-demo src="/demos/tree-view/checkbox.json" demo="/demos/tree-view/empty-css.html" toggle="false" />
 </ClrCol>
 </ClrRow>
 
