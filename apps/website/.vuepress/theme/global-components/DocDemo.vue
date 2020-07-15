@@ -1,19 +1,29 @@
 <template>
   <div class="demo-container" :id="id">
-    <span v-html="demoHTML"></span>
-    <div class="toggle-bar" v-if="showToggle">
-      <button class="btn btn-primary btn-sm" v-if="!state" @click="state = !state">Show Code</button>
-      <button class="btn btn-primary btn-sm" v-if="state" @click="state = !state">Hide Code</button>
+    <div class="demo-wrapper" v-if="demoHTML">
+      <span v-html="demoHTML"></span>
     </div>
-    <div class="code" :class="{ expanded: state }" v-bind:aria-expanded="state ? 'true' : 'false'">
-      <pre :class="'language' + lang"><code v-html="codeHTML"></code></pre>
-      <div class="overlay"></div>
+    <div class="code-wrapper" :class="{ expanded: state }">
+      <button class="btn btn-primary btn-sm toggle-button" @click="toggleState()" v-if="showToggle">
+        {{ state ? 'Hide' : 'Show' }} Code
+      </button>
+      <div
+        class="code"
+        v-bind:aria-expanded="state ? 'true' : 'false'"
+        v-bind:style="{ height: this.getHeight() }"
+        ref="code-snippet"
+      >
+        <pre v-if="codeHTML" :class="'language' + lang"><code v-html="codeHTML"></code></pre>
+        <slot></slot>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import Prism from 'prismjs';
+
+const COLLAPSED_HEIGHT = 75;
 
 export default {
   name: 'DocDemo',
@@ -27,24 +37,18 @@ export default {
   },
   mounted: function () {
     if (this.file) {
-      this.$http.get(this.file).then(result => {
-        this.demoHTML = result.body;
-        this.codeHTML = Prism.highlight(result.bodyText.trim(), Prism.languages[this.lang], this.lang);
-      });
-    } else if (this.src.split('.').pop() === 'ts' && this.src) {
-      this.$http.get(this.src).then(result => {
-        // hack for now, I think we need a ts plugin.
-        this.codeHTML = Prism.highlight(result.bodyText.trim(), Prism.languages.javascript, 'javascript');
-      });
-    } else if (this.src && this.demo) {
+      this.src = this.file;
+      this.demo = this.file;
+    }
+    if (this.src) {
       this.$http.get(this.src).then(result => {
         this.codeHTML = Prism.highlight(result.bodyText.trim(), Prism.languages[this.lang], this.lang);
       });
+    }
+    if (this.demo) {
       this.$http.get(this.demo).then(result => {
         this.demoHTML = result.bodyText.trim();
       });
-    } else {
-      console.warn('doc-demo requires either a file property or both src and demo properties');
     }
 
     if (!this.toggle || (typeof this.toggle === 'string' && this.toggle.toLowerCase().trim() == 'false')) {
@@ -55,56 +59,100 @@ export default {
   data: function () {
     return {
       showToggle: true,
-      height: 0,
       demoHTML: '',
       codeHTML: '',
       state: false,
     };
+  },
+  methods: {
+    toggleState: function () {
+      this.state = !this.state;
+    },
+    getHeight: function () {
+      if (this.state) {
+        return this.$refs['code-snippet'].querySelector('pre').offsetHeight + 'px';
+      } else {
+        return COLLAPSED_HEIGHT + 'px';
+      }
+    },
   },
 };
 </script>
 
 <style lang="scss">
 .demo-container {
-  background: #fff;
-  padding: 1rem;
+  margin: 0.6rem 0;
+  padding: 0.6rem 0;
 }
-.toggle-bar {
-  display: flex;
-  justify-content: flex-end;
-
-  .btn {
-    margin-right: 0;
-    margin-bottom: 0;
-  }
+.demo-wrapper {
+  margin-bottom: 1.2rem;
 }
-.code {
-  max-height: 70px;
-  overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
+.code-wrapper {
   position: relative;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 0.15rem;
 
-  .overlay {
-    height: 70px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 1) 100%);
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out;
+  &.expanded:after {
+    display: none;
   }
-}
-.code.expanding {
-  overflow: hidden;
-}
-.code.expanded {
-  overflow: scroll;
-  max-height: 500px;
 
-  .overlay {
-    height: 0;
-    opacity: 0;
+  &:after {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.85));
+    z-index: 0;
+
+    display: block;
+  }
+
+  .toggle-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    outline: none 0;
+    box-shadow: none;
+    background: #dedede;
+
+    width: 5rem;
+    height: 1.2rem;
+
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom-left-radius: 0.15rem;
+
+    z-index: 1;
+
+    &:hover {
+      background: #ccc;
+      color: inherit;
+    }
+    &:active {
+      box-shadow: none;
+    }
+  }
+
+  .code {
+    transition: height 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    pre {
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
   }
 }
 </style>

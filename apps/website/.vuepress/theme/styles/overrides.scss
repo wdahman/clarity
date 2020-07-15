@@ -44,3 +44,12 @@
   //background: deeppink;
   //transform: translate(-1.15rem,1.3rem) !important;
 }
+
+// Prism code snippet margin
+div[class^='language-'] pre {
+  margin: 1rem 0;
+}
+
+p code {
+  color: var(--clr-color-danger-800, #c21d00);
+}
