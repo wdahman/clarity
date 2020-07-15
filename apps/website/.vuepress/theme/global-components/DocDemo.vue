@@ -13,7 +13,7 @@
         v-bind:style="{ height: this.getHeight() }"
         ref="code-snippet"
       >
-        <pre v-if="codeHTML" :class="'language' + lang"><code v-html="codeHTML"></code></pre>
+        <pre v-if="codeHTML" :class="'language' + prismLang"><code v-html="codeHTML"></code></pre>
         <slot></slot>
       </div>
     </div>
@@ -33,7 +33,6 @@ export default {
     demo: String,
     toggle: { type: Boolean | String, default: true },
     file: String | { file: String, lang: { type: String, default: 'html' } },
-    lang: { type: String, default: 'html' },
   },
   mounted: function () {
     if (this.file) {
@@ -42,7 +41,7 @@ export default {
     }
     if (this.src) {
       this.$http.get(this.src).then(result => {
-        this.codeHTML = Prism.highlight(result.bodyText.trim(), Prism.languages[this.lang], this.lang);
+        this.codeHTML = Prism.highlight(result.bodyText.trim(), Prism.languages[this.prismLang], this.prismLang);
       });
     }
     if (this.demo) {
@@ -50,7 +49,6 @@ export default {
         this.demoHTML = result.bodyText.trim();
       });
     }
-
     if (!this.toggle || (typeof this.toggle === 'string' && this.toggle.toLowerCase().trim() == 'false')) {
       this.state = true;
       this.showToggle = false;
@@ -62,6 +60,7 @@ export default {
       demoHTML: '',
       codeHTML: '',
       state: false,
+      prismLang: this.getLanguage(this.src),
     };
   },
   methods: {
@@ -69,10 +68,23 @@ export default {
       this.state = !this.state;
     },
     getHeight: function () {
+      if (!this.showToggle) {
+        return;
+      }
       if (this.state) {
         return this.$refs['code-snippet'].querySelector('pre').offsetHeight + 'px';
       } else {
         return COLLAPSED_HEIGHT + 'px';
+      }
+    },
+    getLanguage: function (src) {
+      const ext = src.split('.').pop();
+      if (ext === 'ts' || ext === 'js' || ext === 'json') {
+        return 'javascript';
+      } else if (ext === 'css' || ext === 'scss') {
+        return 'css';
+      } else {
+        return 'html';
       }
     },
   },
