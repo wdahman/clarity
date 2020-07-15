@@ -45,3 +45,12 @@
   background-color: hsl(198, 0%, 27%);
   padding: 0.5rem;
 }
+
+.modal-backdrop-container,
+.modal-backdrop {
+  position: relative;
+
+  .modal {
+    position: relative;
+  }
+}
