@@ -213,12 +213,26 @@ Use two-way binding `[(clrExpanded)]="expanded"` on the [clrExpanded](/component
 Use the `.clr-treenode-link` class to style content inside of a Tree Node as clickable. Indicate an active Tree Node with the `.active` class combined with the `.clr-treenode-link` class.
 <doc-demo src="/demos/tree-view/routed-ng.html" demo="/demos/tree-view/empty-css.html"/></doc-demo>
 
+### Generating A Tree Dynamically
+
+When the tree strucutre is large and complex you can use iteration to generate nodes and child nodes based on the structure given to the [ClrTree](/components/tree-view/api.html#clrtree).
+
+![Dynamically Generated Tree](/images/components/tree-view/dynamic-tree.png)
+
+#### Tree Element
+
+<doc-demo src="/demos/tree-view/dynamic.html" demo="/demos/tree-view/empty-css.html" />
+
+#### Tree TypeScript
+
+<doc-demo src="/demos/tree-view/dynamic.ts" demo="/demos/tree-view/empty-css.html" />
+
 ### Checkbox Tree
 
 Use checkbox when nodes of the tree need to be selected or unselected by users. There are three parts that are needed to implement a [ClrTree](/components/tree-view/api.html#clrtree) with checkbox controls.
 
 1. Data structured in a tree hierarchy
-1. The correct declaration on the [ClrTreeNode](/components/tree-view/api.html#clrtree)'s that need to be selectable
+1. The correct declaration on the [ClrTreeNode](/components/tree-view/api.html#clrtreenode)'s that need to be selectable
 1. A ClrSelectedState for each node that is selectable
 
 <ClrRow class="custom-block">
