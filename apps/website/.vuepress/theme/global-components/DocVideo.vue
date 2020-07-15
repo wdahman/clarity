@@ -67,6 +67,11 @@ export default {
     transition: opacity 0.2s ease-out;
   }
 
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+
   &.in-pause .video-overlay {
     opacity: 1;
   }

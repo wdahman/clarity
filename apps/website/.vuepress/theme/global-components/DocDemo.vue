@@ -5,7 +5,7 @@
     </div>
     <div class="code-wrapper" :class="{ expanded: state }">
       <button class="btn btn-primary btn-sm toggle-button" @click="toggleState()" v-if="showToggle">
-        {{ state ? 'Hide' : 'Show' }} Code
+        <cds-icon v-bind:shape="state ? 'resize-down' : 'resize-up'"></cds-icon>
       </button>
       <div
         class="code"
@@ -78,13 +78,15 @@ export default {
       }
     },
     getLanguage: function (src) {
-      const ext = src.split('.').pop();
-      if (ext === 'ts' || ext === 'js' || ext === 'json') {
-        return 'javascript';
-      } else if (ext === 'css' || ext === 'scss') {
-        return 'css';
-      } else {
-        return 'html';
+      if (src) {
+        const ext = src.split('.').pop();
+        if (ext === 'ts' || ext === 'js' || ext === 'json') {
+          return 'javascript';
+        } else if (ext === 'css' || ext === 'scss') {
+          return 'css';
+        } else {
+          return 'html';
+        }
       }
     },
   },
@@ -119,7 +121,7 @@ export default {
     width: 100%;
     height: 100%;
 
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.85));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.85));
     z-index: 0;
 
     display: block;
@@ -136,8 +138,9 @@ export default {
     box-shadow: none;
     background: #dedede;
 
-    width: 5rem;
+    width: 1.8rem;
     height: 1.2rem;
+    min-width: 1.8rem;
 
     border: none;
     border-radius: 0;
@@ -164,6 +167,7 @@ export default {
       margin: 0;
       padding: 0;
       border: none;
+      background: none;
     }
   }
 }
