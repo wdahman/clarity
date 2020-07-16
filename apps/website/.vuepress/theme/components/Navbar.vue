@@ -61,7 +61,9 @@ export default {
         }
       };
       handleLinksWrapWidth();
-      window.addEventListener('resize', handleLinksWrapWidth, false);
+      if (typeof window !== 'undefined') {
+        window.addEventListener('resize', handleLinksWrapWidth, false);
+      }
     }
   },
 };
