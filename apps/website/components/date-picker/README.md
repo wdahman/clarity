@@ -1,19 +1,66 @@
 ---
 title: Overview
+toc: true
 ---
 
-# Date Picker
+Date Picker is a popover control for picking a date value for a date input. It's also sometimes referred to as Datepicker.
 
-- [Design Guidelines](/documentation/datepicker#top)
-- [Code & Examples](/documentation/datepicker#examples)
+## Usage
 
-##### Date Picker is a popover control for picking a date value for a date input. It's also sometimes referred to as Datepicker.
+<ClrRow>
+<ClrCol>
+<p>Use a Date Picker to select a date when a user needs to understand the date in context with other possible dates. Date choices are influenced by day of the week, or week within a month. It is paired with a text input so that it can send a formatted date value to the input. A Date Picker is also helpful when the formatting of the date is important.</p>
+<p>Date Pickers aren’t helpful when the date is a known value like a birthdate. A user will likely want to type that value in versus hunting for it in a Date Picker. In cases where space is limited, it may be a good idea to omit the Date Picker.</p>
+</ClrCol>
+<ClrCol>
+<DocInset class="custom-block">
+<ClrImage src="/images/components/datepicker/datepicker.png" />
+</DocInset>
+</ClrCol>
+</ClrRow>
 
-## Design Guidelines
+## Types
 
-Date Picker is a calendar-view popover. It is paired with a text input so that it can send a formatted date value to the input.
+### Month Picker
 
-Date Picker is shown by clicking, or gaining focus and hitting enter, on the calendar icon next to the input field.
+<ClrRow>
+<ClrCol>
+<p>12 month values can be selected from. Arrow keys can be used to navigate through the values. Selecting a month value will return the user back to the date view.
+</p>
+</ClrCol>
+<ClrCol>
+<DocInset class="custom-block">
+<ClrImage src="/images/components/datepicker/monthpicker.png" />
+</DocInset>
+</ClrCol>
+</ClrRow>
+
+### Year Picker
+
+<ClrRow>
+<ClrCol>
+<p>10 year values are displayed at one time. Arrow keys can be used to navigate through the values, future years, and past years. Selecting a year value will return the user back to the date view.</p>
+</ClrCol>
+<ClrCol>
+<DocInset class="custom-block">
+<ClrImage src="/images/components/datepicker/yearpicker.png" />
+</DocInset>
+</ClrCol>
+</ClrRow>
+
+### Small Screens
+
+We automatically disable the Clarity Date Picker on small mobile phones. This is done because unlike desktop browsers, most mobile browsers have a built-in date picker. These built-in date pickers are optimized to work on mobile devices and provide an experience which the user is already familiar with.
+
+<div class="custom-block">
+  <cds-alert closable="false">
+    <cds-alert-content>Clarity Date Picker is shown at screen width 768px and above.</cds-alert-content>
+  </cds-alert>
+</div>
+
+## Behavior
+
+Date Picker is shown by clicking, or moving focus to the input and pressing enter, on the calendar icon next to the input field.
 
 Today’s date is displayed in bold. Unless preloaded with another date, today’s date will be selected in the Date Picker.
 
@@ -21,37 +68,11 @@ Clicking on the check-calendar icon inside the Date Picker returns the focus to 
 
 Focus is indicated by a grey background. Focus can be moved around inside the Date Picker using arrow and tab keys. Clicking the enter key will select a value.
 
-![Date Picker](assets/images/documentation/datepicker/datepicker.png)
-
-### Usage
-
-A Date Picker is used to select a date when a user needs to understand the date in context with other possible dates. Date choices are influenced by day of the week, or week within a month. A Date Picker is also helpful when the formatting of the date is important.
-
-Date Pickers aren’t helpful when the date is a known value like a birthdate. A user will likely want to type that value in versus hunting for it in a Date Picker. In cases where space is limited, it may be a good idea to omit the Date Picker.
-
-### Views
-
 The Month and Year views are shown when a user clicks on the month or year titles in the date view.
 
-![Month Picker](assets/images/documentation/datepicker/monthpicker.png)
-
-###### Month
-
-12 month values can be selected from. Arrow keys can be used to navigate through the values. Selecting a month value will return the user back to the date view.
-
-![Year Picker](assets/images/documentation/datepicker/yearpicker.png)
-
-###### Year
-
-10 year values are displayed at one time. Arrow keys can be used to navigate through the values, future years, and past years. Selecting a year value will return the user back to the date view.
-
-### Small Screens
-
-We automatically disable the Clarity Date Picker on small mobile phones. This is done because unlike desktop browsers, most mobile browsers have a built-in date picker. These built-in date pickers are optimized to work on mobile devices and provide an experience which the user is already familiar with.
-
-Clarity Date Picker is shown at screen width `768px` and above.
-
 ### Important Notes about User Input
+
+{.custom-block}
 
 - Every time the user changes the value in the input field, the value is validated against the placeholder to check if a valid date is entered or not. If a valid date is entered, the date picker opens with the entered date selected. If an invalid date is entered, the date picker opens with the focus on today's date.
 - Selecting a date from the date picker overrides the value in the input field.
@@ -59,78 +80,34 @@ Clarity Date Picker is shown at screen width `768px` and above.
 
 ## Accessibility
 
-For applications that use the `ClrDateInput` directive and the associated `ClrDateContainer` component there is built in support that adds accessible behavior to the control and its form. This behavior includes:
+For applications that use the ClrDateInput directive and the associated ClrDateContainer component there is built in support that adds accessible behavior to the control and its form. This behavior includes:
 
-1.  Programmatically associating the correct label `for` attribute with the `id` of the input
-2.  Automatic wiring up of the `aria-describedby` behavior with associated `clr-control-error` elements
-3.  An `aria-live` region that can notify screen readers about changes in the control error state
-4.  Adds the label to a general form summary for screen readers when the control is in an error state after a form submit
+{.custom-block}
+
+1. Programmatically associating the correct label for attribute with the id of the input
+1. Automatic wiring up of the aria-describedby behavior with associated clr-control-error elements
+1. An aria-live region that can notify screen readers about changes in the control error state
+1. Adds the label to a general form summary for screen readers when the control is in an error state after a form submit
 
 ## Code & Examples
 
-### API
+### Basic Datepicker
 
-#### `clrDate` Directive
+To use the date picker, add the [clrDate](/components/datepicker#clrdate) directive to an input field. Then, place the input inside the clr-date-container container element.
 
-To use the date picker, add the `clrDate` directive to an `input` field. Then, place the input inside the `clr-date-container` container element.
+![Basic Datepicker](/images/components/datepicker/basic-demo.png)
+<doc-demo src="/demos/datepicker/basic-ng.html" />
 
-Basic Demo
+### Min/Max Dates
 
-```html
-<form clrForm>
-  <clr-date-container>
-    <label>Basic Demo</label>
-    <input type="date" clrDate name="demo" [(ngModel)]="demo" />
-  </clr-date-container>
-</form>
-```
-
-It is recommended that you set the `type` to `date` as it increases readability of your code, helps with SEO, and keeps your HTML markup semantic. When the date picker is enabled, this `type` is overridden to `text` to disable the built-in date pickers that some desktop browsers provide.
-
-#### Min/Max attributes
-
-The earliest and latest acceptable dates can also be set. Just like the native HTML5 date spec a `yyyy-mm-dd` string can be used in the value for min or max. If the max value isn't a possible date then that the input has no max value. Similar for min values, if the string used is not a possible date then the input will not have a min value.
+The earliest and latest acceptable dates can also be set. Just like the native HTML5 date spec a yyyy-mm-dd string can be used in the value for min or max. If the max value isn't a possible date then that the input has no max value. Similar for min values, if the string used is not a possible date then the input will not have a min value.
 
 Only dates inside the min/max range will be selectable for the input when there is a bound placed for the min or max attribute.
 
-##### Only Min
+The `min` and the `max` attributes can be used alone or together to have both an upper and a lower bound on acceppted dates.
 
-Min date: 2019-11-17
-
-```html
-<form clrForm>
-  <clr-date-container>
-    <label>Min date: 2019-11-17</label>
-    <input type="date" clrDate name="demo" [(ngModel)]="demo" min="2019-11-17" />
-  </clr-date-container>
-</form>
-```
-
-##### Only Max
-
-Max date: 2019-11-19
-
-```html
-<form clrForm>
-  <clr-date-container>
-    <label>Max date: 2019-11-19</label>
-    <input type="date" clrDate name="demo" [(ngModel)]="demo" max="2019-11-19" />
-  </clr-date-container>
-</form>
-```
-
-##### Min and Max
-
-Min date: 2019-11-17 AND Max date: 2019-11-19
-
-```html
-<form clrForm>
-  <clr-date-container>
-    <label>Min date: 2019-11-17 AND Max date: 2019-11-19</label>
-    <input type="date" clrDate name="demo" [(ngModel)]="demo" min="2019-11-17" max="2019-11-19" />
-  </clr-date-container>
-</form>
-```
+![Basic Datepicker](/images/components/datepicker/min-max-demo.png)
+<doc-demo src="/demos/datepicker/min-max-ng.html" />
 
 ### Internationalization
 
@@ -139,223 +116,156 @@ Clarity uses the [locale identifiers](https://github.com/angular/angular/tree/ma
 #### Placeholder
 
 Using the date format retrieved from Angular, the placeholder is generated in one of the following formats:
+{.custom-block}
 
-1.  big-endian (YYYY/MM/DD)
-2.  little-endian (DD/MM/YYYY)
-3.  middle-endian (MM/DD/YYYY)
+1. big-endian (YYYY/MM/DD)
+1. little-endian (DD/MM/YYYY)
+1. middle-endian (MM/DD/YYYY)
 
-We recommend against overriding the automatically generated placeholder. Adding an incorrect placeholder will create confusion while entering the date in the input.
+<div class="custom-block">
+  <cds-alert closable="false">
+    <cds-alert-content>We recommend against overriding the automatically generated placeholder. Adding an incorrect placeholder will create confusion while entering the date in the input.</cds-alert-content>
+  </cds-alert>
+</div>
 
 The following demo shows two date pickers. The first date picker uses the `en-US` locale identifier whereas the second one uses `fr`. Both the date pickers have different first day of the week and the calendar is generated based on the first day of the week.
 
-##### Locale Identifier: en-US
+<ClrRow>
+<ClrCol>
+<h5>Locale Identifier: en-US</h5>
+<ClrImage src="/images/components/datepicker/us-locale-demo.png" />
+<table class="table">
+    <thead>
+        <tr><th class="left">Key</th><th class="left">Value</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="left">Language</td>
+            <td class="left">English</td>
+        </tr>
+        <tr>
+            <td class="left">Territory</td>
+            <td class="left">US</td>
+        </tr>
+        <tr>
+            <td class="left">First Day of the Week (Retrieved from Angular)</td>
+            <td class="left">Sunday (US)</td>
+        </tr>
+        <tr>
+            <td class="left">Date Format (Retrieved from Angular)</td>
+            <td class="left">M/d/yy</td>
+        </tr>
+        <tr>
+            <td class="left">Placeholder Generated</td>
+            <td class="left">MM/DD/YYYY</td>
+        </tr>
+    </tbody>
+</table>
+</ClrCol>
+<ClrCol>
+<h5>Locale Identifier: fr</h5>
+<ClrImage src="/images/components/datepicker/fr-locale-demo.png" />
+<table class="table">
+    <thead>
+        <tr><th class="left">Key</th><th class="left">Value</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="left">Language</td>
+            <td class="left">French</td>
+        </tr>
+        <tr>
+            <td class="left">Territory</td>
+            <td class="left">-</td>
+        </tr>
+        <tr>
+            <td class="left">First Day of the Week (Retrieved from Angular)</td>
+            <td class="left">Monday (L)</td>
+        </tr>
+        <tr>
+            <td class="left">Date Format (Retrieved from Angular)</td>
+            <td class="left">dd/MM/y</td>
+        </tr>
+        <tr>
+            <td class="left">Placeholder Generated</td>
+            <td class="left">DD/MM/YYYY</td>
+        </tr>
+    </tbody>
+</table>
+</ClrCol>
+</ClrRow>
 
-US locale
+Changing the locale requires its data to be registered first. Afterwards you can simply provide the locale in any Module or Component by the LOCALE_ID token.
 
-Key
-
-Value
-
-Language
-
-English
-
-Territory
-
-US
-
-First Day of the Week (Retrieved from Angular)
-
-Sunday (S)
-
-Date Format (Retrieved from Angular)
-
-M/d/yy
-
-Placeholder Generated
-
-MM/DD/YYYY
-
-##### Locale Idenitifer: fr
-
-FR Locale
-
-Key
-
-Value
-
-Language
-
-French
-
-Territory
-
-\-
-
-First Day of the Week (Retrieved from Angular)
-
-Monday (L)
-
-Date Format (Retrieved from Angular)
-
-dd/MM/y
-
-Placeholder Generated
-
-DD/MM/YYYY
-
-By default, Angular uses the `en-US` locale but you can set your application's locale to a different value using the `--locale` parameter while building your Angular CLI application.
-
-Changing the locale requires its data to be registered first.
-
-```html
-import { registerLocaleData } from '@angular/common'; import localeFr from '@angular/common/locales/fr';
-registerLocaleData(localeFr);
-```
-
-Afterwards you can simply provide the locale in any Module or Component by the `LOCALE_ID` token.
-
-```html
-providers: [ {provide: LOCALE_ID, useValue: 'fr'} ]
-```
+<doc-demo src="/demos/datepicker/i18n-ng.ts" />
 
 For more information on setting the locale parameter and loading the locale data, please read the Angular [internationalization](https://angular.io/guide/i18n) documentation.
 
-The date picker uses the locale set for the application to ensure consistency of date inputs and outputs across the application. It is not recommended to override the locale identifier to use different locales for different date picker instances in the same application.
+<div class="custom-block">
+  <cds-alert closable="false">
+    <cds-alert-content>The date picker uses the locale set for the application to ensure consistency of date inputs and outputs across the application. It is not recommended to override the locale identifier to use different locales for different date picker instances in the same application.</cds-alert-content>
+  </cds-alert>
+</div>
 
-#### Accessing the Date
+### Date Access
 
-You can access the Date in two ways:
+You can access the Date in two ways, a JavaScript Date object or a string. Further, for access ing the date with a string is different for template driven forms vs. reactive forms.
 
-###### 1\. As a Javascript Date Object
+#### JavaScript Date object
 
-You can add a two way binding on `clrDate` to access the date value. The benefit of using this approach is that you can interact with the Date picker directly using Javascript Date objects which would avoid converting values from string to date and vice versa on the application side.
+You can add a two way binding on clrDate to access the date value. The benefit of using this approach is that you can interact with the Date picker directly using Javascript Date objects which would avoid converting values from string to date and vice versa on the application side.
 
-Date picker emits `null` when an invalid date is entered after a valid date was set.
+<div class="custom-block">
+  <cds-alert closable="false">
+    <cds-alert-content>Date picker emits `null` when an invalid date is entered after a valid date was set.</cds-alert-content>
+  </cds-alert>
+</div>
 
-Date Object
+<doc-demo src="/demos/datepicker/js-date-object.html" />
 
-```html
-<form clrForm clrLayout="vertical">
-  <clr-date-container>
-    <label>Date Object</label>
-    <input type="date" [(clrDate)]="date" />
-  </clr-date-container>
-</form>
+```
+// clrDate Output
+"2020-07-16T17:56:30.728Z"
 ```
 
-###### Output:
-
-"2020-03-04T22:10:54.271Z"
-
-###### 2\. As a date string (in current locale format)
-
-[a. Template Driven Forms](https://angular.io/guide/forms#template-driven-forms)
+#### String: Template Driven
 
 Template Driven Forms use the `ngModel` directive to create a binding between the model and the input field.
 
-#### Template Driven Form Demo
+##### HTML
 
-Enter Date
+<doc-demo src="/demos/datepicker/template-driven.html" />
 
+##### TypeScript
+
+<doc-demo src="/demos/datepicker/template-driven.ts" />
+
+##### Example Output
+
+```javascript
 {
-"date": "01/02/2015"
-}
-
-```html
-<form clrForm #simpleForm="ngForm">
-  <h4>Template Driven Form Demo</h4>
-  <clr-date-container>
-    <label>Enter Date</label>
-    <input type="date" name="date" [(ngModel)]="date" clrDate />
-  </clr-date-container>
-</form>
-<pre class="datepicker-output">
-{{simpleForm.value | json}}
-</pre>
-```
-
-```typescript
-@Component({
-  selector: 'clr-form-demo',
-  templateUrl: './form-demo.html',
-})
-export class DatepickerTemplateDrivenFormsDemo {
-  date: string = '01/02/2015';
+  "date": "01/02/2015"
 }
 ```
 
-[b. Reactive Forms](https://angular.io/guide/reactive-forms)
+#### String: Reactive Form
 
-Reactive Forms use `FormControl`s to create the binding between the model and the input field.
+Reactive Forms use FormControls to create the binding between the model and the input field.
 
-#### Reactive Form Demo
+##### HTML
 
-Date
+<doc-demo src="/demos/datepicker/reactive-date.html" />
 
+##### TypeScript
+
+<doc-demo src="/demos/datepicker/reactive-date.ts" />
+
+##### Example Output
+
+The date value will be null until a user selectes a date.
+
+```javascript
 {
-"date": null
-}
-
-```html
-<form clrForm [formGroup]="dateForm" novalidate>
-  <h4>Reactive Form Demo</h4>
-  <clr-date-container>
-    <label>Date</label>
-    <input type="date" clrDate formControlName="date" />
-  </clr-date-container>
-</form>
-<pre class="datepicker-output">
-    {{dateForm.value | json}}
-</pre>
-```
-
-```typescript
-@Component({
-  selector: 'clr-form-demo',
-  templateUrl: './form-demo.html',
-})
-export class DatepickerReactiveFormsDemo {
-  dateForm = new FormGroup({ date: new FormControl() });
+  "date": null
 }
 ```
-
-We recommend that you either access the date as a string or as a javascript date object from the date picker. Using both at the same time might cause unexpected behavior.
-
-### Summary of Options
-
-Input/Output
-
-Values
-
-Default
-
-Effect
-
-**\[(clrDate)\]**
-
-Type: Date
-
-NA
-
-Javascript Date Objects
-
-NA
-
-Two-way binding on the date value.
-
-\[min\]
-
-string
-
-N/A
-
-Sets the earliest acceptable date and must be in the YYYY-MM-DD format.
-
-\[max\]
-
-string
-
-N/A
-
-Sets the latest acceptable date and must be in the YYYY-MM-DD format.
