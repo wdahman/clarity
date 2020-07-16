@@ -1,17 +1,27 @@
 <template>
-  <img :src="src" :alt="title" />
+  <div class="image-wrapper" v-bind:style="{ 'justify-content': align }">
+    <img :src="src" :alt="title" :width="width" />
+  </div>
 </template>
 
 <script>
 export default {
   name: 'ClrImage',
-  props: ['src', 'title'],
+  props: {
+    src: String,
+    title: String,
+    align: { type: String, default: 'left' },
+    width: { type: Number, default: 'auto' },
+  },
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+.image-wrapper {
+  display: flex;
+  margin: 1.2rem 0;
+}
 img {
-  width: 100%;
-  max-width: 45rem;
+  max-width: 100%;
 }
 </style>

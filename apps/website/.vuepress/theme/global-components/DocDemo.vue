@@ -5,8 +5,7 @@
     </div>
     <div class="code-wrapper" :class="{ expanded: state }">
       <button class="btn btn-primary btn-sm toggle-button" @click="toggleState()" v-if="showToggle">
-        {{ state ? 'Hide' : 'Show' }} Code
-        <cds-icon v-bind:shape="state ? 'resize-down' : 'resize-up'"></cds-icon>
+        {{ state ? 'hide' : 'show' }} code
       </button>
       <div
         class="code"
@@ -139,9 +138,8 @@ export default {
     box-shadow: none;
     background: #dedede;
 
-    width: 5rem;
+    width: 4.8rem;
     height: 1.2rem;
-    min-width: 5rem;
 
     border: none;
     border-radius: 0;

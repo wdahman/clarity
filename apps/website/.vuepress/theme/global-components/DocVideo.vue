@@ -46,10 +46,8 @@ export default {
   flex-direction: column;
   align-items: center;
   position: relative;
-  padding: 1.8rem 0.6rem;
   margin: 1.2rem 0;
   border-radius: 0.15rem;
-  box-shadow: inset 0 0 0.6rem 0rem #e4e4e4;
   overflow: hidden;
   cursor: pointer;
 

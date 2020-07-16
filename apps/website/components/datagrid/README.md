@@ -32,6 +32,8 @@ The Clarity datagrid uses 13px ClarityCity REGULAR for content and 11px Clarity 
 
 To use our Datagrid, you do not need to pass an array of data or a JSON configuration to a single element. Instead, we leverage a pure declarative API, just like any other Angular component. You write your HTML just as you would for a basic table, with a `*ngFor` (or `*clrDgItems`, see Smart iterator below) on the rows to iterate over your data.
 
+<ClrImage title="basic structure" src="/demos/datagrid/images/datagrid-basic-structure.png" :align="'center'" :width="864" />
+
 <DocDemo src="/demos/datagrid/basic-structure.html"></DocDemo>
 
 ### Custom Cell Rendering
@@ -56,7 +58,7 @@ You can also see in the following example how every feature we offer is always o
 
 By default, bound columns are assumed to contain string-like contents and the user is presented with the normal string filter. If you know that the contents of the column will be numeric, you can instead use the built-in numeric range filter by adding `[clrDgColType]="'number'"`. You can see an example of this in the "Wins" column.
 
-<DocVideo src="/demos/datagrid/datagrid-binding-properties.mov" :width="874" :autoplay="true"></DocVideo>
+<DocVideo src="/demos/datagrid/videos/datagrid-binding-properties.mov" :width="874" :autoplay="true"></DocVideo>
 
 <DocDemo src="/demos/datagrid/binding-properties.html"></DocDemo>
 
@@ -88,7 +90,7 @@ A comparator is just an object that implements a `compare` method that could be 
 
 In our example, everyone knows pokemon **should not** be sorted lexicographically, but according to Pokédex number.
 
-<DocVideo src="/demos/datagrid/datagrid-custom-sorting.mov" :width="876" :autoplay="true"></DocVideo>
+<DocVideo src="/demos/datagrid/videos/datagrid-custom-sorting.mov" :width="876" :autoplay="true"></DocVideo>
 
 <DocDemo>
 
@@ -289,7 +291,7 @@ class MyReusableFilter {
 
 In our example, we can create "color picker" filter, rather than have to search by color name.
 
-<DocVideo src="/demos/datagrid/datagrid-custom-filtering.mov" :width="872" :autoplay="true"></DocVideo>
+<DocVideo src="/demos/datagrid/videos/datagrid-custom-filtering.mov" :width="872" :autoplay="true"></DocVideo>
 
 <DocDemo>
 
@@ -482,7 +484,7 @@ To activate pagination on your datagrid, you simply need to add a `<clr-dg-pagin
 
 Here is an example of how to use pagination, and attach a template reference variable to it to display information on the current page.
 
-<DocVideo src="/demos/datagrid/datagrid-pagination.mov" :width="876" :autoplay="true"></DocVideo>
+<DocVideo src="/demos/datagrid/videos/datagrid-pagination.mov" :width="876" :autoplay="true"></DocVideo>
 
 <DocDemo>
 
@@ -509,7 +511,7 @@ In addition to a checkbox for each row to select individual rows, there will be 
 
 In the following example, we simply display the names of the selected users, but since we have access to the full objects, we could perform any operation we want on them.
 
-<DocVideo src="/demos/datagrid/datagrid-selection.mov" :width="872" :autoplay="true"></DocVideo>
+<DocVideo src="/demos/datagrid/videos/datagrid-selection.mov" :width="872" :autoplay="true"></DocVideo>
 
 <DocDemo>
 
@@ -577,7 +579,7 @@ Depending on the use case, you might want to restrict the user to only allow sin
 
 In the following example, we simply display the name of the selected user, but since we have access to the full objects, we could perform any operation we want on it.
 
-<DocVideo src="/demos/datagrid/datagrid-single-selection.mov" :width="872" :autoplay="true"></DocVideo>
+<DocVideo src="/demos/datagrid/videos/datagrid-single-selection.mov" :width="872" :autoplay="true"></DocVideo>
 
 <DocDemo>
 
@@ -627,7 +629,7 @@ In the following example, we simply display the names of the selected users, but
 
 Depending on the role of certain batch actions, you can choose to break button bars up into separate button groups. To increase the visibility of the most important batch actions within each button group, we recommend organizing batch actions in priority order from left to right.
 
-<DocVideo src="/demos/datagrid/datagrid-batch-action.mov" :width="872" :autoplay="true"></DocVideo>
+<DocVideo src="/demos/datagrid/videos/datagrid-batch-action.mov" :width="872" :autoplay="true"></DocVideo>
 
 <DocDemo>
 
@@ -676,7 +678,7 @@ You can allow actions on an item in a single row, in the cases where batch opera
 
 In the following example, we simply display the names of the selected users, but since we have access to the full objects, we could perform any operation we want on them.
 
-<DocVideo src="/demos/datagrid/datagrid-single-action.mov" :width="872" :autoplay="true"></DocVideo>
+<DocVideo src="/demos/datagrid/videos/datagrid-single-action.mov" :width="872" :autoplay="true"></DocVideo>
 
 <DocDemo>
 
@@ -799,7 +801,7 @@ class MyComponent {
 
 Your datagrid can be empty for any number of reasons: you are still fetching the data from the server, the filters selected by the user are too strict, or simply you didn't find any data to display in it. In these cases, we display a simple placeholder image, but it can be useful to display a message to the user explaining what is happening. To do so, simply add a `<clr-dg-placeholder>` element next to your rows.
 
-TODO: add placeholder image
+<ClrImage title="basic structure" src="/demos/datagrid/images/datagrid-placeholder.png" :align="'center'" :width="864" />
 
 <DocDemo>
 
@@ -842,7 +844,7 @@ To use the Detail Pane, add a new element with the following syntax inside of th
 
 </DocDemo>
 
-<DocVideo src="/demos/datagrid/datagrid-detail-pane.mov" :width="870" :autoplay="true"></DocVideo>
+<DocVideo src="/demos/datagrid/videos/datagrid-detail-pane.mov" :width="870" :autoplay="true"></DocVideo>
 
 <DocDemo>
 
@@ -992,7 +994,7 @@ class MyDetailComponent implements OnInit {
   </cds-alert>
 </div>
 
-<DocVideo src="/demos/datagrid/datagrid-expandable-rows.mov" :width="872" :autoplay="true"></DocVideo>
+<DocVideo src="/demos/datagrid/videos/datagrid-expandable-rows.mov" :width="872" :autoplay="true"></DocVideo>
 
 ### Hide/Show Columns
 
@@ -1000,7 +1002,7 @@ Datagrid columns may be shown / hidden by the user. A UI control on the left sid
 
 Datagrid columns are hideable with the `*clrDgHideableColumn` directive. Because this is a structural directive it cannot be used on the clr-dg-column component directly. Instead, you use `*clrDgHideableColumn` on an `ng-container` inside your `clr-dg-column`. It defaults to showing the column but you can use the hidden property to pre-configure it.
 
-<DocVideo src="/demos/datagrid/datagrid-hide-show-columns.mov" :width="874" :autoplay="true"></DocVideo>
+<DocVideo src="/demos/datagrid/videos/datagrid-hide-show-columns.mov" :width="874" :autoplay="true"></DocVideo>
 
 <DocDemo>
 
@@ -1031,6 +1033,20 @@ Datagrid columns are hideable with the `*clrDgHideableColumn` directive. Because
 </clr-datagrid>
 ```
 
+</DocDemo>
+
+### Compact Datagrid
+
+To increase the information density of your Datagrid or to decrease the amount of space it takes up, add the `datagrid-compact` class to it. This class decreases the amount of whitespace paddings in the default Datagrid style.
+
+<ClrImage title="basic structure" src="/demos/datagrid/images/datagrid-compact.png" :align="'center'" :width="864" />
+
+<DocDemo toggle="false">
+```html
+<clr-datagrid class="datagrid-compact">
+    <!-- ... -->
+</clr-datagrid>
+```
 </DocDemo>
 
 [//]: #Placement
