@@ -54,3 +54,15 @@
     position: relative;
   }
 }
+
+// Used this in badges for inline code. Need child elements to vertically stack
+.inline-code {
+  display: flex;
+  width: 100%;
+  // vertical stack is default
+  flex-direction: column;
+
+  &.horizontal {
+    flex-direction: unset;
+  }
+}
