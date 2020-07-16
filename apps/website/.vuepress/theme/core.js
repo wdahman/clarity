@@ -25,4 +25,4 @@ loadTextEditIconSet();
 loadTravelIconSet();
 
 import '@clr/icons';
-import '@clr/all-shapes';
+import '@clr/icons/shapes/all-shapes';
