@@ -54,7 +54,7 @@ module.exports = {
         '@clr/core/icon': path.resolve('../../dist/core/icon'),
         '@clr/core/icon-shapes': path.resolve('../../dist/core/icon-shapes'),
         '@clr/icons': path.resolve('../../dist/clr-icons/clr-icons.min.js'),
-        '@clr/all-shapes': path.resolve('../../dist/clr-icons/shapes/all-shapes.min.js'),
+        '@clr/icons/all-shapes': path.resolve('../../dist/clr-icons/shapes/all-shapes.min.js'),
       },
     },
   },
