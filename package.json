@@ -49,8 +49,6 @@
     "publish:rc": "yarn publish dist/core --tag rc; yarn publish dist/clr-ui --tag rc; yarn publish dist/clr-angular --tag rc; yarn publish dist/clr-icons --tag rc; yarn publish dist/react --tag rc;",
     "publish:local": "yarn publish dist/core --registry http://localhost:4873 --tag local; yarn publish dist/clr-ui --registry http://localhost:4873 --tag local; yarn publish dist/clr-angular --registry http://localhost:4873 --tag local; yarn publish dist/clr-icons --registry http://localhost:4873 --tag local; yarn publish dist/react --registry http://localhost:4873 --tag local",
     "publish:local:npm": "npm publish dist/core --registry http://localhost:4873 --tag local; npm publish dist/clr-ui --registry http://localhost:4873 --tag local; npm publish dist/clr-angular --registry http://localhost:4873 --tag local; npm publish dist/clr-icons --registry http://localhost:4873 --tag local; npm publish dist/react --registry http://localhost:4873 --tag local",
-    "website:deploy": "scripts/website.sh",
-    "website:preview": "lite-server --baseDir=dist/website",
     "angular:build": "yarn --cwd packages/angular run build",
     "angular:test": "yarn --cwd packages/angular run test",
     "angular:test:watch": "yarn --cwd packages/angular run test:watch",
@@ -77,6 +75,8 @@
     "react:lint": "yarn --cwd packages/react run lint",
     "react:test": "yarn --cwd packages/react run test",
     "website:build": "yarn --cwd apps/website build; yarn --cwd packages/angular run build-storybook; yarn --cwd packages/core dev:build",
+    "website:deploy": "scripts/website.sh",
+    "website:preview": "lite-server --baseDir=dist/website",
     "website:start": "yarn --cwd apps/website start"
   },
   "devDependencies": {
