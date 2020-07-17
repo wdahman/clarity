@@ -162,11 +162,9 @@ The progress indicator changed back to green once all errors are resolved.
 - The wizard can be closed by clicking the finish button, the cancel button, or canceling out by clicking the close "X" in the top right.
   Content
 
-<cds-alert status="warning" closable="false">
-<cds-alert-content>
-<div>Clarity Wizards are not dismissed when clicking on the background overlay. This prevents losing information or data. An option to override this is available.</div>
-</cds-alert-content>
-</cds-alert>
+<cds-alert-group status="warning" type="default">
+<cds-alert>Clarity Wizards are not dismissed when clicking on the background overlay. This prevents losing information or data. An option to override this is available.</cds-alert>
+</cds-alert-group>
 
 </div>
 <div class="clr-col-6">

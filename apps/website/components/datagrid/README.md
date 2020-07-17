@@ -62,12 +62,10 @@ By default, bound columns are assumed to contain string-like contents and the us
 
 <DocDemo src="/demos/datagrid/binding-properties.html"></DocDemo>
 
-<div class="top-margin-wrapper">
-  <cds-alert status="warning" closable="false">
-    <cds-alert-content>In this example, the <code class="clr-code">[clrDgField]</code> input is a hard-coded string, so it needs to be quoted twice: <code class="clr-code">[clrDgField]="'name'"</code>.</cds-alert-content>
-    <cds-alert-content>Another way to write this would be <code class="clr-code">clrDgField="name"</code>, without having the extra quotes, but we do not recommend this. In particular, this leaves a potentially unwanted attribute on the element, whereas the previous syntax only adds a property to the corresponding Javascript object.</cds-alert-content>
-  </cds-alert>
-</div>
+<cds-alert-group status="warning" type="default">
+<cds-alert>In this example, the <code class="clr-code">[clrDgField]</code> input is a hard-coded string, so it needs to be quoted twice: <code class="clr-code">[clrDgField]="'name'"</code>.</cds-alert>
+<cds-alert>Another way to write this would be <code class="clr-code">clrDgField="name"</code>, without having the extra quotes, but we do not recommend this. In particular, this leaves a potentially unwanted attribute on the element, whereas the previous syntax only adds a property to the corresponding Javascript object.</cds-alert>
+</cds-alert-group>
 
 ### Custom Sorting
 
@@ -80,13 +78,11 @@ A comparator is just an object that implements a `compare` method that could be 
 - if compare(a, b) is greater than 0, b comes first.
   The safest way to check that your types comply with our API is to have your comparator be an instance of a class that implement the `ClrDatagridComparatorInterface`{.clr-code} interface provided by Clarity.
 
-<div class="top-margin-wrapper">
-  <cds-alert closable="false">
-    <cds-alert-content><strong>Why use an object instead of the function directly?</strong></cds-alert-content>
-    <cds-alert-content>Using an object implementing an interface allows strong type-checking, which is safer for your application.If your sorting function does not comply with our API, you will get a clear error during typescript compilation, instead of an obscure one during runtime.</cds-alert-content>
-    <cds-alert-content>Admittedly, we could achieve strong typing by exporting a function signature instead of a whole interface, but not only do interfaces leave room for future features without forcing breaking changes, they also encourage you to write your business logic outside of the controller, naturally creating pure Typescript or Javascript "logic" classes, which are far more reusable.</cds-alert-content>
-  </cds-alert>
-</div>
+<strong>Why use an object instead of the function directly?</strong>
+<cds-alert-group status="warning" type="default">
+<cds-alert>Using an object implementing an interface allows strong type-checking, which is safer for your application.If your sorting function does not comply with our API, you will get a clear error during typescript compilation, instead of an obscure one during runtime.</cds-alert>
+<cds-alert>Admittedly, we could achieve strong typing by exporting a function signature instead of a whole interface, but not only do interfaces leave room for future features without forcing breaking changes, they also encourage you to write your business logic outside of the controller, naturally creating pure Typescript or Javascript "logic" classes, which are far more reusable.</cds-alert>
+</cds-alert-group>
 
 In our example, everyone knows pokemon **should not** be sorted lexicographically, but according to Pokédex number.
 
@@ -335,13 +331,13 @@ By default, filtering searches the original model value for matches. In cases wh
 
 ```html
 <clr-datagrid>
-  <!-- 
+  <!--
       This will search into user.creation (a Date object) and not the result
       of the pipe (the string 'Jan 6, 2018').
     -->
   <clr-dg-column [clrDgField]="'creation'">Creation Date</clr-dg-column>
 
-  <!-- 
+  <!--
       This will search into user.name and will not include user.id searching for user.id will not return any results.
     -->
   <clr-dg-column [clrDgField]="'name'">Name</clr-dg-column>
@@ -470,11 +466,9 @@ You can use a preset filter with either of the built-in filters to initialize th
 
 </DocDemo>
 
-<div class="top-margin-wrapper">
-  <cds-alert closable="false">
-    <cds-alert-content>We are planning on writing more of these semi-customisable filters in future releases, including a filter where the user selects values among the ones that are actually present in the data.
-If the one you are looking for isn't implemented yet, you can absolutely write it yourself using the fully customisable filters. And if you think it's good, feel free to contribute back to Clarity and add it for everyone!</cds-alert-content></cds-alert>
-</div>
+<cds-alert-group status="warning" type="default">
+<cds-alert>We are planning on writing more of these semi-customisable filters in future releases, including a filter where the user selects values among the ones that are actually present in the data. If the one you are looking for isn't implemented yet, you can absolutely write it yourself using the fully customisable filters. And if you think it's good, feel free to contribute back to Clarity and add it for everyone!</cds-alert>
+</cds-alert-group>
 
 ### Pagination
 
@@ -988,11 +982,9 @@ class MyDetailComponent implements OnInit {
 
 </DocDemo>
 
-<div class="top-margin-wrapper">
-  <cds-alert closable="false">
-    <cds-alert-content>Note the <code class="clr-code">ngProjectAs</code> attribute on our custom detail component. This is needed to make sure it is projected in the same place an actual <code class="clr-code">clr-dg-row-detail</code> would be.</cds-alert-content>
-  </cds-alert>
-</div>
+<cds-alert-group status="warning" type="default">
+<cds-alert>Note the <code class="clr-code">ngProjectAs</code> attribute on our custom detail component. This is needed to make sure it is projected in the same place an actual <code class="clr-code">clr-dg-row-detail</code> would be.</cds-alert>
+</cds-alert-group>
 
 <DocVideo src="/demos/datagrid/videos/datagrid-expandable-rows.mov" :width="872" :autoplay="true"></DocVideo>
 

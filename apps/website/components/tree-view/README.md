@@ -80,11 +80,9 @@ The dimensions of the expand/collapse arrow and the node title allow for a comfo
 </ClrCol>
 </ClrRow>
 
-<cds-alert status="warning" closable="false">
-<cds-alert-content>
-<div>Touch Targets are relevant even outside of a mobile form factor. Many new desktop environments, especially those running Windows, allow for the use of a touch screen and should be considered when designing your applications.</div>
-</cds-alert-content>
-</cds-alert>
+<cds-alert-group status="warning" type="default">
+<cds-alert>Touch Targets are relevant even outside of a mobile form factor. Many new desktop environments, especially those running Windows, allow for the use of a touch screen and should be considered when designing your applications.</cds-alert>
+</cds-alert-group>
 
 ## Behavior
 
@@ -194,11 +192,9 @@ The way to load data within the tree is based on the scenario in which the tree 
 
 A basic tree can be created by simply nesting `clr-tree-node` components at will. To pre-expand a node, you can use the `[clrExpanded]` input.
 
-<cds-alert status="info" closable="false">
-<cds-alert-content>
-<div>Please note that every tree requires to have root node to work properly, this is done by having clr-tree as root wrapper, please check the example below.</div>
-</cds-alert-content>
-</cds-alert>
+<cds-alert-group status="warning" type="default">
+<cds-alert>Please note that every tree requires to have root node to work properly, this is done by having clr-tree as root wrapper, please check the example below.</cds-alert>
+</cds-alert-group>
 
 ![Basic Tree](/images/components/tree-view/basic-tree-demo.png)
 <doc-demo src="/demos/tree-view/basic-ng.html"/></doc-demo>

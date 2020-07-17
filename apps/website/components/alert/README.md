@@ -16,7 +16,7 @@ There are two types of alerts, standard alerts and app level alerts.
 <ClrRow>
 <ClrCol>
 <DocInset>
-<ClrImage title="Standard Alerts" src="/images/components/alert/standard-alert.png" />
+<ClrImage alt="Standard Alerts" src="/images/components/alert/standard-alert.png" />
 </DocInset>
 <h3>Standard alerts</h3>
 <p>Standard alerts are used in the context of an application either in the content area itself or within components.</p>
@@ -146,23 +146,21 @@ Depending on the sub-type of a standard alert, make sure to communicate a clear,
 
 ## Accessibility
 
-<cds-alert status="warning" closable="false">
-<cds-alert-content>
-<div>Actionable controls inside dynamically genrated alerts are not accessible to screen reader users! For this reason Clarity does not recommend using dropdowns, buttons, links inside alerts that appear as dynamic notifications.</div>
-</cds-alert-content>
-</cds-alert>
+<cds-alert-group status="warning" type="default">
+<cds-alert>Actionable controls inside dynamically generated alerts are not accessible to screen reader users! For this reason Clarity does not recommend using dropdowns, buttons, links inside alerts that appear as dynamic notifications.</cds-alert>
+</cds-alert-group>
 
 Accessibility problems related to using actionable controls inside dynamically generated alerts:
 
 - They are announced as part of the alert message, which is out of context and may be confusing. For example, the following alert will be announced as "success acknowledge":
   TODO Fix core components (maybe it cannot be used in the markdown rendering)
-  - <cds-alert status="success" closable="false"><cds-alert-content>Success<div class="alert-actions">Acknowledge</div></cds-alert-content></cds-alert>
 - There is no way for the user to directly interact with the announced action controls.
 
 It is acceptable to use actions in static alerts. The following guidlines are recommended:
 
 - Controls can be dropdown, button or link elements.
 - Buttons should be used for actions, links for navigation.
+  - <cds-alert-group status="warning" type="default"><cds-alert>Acknowledge</cds-alert><cds-alert-actions><a href>Action Link</a></cds-alert-actions></cds-alert-group>
 - The text for these controls should be as descriptive as possible.
 
 ## Code & Examples

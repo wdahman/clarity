@@ -9,12 +9,12 @@ module.exports = {
   head: [['link', { rel: 'shortcut icon', href: '/favicon.ico' }]],
   dest: '../../dist/website',
   themeConfig: {
-    algolia: {
-      apiKey: 'd3349af25a19e3824cb48e57fe88fdcb',
-      indexName: 'clarity',
-    },
+    // algolia: {
+    //   apiKey: 'd3349af25a19e3824cb48e57fe88fdcb',
+    //   indexName: 'clarity',
+    // },
     lastUpdated: 'Last Updated',
-    search: true,
+    search: false, // Disabling for the moment
     sidebar,
   },
   markdown: {

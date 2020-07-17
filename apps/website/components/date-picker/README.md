@@ -52,11 +52,9 @@ Date Picker is a popover control for picking a date value for a date input. It's
 
 We automatically disable the Clarity Date Picker on small mobile phones. This is done because unlike desktop browsers, most mobile browsers have a built-in date picker. These built-in date pickers are optimized to work on mobile devices and provide an experience which the user is already familiar with.
 
-<div class="custom-block">
-  <cds-alert closable="false">
-    <cds-alert-content>Clarity Date Picker is shown at screen width 768px and above.</cds-alert-content>
-  </cds-alert>
-</div>
+<cds-alert-group status="warning" type="default">
+<cds-alert>Clarity Date Picker is shown at screen width 768px and above.</cds-alert>
+</cds-alert-group>
 
 ## Behavior
 
@@ -122,11 +120,9 @@ Using the date format retrieved from Angular, the placeholder is generated in on
 1. little-endian (DD/MM/YYYY)
 1. middle-endian (MM/DD/YYYY)
 
-<div class="custom-block">
-  <cds-alert closable="false">
-    <cds-alert-content>We recommend against overriding the automatically generated placeholder. Adding an incorrect placeholder will create confusion while entering the date in the input.</cds-alert-content>
-  </cds-alert>
-</div>
+<cds-alert-group status="warning" type="default">
+<cds-alert>We recommend against overriding the automatically generated placeholder. Adding an incorrect placeholder will create confusion while entering the date in the input.</cds-alert>
+</cds-alert-group>
 
 The following demo shows two date pickers. The first date picker uses the `en-US` locale identifier whereas the second one uses `fr`. Both the date pickers have different first day of the week and the calendar is generated based on the first day of the week.
 
@@ -201,11 +197,9 @@ Changing the locale requires its data to be registered first. Afterwards you can
 
 For more information on setting the locale parameter and loading the locale data, please read the Angular [internationalization](https://angular.io/guide/i18n) documentation.
 
-<div class="custom-block">
-  <cds-alert closable="false">
-    <cds-alert-content>The date picker uses the locale set for the application to ensure consistency of date inputs and outputs across the application. It is not recommended to override the locale identifier to use different locales for different date picker instances in the same application.</cds-alert-content>
-  </cds-alert>
-</div>
+<cds-alert-group status="warning" type="default">
+<cds-alert>The date picker uses the locale set for the application to ensure consistency of date inputs and outputs across the application. It is not recommended to override the locale identifier to use different locales for different date picker instances in the same application.</cds-alert>
+</cds-alert-group>
 
 ### Date Access
 
@@ -215,11 +209,9 @@ You can access the Date in two ways, a JavaScript Date object or a string. Furth
 
 You can add a two way binding on clrDate to access the date value. The benefit of using this approach is that you can interact with the Date picker directly using Javascript Date objects which would avoid converting values from string to date and vice versa on the application side.
 
-<div class="custom-block">
-  <cds-alert closable="false">
-    <cds-alert-content>Date picker emits `null` when an invalid date is entered after a valid date was set.</cds-alert-content>
-  </cds-alert>
-</div>
+<cds-alert-group status="warning" type="default">
+<cds-alert>Date picker emits `null` when an invalid date is entered after a valid date was set.</cds-alert>
+</cds-alert-group>
 
 <doc-demo src="/demos/datepicker/js-date-object.html" />
 

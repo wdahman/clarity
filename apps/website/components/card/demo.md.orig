@@ -381,9 +381,9 @@ Cards can contain [alerts](/documentation/alerts).
 
 <div class="card">
   <div class="card-block">
-  <cds-alert status="warning" size="sm" style="margin-bottom: 6px">
-    Use small alerts in a card.
-  </cds-alert>
+  <cds-alert-group status="warning" size="sm" type="default">
+    <cds-alert>Use small alerts in a card.</cds-alert>
+  </cds-alert-group>
     <!-- <div class="alert alert-warning alert-sm">
       <button type="button" class="close" aria-label="Close">
         <cds-icon aria-hidden="true" shape="close"></cds-icon>

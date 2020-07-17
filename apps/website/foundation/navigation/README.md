@@ -190,12 +190,9 @@ Clarity supports responsive navigation as follows:
   - The hamburger icon appears on the left of the header and triggers the primary navigation
   - The overflow icon appears on the right and triggers the secondary navigation
 
-<cds-alert status="info" closable="false">
-<cds-alert-content>
-<div>Although three levels of navigation make sense on large screens, this number of levels becomes hard to navigate on smaller screens. Clarity recommends that applications for tablets and phones are not exact replicas of the desktop versions, but rather a different, simplified experience.
-</div>
-</cds-alert-content>
-</cds-alert>
+<cds-alert-group status="warning" type="default">
+<cds-alert>Although three levels of navigation make sense on large screens, this number of levels becomes hard to navigate on smaller screens. Clarity recommends that applications for tablets and phones are not exact replicas of the desktop versions, but rather a different, simplified experience.</cds-alert>
+</cds-alert-group>
 
 #### Screen Size
 

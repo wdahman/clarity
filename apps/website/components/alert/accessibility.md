@@ -2,7 +2,9 @@
 title: Accessibility
 ---
 
-<cds-alert status="warning" closable="false">Actionable controls inside dynamically genrated alerts are not accessible to screen reader users! For this reason Clarity does not recommend using dropdowns, buttons, links inside alerts that appear as dynamic notifications.</cds-alert>
+<cds-alert-group status="warning" type="default">
+<cds-alert>Actionable controls inside dynamically genrated alerts are not accessible to screen reader users! For this reason Clarity does not recommend using dropdowns, buttons, links inside alerts that appear as dynamic notifications.</cds-alert>
+</cds-alert-group>
 
 There are accessibility problems related to using actionable controls inside dynamically generated alerts:
 
