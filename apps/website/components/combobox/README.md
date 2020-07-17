@@ -15,23 +15,174 @@ Use a combobox when you need to have a list of options with search and filtering
 
 The combobox can be configured in several different ways, depending on how the options are loaded, whether a single value or multiple values can be selected.
 
-### List of simple static options.
+### List of basic static options
 
-This simple type of combobox features declarative list of options. It's suitable for smaller, static lists.
+<ClrRow>
+<ClrCol>
+<p>
+This basic type of combobox features declarative list of options. It's suitable for smaller, static lists.
+</p>
+</ClrCol>
+<ClrCol>
+<DocInset>
+<ClrImage title="Basic Combobox" src="/images/components/combobox/combobox-simple.png" />
+</DocInset>
+</ClrCol>
+</ClrRow>
 
-### Single selection list of data-driven options.
+### Single selection list of data-driven options
 
+<ClrRow>
+<ClrCol>
+<p>
 This type is dynamic and is generated from an array of data. The user supplies a template which tells how any option will be displayed in the list. When an option is selected, its display name gets populated in the search box.
+</p>
+</ClrCol>
+<ClrCol>
+<DocInset>
+<ClrImage title="Single Selection Combobox" src="/images/components/combobox/combobox-single.png" />
+</DocInset>
+</ClrCol>
+</ClrRow>
 
-### Multi selection list of data-driven options.
+### Multi selection list of data-driven options
 
+<ClrRow>
+<ClrCol>
+<p>
 The multi select combobox is similar to the single select one, as it is data driven and allows for detailed configuration of the option display. After selection is made, a pill is created that corresponds to the selected item. Multi selection is achieved by subsequent selection from the drop down list, adding pills to the pills list.
+</p>
+</ClrCol>
+<ClrCol>
+<DocInset>
+<ClrImage title="Multi Selection Combobox" src="/images/components/combobox/combobox-multi.png" />
+</DocInset>
+</ClrCol>
+</ClrRow>
 
-### Asynchronous list of options, either single or multi selectable.
+### Asynchronous list of options, either single or multi selectable
 
+<ClrRow>
+<ClrCol>
+<p>
 The asynchronous scenario allows for lazy loading of the preselected options. There is a "loading" spinner and message that's displayed before the options load is complete.
+</p>
+</ClrCol>
+<ClrCol>
+<DocInset>
+<ClrImage title="Asynchronous Combobox" src="/images/components/combobox/combobox-async.png" />
+</DocInset>
+</ClrCol>
+</ClrRow>
 
 ## Anatomy
 
+<ClrRow>
+<ClrCol>
+<p>
 As part of the forms elements collection, the Combobox has a label, that can be vertically or horizontally aligned to it. It also has a condensed mode, that occupies less space.
 It has helper text and error/success message area. The component itself has a text input where the users enter the search text and a dropdown area, with a list of predefined options which can be styled by the user. The multi select version of the combobox has a list of pills that is situated before the text input. These pills all feature a delete button, and can also be styled, similarly to the options.
+</p>
+</ClrCol>
+<ClrCol>
+<DocInset>
+<ClrImage title="Combobox Anatomy" src="/images/components/combobox/combobox-anatomy.png" />
+</DocInset>
+</ClrCol>
+</ClrRow>
+
+## Behavior
+
+### Interacting with current selection
+
+#### Single selection combobox
+
+The current selection is prefilled in the text input box. Changing the input text does not change the selection until an option is selected from the drop down list. Selection can only be changed, not deleted.
+
+#### Multi selection combobox
+
+Current selection is displayed as a list of pills before the input box. New pills can be added from the drop down list. Pills can be deleted by clicking the "X" icon on each pill. Also, pressing Backspace key in an empty input box will select the last pill in the list.
+
+### Opening the drop down
+
+The drop down with the preselcted options can be opened either by clicking on the down carret icon at the end of the input text box, or by typing into the text box.
+
+### Interacting with the options
+
+Options can be mouse clicked to be selected. Also keyboard navigation with the arrow keys and selection with Enter key is available.
+Selected option/s are highlighted in the list.
+
+### Filtering the options list
+
+Typing in the input text box will filter the drop down list of predefined options. This works in all cases with the exception of the basic, declarative list with static options, as they don't use the smart options iterator which is used in the dynamic scenarios.
+
+## Code & Examples
+
+### Basic static combobox
+
+<ClrRow>
+<ClrCol>
+<p>
+A basic static combobox can be created by directly nesting <code>clr-option</code> components in the <code>clr-opitons</code> container.
+</p>
+</ClrCol>
+<ClrCol>
+<DocInset>
+<ClrImage title="Basic Combobox" src="/images/components/combobox/combobox-simple.png" />
+</DocInset>
+</ClrCol>
+</ClrRow>
+<doc-demo src="/demos/combobox/basic.html"/></doc-demo>
+
+### Single selection combobox
+
+<ClrRow>
+<ClrCol>
+<p>
+A single selection combobox is taking advantage of the <code>*clrOptionItems</code> smart iterator to manage its inventory of preselection options. It is similar to <code>*NgFor</code> as syntax. <code>field:'name'</code> designates which field of the underlying data object should be used as display name. The html nested inside the <code>clr-option</code> node will be used as template for the option design. It can include images, text, html code.
+</p>
+</ClrCol>
+<ClrCol>
+<DocInset>
+<ClrImage title="Single Selection Combobox" src="/images/components/combobox/combobox-single.png" />
+</DocInset>
+</ClrCol>
+</ClrRow>
+<doc-demo src="/demos/combobox/single.html"/></doc-demo>
+
+### Multi selection combobox
+
+<ClrRow>
+<ClrCol>
+<p>
+The multi selection mode is triggered with a <code>clrMulti="true"</code> attribute on the <code>clr-combobox</code> component.
+In regard to option management, the multi select combobox works the same as the single select one. It uses <code>*clrOptionItems</code> smart iterator and a template inside <code>clr-option</code> node for option styling.
+Pill styling is defined inside <code>ng-container</code> with <code>*clrOptionSelected</code> structural directive, as seen in the example.
+
+</p>
+</ClrCol>
+<ClrCol>
+<DocInset>
+<ClrImage title="Single Selection Combobox" src="/images/components/combobox/combobox-multi.png" />
+</DocInset>
+</ClrCol>
+</ClrRow>
+<doc-demo src="/demos/combobox/multi.html"/></doc-demo>
+
+### Asynchronous combobox
+
+<ClrRow>
+<ClrCol>
+<p>
+Using the combobox asynchronously requires to manually bind several event handlers on the <code>clr-combobox</code> component.
+<code>(clrInputChange)="fetchStates($event)"</code> and <code>(clrOpenChange)="$event ? fetchStates() : null"</code> need to be bound to your method that fetches the backend data ("fetchStates()" in this example). Then <code>[clrLoading]="loading"</code>, which triggers the display of the "loading" indicator, should be bound to a property that is active while your data fetching called is in progress.
+
+</p>
+</ClrCol>
+<ClrCol>
+<DocInset>
+<ClrImage title="Async Combobox" src="/images/components/combobox/combobox-async.png" />
+</DocInset>
+</ClrCol>
+</ClrRow>
+<doc-demo src="/demos/combobox/async.html"/></doc-demo>
