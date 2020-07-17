@@ -18,7 +18,7 @@ import {
   travelCollectionAliases as travelAliases,
   textEditCollectionAliases as textEditAliases,
   technologyCollectionAliases as technologyAliases,
-} from '@clr/core/icon-shapes';
+} from '@clr/core/icon';
 
 const ICONS_TO_HIDE = ['vm-bug', 'vm-bug-inverse'];
 

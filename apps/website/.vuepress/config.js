@@ -52,7 +52,6 @@ module.exports = {
         '@clr/core/alert': path.resolve('../../dist/core/alert'),
         '@clr/core/button': path.resolve('../../dist/core/button'),
         '@clr/core/icon': path.resolve('../../dist/core/icon'),
-        // '@clr/core/icon-shapes': path.resolve('../../dist/core/icon-shapes'),
         '@clr/icons': path.resolve('../../dist/clr-icons'),
         '@clr/icons/shapes/all-shapes': path.resolve('../../dist/clr-icons/shapes/all-shapes.min'),
       },
