@@ -160,8 +160,8 @@ It is acceptable to use actions in static alerts. The following guidlines are re
 
 - Controls can be dropdown, button or link elements.
 - Buttons should be used for actions, links for navigation.
-  - <cds-alert-group status="warning" type="default"><cds-alert>Acknowledge</cds-alert><cds-alert-actions><a href>Action Link</a></cds-alert-actions></cds-alert-group>
 - The text for these controls should be as descriptive as possible.
+  <cds-alert-group type="default" status="warning"><cds-alert closable>Acknowledge<cds-alert-actions><cds-button>Action Link</cds-button></cds-alert-actions></cds-alert></cds-alert-group>
 
 ## Code & Examples
 

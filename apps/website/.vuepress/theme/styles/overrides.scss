@@ -78,3 +78,8 @@ p code {
 .clr-example .clr-example-nesting-row .clr-example-nesting-row {
   background: #62727f;
 }
+
+// Workaround for cds-alert-actions issue
+cds-alert-actions {
+  display: block;
+}
