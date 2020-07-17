@@ -21,6 +21,7 @@ const scopes = [
   'list',
   'login',
   'modal',
+  'navigation',
   'password',
   'progress-bar',
   'radio',
