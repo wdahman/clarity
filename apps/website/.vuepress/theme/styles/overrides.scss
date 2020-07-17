@@ -53,3 +53,28 @@ div[class^='language-'] pre {
 p code {
   color: var(--clr-color-danger-800, #c21d00);
 }
+
+// From porting grid demos
+.clr-example .clr-example-col-value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.8rem;
+  border-radius: 0.15rem;
+  background: #d8e3e9;
+  margin: 0.3rem 0;
+}
+
+.clr-example .clr-example-nesting-row,
+.clr-example .clr-example-row {
+  background: #304250;
+  margin: 0.3rem 0;
+}
+
+.clr-example .clr-example-row {
+  height: 5.4rem;
+}
+
+.clr-example .clr-example-nesting-row .clr-example-nesting-row {
+  background: #62727f;
+}
