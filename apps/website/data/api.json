@@ -664,32 +664,9 @@
     "css": []
   },
   "ClrControl": {
-    "bindings": [
-      {
-        "name": "",
-        "accepts": "",
-        "type": "",
-        "options": "",
-        "description": "",
-        "default": 0
-      }
-    ],
-    "methods": [
-      {
-        "name": "",
-        "parameters": [],
-        "description": "",
-        "returns": ""
-      }
-    ],
-    "css": [
-      {
-        "name": ".alert-text",
-        "description": "Defines the text that is placed into the alert",
-        "host": "div, span",
-        "required": true
-      }
-    ]
+    "bindings": [],
+    "methods": [],
+    "css": []
   },
   "ClrControlContainer": {
     "bindings": [
@@ -775,33 +752,40 @@
       }
     ]
   },
-  "ClrControl": {
+  "ClrCombobox": {
     "bindings": [
       {
-        "name": "",
-        "accepts": "",
-        "type": "",
+        "name": "clrMulti",
+        "accepts": "boolean",
+        "type": "input",
+        "options": "true, false",
+        "description": "Enable multiple selection mode for a combobox.",
+        "default": false
+      },
+      {
+        "name": "clrInputChange",
+        "accepts": "string",
+        "type": "output",
         "options": "",
-        "description": "",
-        "default": 0
+        "description": "Output event that emits the user entered search text..",
+        "default": ""
+      },
+      {
+        "name": "clrOpenChange",
+        "accepts": "boolean",
+        "type": "output",
+        "options": "",
+        "description": "Output event that emits boolean state when combox is opened or closed. .",
+        "default": ""
       }
     ],
-    "methods": [
-      {
-        "name": "",
-        "parameters": [],
-        "description": "",
-        "returns": ""
-      }
-    ],
-    "css": [
-      {
-        "name": ".alert-text",
-        "description": "Defines the text that is placed into the alert",
-        "host": "div, span",
-        "required": true
-      }
-    ]
+    "methods": [],
+    "css": []
+  },
+  "ClrComboboxContainer": {
+    "bindings": [],
+    "methods": [],
+    "css": []
   },
   "ClrDatagrid": {
     "bindings": [
@@ -2297,6 +2281,100 @@
         "parameters": [],
         "description": "",
         "returns": ""
+      }
+    ],
+    "css": [
+      {
+        "name": ".alert-text",
+        "description": "Defines the text that is placed into the alert",
+        "host": "div, span",
+        "required": true
+      }
+    ]
+  },
+  "ClrOption": {
+    "bindings": [
+      {
+        "name": "id",
+        "accepts": "string",
+        "type": "input",
+        "options": "Valid HTML id string.",
+        "description": "Set a custom id for the option.",
+        "default": "Internally generated id."
+      },
+      {
+        "name": "clrValue",
+        "accepts": "T",
+        "type": "input",
+        "options": "T",
+        "description": "This is the option item of type T.",
+        "default": "n/a"
+      }
+    ],
+    "methods": [],
+    "css": []
+  },
+  "ClrOptions": {
+    "bindings": [
+      {
+        "name": "id",
+        "accepts": "string",
+        "type": "input",
+        "options": "Valid HTML id string.",
+        "description": "Set this for a custom id on the ClrOptions element.",
+        "default": "Internally generated id."
+      }
+    ],
+    "methods": [],
+    "css": []
+  },
+  "ClrOptionItems": {
+    "bindings": [
+      {
+        "name": "clrOptionItemsOf",
+        "accepts": "items: t[]",
+        "type": "input",
+        "options": "items: T[]",
+        "description": "Structural directive iterator that accepts a list of ClrOptions..",
+        "default": "n/a"
+      },
+      {
+        "name": "clrOptionItemsTrackBy",
+        "accepts": "TrackByFunction<T>",
+        "type": "input",
+        "options": "TrackByFunction<T>",
+        "description": "Custom trackBy function for optimizing items in the options list.",
+        "default": "n/a"
+      },
+      {
+        "name": "clrOptionItemsField",
+        "accepts": "string",
+        "type": "input",
+        "options": "String of the Option model field.",
+        "description": "Sets the field used to filter options with as user types.",
+        "default": "n/a"
+      }
+    ],
+    "methods": [],
+    "css": []
+  },
+  "ClrOptionSelected": {
+    "bindings": [
+      {
+        "name": "",
+        "accepts": "",
+        "type": "",
+        "options": "",
+        "description": "",
+        "default": 0
+      }
+    ],
+    "methods": [
+      {
+        "name": "togglePanel",
+        "parameters": [],
+        "description": "Opens and close the panel.",
+        "returns": "void"
       }
     ],
     "css": [

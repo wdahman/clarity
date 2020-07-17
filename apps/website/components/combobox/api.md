@@ -14,47 +14,63 @@ Combobox description here
 #### Selector & Basic Usage
 
 ```html
-tbd
+<clr-combobox></clr-combobox>
 ```
 
 #### Properties
 
 <DocComponentApi component="ClrCombobox" item="bindings" />
 
-#### Methods
+### ClrComboboxContainer
 
-<DocComponentApi component="ClrAccordionPanel" item="methods" />
+#### Selector & Basic Usage
+
+```html
+<clr-combobox-container></clr-combobox-container>
+```
+
+#### Properties
+
+<DocComponentApi component="ClrComboboxContainer" item="bindings" />
+
+### ClrOption
+
+#### Selector & Basic Usage
+
+```html
+<clroption></clroption>
+```
+
+#### Properties
+
+<DocComponentApi component="ClrOption" item="bindings" />
+
+### ClrOptions
+
+#### Selector & Basic Usage
+
+```html
+<clr-options></clr-options>
+```
+
+#### Properties
+
+<DocComponentApi component="ClrOptions" item="bindings" />
 
 ## Angular Directives
 
 {.section-header}
 
-### \*clrIfOpen
-
-description here
+### ClrOptionItems
 
 #### Selector & Basic Usage
 
 ```html
-usage
+<clr-option *clrOptionItems="let state of states; field:'name'" [clrValue]="state">
+  <!-- elements with options data -->
+</clr-option>
 ```
 
-<DocComponentApi component="ClrCombobox" item="bindings" />
+#### Properties
 
-#### Methods
-
-<DocComponentApi component="ClrAccordionPanel" item="methods" />
-
-##
-
-## CSS
-
-These are the css classes needed to work with the spans that create badge elements.
-
-## CSS
-
-TODO recheck if this is the same structure as the first css apis I wrote in other components and align them together.
-
-### Classes
-
-<DocComponentApi component="ClrCombox" item="css" />
+<DocComponentApi component="ClrOptionItems" item="bindings" />
