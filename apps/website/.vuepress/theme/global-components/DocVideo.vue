@@ -1,5 +1,10 @@
 <template>
-  <div class="video-wrapper" :class="{ 'in-pause': !autoplay && !playing }" @click="toggleVideo()">
+  <div
+    class="video-wrapper"
+    :class="{ 'in-pause': !autoplay && !playing }"
+    :style="{ 'background-color': bgColor, cursor: autoplay ? 'auto' : 'pointer' }"
+    @click="toggleVideo()"
+  >
     <div class="video-overlay" v-if="!autoplay">
       <cds-icon
         v-bind:shape="playing ? 'pause' : 'play'"
@@ -20,6 +25,7 @@ export default {
     src: String,
     autoplay: Boolean,
     width: Number,
+    bgColor: { type: String, default: 'transparent' },
   },
   data: function () {
     return {
@@ -49,7 +55,24 @@ export default {
   margin: 1.2rem 0;
   border-radius: 0.15rem;
   overflow: hidden;
-  cursor: pointer;
+
+  &:after,
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fafafa;
+    left: 0;
+  }
+
+  &:before {
+    top: 0px;
+  }
+
+  &:after {
+    bottom: 0px;
+  }
 
   .video-overlay {
     display: flex;

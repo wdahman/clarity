@@ -3,7 +3,7 @@
     <div class="demo-wrapper" v-if="demoHTML">
       <span v-html="demoHTML"></span>
     </div>
-    <div class="code-wrapper" :class="{ expanded: state }">
+    <div class="code-wrapper" :class="{ expanded: state }" v-if="hasCodeProjection() || codeHTML">
       <button class="btn btn-primary btn-sm toggle-button" @click="toggleState()" v-if="showToggle">
         {{ state ? 'hide' : 'show' }} code
       </button>
@@ -35,17 +35,15 @@ export default {
     file: String | { file: String, lang: { type: String, default: 'html' } },
   },
   mounted: function () {
-    if (this.file) {
-      this.src = this.file;
-      this.demo = this.file;
-    }
-    if (this.src) {
-      this.$http.get(this.src).then(result => {
+    const src = this.src || this.file;
+    const demo = this.demo || this.file;
+    if (src) {
+      this.$http.get(src).then(result => {
         this.codeHTML = Prism.highlight(result.bodyText.trim(), Prism.languages[this.prismLang], this.prismLang);
       });
     }
-    if (this.demo) {
-      this.$http.get(this.demo).then(result => {
+    if (demo) {
+      this.$http.get(demo).then(result => {
         this.demoHTML = result.bodyText.trim();
       });
     }
@@ -60,7 +58,7 @@ export default {
       demoHTML: '',
       codeHTML: '',
       state: false,
-      prismLang: this.getLanguage(this.src),
+      prismLang: this.getLanguage(this.src || this.file),
     };
   },
   methods: {
@@ -89,18 +87,27 @@ export default {
         }
       }
     },
+    hasCodeProjection() {
+      return this.$slots.default;
+    },
   },
 };
 </script>
 
 <style lang="scss">
 .demo-container {
+  position: relative;
   margin: 0.6rem 0;
-  padding: 0.6rem 0;
 }
+
 .demo-wrapper {
   margin-bottom: 1.2rem;
+
+  .has-padding & {
+    padding: 1.2rem;
+  }
 }
+
 .code-wrapper {
   position: relative;
   padding: 0.6rem;

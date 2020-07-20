@@ -1,180 +1,79 @@
 ---
 title: Overview
+toc: true
 ---
 
-# Modals
+Modals are dialogues which provide information or help a user complete a task. They require the user to take an action to dismiss them.
 
-- [Design Guidelines](/documentation/modals#top)
-- [Code & Examples](/documentation/modals#examples)
+<DocVideo src="/demos/modal/videos/modal-basic.mov" :width="736"  :autoplay="true" bgColor="#353335"></DocVideo>
 
-##### Modals provide information or help a user complete a task. They require the user to take an action to dismiss them.
+## Usage
 
-### Style
+Use a modal for self-contained processes with a clear start and end point. For the limited time frame of this action, a modal takes the user out of the current user workflow. Instead, it lets the user focus on the action and then return to the original context.
 
-Beginning of Modal Content
+<div class="top-margin-wrapper">
+  <cds-alert-group status="warning">
+    <cds-alert>Modals are disruptive. Only use modals when you need the user’s full attention for the period of time the modal is displayed.</cds-alert>
+  </cds-alert-group>
+</div>
 
-### Add datastore to host
+**Use a modal:**
 
-Select a host where you want your datastore to be added.
+- When you need to grab user’s attetnion for important message
+- When you want to show additional information without losing the context of the parent page.
+- To break down a complex workflow into simpler step
 
-Host
+**Do not use a modal:**
 
-10.11.12.1314.15.16.1718.19.20.2122.23.24.25
+- For nonessential information that is not related to the current workflow.
+- For complex workflow that requires additional information unavailable in the modal
+- Avoid modal over modal. It can confuse user about the context.
 
-CancelAdd
+## Anatomy
 
-End of Modal Content
+<DocModalWrapper></DocModalWrapper>
 
-###### Title
+#### Title
 
 The title **summarizes the purpose** of the modal. In a confirmation modal, use a question in your title and make sure the action is clearly called out in the buttons.
 
-###### Content
+#### Content
 
 The content may differ between different types of modals. **Be concise and provide a clear explanation** of the task or information a user should focus on.
 
-###### Buttons
+#### Buttons
 
-Buttons should include clear and direct action for the user to take. Buttons are right-aligned based on the **Z Pattern**. Read more about it in [Button Placement](/documentation/buttons).
+Buttons should include clear and direct action for the user to take. Buttons are right-aligned based on the **Z&#160;Pattern**. Read more about it in Button Placement.
 
-### Sizes
-
-There are multiple sizes for modals. The Clarity modal defaults to medium but different sizes could be used based on the content and screen sizes you are planning to support. Always remember to test responsiveness as you design and use modals.
-
-S
-
-###### Small Modal
-
-Width: 288px
-
-Launch
-
-M
-
-###### Medium Modal
-
-Width: 576px
-
-Launch
-
-L
-
-###### Large Modal
-
-Width: 864px
-
-Launch
-
-XL
-
-###### X-Large Modal
-
-Width: 1152px
-
-Launch
-
-### Overlay
+#### Overlay backdrop
 
 The background overlay is dark with opacity to provide the feeling of a third dimensional layer. This also eliminates distraction and helps the user focus on the modal content.
 
-### Animation
+<doc-demo demo="/demos/modal/modal-backdrop.html" class="has-padding"></doc-demo>
 
-The background overlay animates once a modal is launched to grab a user’s attention and retain their focus.
-
-### Delete datastore
-
-Are you sure you want to delete **datastore743**? This action is permanent and cannot be recovered.
-
-CancelDelete
-
-### Behavior
-
-Modals are used in different scenarios. Most notably: alerting the user, confirmation dialogs, and task-oriented workflows.
-
-###### Focus
-
-Modals are disruptive. Only use modals when you need the user’s **full attention** for the period of time the modal is displayed.
-
-###### Dismissing modals
-
-A user needs to **actively** dismiss a modal. A modal should **not** disappear on its own. Taking any of the actions to either cancel or proceed should eventually dismiss the modal.
-
-![Different ways modals can be dismissed](assets/images/documentation/modals/dismissing.png)
-
-There are multiple ways to dismiss a modal but a user needs to **intentionally** make that choice.
-
-Clarity Modals are not dismissed when clicking on the background overlay. This prevents losing information or data. An option to override this is available.
-
-###### Stacking modals
-
-Modals shouldn’t launch other modals. Stacking modals makes it hard to dismiss them and confuses the user on their levels of importance.
-
-If you see a need to stack modals, you should:
-
-- Seek alternatives to the second modal such as inline expansion within the first one.
-- Seek alternatives to the use of modals in that scenario and explore alternatives such as inline task completion.
-
-![Don't stack modals on top of each other](assets/images/documentation/modals/stacking.png)
-
-###### Don't
-
-Stack multiple modals on top of each other.
-
-###### Scrolling
-
-Scrolling makes it hard for a user to go through the content of your modal or complete the task assigned. Use scrolling only when absolutely needed.
-
-If your modals scroll, make sure:
-
-- You’re using the right modal size based on your content and supported screen sizes.
-- Consider alternative components to using modal if the content is too long or too complex within a modal.
-
-### Code & Examples
-
-A static example of a modal with header, body and footer:
-
-IE fix: When the modal dialog is open, extend the `.no-scrolling` class on the `body` tag so that the content behind the backdrop does not scroll. Remove the class when the modal dialog is closed.
-
-### I have a nice title
-
-But not much to say...
-
-CancelOk
+<DocDemo toggle="false">
 
 ```html
-<div class="modal">
-  <div class="modal-dialog" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button aria-label="Close" class="close" type="button">
-          <clr-icon aria-hidden="true" shape="close"></clr-icon>
-        </button>
-        <h3 class="modal-title">I have a nice title</h3>
-      </div>
-      <div class="modal-body">
-        <p>But not much to say...</p>
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-outline" type="button">Cancel</button>
-        <button class="btn btn-primary" type="button">Ok</button>
-      </div>
-    </div>
-  </div>
-</div>
 <div class="modal-backdrop" aria-hidden="true"></div>
 ```
 
-### Sizes
+</DocDemo>
 
-In addition to the default, medium size, Clarity modals come in two optional sizes: large and small. To use an optional size, add `modal-sm` or `modal-lg` class to your modal-dialog.
+#### Sizes
 
-###### 1\. .modal-sm
+There are multiple sizes for modals. The Clarity modal defaults to medium but different sizes could be used based on the content and screen sizes you are planning to support. Always remember to test responsiveness as you design and use modals.
 
-### Small modal
+<doc-demo demo="/demos/modal/modal-sizes.html"></doc-demo>
 
-I am a small modal.
+<div class="top-margin-wrapper">
+  <cds-alert-group status="info">
+    <cds-alert>The default size is medium so there is no style class for the medium size modal.</cds-alert>
+  </cds-alert-group>
+</div>
 
-Ok
+<DocModalWrapper size="sm"></DocModalWrapper>
+
+<DocDemo>
 
 ```html
 <div class="modal">
@@ -187,13 +86,11 @@ Ok
 <div class="modal-backdrop" aria-hidden="true"></div>
 ```
 
-###### 2\. .modal-lg
+</DocDemo>
 
-### Large modal
+<DocModalWrapper size="lg"></DocModalWrapper>
 
-I am a large modal.
-
-CancelOk
+<DocDemo>
 
 ```html
 <div class="modal">
@@ -206,13 +103,11 @@ CancelOk
 <div class="modal-backdrop" aria-hidden="true"></div>
 ```
 
-###### 3\. .modal-xl
+</DocDemo>
 
-### Extra large modal
+<DocModalWrapper size="xl"></DocModalWrapper>
 
-I am an extra large modal.
-
-CancelOk
+<DocDemo>
 
 ```html
 <div class="modal">
@@ -225,26 +120,18 @@ CancelOk
 <div class="modal-backdrop" aria-hidden="true"></div>
 ```
 
-### Modal Backdrop
+</DocDemo>
 
-Here is an example of a backdrop to use behind your modal, when you display it over a page:
+## Behavior
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ullamcorper nec ex in volutpat. Maecenas consectetur, dui quis accumsan pellentesque, dui sem ultricies nulla, sed auctor magna diam vel neque. Nullam id est vel purus volutpat accumsan non quis enim. Curabitur non turpis eu nunc faucibus venenatis quis ut neque. Integer in mattis tortor, eu sollicitudin sapien. Vestibulum convallis et quam vitae auctor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam sagittis facilisis sapien, a malesuada purus. Donec vel dui sit amet orci semper accumsan sit amet non enim. Nulla sit amet commodo justo, ut pellentesque mauris. Pellentesque sollicitudin vestibulum ante eleifend pharetra. Nullam dignissim risus eget feugiat scelerisque. Nullam vehicula porta ex ac hendrerit. Phasellus laoreet felis et lacinia tincidunt. Nullam mattis sit amet est a maximus.
-Ut dolor ipsum
+Modals are used in different scenarios. Most notably: alerting the user, confirmation dialogs, and task-oriented workflows.
 
-```html
-<div class="modal-backdrop" aria-hidden="true"></div>
-```
+#### Animation
 
-### Animation
+The background overlay animates once a modal is launched to grab a user’s attention and retain their focus. Modals and backdrops support fading animations. Clarity recommends using `fadeDown` on the `modal-dialog` and `fade` on the `modal-backdrop`. These animations hide the modal and backdrop by default. Adding or removing the `in` class animates the modal or backdrop in or out, respectively.
 
-Modals and backdrops support fading animations. Clarity recommends using `fadeDown` on the `modal-dialog` and `fade` on the `modal-backdrop`. These animations hide the modal and backdrop by default. Adding or removing the `in` class animates the modal or backdrop in or out, respectively.
-
-### I have a nice title
-
-But not much to say...
-
-CancelOk
+<div class="top-margin-wrapper">
+<DocDemo>
 
 ```html
 <div class="modal">
@@ -257,73 +144,66 @@ CancelOk
 <div class="modal-backdrop fade in" aria-hidden="true"></div>
 ```
 
+</DocDemo>
+</div>
+
+#### Dismissing modals
+
+A user needs to **actively** dismiss a modal. A modal should not disappear on its own. Taking any of the actions to either cancel or proceed should eventually dismiss the modal.
+
+<div class="clr-row">
+<div class="clr-col-lg-6 clr-col-md-12">
+
+There are multiple ways to dismiss a modal but a user needs to intentionally make that choice.
+
+Clarity Modals are not dismissed when clicking on the background overlay. This prevents losing information or data. An option to override this is available.
+
+</div>
+<div class="clr-col-lg-6 clr-col-md-12">
+
+<ClrImage title="Dismissing modals" src="/demos/modal/images/dismissing.png" :align="'left'" :width="420" />
+
+</div>
+</div>
+
+#### Stacking modals
+
+Modals **should not** launch other modals. Stacking modals makes it hard to dismiss them and confuses the user on their levels of importance.
+
+<div class="clr-row">
+<div class="clr-col-lg-6 clr-col-md-12">
+
+If you see a need to stack modals, you should:
+
+- Seek alternatives to the second modal such as inline expansion within the first one.
+- Seek alternatives to the use of modals in that scenario and explore alternatives such as inline task completion.
+
+</div>
+<div class="clr-col-lg-6 clr-col-md-12">
+
+<ClrImage title="Stacking modals" src="/demos/modal/images/stacking.png" :align="'left'" :width="420" />
+
+</div>
+</div>
+
+#### Scrolling
+
+Scrolling makes it hard for a user to go through the content of your modal or complete the task assigned. Use scrolling only when absolutely needed.
+
+If your modals scroll, make sure:
+
+- You’re using the right modal size based on your content and supported screen sizes.
+- Consider alternative components to using modal if the content is too long or too complex within a modal.
+
 ## Angular Component
 
-### Summary of Options
+Besides a static HTML/CSS Modal component, we also offer a fully interactive Angular version of the component. So if you are using Angular, you can use the `ClrModal` component. By using `ClrModal`, you'll be able to leverage its interactive behavior and features out-of-the-box. If you would like to learn more about how to customize its default interactive behavior, please refer to [the API tab](./api.html).
 
-Input/Output
-
-Values
-
-Default
-
-Effect
-
-**\[(clrModalOpen)\]**
-
-Type: Boolean
-
-Default: false
-
-true, false
-
-false
-
-Two-way binding on the state of the modal: opened or closed.
-
-**\[clrModalSize\]**
-
-Values:
-"sm", "md", "lg", "xl"
-
-Default: "md"
-
-"sm", "md", "lg", "xl"
-
-"md"
-
-Sets the size of the modal. "md" is for medium size.
-
-**\[clrModalClosable\]**
-
-Type: Boolean
-
-Default: true
-
-true, false
-
-true
-
-If false, the modal will not be closable by clicking on the mask or on the top-right "x".
-
-**\[clrModalStaticBackdrop\]**
-
-Type: Boolean
-
-Default: true
-
-true, false
-
-true
-
-If true, the modal will not close when the user clicks outside of the modal.
-
-#### Examples
-
-Try it live: Show modal
+<div class="top-margin-wrapper">
+<DocDemo>
 
 ```html
-<clr-modal [(clrModalOpen)]="basic">
+<clr-modal [(clrModalOpen)]="open">
   <h3 class="modal-title">I have a nice title</h3>
   <div class="modal-body">
     <p>But not much to say...</p>
@@ -335,80 +215,5 @@ Try it live: Show modal
 </clr-modal>
 ```
 
-###### 1\. clrModalSize
-
-The Angular component offers the same optional sizes as the static styles through the `clrModalSize` input. The default, empty size is medium.
-
-Small modalLarge modalExtra large modal
-
-```html
-<clr-modal [(clrModalOpen)]="opened" [clrModalSize]="'sm'">
-  ...
-</clr-modal>
-
-<clr-modal [(clrModalOpen)]="opened" [clrModalSize]="'lg'">
-  ...
-</clr-modal>
-
-<clr-modal [(clrModalOpen)]="opened" [clrModalSize]="'xl'">
-  ...
-</clr-modal>
-```
-
-###### 2\. clrModalClosable
-
-If you don’t want your modal to be closable by clicking on the top-right “x” or on the mask, you can do so with the `clrModalClosable` input. The default value is `true`. You can still close the modal if one of _your_ components modifies the value bound to `clrModalOpen`.
-
-Show modal
-
-```html
-<clr-modal [(clrModalOpen)]="opened" [clrModalClosable]="false">
-  <h3 class="modal-title">No "x" in the top-right corner</h3>
-  <div class="modal-body">
-    <p>Clicking on the backdrop doesn't do anything.</p>
-  </div>
-  <div class="modal-footer">
-    <button type="button" class="btn btn-primary" (click)="opened = false">
-      I'm the only way to close the modal!
-    </button>
-  </div>
-</clr-modal>
-```
-
-###### 3\. clrModalStaticBackdrop
-
-If you want the modal to be closable with a click on the backdrop, use the `clrModalStaticBackdrop`. If `false`, clicks on the background will close the modal. The default value is `true`.
-
-Show modal
-
-```html
-<clr-modal [(clrModalOpen)]="opened" [clrModalStaticBackdrop]="false">
-  ...
-</clr-modal>
-```
-
-### API Reference
-
-Method
-
-Arguments
-
-Return Value
-
-Description
-
-open()
-
-N/A
-
-N/A
-
-Manually opens the modal.
-
-close()
-
-N/A
-
-N/A
-
-Manually closes the modal if `clrModalClosable` is not set to `false`.
+</DocDemo>
+</div>

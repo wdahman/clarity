@@ -429,8 +429,6 @@ interface ClrDatagridNumericFilterInterface<T> {
 
 In the example below, we are implementing the string filter on pokemons' names.
 
-TODO: add video example
-
 <DocDemo>
 
 ```javascript
