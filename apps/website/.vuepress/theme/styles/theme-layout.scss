@@ -1,39 +1,8 @@
-//header {
-//  background-color: deeppink;
-//  max-height: 4rem;
-//}
-
-//main {
-//  background-color: cadetblue;
-//}
-//aside {
-//  background-color: blanchedalmond;
-//  max-width: 20%;
-//  max-height: calc(100vh - 4em);
-//  overflow: scroll;
-//}
-//footer {
-//  background-color: lavender;
-//  max-height: 4rem;
-//}
-//.app-container {
-//  height: 100vh;
-//}
-
-.super-tall {
-  height: 150vh;
-}
-
-//.main-footer {
-//  overflow: scroll;
-//  max-height: calc(100vh - 4em);
-//}
-
-.page-header {
-}
 .page-block {
+  flex-wrap: nowrap;
   .page-nav {
     max-width: 10rem;
+    min-width: 10rem;
     max-height: calc(100vh - 3rem);
     overflow-y: auto;
   }

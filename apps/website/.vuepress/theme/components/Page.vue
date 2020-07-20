@@ -8,11 +8,11 @@
       <Content />
       <PageEdit />
 
-      <!--    <PageNav v-bind="{ sidebarItems }" />-->
+      <PageNav v-bind="{ sidebarItems }" />
 
       <slot name="bottom" />
     </div>
-    <nav class="nav-table-of-contents">
+    <nav class="nav-table-of-contents" v-if="shouldShowTOC">
       <b class="title">Content</b>
       <TOC />
     </nav>
@@ -27,6 +27,11 @@ import PageSubnav from '@theme/components/PageSubnav';
 export default {
   components: { PageEdit, PageNav, PageSubnav },
   props: ['sidebarItems'],
+  computed: {
+    shouldShowTOC() {
+      return this.$frontmatter.toc ? true : false;
+    },
+  },
 };
 </script>
 

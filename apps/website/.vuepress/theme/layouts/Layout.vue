@@ -1,10 +1,10 @@
 <template>
-  <div @touchstart="onTouchStart" @touchend="onTouchEnd" cds-layout="vertical align:stretch">
+  <div @touchstart="onTouchStart" @touchend="onTouchEnd" cds-layout="vertical align:stretch no-wrap">
     <!-- Comment out following to use debugger -->
     <!--    <script src="http://localhost:8098"></script>-->
     <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar" cds-layout="p:sm p@md:md" />
 
-    <div class="page-block" cds-layout="horizontal align:stretch">
+    <div class="page-block" cds-layout="horizontal align:stretch no-wrap">
       <Sidebar :items="sidebarItems" @toggle-sidebar="toggleSidebar">
         <template #top>
           <slot name="sidebar-top" />
@@ -14,21 +14,19 @@
         </template>
       </Sidebar>
 
-      <div cds-layout="horizontal align:stretch" class="page-wrapper">
-        <div cds-layout="align:stretch">
-          <main>
-            <Home v-if="$page.frontmatter.home" />
+      <div class="page-wrapper">
+        <main>
+          <Home v-if="$page.frontmatter.home" />
 
-            <Page v-else :sidebar-items="sidebarItems">
-              <template #top>
-                <slot name="page-top" />
-              </template>
-              <template #bottom>
-                <slot name="page-bottom" />
-              </template>
-            </Page>
-          </main>
-        </div>
+          <Page v-else :sidebar-items="sidebarItems">
+            <template #top>
+              <slot name="page-top" />
+            </template>
+            <template #bottom>
+              <slot name="page-bottom" />
+            </template>
+          </Page>
+        </main>
       </div>
     </div>
   </div>
