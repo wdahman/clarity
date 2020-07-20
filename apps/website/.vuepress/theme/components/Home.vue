@@ -139,11 +139,15 @@
         </div>
       </div>
     </section>
+
+    <Footer></Footer>
   </main>
 </template>
 
 <script>
+import Footer from '@theme/components/Footer';
 export default {
+  components: { Footer },
   name: 'Home',
 
   computed: {

@@ -1,0 +1,18 @@
+//body {
+//  margin: 0;
+//  height: 100vh;
+//  font-family: sans-serif;
+//  color: white;
+//}
+
+//main {
+//  height: 100%;
+//  overflow: hidden;
+//}
+
+.make-it-scrollable {
+  overflow-y: auto;
+  justify-content: start;
+  align-items: start;
+  height: calc(100vh - 3rem);
+}

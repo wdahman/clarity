@@ -1,12 +1,18 @@
 <template>
-  <div class="main-container" @touchstart="onTouchStart" @touchend="onTouchEnd">
+  <div
+    class="main-container"
+    @touchstart="onTouchStart"
+    @touchend="onTouchEnd"
+    cds-layout="vertical align:stretch"
+    style="height: 100vh;"
+  >
     <!-- Comment out following to use debugger -->
     <!-- <script src="http://localhost:8098"></script> -->
 
-    <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar" />
+    <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar" cds-layout="p:sm vertical gap:sm" />
 
     <div class="content-container">
-      <Sidebar :items="sidebarItems" @toggle-sidebar="toggleSidebar">
+      <Sidebar :items="sidebarItems" @toggle-sidebar="toggleSidebar" class="make-it-scrollable">
         <template #top>
           <slot name="sidebar-top" />
         </template>
@@ -15,10 +21,10 @@
         </template>
       </Sidebar>
 
-      <div class="content-area">
-        <Home v-if="$page.frontmatter.home" />
+      <div class="content-container" style="max-width: 960px; height: calc(100vh - 3rem);" cds-layout="p-l:lg">
+        <Home v-if="$page.frontmatter.home" class="make-it-scrollable" />
 
-        <Page v-else :sidebar-items="sidebarItems">
+        <Page id="content-area" v-else :sidebar-items="sidebarItems" class="make-it-scrollable">
           <template #top>
             <slot name="page-top" />
           </template>
@@ -26,11 +32,9 @@
             <slot name="page-bottom" />
           </template>
         </Page>
-
-        <Footer></Footer>
       </div>
 
-      <nav class="nav-table-of-contents" v-if="shouldShowTOC">
+      <nav class="nav-table-of-contents" v-if="shouldShowTOC" cds-layout="p-l:lg">
         <b class="title">Content</b>
         <TOC />
       </nav>
