@@ -1,11 +1,8 @@
 <template>
-  <div class="main-container" @touchstart="onTouchStart" @touchend="onTouchEnd">
-    <!-- Comment out following to use debugger -->
-    <!-- <script src="http://localhost:8098"></script> -->
+  <div @touchstart="onTouchStart" @touchend="onTouchEnd" cds-layout="vertical align:stretch">
+    <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar" cds-layout="p:sm p@md:md" />
 
-    <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar" />
-
-    <div class="content-container">
+    <div class="page-block" cds-layout="horizontal align:stretch">
       <Sidebar :items="sidebarItems" @toggle-sidebar="toggleSidebar">
         <template #top>
           <slot name="sidebar-top" />
@@ -15,27 +12,118 @@
         </template>
       </Sidebar>
 
-      <div class="content-area">
-        <Home v-if="$page.frontmatter.home" />
+      <div cds-layout="horizontal align:stretch">
+        <div cds-layout="align:stretch p:sm">
+          <main class="page-content">
+            <Home v-if="$page.frontmatter.home" />
 
-        <Page v-else :sidebar-items="sidebarItems">
-          <template #top>
-            <slot name="page-top" />
-          </template>
-          <template #bottom>
-            <slot name="page-bottom" />
-          </template>
-        </Page>
-
-        <Footer></Footer>
+            <Page v-else :sidebar-items="sidebarItems">
+              <template #top>
+                <slot name="page-top" />
+              </template>
+              <template #bottom>
+                <slot name="page-bottom" />
+              </template>
+            </Page>
+          </main>
+          <footer>
+            <!-- Footer content -->
+            footer
+          </footer>
+        </div>
+        <aside>
+          <!-- Sidebar / Ads -->
+          <ul>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+          </ul>
+        </aside>
       </div>
-
-      <nav class="nav-table-of-contents" v-if="shouldShowTOC">
-        <b class="title">Content</b>
-        <TOC />
-      </nav>
     </div>
+    <!-- Comment out following to use debugger -->
+    <!-- <script src="http://localhost:8098"></script> -->
+
+    <!--    <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar" />-->
+
+    <!--    <div class="content-container">-->
+    <!--      <Sidebar :items="sidebarItems" @toggle-sidebar="toggleSidebar">-->
+    <!--        <template #top>-->
+    <!--          <slot name="sidebar-top" />-->
+    <!--        </template>-->
+    <!--        <template #bottom>-->
+    <!--          <slot name="sidebar-bottom" />-->
+    <!--        </template>-->
+    <!--      </Sidebar>-->
+
+    <!--      <div class="content-area">-->
+    <!--            <Home v-if="$page.frontmatter.home" />-->
+
+    <!--            <Page v-else :sidebar-items="sidebarItems">-->
+    <!--              <template #top>-->
+    <!--                <slot name="page-top" />-->
+    <!--              </template>-->
+    <!--              <template #bottom>-->
+    <!--                <slot name="page-bottom" />-->
+    <!--              </template>-->
+    <!--            </Page>-->
+
+    <!--        <Footer></Footer>-->
+    <!--      </div>-->
+
+    <!--      <nav class="nav-table-of-contents" v-if="shouldShowTOC">-->
+    <!--        <b class="title">Content</b>-->
+    <!--        <TOC />-->
+    <!--      </nav>-->
   </div>
+  <!--  </div>-->
 </template>
 
 <style lang="scss">
