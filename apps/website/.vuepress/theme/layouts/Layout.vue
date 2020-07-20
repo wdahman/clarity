@@ -1,5 +1,7 @@
 <template>
   <div @touchstart="onTouchStart" @touchend="onTouchEnd" cds-layout="vertical align:stretch">
+    <!-- Comment out following to use debugger -->
+    <!--    <script src="http://localhost:8098"></script>-->
     <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar" cds-layout="p:sm p@md:md" />
 
     <div class="page-block" cds-layout="horizontal align:stretch">
@@ -12,9 +14,9 @@
         </template>
       </Sidebar>
 
-      <div cds-layout="horizontal align:stretch">
-        <div cds-layout="align:stretch p:sm">
-          <main class="page-content">
+      <div cds-layout="horizontal align:stretch" class="page-wrapper">
+        <div cds-layout="align:stretch">
+          <main>
             <Home v-if="$page.frontmatter.home" />
 
             <Page v-else :sidebar-items="sidebarItems">
@@ -26,148 +28,16 @@
               </template>
             </Page>
           </main>
-          <footer>
-            <!-- Footer content -->
-            footer
-          </footer>
         </div>
-        <aside>
-          <!-- Sidebar / Ads -->
-          <ul>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-            <li>link</li>
-          </ul>
-        </aside>
       </div>
     </div>
-    <!-- Comment out following to use debugger -->
-    <!-- <script src="http://localhost:8098"></script> -->
-
-    <!--    <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar" />-->
-
-    <!--    <div class="content-container">-->
-    <!--      <Sidebar :items="sidebarItems" @toggle-sidebar="toggleSidebar">-->
-    <!--        <template #top>-->
-    <!--          <slot name="sidebar-top" />-->
-    <!--        </template>-->
-    <!--        <template #bottom>-->
-    <!--          <slot name="sidebar-bottom" />-->
-    <!--        </template>-->
-    <!--      </Sidebar>-->
-
-    <!--      <div class="content-area">-->
-    <!--            <Home v-if="$page.frontmatter.home" />-->
-
-    <!--            <Page v-else :sidebar-items="sidebarItems">-->
-    <!--              <template #top>-->
-    <!--                <slot name="page-top" />-->
-    <!--              </template>-->
-    <!--              <template #bottom>-->
-    <!--                <slot name="page-bottom" />-->
-    <!--              </template>-->
-    <!--            </Page>-->
-
-    <!--        <Footer></Footer>-->
-    <!--      </div>-->
-
-    <!--      <nav class="nav-table-of-contents" v-if="shouldShowTOC">-->
-    <!--        <b class="title">Content</b>-->
-    <!--        <TOC />-->
-    <!--      </nav>-->
   </div>
-  <!--  </div>-->
 </template>
 
 <style lang="scss">
 .content-area {
   display: flex;
   flex-direction: column;
-}
-.nav-table-of-contents {
-  margin-top: 3rem;
-  padding-right: 4px;
-  width: 12rem;
-  min-width: 12rem;
-  max-width: 12rem;
-
-  .title {
-    padding-left: 6px;
-    text-transform: uppercase;
-  }
-
-  ul {
-    padding: 0;
-    margin: 0;
-  }
-  li {
-    list-style: none;
-    padding-top: 0.5rem;
-    a {
-      padding-left: 6px;
-      display: inline-block;
-    }
-  }
-  li a.router-link-active {
-    padding-left: 4px;
-    border-left: 2px solid #0f5e80;
-  }
-  li li {
-    padding-top: 0;
-  }
-  li li a {
-    padding-left: 16px;
-  }
-  li li a.router-link-active {
-    padding-left: 14px;
-  }
 }
 </style>
 
