@@ -23,33 +23,9 @@ export default ({
     });
 
     router.afterEach((to, from) => {
-      // ...
-      // console.log('afterEach');
-      // console.log('from: ', to, 'to: ', from);
-      // console.log(`from: ${from} to: ${to}`);
-
-      // if(from.fullPath === to.fullPath && )
-      if (scrollToGuard(from, to)) {
-        console.log('HANDLE SCROLLING!!!!!');
-        // document
-        //   .getElementById(to.hash.substring(1))
-        //   .scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
-        // console.log('afterEach running');
+      if (to.hash) {
+        scrollToGuard(to, from);
       }
     });
-
-    // router.beforeEach((to, from, next) => {
-    //   // ...
-    //   console.log(`to: ${to} and from ${from}`);
-    // })
   }
-  // console.log(this.$router);
-  // // need to wait until everything is rendered or it doesnt scroll to correct element.
-  // document.onreadystatechange = () => {
-  //   if (document.readyState == 'complete' && this.$router.history.current.hash) {
-  //     document
-  //       .getElementById(this.$router.history.current.hash.substring(1))
-  //       .scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
-  //   }
-  // };
 };
