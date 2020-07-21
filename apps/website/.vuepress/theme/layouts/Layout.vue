@@ -4,15 +4,12 @@
     @touchstart="onTouchStart"
     @touchend="onTouchEnd"
     cds-layout="vertical align:stretch"
-    style="height: 100vh;"
+    style="height: 100vh; max-height: 100vh;"
   >
-    <!-- Comment out following to use debugger -->
-    <!-- <script src="http://localhost:8098"></script> -->
+    <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar" cds-layout="p:sm p@md:md align:shrink" />
 
-    <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar" cds-layout="p:sm vertical gap:sm" />
-
-    <div class="content-container">
-      <Sidebar :items="sidebarItems" @toggle-sidebar="toggleSidebar" class="make-it-scrollable">
+    <div class="content-container" cds-layout="horizontal align:vertical-stretch" style="flex-wrap: nowrap;">
+      <Sidebar :items="sidebarItems" @toggle-sidebar="toggleSidebar" class="side-nav make-it-scrollable" cds-layout="">
         <template #top>
           <slot name="sidebar-top" />
         </template>
@@ -20,10 +17,12 @@
           <slot name="sidebar-bottom" />
         </template>
       </Sidebar>
-
-      <div class="content-container" style="max-width: 960px; height: calc(100vh - 3rem);" cds-layout="p-l:lg">
+      <div
+        class="content-area"
+        cds-layout="pl@sm:md align:stretch"
+        style="padding-top: unset; padding-bottom: unset; padding-right: unset; max-width: 960px;"
+      >
         <Home v-if="$page.frontmatter.home" class="make-it-scrollable" />
-
         <Page id="content-area" v-else :sidebar-items="sidebarItems" class="make-it-scrollable">
           <template #top>
             <slot name="page-top" />
@@ -33,8 +32,7 @@
           </template>
         </Page>
       </div>
-
-      <nav class="nav-table-of-contents" v-if="shouldShowTOC" cds-layout="p-l:lg">
+      <nav class="nav-table-of-contents" v-if="shouldShowTOC" cds-layout="p:sm p@md:md">
         <b class="title">Content</b>
         <TOC />
       </nav>
@@ -48,11 +46,11 @@
   flex-direction: column;
 }
 .nav-table-of-contents {
-  margin-top: 3rem;
-  padding-right: 4px;
-  width: 12rem;
-  min-width: 12rem;
-  max-width: 12rem;
+  /*margin-top: 3rem;*/
+  /*padding-right: 4px;*/
+  width: 10rem;
+  min-width: 10rem;
+  max-width: 10rem;
 
   .title {
     padding-left: 6px;
@@ -85,6 +83,59 @@
     padding-left: 14px;
   }
 }
+
+/* cds-alert-actions {
+display: block;
+} */
+
+/*header {*/
+/*  background-color: deeppink;*/
+/*  max-height: 4rem;*/
+/*}*/
+/*nav {*/
+/*  background-color: deepskyblue;*/
+/*  max-width: 20%;*/
+/*  max-height: calc(100vh - 4em);*/
+/*  overflow: scroll;*/
+/*}*/
+
+/*main {*/
+/*  background-color: cadetblue;*/
+/*}*/
+/*aside {*/
+/*  background-color: blanchedalmond;*/
+/*  max-width: 20%;*/
+/*  max-height: calc(100vh - 4em);*/
+/*  overflow: scroll;*/
+/*}*/
+/*footer {*/
+/*  background-color: lavender;*/
+/*  max-height: 4rem;*/
+/*}*/
+/*.app-container {*/
+/*  height: 100vh;*/
+/*}*/
+
+/*.super-tall {*/
+/*  height: 150vh;*/
+/*}*/
+
+/*.main-footer {*/
+/*  overflow: scroll;*/
+/*  max-height: calc(100vh - 4em);*/
+/*  max-width: 1000px;*/
+/*}*/
+
+/*.demo-content {*/
+/*  background-color: lightblue;*/
+/*}*/
+
+/*.demo-content {*/
+/*  background-color: tan;*/
+/*}*/
+/*.demo-sidebar {*/
+/*  background-color: antiquewhite*/
+/*}*/
 </style>
 
 <script>
