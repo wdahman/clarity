@@ -32,7 +32,8 @@
           </template>
         </Page>
       </div>
-      <nav class="nav-table-of-contents" v-if="shouldShowTOC" cds-layout="p:sm p@md:md">
+
+      <nav class="nav-table-of-contents" v-if="shouldShowTOC" cds-layout="p:sm p@md:md display:none display@lg:block">
         <b class="title">Content</b>
         <TOC />
       </nav>

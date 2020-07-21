@@ -2,7 +2,7 @@
   <main class="page" style="height: calc(100vh - 3rem);">
     <slot name="top" />
     <PageSubnav v-bind="{ sidebarItems }" />
-
+    <TOC cds-layout="display@lg:none" />
     <Content class="theme-default-content" />
     <PageEdit />
 
