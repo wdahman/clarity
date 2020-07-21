@@ -56,18 +56,13 @@ export default {
   border-radius: 0.15rem;
   overflow: hidden;
 
-  &:after,
-  &:before {
+  &:after {
     content: '';
     position: absolute;
     width: 100%;
     height: 2px;
     background-color: #fafafa;
     left: 0;
-  }
-
-  &:before {
-    top: 0px;
   }
 
   &:after {
