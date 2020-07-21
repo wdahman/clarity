@@ -34,9 +34,6 @@ export default {
   props: {
     size: String,
   },
-  //   mounted: function () {
-  //   },
-  //   data: function () {},
   methods: {
     getSizeClass: function () {
       if (this.size) {

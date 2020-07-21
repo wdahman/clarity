@@ -67,9 +67,11 @@ There are multiple sizes for modals. The Clarity modal defaults to medium but di
 
 <div class="top-margin-wrapper">
   <cds-alert-group status="info">
-    <cds-alert>The default size is medium so there is no style class for the medium size modal.</cds-alert>
+    <cds-alert>The default size is medium so there is no style class for a medium size modal.</cds-alert>
   </cds-alert-group>
 </div>
+
+In the following example, we are using a small size modal dialog.
 
 <DocModalWrapper size="sm"></DocModalWrapper>
 
@@ -78,40 +80,6 @@ There are multiple sizes for modals. The Clarity modal defaults to medium but di
 ```html
 <div class="modal">
   <div class="modal-dialog modal-sm" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      ...
-    </div>
-  </div>
-</div>
-<div class="modal-backdrop" aria-hidden="true"></div>
-```
-
-</DocDemo>
-
-<DocModalWrapper size="lg"></DocModalWrapper>
-
-<DocDemo>
-
-```html
-<div class="modal">
-  <div class="modal-dialog modal-lg" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      ...
-    </div>
-  </div>
-</div>
-<div class="modal-backdrop" aria-hidden="true"></div>
-```
-
-</DocDemo>
-
-<DocModalWrapper size="xl"></DocModalWrapper>
-
-<DocDemo>
-
-```html
-<div class="modal">
-  <div class="modal-dialog modal-xl" role="dialog" aria-hidden="true">
     <div class="modal-content">
       ...
     </div>
@@ -203,14 +171,14 @@ Besides a static HTML/CSS Modal component, we also offer a fully interactive Ang
 <DocDemo>
 
 ```html
-<clr-modal [(clrModalOpen)]="open">
+<clr-modal [(clrModalOpen)]="openModal">
   <h3 class="modal-title">I have a nice title</h3>
   <div class="modal-body">
     <p>But not much to say...</p>
   </div>
   <div class="modal-footer">
-    <button type="button" class="btn btn-outline" (click)="basic = false">Cancel</button>
-    <button type="button" class="btn btn-primary" (click)="basic = false">Ok</button>
+    <button type="button" class="btn btn-outline" (click)="openModal = false">Cancel</button>
+    <button type="button" class="btn btn-primary" (click)="openModal = false">Ok</button>
   </div>
 </clr-modal>
 ```
