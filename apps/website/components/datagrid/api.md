@@ -12,7 +12,7 @@ toc: true
 #### Selector & Basic Usage
 
 ```html
-<clr-datagrid></clr-datagrid>
+<clr-datagrid>...</clr-datagrid>
 ```
 
 #### Properties
