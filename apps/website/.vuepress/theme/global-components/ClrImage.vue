@@ -11,7 +11,7 @@ export default {
     src: String,
     title: String,
     align: { type: String, default: 'left' },
-    width: { type: Number, default: 'auto' },
+    width: { type: Number | String, default: 'auto' },
   },
 };
 </script>

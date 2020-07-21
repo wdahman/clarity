@@ -100,11 +100,6 @@ cds-alert-actions {
 
 // Side efects from combining @clr/core layout tokens and legacy @clr/ui
 .content-area {
-  padding-left: 1.5rem !important; // note: the template uses core tokens for the left padding.
-  padding-right: unset !important;
-  padding-top: unset !important;
-  padding-bottom: unset !important;
-  max-width: 960px; // design is to only grow this much on x-axis
   height: calc(100vh - 3rem); // Grow from the bottom of the header to the bottom of the viewport.
 }
 

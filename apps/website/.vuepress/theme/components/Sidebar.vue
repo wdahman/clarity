@@ -46,6 +46,9 @@
 </template>
 
 <style lang="scss">
+.nav-content {
+  padding: var(--cds-token-space-size-8) 0;
+}
 .nav-group-children {
   overflow-y: hidden;
   transition: height 0.2s ease-in-out;

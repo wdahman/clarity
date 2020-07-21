@@ -3,10 +3,12 @@
     <slot name="top" />
     <PageSubnav v-bind="{ sidebarItems }" />
 
-    <nav class="nav-table-of-contents" v-if="shouldShowTOC" cds-layout="p:sm p@md:md display@md:none">
-      <b class="title">Content</b>
-      <TOC />
-    </nav>
+    <div class="nav-toc-container" cds-layout="p-t:sm p-b:sm display@md:none" v-if="shouldShowTOC">
+      <nav class="nav-toc">
+        <b class="title">Content</b>
+        <TOC />
+      </nav>
+    </div>
 
     <Content class="theme-default-content" />
     <PageEdit />
@@ -38,12 +40,18 @@ export default {
 
 <style lang="scss">
 .page {
-  max-width: 50rem;
+  max-width: 48rem;
+  width: 100%;
+  height: calc(100vh - 3rem);
+
+  @media (min-width: 992px) {
+    width: calc(100% - 10rem);
+  }
 }
-.nav-table-of-contents {
+.nav-toc-container {
   li {
     ul li {
-      padding-top: 0.3rem;
+      padding-top: var(--cds-token-space-size-4);
     }
   }
 }

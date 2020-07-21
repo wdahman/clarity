@@ -1,6 +1,6 @@
 <template>
   <div class="main-container" @touchstart="onTouchStart" @touchend="onTouchEnd" cds-layout="vertical align:stretch">
-    <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar" cds-layout="p:sm p@md:md align:shrink" />
+    <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar" />
 
     <div class="content-container" cds-layout="horizontal align:vertical-stretch no-wrap">
       <Sidebar :items="sidebarItems" @toggle-sidebar="toggleSidebar" class="side-nav has-y-scroll" cds-layout="">
@@ -11,37 +11,60 @@
           <slot name="sidebar-bottom" />
         </template>
       </Sidebar>
-      <div class="content-area" cds-layout="pl@sm:md align:stretch">
-        <Home v-if="$page.frontmatter.home" class="has-y-scroll" />
-        <Page id="content-area" v-else :sidebar-items="sidebarItems" class="has-y-scroll">
-          <template #top>
-            <slot name="page-top" />
-          </template>
-          <template #bottom>
-            <slot name="page-bottom" />
-          </template>
-        </Page>
+      <div class="content-area" cds-layout="pl@sm:md">
+        <Home v-if="$page.frontmatter.home" class="make-it-scrollable" />
+        <div class="page-wrapper" v-else>
+          <Page id="content-area" :sidebar-items="sidebarItems">
+            <template #top>
+              <slot name="page-top" />
+            </template>
+            <template #bottom>
+              <slot name="page-bottom" />
+            </template>
+          </Page>
+          <div
+            class="nav-toc-container has-sticky-nav-toc"
+            cds-layout="p@md:lg display:none display@md:block"
+            v-if="shouldShowTOC"
+          >
+            <nav class="nav-toc">
+              <b class="title">Content</b>
+              <TOC />
+            </nav>
+          </div>
+        </div>
       </div>
-
-      <nav class="nav-table-of-contents" v-if="shouldShowTOC" cds-layout="display:none display@md:block">
-        <b class="title">Content</b>
-        <TOC />
-      </nav>
     </div>
   </div>
 </template>
 
 <style lang="scss">
+.page-wrapper {
+  display: flex;
+  max-width: 60rem;
+  flex-direction: row;
+}
 .content-area {
   display: flex;
   flex-direction: column;
 }
-.nav-table-of-contents {
-  width: 10rem;
-  min-width: 10rem;
-  max-width: 10rem;
-  padding-left: 1.5rem;
-  padding-top: 4rem; // best guess at the distance in Figma file
+.nav-toc-container {
+  position: relative;
+  max-width: 12rem;
+  width: 100%;
+
+  &.has-sticky-nav-toc {
+    height: calc(100vh - 8.1rem);
+    .nav-toc {
+      position: fixed;
+      top: 8.1rem;
+      max-height: calc(100vh - 3rem);
+      overflow-y: auto;
+      padding-bottom: 8.1rem;
+      padding-left: 0.15rem;
+      max-width: inherit;
+    }
+  }
 
   .title {
     padding-left: 6px;
@@ -56,22 +79,30 @@
     list-style: none;
     padding-top: 0.5rem;
     a {
-      padding-left: 6px;
+      padding-left: var(--cds-token-space-size-4);
       display: inline-block;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
   li a.router-link-active {
-    padding-left: 4px;
-    border-left: 2px solid #0f5e80;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -3px;
+      width: 3px;
+      height: 100%;
+      background-color: #0079b8;
+    }
   }
   li li {
     padding-top: 0;
-  }
-  li li a {
-    padding-left: 16px;
-  }
-  li li a.router-link-active {
-    padding-left: 14px;
+    a {
+      padding-left: var(--cds-token-space-size-8);
+    }
   }
 }
 
