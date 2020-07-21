@@ -13,7 +13,7 @@ module.exports = {
     //   apiKey: 'd3349af25a19e3824cb48e57fe88fdcb',
     //   indexName: 'clarity',
     // },
-    lastUpdated: 'Last Updated',
+    lastUpdated: false,
     search: false, // Disabling for the moment
     sidebar,
   },

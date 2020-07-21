@@ -65,6 +65,14 @@ module.exports = [
   {
     title: 'Releases',
     path: '/releases/',
-    children: ['/releases/v3'],
+    children: [
+      ...getChildren('releases'),
+      {
+        title: 'Older Changelogs',
+        external: true,
+        path: 'https://v3.clarity.design/news',
+        target: '_blank',
+      },
+    ],
   },
 ];

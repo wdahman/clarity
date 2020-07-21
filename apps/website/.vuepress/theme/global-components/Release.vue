@@ -1,38 +1,55 @@
 <template>
   <div>
-    <hr />
-    <h2>
-      {{ version }}
-      <a class="release-date" :href="commitLink" target="_blank"
-        >Released {{ commitDate }} <cds-icon class="external-link" size="12" shape="pop-out"></cds-icon
-      ></a>
-    </h2>
-    <slot></slot>
+    <div v-for="release of item.releases">
+      <h2>
+        {{ release.version }}
+        <a class="release-date" :href="commitLink" target="_blank">
+          Released {{ release.date }} <cds-icon class="external-link" size="12" shape="pop-out"></cds-icon>
+        </a>
+      </h2>
+      <p v-if="release.description">{{ release.description }}</p>
+      <ReleaseGroup v-if="release.feat" type="feat">
+        <template v-for="feat of release.feat">
+          <ReleaseItem v-if="feat.project.toLowerCase() !== 'core'" :item="feat" />
+        </template>
+      </ReleaseGroup>
+
+      <ReleaseGroup v-if="release.fix" type="fix">
+        <template v-for="fix of release.fix">
+          <ReleaseItem v-if="fix.project.toLowerCase() !== 'core'" :item="fix" />
+        </template>
+      </ReleaseGroup>
+
+      <ReleaseGroup v-if="release.deprecation" type="deprecation">
+        <template v-for="deprecation of release.deprecation">
+          <ReleaseItem v-if="deprecation.project.toLowerCase() !== 'core'" :item="deprecation" />
+        </template>
+      </ReleaseGroup>
+    </div>
   </div>
 </template>
 
 <script>
+import v4 from '../../../../../changelogs/v4/v4.json';
+import ReleaseGroup from './ReleaseGroup';
+import ReleaseItem from './ReleaseItem';
+
+// To make this reusable, we have to load data from different JSON files and merge them here as one object.
+// Any new versions would need to be added and referenced as part of this in future releases.
+const data = { v4 };
+
 export default {
   name: 'Release',
-  props: ['version', 'date', 'commit'],
+  components: { ReleaseGroup, ReleaseItem },
+  props: ['version'],
+  methods: {
+    commitLink: function (release) {
+      return `https://github.com/vmware/clarity/tree/${release.version}`;
+    },
+  },
   computed: {
-    commitLink: function () {
-      return `https://github.com/vmware/clarity/commit/${this.commit}`;
-    },
-    commitDate: function () {
-      const date = new Date(this.date);
-      return `${date.toDateString()}`;
-    },
-    items: function () {
-      const items = {};
-      this.$slots.default.forEach(vnode => {
-        if (!items[vnode.componentOptions.propsData.type]) {
-          items[vnode.componentOptions.propsData.type] = 0;
-        }
-
-        items[vnode.componentOptions.propsData.type]++;
-      });
-      return items;
+    item: function () {
+      return data[this.version];
     },
   },
 };
@@ -40,11 +57,8 @@ export default {
 
 <style scoped>
 .release-date {
-  font-size: 0.8rem;
-  float: right;
-}
-hr {
-  margin-top: 2rem;
+  font-size: 0.75rem;
+  margin-left: 1rem;
 }
 .external-link {
   margin-top: -0.5rem;

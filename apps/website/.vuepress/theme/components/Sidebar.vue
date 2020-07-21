@@ -14,14 +14,26 @@
             v-bind:class="{ 'is-expanded': states[index] || activePage.path.startsWith(item.path) }"
             v-bind:style="{ height: states[index] ? `${item.children.length * 36}px` : '0' }"
           >
-            <router-link
-              class="nav-link"
-              :to="childItem.path"
-              v-for="childItem in item.children"
-              v-bind:class="{ active: childItem.path === activePage.path || childActive(childItem) }"
-            >
-              <span class="nav-text">{{ childItem.title }}</span>
-            </router-link>
+            <template v-for="childItem in item.children">
+              <router-link
+                class="nav-link"
+                :to="childItem.path"
+                v-if="childItem.type !== 'external'"
+                v-bind:class="{ active: childItem.path === activePage.path || childActive(childItem) }"
+              >
+                <span class="nav-text">{{ childItem.title }}</span>
+              </router-link>
+              <a
+                v-else-if="childItem.type === 'external'"
+                :href="childItem.path"
+                :target="childItem.target"
+                class="nav-link"
+              >
+                <span class="nav-text"
+                  >{{ childItem.title }} <cds-icon class="external-link" size="12" shape="pop-out"></cds-icon
+                ></span>
+              </a>
+            </template>
           </div>
         </div>
 
@@ -75,6 +87,9 @@ export default {
     childActive: function (item) {
       let path = this.$page.path;
       let itemPath = item.path;
+      if (!itemPath) {
+        return false;
+      }
       if (path.endsWith('/')) {
         path = path.slice(0, -1);
       }
