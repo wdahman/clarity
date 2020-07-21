@@ -44,12 +44,18 @@ Stack views are designed for use in the main content area and modals.
 
 #### Basic Stack View
 
+<DocVideo src="/demos/stack-view/videos/stackview-basic.mov" :width="874" :autoplay="true"></DocVideo>
+
 <doc-demo src="/demos/stack-view/stack-view.html"></doc-demo>
 
 #### Stack View With Editing in a Modal
 
+<DocVideo src="/demos/stack-view/videos/stackview-editing.mov" :width="884" :autoplay="true"></DocVideo>
+
 <doc-demo src="/demos/stack-view/stack-view-editing.html"></doc-demo>
 
 #### Lazy Loading of Children
+
+<DocVideo src="/demos/stack-view/videos/stackview-lazy.mov" :width="874" :autoplay="true"></DocVideo>
 
 <doc-demo src="/demos/stack-view/stack-view-lazy.html"></doc-demo>
