@@ -1,5 +1,5 @@
 <template>
-  <main class="page" style="height: calc(100vh - 3rem);">
+  <main class="page">
     <slot name="top" />
     <PageSubnav v-bind="{ sidebarItems }" />
 

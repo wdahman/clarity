@@ -83,3 +83,37 @@ p code {
 cds-alert-actions {
   display: block;
 }
+
+// This is added to be able to use core layout tokens
+//style="height: 100vh; max-height: 100vh;
+.main-container {
+  height: 100vh;
+  max-height: 100vh;
+}
+
+// core has a token to turn off wrapping but it doesn't seem to work.
+// This is the override / workaround for now.
+// TODO: figure out if there is an issue with how I've tried to use the core nowrap property.
+.content-container {
+  flex-wrap: nowrap;
+}
+
+// Side efects from combining @clr/core layout tokens and legacy @clr/ui
+.content-area {
+  padding-left: 1.5rem !important; // note: the template uses core tokens for the left padding.
+  padding-right: unset !important;
+  padding-top: unset !important;
+  padding-bottom: unset !important;
+  max-width: 960px; // design is to only grow this much on x-axis
+  height: calc(100vh - 3rem); // Grow from the bottom of the header to the bottom of the viewport.
+}
+
+// This override is needed b/c I want the legacy @clr/ui contaier to also fill the space from the header to bottom of
+// the viewport.
+.clr-vertical-nav {
+  height: calc(100vh - 3rem);
+}
+
+.nav-content {
+  width: 100%; // this container in @clr/ui is not fully expanding with the @clr/core layout
+}

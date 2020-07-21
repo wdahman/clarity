@@ -1,6 +1,6 @@
 <template>
-  <nav class="clr-vertical-nav has-nav-groups" style="height: calc(100vh - 3rem);">
-    <div class="nav-content" style="width: 100%;">
+  <nav class="clr-vertical-nav has-nav-groups">
+    <div class="nav-content">
       <template v-for="(item, index) in items">
         <div class="nav-group" v-if="item.children">
           <div class="nav-group-content" v-bind:class="{ active: !states[index] && childActive(item) }">

@@ -1,15 +1,9 @@
 <template>
-  <div
-    class="main-container"
-    @touchstart="onTouchStart"
-    @touchend="onTouchEnd"
-    cds-layout="vertical align:stretch"
-    style="height: 100vh; max-height: 100vh;"
-  >
+  <div class="main-container" @touchstart="onTouchStart" @touchend="onTouchEnd" cds-layout="vertical align:stretch">
     <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar" cds-layout="p:sm p@md:md align:shrink" />
 
-    <div class="content-container" cds-layout="horizontal align:vertical-stretch" style="flex-wrap: nowrap;">
-      <Sidebar :items="sidebarItems" @toggle-sidebar="toggleSidebar" class="side-nav make-it-scrollable" cds-layout="">
+    <div class="content-container" cds-layout="horizontal align:vertical-stretch no-wrap">
+      <Sidebar :items="sidebarItems" @toggle-sidebar="toggleSidebar" class="side-nav has-y-scroll" cds-layout="">
         <template #top>
           <slot name="sidebar-top" />
         </template>
@@ -17,13 +11,9 @@
           <slot name="sidebar-bottom" />
         </template>
       </Sidebar>
-      <div
-        class="content-area"
-        cds-layout="pl@sm:md align:stretch"
-        style="padding-top: unset; padding-bottom: unset; padding-right: unset; max-width: 960px;"
-      >
-        <Home v-if="$page.frontmatter.home" class="make-it-scrollable" />
-        <Page id="content-area" v-else :sidebar-items="sidebarItems" class="make-it-scrollable">
+      <div class="content-area" cds-layout="pl@sm:md align:stretch">
+        <Home v-if="$page.frontmatter.home" class="has-y-scroll" />
+        <Page id="content-area" v-else :sidebar-items="sidebarItems" class="has-y-scroll">
           <template #top>
             <slot name="page-top" />
           </template>
@@ -33,7 +23,7 @@
         </Page>
       </div>
 
-      <nav class="nav-table-of-contents" v-if="shouldShowTOC" cds-layout="p:sm p@md:md display:none display@md:block">
+      <nav class="nav-table-of-contents" v-if="shouldShowTOC" cds-layout="display:none display@md:block">
         <b class="title">Content</b>
         <TOC />
       </nav>
@@ -47,11 +37,11 @@
   flex-direction: column;
 }
 .nav-table-of-contents {
-  /*margin-top: 3rem;*/
-  /*padding-right: 4px;*/
   width: 10rem;
   min-width: 10rem;
   max-width: 10rem;
+  padding-left: 1.5rem;
+  padding-top: 4rem; // best guess at the distance in Figma file
 
   .title {
     padding-left: 6px;

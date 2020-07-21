@@ -1,16 +1,5 @@
-//body {
-//  margin: 0;
-//  height: 100vh;
-//  font-family: sans-serif;
-//  color: white;
-//}
-
-//main {
-//  height: 100%;
-//  overflow: hidden;
-//}
-
-.make-it-scrollable {
+// Style code used to make @clr/core containers scrollable
+.has-y-scroll {
   overflow-y: auto;
   justify-content: start;
   align-items: start;
