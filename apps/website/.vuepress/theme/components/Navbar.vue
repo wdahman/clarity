@@ -1,5 +1,6 @@
 <template>
   <header class="header header-6">
+    <slot name="sidebar-toggle"></slot>
     <div class="branding">
       <RouterLink :to="$localePath" class="nav-link">
         <img class="logo" src="/images/clarity-logo.svg" :alt="$siteTitle" />

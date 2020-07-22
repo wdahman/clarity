@@ -1,9 +1,15 @@
 <template>
-  <div class="main-container" @touchstart="onTouchStart" @touchend="onTouchEnd" cds-layout="vertical align:stretch">
-    <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar" />
+  <div class="main-container" cds-layout="vertical align:stretch">
+    <Navbar v-if="shouldShowNavbar">
+      <template #sidebar-toggle>
+        <button type="button" class="header-hamburger-trigger" @click="toggleSidebar()">
+          <cds-icon class="hamburger-icon" shape="bars" size="24" inverse></cds-icon>
+        </button>
+      </template>
+    </Navbar>
 
     <div class="content-container" cds-layout="horizontal align:vertical-stretch no-wrap">
-      <Sidebar :items="sidebarItems" @toggle-sidebar="toggleSidebar" class="side-nav has-y-scroll" />
+      <Sidebar :items="sidebarItems" :isSidebarOpen="isSidebarOpen" @isSidebarOpenChange="toggleSidebar()" />
       <div class="content-area" cds-layout="pl@sm:md">
         <Home v-if="$page.frontmatter.home" class="make-it-scrollable" />
         <div class="page-wrapper" v-else>
@@ -28,6 +34,11 @@
 .content-area {
   display: flex;
   flex-direction: column;
+}
+.header-hamburger-trigger {
+  .hamburger-icon {
+    cursor: inherit;
+  }
 }
 </style>
 
@@ -89,29 +100,8 @@ export default {
   },
 
   methods: {
-    toggleSidebar(to) {
-      this.isSidebarOpen = typeof to === 'boolean' ? to : !this.isSidebarOpen;
-      this.$emit('toggle-sidebar', this.isSidebarOpen);
-    },
-
-    // side swipe
-    onTouchStart(e) {
-      this.touchStart = {
-        x: e.changedTouches[0].clientX,
-        y: e.changedTouches[0].clientY,
-      };
-    },
-
-    onTouchEnd(e) {
-      const dx = e.changedTouches[0].clientX - this.touchStart.x;
-      const dy = e.changedTouches[0].clientY - this.touchStart.y;
-      if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 40) {
-        if (dx > 0 && this.touchStart.x <= 80) {
-          this.toggleSidebar(true);
-        } else {
-          this.toggleSidebar(false);
-        }
-      }
+    toggleSidebar() {
+      this.isSidebarOpen = !this.isSidebarOpen;
     },
   },
 };
