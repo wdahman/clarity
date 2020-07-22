@@ -18,20 +18,14 @@
             <template #top>
               <slot name="page-top" />
             </template>
+            <template #nav-toc>
+              <NavToc v-if="shouldShowTOC" cds-layout="p-t:sm p-b:sm display@md:none" />
+            </template>
             <template #bottom>
               <slot name="page-bottom" />
             </template>
           </Page>
-          <div
-            class="nav-toc-container has-sticky-nav-toc"
-            cds-layout="p@md:lg display:none display@md:block"
-            v-if="shouldShowTOC"
-          >
-            <nav class="nav-toc">
-              <b class="title">Content</b>
-              <TOC />
-            </nav>
-          </div>
+          <NavToc :sticky="true" v-if="shouldShowTOC" cds-layout="p@md:lg display:none display@md:block" />
         </div>
       </div>
     </div>
@@ -48,121 +42,12 @@
   display: flex;
   flex-direction: column;
 }
-.nav-toc-container {
-  position: relative;
-  max-width: 12rem;
-  width: 100%;
-
-  &.has-sticky-nav-toc {
-    height: calc(100vh - 8.1rem);
-    .nav-toc {
-      position: fixed;
-      top: 8.1rem;
-      max-height: calc(100vh - 3rem);
-      overflow-y: auto;
-      padding-bottom: 8.1rem;
-      padding-left: 0.15rem;
-      max-width: inherit;
-    }
-  }
-
-  .title {
-    padding-left: 6px;
-    text-transform: uppercase;
-  }
-
-  ul {
-    padding: 0;
-    margin: 0;
-  }
-  li {
-    list-style: none;
-    padding-top: 0.5rem;
-    a {
-      padding-left: var(--cds-token-space-size-4);
-      display: inline-block;
-      &:hover {
-        text-decoration: none;
-      }
-    }
-  }
-  li a.router-link-active {
-    position: relative;
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -3px;
-      width: 3px;
-      height: 100%;
-      background-color: #0079b8;
-    }
-  }
-  li li {
-    padding-top: 0;
-    a {
-      padding-left: var(--cds-token-space-size-8);
-    }
-  }
-}
-
-/* cds-alert-actions {
-display: block;
-} */
-
-/*header {*/
-/*  background-color: deeppink;*/
-/*  max-height: 4rem;*/
-/*}*/
-/*nav {*/
-/*  background-color: deepskyblue;*/
-/*  max-width: 20%;*/
-/*  max-height: calc(100vh - 4em);*/
-/*  overflow: scroll;*/
-/*}*/
-
-/*main {*/
-/*  background-color: cadetblue;*/
-/*}*/
-/*aside {*/
-/*  background-color: blanchedalmond;*/
-/*  max-width: 20%;*/
-/*  max-height: calc(100vh - 4em);*/
-/*  overflow: scroll;*/
-/*}*/
-/*footer {*/
-/*  background-color: lavender;*/
-/*  max-height: 4rem;*/
-/*}*/
-/*.app-container {*/
-/*  height: 100vh;*/
-/*}*/
-
-/*.super-tall {*/
-/*  height: 150vh;*/
-/*}*/
-
-/*.main-footer {*/
-/*  overflow: scroll;*/
-/*  max-height: calc(100vh - 4em);*/
-/*  max-width: 1000px;*/
-/*}*/
-
-/*.demo-content {*/
-/*  background-color: lightblue;*/
-/*}*/
-
-/*.demo-content {*/
-/*  background-color: tan;*/
-/*}*/
-/*.demo-sidebar {*/
-/*  background-color: antiquewhite*/
-/*}*/
 </style>
 
 <script>
 import Home from '@theme/components/Home';
 import Navbar from '@theme/components/Navbar';
+import NavToc from '@theme/components/NavToc';
 import Page from '@theme/components/Page';
 import Sidebar from '@theme/components/Sidebar';
 import Footer from '@theme/components/Footer';
@@ -176,6 +61,7 @@ export default {
     Page,
     Sidebar,
     Navbar,
+    NavToc,
     Footer,
   },
 

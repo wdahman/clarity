@@ -3,12 +3,7 @@
     <slot name="top" />
     <PageSubnav v-bind="{ sidebarItems }" />
 
-    <div class="nav-toc-container" cds-layout="p-t:sm p-b:sm display@md:none" v-if="shouldShowTOC">
-      <nav class="nav-toc">
-        <b class="title">Content</b>
-        <TOC />
-      </nav>
-    </div>
+    <slot name="nav-toc" />
 
     <Content class="theme-default-content" />
     <PageEdit />
