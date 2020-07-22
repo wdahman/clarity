@@ -1,16 +1,11 @@
 <template>
   <main class="page">
-    <slot name="top" />
     <PageSubnav v-bind="{ sidebarItems }" />
 
     <slot name="nav-toc" />
 
     <Content class="theme-default-content" />
     <PageEdit />
-
-    <!--    <PageNav v-bind="{ sidebarItems }" />-->
-
-    <slot name="bottom" />
 
     <Footer></Footer>
   </main>

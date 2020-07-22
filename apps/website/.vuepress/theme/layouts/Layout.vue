@@ -3,26 +3,13 @@
     <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar" />
 
     <div class="content-container" cds-layout="horizontal align:vertical-stretch no-wrap">
-      <Sidebar :items="sidebarItems" @toggle-sidebar="toggleSidebar" class="side-nav has-y-scroll" cds-layout="">
-        <template #top>
-          <slot name="sidebar-top" />
-        </template>
-        <template #bottom>
-          <slot name="sidebar-bottom" />
-        </template>
-      </Sidebar>
+      <Sidebar :items="sidebarItems" @toggle-sidebar="toggleSidebar" class="side-nav has-y-scroll" />
       <div class="content-area" cds-layout="pl@sm:md">
         <Home v-if="$page.frontmatter.home" class="make-it-scrollable" />
         <div class="page-wrapper" v-else>
           <Page id="content-area" :sidebar-items="sidebarItems">
-            <template #top>
-              <slot name="page-top" />
-            </template>
             <template #nav-toc>
               <NavToc v-if="shouldShowTOC" cds-layout="p-t:sm p-b:sm display@md:none" />
-            </template>
-            <template #bottom>
-              <slot name="page-bottom" />
             </template>
           </Page>
           <NavToc :sticky="true" v-if="shouldShowTOC" cds-layout="p@md:lg display:none display@md:block" />
