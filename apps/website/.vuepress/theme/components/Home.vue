@@ -4,145 +4,163 @@
 }
 </style>
 <template>
-  <main>
-    <section class="home-hero">
-      <div class="home-hero-content">
-        <h1>Clarity Design System</h1>
-        <p class="head">
-          UX guidelines, HTML/CSS framework, and Angular components working together to craft exceptional experiences
+  <!--  <div class="home-wrapper">-->
+  <main class="page-home">
+    <!-- Hero -->
+    <section class="home-hero" cds-layout="vertical align:horizontal-center">
+      <h1 cds-text="display center semibold" cds-layout="m-t:x">Design + Build with Clarity</h1>
+      <h2 cds-text="title center" cds-layout="m-t:xl m-x@sm:sm">
+        Clarity is an open source design system that brings together UX guidelines, an HTML/CSS framework, and Angular
+        components. Clarity is for both designers and developers.
+      </h2>
+      <cds-button cds-layout="m-t:xl">Get Started</cds-button>
+      <img aria-hidden="true" cds-layout="m-t:xl container:fill" src="/images/home/img-hero.svg" />
+    </section>
+    <!-- iamge spacer -->
+    <section class="home-spacer" cds-layout="m-b:xl ">
+      <img cds-layout="container:fill" aria-hidden="true" src="/images/home/bg-graphic1-fullwidth.svg" alt="" />
+    </section>
+    <!-- whats new -->
+    <section class="whats-new" cds-layout="grid gap:sm">
+      <div cds-layout="col:start-2 col:10">
+        <h3 cds-text="heading" cds-layout="m-b:xl">What's New</h3>
+        <h4 cds-text="section" cds-layout="m-b:md">4.0.0</h4>
+        <h5 cds-text="subsection" cds-layout="m-b:md">New - Combobox</h5>
+        <p cds-text="body" cds-layout="m-b:md">
+          We've introduced a new Angular component for combining dropdown lists with text inputs.
         </p>
-        <br />
-        <div class="home-hero-btn">
-          <cds-button class="need-style-fix">
-            <router-link to="get-started">Get Started</router-link>
-          </cds-button>
-          <cds-button action="outline">
-            <router-link to="documentation">Documentation</router-link>
-          </cds-button>
-        </div>
-        <p class="subtext">
-          View the <a rel="noopener" target="_blank" href="https://github.com/vmware/clarity">source</a> on GitHub
-        </p>
       </div>
-      <div class="bg-img" :class="currentSeason"></div>
+      <div cds-layout="col:12">
+        <div cds-layout="grid cols:auto align:horizontal-center">
+          <cds-button action="outline" cds-layout="m-t:xl m-b:sm m-b:md">View Details</cds-button>
+        </div>
+      </div>
     </section>
-
-    <section class="home-cards">
-      <div class="home-cards-container clearfix">
-        <h1>Designed for designers and built for developers</h1>
-        <div class="home-card-wrapper clr-row">
-          <div class="home-card home-card-sketch clr-col-3">
-            <div class="home-card-bug">
-              <img src="/images/home/sketch.svg" alt="Sketch logo" />
+    <section class="home-spacer">
+      <img cds-layout="container:fill" aria-hidden="true" src="/images/home/bg-graphic2-L-align.svg" />
+    </section>
+    <!-- design+dev section -->
+    <section>
+      <h3 cds-text="title center" cds-layout="m-t:xxl m-b:xl">Build inclusive and intuitive products with Clarity</h3>
+      <div cds-layout="grid cols@sm:8 cols@xs:12">
+        <div cds-layout="col@sm:start-3">
+          <div cds-layout="m-y:xl grid gap:sm cols@sm:6 cols@xs:12 ">
+            <div class="image-cell" cds-layout="horizontal align:right">
+              <img cds-layout="container:fill" src="/images/home/img-design-dev.svg" aria-hidden="true" />
             </div>
-            <h3 class="home-card-title">Sketch Template</h3>
-            <p>
-              Jumpstart your project using our
-              <a routerLink="get-started" fragment="designResources">Sketch template</a>
-              with ready-to-use components.
-            </p>
-          </div>
-
-          <div class="home-card home-card-ux clr-col-3">
-            <div class="home-card-bug">
-              <img src="/images/home/ux.svg" alt="UX guidelines" />
+            <div class="content-cell" cds-layout="vertical gap:sm align:center m@xs:xs">
+              <h4 cds-text="section" cds-layout="p-b:lg">Design + Development</h4>
+              <p class="section-block" cds-text="body">
+                Clarity is designed and built by working directly within product teams. We do this to enable developers
+                and designers to deliver the best experience possible to their end users.
+              </p>
             </div>
-            <h3 class="home-card-title">UX guidelines</h3>
-            <p>
-              Reference UX guidelines that stem from ongoing research and exploration, making it easy to design cohesive
-              experiences.
-            </p>
-          </div>
-
-          <div class="home-card home-card-html clr-col-3">
-            <div class="home-card-bug">
-              <img src="/images/home/html.svg" alt="HTML/CSS" />
-            </div>
-            <h3 class="home-card-title">HTML/CSS</h3>
-            <p>
-              Start building with our HTML/CSS framework and rapidly go from prototype to production.
-            </p>
-          </div>
-
-          <div class="home-card home-card-angular clr-col-3">
-            <div class="home-card-bug">
-              <img src="/images/home/angular.svg" alt="Angular logo" />
-            </div>
-            <h3 class="home-card-title">Angular</h3>
-            <p>
-              Use our set of data-bound and performant components on top of Angular to add interactivity
-            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="home-process">
-      <h1>From prototype to product, faster and better</h1>
-
-      <div class="clr-row">
-        <div class="home-process-block clr-col-6">
-          <div class="home-process-block__title">
-            <div class="img bulb"></div>
-            <h3>Product-based</h3>
+    <!-- a11y section -->
+    <section>
+      <div cds-layout="grid cols@sm:8 cols@xs:12">
+        <div cds-layout="col@sm:start-3">
+          <div cds-layout="m-y:xl grid gap:sm cols@sm:6 cols@xs:12 ">
+            <div class="content-cell" cds-layout="vertical gap:sm align:center m@xs:xs">
+              <h4 cds-text="section" cds-layout="p-b:lg">Fully Accessible</h4>
+              <p class="section-block" cds-text="body">
+                We are continually investing heavily in the accessibility of Clarity. We do this to set a foundation for
+                your application to be used by all users.
+              </p>
+            </div>
+            <div class="image-cell" cds-layout="horizontal align:right">
+              <img cds-layout="container:fill" src="/images/home/img-accessibility.svg" aria-hidden="true" />
+            </div>
           </div>
-          <p>
-            We work closely with product teams to understand and solve the vast array of challenges they face. These
-            solutions are built into Clarity and contributed back to the community.
-          </p>
-        </div>
-        <div class="home-process-block clr-col-6">
-          <div class="home-process-block__title">
-            <div class="img rapid"></div>
-            <h3>Rapid development</h3>
-          </div>
-          <p>
-            Clarity’s shared foundation of design and development makes communication and collaboration between
-            different areas of expertise easier than ever.
-          </p>
-        </div>
-        <div class="home-process-block clr-col-6">
-          <div class="home-process-block__title">
-            <div class="img evolving"></div>
-            <h3>Evolving</h3>
-          </div>
-          <p>
-            Design patterns and technology change quickly. Clarity is built to anticipate and adopt to changes quickly
-            and easily.
-          </p>
-        </div>
-        <div class="home-process-block clr-col-6">
-          <div class="home-process-block__title">
-            <div class="img reliable"></div>
-            <h3>Reliable</h3>
-          </div>
-          <p>
-            We have a dedicated team focused on shipping frequently, with a high bar of quality standard.
-          </p>
         </div>
       </div>
     </section>
 
-    <section class="home-contact">
-      <div class="clr-row home-contact-container">
-        <div class="home-contact-block clr-col-6">
-          <a href="//opensource.org/licenses/MIT" class="mit-link home-contact_link" rel="noopener" target="_blank">
-            <span class="img"></span>
-            Clarity is licensed under the MIT License. <span class="xtra">Read more here.</span>
-          </a>
-        </div>
-        <div class="home-contact-block clr-col-6">
-          <a href="//twitter.com/VMwareClarity" class="twr-link home-contact_link" rel="noopener" target="_blank">
-            <span class="img"></span>
-            @VMwareClarity
-          </a>
+    <!-- enterprise section -->
+    <section>
+      <div cds-layout="grid cols@sm:8 cols@xs:12">
+        <div cds-layout="col@sm:start-3">
+          <div cds-layout="m-y:xl grid gap:sm cols@sm:6 cols@xs:12 ">
+            <div class="image-cell" cds-layout="horizontal align:right">
+              <img cds-layout="container:fill" src="/images/home/img-enterprise-ready.svg" aria-hidden="true" />
+            </div>
+            <div class="content-cell" cds-layout="vertical gap:sm align:center m@xs:xs">
+              <h4 cds-text="section" cds-layout="p-b:lg">Enterprise Ready</h4>
+              <p class="section-block" cds-text="body">
+                Clarity is robust, designed at scale, and high-performance. As we use Clarity within VMware, we’re
+                building products that most of the Fortune 500 use. Clarity is at the core of VMware’s software.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <Footer></Footer>
+    <!-- open source section -->
+    <section>
+      <div cds-layout="grid cols@sm:8 cols@xs:12">
+        <div cds-layout="col@sm:start-3">
+          <div cds-layout="m-y:xl grid gap:sm cols@sm:6 cols@xs:12 ">
+            <div class="content-cell" cds-layout="vertical gap:sm align:center m@xs:xs">
+              <h4 cds-text="section" cds-layout="p-b:lg">Open Source</h4>
+              <p class="section-block" cds-text="body">
+                We are continually investing heavily in the accessibility of Clarity. We do this to set a foundation for
+                your application to be used by all users.
+              </p>
+            </div>
+            <div class="image-cell" cds-layout="horizontal align:right">
+              <img cds-layout="container:fill" src="/images/home/img-open-source.svg" aria-hidden="true" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- resources section -->
+    <section>
+      <div cds-layout="grid cols@sm:8 cols@xs:12">
+        <div cds-layout="col@sm:start-3">
+          <div cds-layout="m-y:xl grid gap:sm cols@sm:6 cols@xs:12">
+            <div class="image-cell" cds-layout="horizontal align:left">
+              <img cds-layout="container:fill" src="/images/home/img-pr-components.svg" aria-hidden="true" />
+              <h4 cds-text="title" cds-layout="m-t:lg">Components</h4>
+              <p cds-text="body" cds-layout="m-t:md">
+                Access UX guidelines and developer documentation for interactive components.
+              </p>
+            </div>
+            <div class="image-cell" cds-layout="horizontal align:left m-t@xs:sm m-t@sm:none">
+              <img cds-layout="container:fill" src="/images/home/img-pr-icons.svg" aria-hidden="true" />
+              <h4 cds-text="title left" cds-layout="m-t:lg">Icons</h4>
+              <p cds-text="body" cds-layout="m-t:md">
+                Over 380 flexible and easy to use SVG icons, complete with variations to meet your design needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section cds-layout="m-l:lg m-b:lg">
+      <Footer></Footer>
+    </section>
   </main>
+  <!--  </div>-->
 </template>
+
+<style>
+.content-cell,
+image-cell {
+  height: 100%;
+}
+
+.page-home {
+  max-width: 960px;
+}
+</style>
 
 <script>
 import Footer from '@theme/components/Footer';

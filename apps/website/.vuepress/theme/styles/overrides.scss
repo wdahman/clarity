@@ -103,6 +103,11 @@ cds-alert-actions {
   height: calc(100vh - 3rem); // Grow from the bottom of the header to the bottom of the viewport.
 }
 
+// No padding on the home page b/c of hero component
+.content-area.home-page {
+  padding: 0 !important;
+}
+
 // This override is needed b/c I want the legacy @clr/ui contaier to also fill the space from the header to bottom of
 // the viewport.
 .clr-vertical-nav {

@@ -10,10 +10,10 @@
 
     <div class="content-container" cds-layout="horizontal align:vertical-stretch no-wrap">
       <Sidebar :items="sidebarItems" :isSidebarOpen="isSidebarOpen" @isSidebarOpenChange="toggleSidebar()" />
-      <div class="content-area" cds-layout="pl@sm:md">
+      <div :class="{ 'content-area': true, 'home-page': $page.frontmatter.home }" cds-layout="pl@sm:md">
         <Home v-if="$page.frontmatter.home" class="make-it-scrollable" />
         <div class="page-wrapper" v-else>
-          <Page id="content-area" :sidebar-items="sidebarItems">
+          <Page :sidebar-items="sidebarItems">
             <template #nav-toc>
               <NavToc v-if="shouldShowTOC" cds-layout="p-t:sm p-b:sm display@md:none" />
             </template>
@@ -35,6 +35,11 @@
   display: flex;
   flex-direction: column;
 }
+
+.content-area.home-page {
+  padding: 0;
+}
+
 .header-hamburger-trigger {
   .hamburger-icon {
     cursor: inherit;
