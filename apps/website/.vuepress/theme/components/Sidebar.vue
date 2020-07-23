@@ -62,6 +62,7 @@
     width: 100%;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.6);
+    will-change: background-color;
   }
 
   .side-nav {
@@ -70,15 +71,15 @@
   }
 
   .slide-fade-enter-active {
-    transition: all 0.2s ease-in-out;
+    transition: background-color 0.2s ease;
     .side-nav {
-      transition: all 0.2s ease-in-out 0.1s;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     }
   }
   .slide-fade-leave-active {
-    transition: all 0.2s ease-in-out 0.1s;
+    transition: background-color 0.2s ease;
     .side-nav {
-      transition: all 0.2s ease-in-out;
+      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
     }
   }
   .slide-fade-enter,
