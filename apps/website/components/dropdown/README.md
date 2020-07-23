@@ -16,17 +16,17 @@ A dropdown menu is a contextual list that allows the user to choose an option th
 
 ### Dropdown vs Select
 
-<ClrRow class="custom-block">
-<ClrCol>
+<div class="clr-row custom-block">
+<div class="clr-col">
 <DocInset>
 <ClrImage src="/images/components/dropdown/basic-dropdown.png" />
 </DocInset>
 
 **Dropdown menus** present a list of options that take an immediate action or navigate the user outside of the current context.
 
-</ClrCol>
+</div>
 
-<ClrCol>
+<div class="clr-col">
 <DocInset>
 <ClrImage src="/images/components/dropdown/select.png" />
 <ClrImage src="/images/components/dropdown/select-options.png" />
@@ -34,8 +34,8 @@ A dropdown menu is a contextual list that allows the user to choose an option th
 
 **Select boxes** present a list of options that the user can choose from and apply to an input field.
 
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 ## Behavior
 
@@ -73,8 +73,8 @@ Nested menus are an extension of dropdown menus. They save screen space by organ
 
 ### Placement
 
-<ClrRow class="custom-block">
-<ClrCol>
+<div class="clr-row custom-block">
+<div class="clr-col">
 <DocInset>
 <ClrImage src="/images/components/dropdown/img_placement_default.png" />
 </DocInset>
@@ -83,9 +83,9 @@ Nested menus are an extension of dropdown menus. They save screen space by organ
 
 By default a nested menu pops up on the right side of its root menu.
 
-</ClrCol>
+</div>
 
-<ClrCol>
+<div class="clr-col">
 <DocInset>
 <ClrImage src="/images/components/dropdown/img_placement_resp.png" />
 </DocInset>
@@ -94,8 +94,8 @@ By default a nested menu pops up on the right side of its root menu.
 
 If screen space isn’t available to the right of the root menu, the nested menu appears on the left side. If there is a second nested menu, it appears to the right of the first nested menu, creating a zig-zag pattern.
 
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 ## Accessibility
 

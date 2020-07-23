@@ -13,51 +13,51 @@ Use a tree view to visually display hierarchical information. The user can expan
 
 ### Basic Tree
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col">
 <p>
 A basic tree provides a tree structure with named nodes and an arrow to expand and collapse child nodes.
 </p>
-</ClrCol>
-<ClrCol>
+</div>
+<div class="clr-col" cds-layout="m-t:lg">
 <DocInset>
 <ClrImage title="Basic Tree" src="/images/components/tree-view/basic-tree.png" />
 </DocInset>
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 ### Basic Tree With Icons
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col">
 <p>
 A tree can include icons to represent the type of nodes within that group. Icons appear between the collapse/expand arrow and the parent node title.
 </p>
-</ClrCol>
-<ClrCol>
+</div>
+<div class="clr-col">
 <DocInset>
 <ClrImage title="Basic Tree" src="/images/components/tree-view/icon-tree.png" />
 </DocInset>
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 ### Checkbox Tree
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col">
 <p>
 A checkbox tree features checkboxes between the collapse/expand arrow and the name to indicate whether a node is selected. A parent node with children that are both selected and not selected is shown with an “indeterminate” state.
 </p>
 <p>
 Checkbox trees should not be used together with icons for the nodes. As with icon trees, make sure to put checkboxes on all nodes of a checkbox tree. Do not alternate between types of trees in a checkbox tree.
 </p>
-</ClrCol>
-<ClrCol>
+</div>
+<div class="clr-col">
 <DocInset>
 <ClrImage title="Basic Tree" src="/images/components/tree-view/checkbox-tree.png" />
 </DocInset>
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 ## Anatomy
 
@@ -65,18 +65,18 @@ The styling of each piece of a tree node is consistent across the different type
 
 ### Touch Targets
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col">
 <div>
 The dimensions of the expand/collapse arrow and the node title allow for a comfortable touch target allowing use with a mouse or a touch screen.
 </div>
-</ClrCol>
-<ClrCol>
+</div>
+<div class="clr-col">
 <DocInset>
 <ClrImage title="Tree view touch targets" src="/images/components/tree-view/touch-tree.svg" />
 </DocInset>
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 <cds-alert-group status="warning" type="default">
 <cds-alert>Touch Targets are relevant even outside of a mobile form factor. Many new desktop environments, especially those running Windows, allow for the use of a touch screen and should be considered when designing your applications.</cds-alert>
@@ -86,68 +86,68 @@ The dimensions of the expand/collapse arrow and the node title allow for a comfo
 
 Common terminology that explains tree behavior.
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col">
 <div class="custom-block">
 <strong>Highlight</strong>
 <p>Click on a node in the tree to either “highlight” it or navigate to its relative content.</p>
 </div>
-</ClrCol>
-<ClrCol>
+</div>
+<div class="clr-col">
 <div class="custom-block">
 <strong>Select</strong>
 <p>Choose items to apply an action. For example, selecting a checkbox in the tree.</p>
 </div>
-</ClrCol>
-<ClrCol>
+</div>
+<div class="clr-col">
 <div class="custom-block">
 <strong>Expand / Collapse</strong>
 <p>Use the arrow to the left of a node to expand or collapse a node in the tree.</p>
 </div>
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 ### Interacting With Nodes
 
 #### Expanding / Collapsing Nodes
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col">
 <p>
 To expand or collapse a parent node, the user clicks on the expand/collapse arrow. Clicking on the node item itself does not expand or collapse a node. It serves as a highlighting mechanism.
 </p>
 <p>
 In read-only trees where highlighting is not an option, this pattern remains true for consistency.
 </p>
-</ClrCol>
-<ClrCol>
+</div>
+<div class="clr-col">
 <DocInset>
 <ClrImage title="Expand and collapse tree node" src="/images/components/tree-view/expand-collapse-node.png" />
 </DocInset>
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 #### Highlighting Tree Nodes
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col">
 <p>
 To navigate to a content area based on a tree node or to highlight a tree node in order to take a subsequent action based on the selection, a user clicks on the node title itself.
 </p>
-</ClrCol>
-<ClrCol>
+</div>
+<div class="clr-col">
 <DocInset>
 <ClrImage title="Expand and collapse tree node" src="/images/components/tree-view/highlight-node.png" />
 </DocInset>
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 [//]: # 'IMAGE - dashboard'
 
 #### Interacting With Checkbox Trees
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col">
 <p>
 With a checkbox tree, a user is able to perform one or a combination of three actions by clicking on one of three distinct targets:
 </p>
@@ -156,13 +156,13 @@ With a checkbox tree, a user is able to perform one or a combination of three ac
 <li class="custom-block">Checking a Checkbox: this would require clicking on the checkbox itself to check or uncheck a treenode. This will also affect the status of the parent node’s checkbox.</li>
 <li class="custom-block">Highlighting Tree Node: a user can highlight a tree node by clicking on the name (label) of the tree node. This allows for the possibility of loading content based on selection to provide more information on a tree node.</li>
 </ol>
-</ClrCol>
-<ClrCol>
+</div>
+<div class="clr-col">
 <DocInset>
 <ClrImage title="Interacting with checkboxes" src="/images/components/tree-view/checkbox-interaction.png" />
 </DocInset>
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 [//]: # 'IMAGE - view privileges'
 
@@ -170,19 +170,19 @@ With a checkbox tree, a user is able to perform one or a combination of three ac
 
 The way to load data within the tree is based on the scenario in which the tree is being used.
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col">
 #### Load Parent Nodes First
 <p>With a dynamic tree, make sure to load the parent nodes first and then lazy load child nodes when requested.</p>
 
 <p>A general goal to keep in mind is that you want to minimize the time a user needs to spend before their first interaction with the tree as well as every subsequent interaction afterwards.</p>
-</ClrCol>
-<ClrCol>
+</div>
+<div class="clr-col">
 <DocInset>
 <ClrImage title="Loading data" src="/images/components/tree-view/loading-node.png" />
 </DocInset>
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 ## Code & Examples
 
@@ -229,17 +229,17 @@ Use checkbox when nodes of the tree need to be selected or unselected by users. 
 1. The correct declaration on the [ClrTreeNode](/components/tree-view/api.html#clrtreenode)'s that need to be selectable
 1. A ClrSelectedState for each node that is selectable
 
-<ClrRow class="custom-block">
-<ClrCol>
+<div class="clr-row custom-block">
+<div class="clr-col">
 <ClrImage title="Checkbox Tree" src="/images/components/tree-view/checkbox-tree-demo.png" />
-</ClrCol>
-<ClrCol>
+</div>
+<div class="clr-col">
 
 #### Checkbox JSON
 
 <doc-demo src="/demos/tree-view/checkbox.json" />
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 #### Checkbox element
 
@@ -253,18 +253,18 @@ Use checkbox when nodes of the tree need to be selected or unselected by users. 
 
 If you know a specific node can never become indeterminate, you probably want to use a boolean property on your node. As mentioned previously, `[(clrSelected)]` always outputs [ClrSelectedState](/components/tree-view/api.html#properties) enum values, making two-way binding with a boolean problematic. The most straightforward solution is to use the de-sugarized syntax of the two-way binding , transforming the output to a boolean directly.
 
-<ClrRow class="custom-block">
-<ClrCol>
+<div class="clr-row custom-block">
+<div class="clr-col">
 <!-- cannot project md images here and ClrImage w/ height distorts the image -->
 <img src="/images/components/tree-view/checkbox-binding-demo.png" alt="Checkbox Tree" height="500">
-</ClrCol>
-<ClrCol>
+</div>
+<div class="clr-col">
 
 #### Checkbox JSON
 
 <doc-demo src="/demos/tree-view/checkbox-binding.json" />
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 #### Binding element
 

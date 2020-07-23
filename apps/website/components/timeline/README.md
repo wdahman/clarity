@@ -40,7 +40,7 @@ There are two types of layouts, horizontal and vertical.
 
 It is optional to have a step description that offers additional information and guidance to the user. This information can be displayed all of the time or only for the current step.
 
-<ClrRow>
+<div class="clr-row">
 
 <div class="clr-col-12 clr-col-md-6">
 
@@ -58,7 +58,7 @@ It is optional to have a step description that offers additional information and
 **All step descriptions**
 
 </div>
-</ClrRow>
+</div>
 
 ## States
 
@@ -76,38 +76,38 @@ Every timeline step has one of five steps. With one exception these steps are re
 
 As users move through the timeline steps should be progressively marked with the current and success icons to indicate progress.
 
-<ClrRow>
+<div class="clr-row">
 <div class="clr-col-12 clr-col-md-4">
 By default, step one is highlighted as the current step.
 </div>
 <div class="clr-col-12 clr-col-md-8">
 <ClrImage src="/images/components/timeline/timeline-step-1.svg" title="Showing current step"></ClrImage>
 </div>
-</ClrRow>
-<ClrRow>
+</div>
+<div class="clr-row">
 <div class="clr-col-12 clr-col-md-4">
 When step one is complete the step two gets highlighted.
 </div>
 <div class="clr-col-12 clr-col-md-8">
 <ClrImage src="/images/components/timeline/timeline-step-3.svg" title="Showing current step"></ClrImage>
 </div>
-</ClrRow>
-<ClrRow>
+</div>
+<div class="clr-row">
 <div class="clr-col-12 clr-col-md-4">
 When the user has completed all steps, they are all marked complete.
 </div>
 <div class="clr-col-12 clr-col-md-8">
 <ClrImage src="/images/components/timeline/timeline-step-4.svg" title="Showing current step"></ClrImage>
 </div>
-</ClrRow>
-<ClrRow>
+</div>
+<div class="clr-row">
 <div class="clr-col-12 clr-col-md-4">
 When steps one and two are complete, step three gets highlighted.
 </div>
 <div class="clr-col-12 clr-col-md-8">
 <ClrImage src="/images/components/timeline/timeline-step-4.svg" title="Showing current step"></ClrImage>
 </div>
-</ClrRow>
+</div>
 
 ### Error State
 

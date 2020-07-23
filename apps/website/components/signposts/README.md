@@ -9,11 +9,11 @@ The signpost is a convenient, lightweight way to show contextual help of informa
 
 Use a signpost when you want to show a small amount of contextual help of information without taking the user out of the current context. Use sparingly as a supplemental element and not as a primary method of adding details.
 
-<ClrRow>
+<div class="clr-row">
 
 ![Jigglypuff is active nav](/images/components/signpost/basic-and-pie-chart.svg)
 
-</ClrRow>
+</div>
 
 Use a signpost:
 
@@ -33,11 +33,11 @@ Max-width 360px; Max-height 504px
 
 Clicking the icon triggers the signpost. It remains visible until the user clicks the close icon or clicks anywhere outside of the dialog to dismiss it. To keep the interface uncluttered, only one signpost is displayed at a time. When a dialog is visible, clicking an icon to open another one automatically dismisses the previous dialog.
 
-<ClrRow>
+<div class="clr-row">
 
 ![Jigglypuff is active nav](/images/components/signpost/states.svg)
 
-</ClrRow>
+</div>
 
 ## Placement
 
@@ -45,15 +45,15 @@ Clicking the icon triggers the signpost. It remains visible until the user click
 
 Default position for the dialog is 6px to the right of the trigger icon.
 
-<ClrRow>
+<div class="clr-row">
 
 ![Jigglypuff is active nav](/images/components/signpost/positioning.svg)
 
-</ClrRow>
+</div>
 
 [//]: # 'IMAGES x2 - icon position'
 
-<ClrRow>
+<div class="clr-row">
 
 <div class="clr-col-12 clr-col-md-6">
 
@@ -71,7 +71,7 @@ Default position for the dialog is 6px from the end of the text
 In tables, the icons may be aligned in a column
 
 </div>
-</ClrRow>
+</div>
 
 ### Recommendations
 

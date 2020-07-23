@@ -32,12 +32,19 @@ The step title section has three states: completed, active, to-do. When a step i
 
 The input section has two elements: the form and the buttons. The form is used to collect input from users to finish the step. The buttons section will allow the users to proceed to the next step or finish the workflow. To go back to a previous step, users need to click on the step title of one of the previous steps. That step will become the active step with its input section visible for editing.
 
-::: do Use clear copy in the final call to action to best represent the action that users are taking in completing the stepper.
-![Stepper do](/images/components/stepper/stepper-do.png)
-:::
-::: dont Don't use ambiguous a non-action oriented description that does not specify what users are accomplishing.
-![Stepper do](/images/components/stepper/stepper-dont.png)
-:::
+<div class="clr-row" cds-layout="m-t:lg">
+
+<div class="clr-col-sm-12 clr-col-lg-6 doc-do">
+<ClrImage class="doc-example" title="stepper do" src="/images/components/stepper/stepper-do.png" align="center" />
+Use clear copy in the final call to action to best represent the action that users are taking in completing the stepper.
+</div>
+
+<div class="clr-col-sm-12 clr-col-lg-6 doc-dont">
+<ClrImage class="doc-example" title="Stepper dont" src="/images/components/stepper/stepper-dont.png" align="center" />
+Don't use ambiguous a non-action oriented description that does not specify what users are accomplishing.
+</div>
+
+</div>
 
 #### Final Call To Action
 

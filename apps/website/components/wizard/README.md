@@ -47,7 +47,7 @@ There are multiple sizes for wizards. The Clarity wizard defaults to x-large but
 
 Wizards should have at least 2 steps. If your wizard exceeds 10 steps, consider combining similar steps.
 
-<ClrRow>
+<div class="clr-row">
 
 <div class="clr-col-6">
 
@@ -64,7 +64,7 @@ Wizards should have at least 2 steps. If your wizard exceeds 10 steps, consider 
 :::
 
 </div>
-</ClrRow>
+</div>
 
 #### Building Steps
 
@@ -94,8 +94,8 @@ Default progress buttons are provided, but can be overridden. Buttons are right-
 
 Enhancement to the wizard component to add an error state to the wizard step states.
 
-<ClrRow></ClrRow>
-<ClrRow>
+<div class="clr-row"></div>
+<div class="clr-row">
 
 <div class="clr-col-6">
 
@@ -111,9 +111,9 @@ When an error occurs, replace the step number with the error icon. This design i
 :::
 
 </div>
-</ClrRow>
+</div>
 
-<ClrRow>
+<div class="clr-row">
 
 <div class="clr-col-6">
 
@@ -129,9 +129,9 @@ Indicate clearly why the error occurs on the error step.
 :::
 
 </div>
-</ClrRow>
+</div>
 
-<ClrRow>
+<div class="clr-row">
 
 <div class="clr-col-6">
 
@@ -147,11 +147,11 @@ The progress indicator changed back to green once all errors are resolved.
 :::
 
 </div>
-</ClrRow>
+</div>
 
 ### Dismissing Wizard
 
-<ClrRow>
+<div class="clr-row">
 
 <div class="clr-col-6">
 
@@ -172,7 +172,7 @@ The progress indicator changed back to green once all errors are resolved.
 :::
 
 </div>
-</ClrRow>
+</div>
 
 #### Use Cases Under Consideration
 

@@ -11,7 +11,7 @@ A spinner is visual indicator of an ongoing, user-initiated process.
 
 Use a spinner to offer visual feedback to show users their action is processing. Below is a comparison of spinner usage with [progress bar](/components/progress) usage.
 
-<ClrRow>
+<div class="clr-row">
 <div class="clr-col-12 clr-col-md-6">
 
 ::: inset
@@ -43,7 +43,7 @@ Use a spinner to offer visual feedback to show users their action is processing.
 
 </div>
 
-</ClrRow>
+</div>
 
 ## Types
 

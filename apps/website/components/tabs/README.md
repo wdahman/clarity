@@ -7,19 +7,8 @@ Tabs divide content into separate views which users navigate between.
 
 ## Usage
 
-::: do Use tabs for alternate views
-<DocInset height="100">
-Use tabs in the main content area or, alternatively use the [vertical nav](/components/vertical-nav) component to break up separate views.
-
-</DocInset>
-:::
-
-::: dont Use tabs to beak up user interactions
-<DocInset height="100">
-Use tabs to break user interactions into a series of steps. Serial workflows are best presented in a multi-step workflow, like [wizard](/components/wizards), [stepper](/components/stepper), or a [timeline](/components/timeline).
-
-</DocInset>
-:::
+- Use tabs in the main content area or, alternatively use the [vertical nav](/components/vertical-nav) component to break up separate views.
+- Don't use tabs to break user interactions into a series of steps. Serial workflows are best presented in a multi-step workflow, like [wizard](/components/wizards), [stepper](/components/stepper), or a [timeline](/components/timeline).
 
 ### Content
 

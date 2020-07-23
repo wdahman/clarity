@@ -24,12 +24,14 @@ When establishing your navigation model, consider:
 
 ### Using Navigation Components
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col">
+
 #### Header
-<ClrImage title="Header navigation pattern" src="/images/foundation/navigation/header.png" />
-</ClrCol>
-<ClrCol>
+
+<ClrImage cds-layout="m-t:md" title="Header navigation pattern" src="/images/foundation/navigation/header.png" />
+</div>
+<div class="clr-col" cds-layout="m-t:xl">
 
 {.custom-container}
 
@@ -41,15 +43,17 @@ The <a href="/components/header">header</a> is for primary navigation. Benefits 
 
 Conversely, the header supports other items (search and setting) and the navigation links might become crowded.
 
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col">
+
 #### Subnav
-<ClrImage title="Subnav navigation pattern" src="/images/foundation/navigation/subnav.png" />
-</ClrCol>
-<ClrCol>
+
+<ClrImage cds-layout="m-t:md" title="Subnav navigation pattern" src="/images/foundation/navigation/subnav.png" />
+</div>
+<div class="clr-col" cds-layout="m-t:xl">
 
 {.custom-container}
 
@@ -59,15 +63,17 @@ Use the <a href="/components/header/#subnav">subnav</a> for primary navigation w
 - The text of your links is too long for the header.
 - You want to limit the header to search and settings.
 
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col">
+
 #### Sidenav
-<ClrImage title="Sidenav navigation pattern" src="/images/foundation/navigation/sidenav.png" />
-</ClrCol>
-<ClrCol>
+
+<ClrImage cds-layout="m-t:md" title="Sidenav navigation pattern" src="/images/foundation/navigation/sidenav.png" />
+</div>
+<div class="clr-col" cds-layout="m-t:xl">
 
 {.custom-container}
 
@@ -80,66 +86,74 @@ Benefits of the <a href="/components/header/#sidenav">sidenav</a> are that it:
 
 Conversely, the sidenav takes real estate away from the content area. Also, on mobile, the hierarchy within the sidenav should be kept to a minimum.
 
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 ### Combining Navigation Types
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col">
+
 #### Header + Sidenav
-<ClrImage title="Header + Sidenav navigation pattern" src="/images/foundation/navigation/header_sidenav.png" />
-</ClrCol>
-<ClrCol>
+
+<ClrImage cds-layout="m-t:md" title="Header + Sidenav navigation pattern" src="/images/foundation/navigation/header_sidenav.png" />
+</div>
+<div class="clr-col" cds-layout="m-t:xl">
 
 {.custom-container}
 
 A common pattern for two levels of navigation. The primary navigation is in the header, secondary in the sidenav.
 
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col">
+
 #### Header + Subnav
-<ClrImage title="Header + Subnav navigation pattern" src="/images/foundation/navigation/header_subnav.png" />
-</ClrCol>
-<ClrCol>
+
+<ClrImage cds-layout="m-t:md" title="Header + Subnav navigation pattern" src="/images/foundation/navigation/header_subnav.png" />
+</div>
+<div class="clr-col" cds-layout="m-t:xl">
 
 {.custom-container}
 
 Because both patterns are horizontal, use this combination only when the secondary navigation does not warrant the space taken up by the sidenav.
 
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col">
+
 #### Subnav + Sidenav
-<ClrImage title="Subnav + Sidenav navigation pattern" src="/images/foundation/navigation/subnav_sidenav.png" />
-</ClrCol>
-<ClrCol>
+
+<ClrImage cds-layout="m-t:md" title="Subnav + Sidenav navigation pattern" src="/images/foundation/navigation/subnav_sidenav.png" />
+</div>
+<div class="clr-col" cds-layout="m-t:xl">
 
 {.custom-container}
 
 Use the subnav for primary navigation when the links do not fit in the header.
 
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col">
+
 #### Header, subnav and sidenav
-<ClrImage title="Header, subnav and sidenav navigation pattern" src="/images/foundation/navigation/header_subnav_sidenav.png" />
-</ClrCol>
-<ClrCol>
+
+<ClrImage cds-layout="m-t:md" title="Header, subnav and sidenav navigation pattern" src="/images/foundation/navigation/header_subnav_sidenav.png" />
+</div>
+<div class="clr-col" cds-layout="m-t:xl">
 
 {.custom-container}
 
 This schema will not result in a clear visual hierarchy because of the adjacent horizontal patterns. An alternative is to use the header and sidenav and then provide further navigation in the content area by using tabs.
 
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 ## Types
 
@@ -198,15 +212,17 @@ Clarity supports responsive navigation as follows:
 
 ##### Large Screens
 
-<ClrImage title="Large Screen Navigation" src="/images/foundation/navigation/header_sidenav_large.png" />
+<ClrImage cds-layout="m-t:md" title="Large Screen Navigation" src="/images/foundation/navigation/header_sidenav_large.png" />
 ##### Small Screens
-<ClrRow>
-<ClrCol>
-<ClrImage title="Header navigation on small screens" src="/images/foundation/navigation/navLevel1.gif" />
+<div class="clr-row">
+<div class="clr-col">
+
+<ClrImage cds-layout="m-t:md" title="Header navigation on small screens" src="/images/foundation/navigation/navLevel1.gif" />
 <doc-demo src="/demos/navigation/nav-1-css.html" />
-</ClrCol>
-<ClrCol>
-<ClrImage title="Sidnav on small screens" src="/images/foundation/navigation/navLevel2.gif" />
+</div>
+<div class="clr-col" cds-layout="m-t:xl">
+
+<ClrImage cds-layout="m-t:md" title="Sidnav on small screens" src="/images/foundation/navigation/navLevel2.gif" />
 <doc-demo src="/demos/navigation/nav-2-css.html" />
-</ClrCol>
-</ClrRow>
+</div>
+</div>

@@ -7,46 +7,46 @@ Date Picker is a popover control for picking a date value for a date input. It's
 
 ## Usage
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col">
 <p>Use a Date Picker to select a date when a user needs to understand the date in context with other possible dates. Date choices are influenced by day of the week, or week within a month. It is paired with a text input so that it can send a formatted date value to the input. A Date Picker is also helpful when the formatting of the date is important.</p>
 <p>Date Pickers aren’t helpful when the date is a known value like a birthday. A user will likely want to type that value in versus hunting for it in a Date Picker. In cases where space is limited, it may be a good idea to omit the Date Picker.</p>
-</ClrCol>
-<ClrCol>
+</div>
+<div class="clr-col">
 <DocInset class="custom-block">
 <ClrImage src="/images/components/datepicker/datepicker.png" />
 </DocInset>
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 ## Types
 
 ### Month Picker
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col">
 <p>12 month values can be selected from. Arrow keys can be used to navigate through the values. Selecting a month value will return the user back to the date view.
 </p>
-</ClrCol>
-<ClrCol>
+</div>
+<div class="clr-col">
 <DocInset class="custom-block">
 <ClrImage src="/images/components/datepicker/monthpicker.png" />
 </DocInset>
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 ### Year Picker
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col">
 <p>10 year values are displayed at one time. Arrow keys can be used to navigate through the values, future years, and past years. Selecting a year value will return the user back to the date view.</p>
-</ClrCol>
-<ClrCol>
+</div>
+<div class="clr-col">
 <DocInset class="custom-block">
 <ClrImage src="/images/components/datepicker/yearpicker.png" />
 </DocInset>
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 ### Small Screens
 
@@ -126,8 +126,8 @@ Using the date format retrieved from Angular, the placeholder is generated in on
 
 The following demo shows two date pickers. The first date picker uses the `en-US` locale identifier whereas the second one uses `fr`. Both the date pickers have different first day of the week and the calendar is generated based on the first day of the week.
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col">
 <h5>Locale Identifier: en-US</h5>
 <ClrImage src="/images/components/datepicker/us-locale-demo.png" />
 <table class="table">
@@ -157,8 +157,8 @@ The following demo shows two date pickers. The first date picker uses the `en-US
         </tr>
     </tbody>
 </table>
-</ClrCol>
-<ClrCol>
+</div>
+<div class="clr-col">
 <h5>Locale Identifier: fr</h5>
 <ClrImage src="/images/components/datepicker/fr-locale-demo.png" />
 <table class="table">
@@ -188,8 +188,8 @@ The following demo shows two date pickers. The first date picker uses the `en-US
         </tr>
     </tbody>
 </table>
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 Changing the locale requires its data to be registered first. Afterwards you can simply provide the locale in any Module or Component by the LOCALE_ID token.
 

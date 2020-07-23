@@ -84,4 +84,8 @@ function css(el, property) {
 .header .logo {
   margin-right: 10px;
 }
+
+.main-container .header .branding {
+  max-width: none;
+}
 </style>

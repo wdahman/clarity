@@ -19,7 +19,6 @@ export default {
 <style scoped lang="scss">
 .image-wrapper {
   display: flex;
-  margin: 1.2rem 0;
 }
 img {
   max-width: 100%;

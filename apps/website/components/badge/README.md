@@ -16,13 +16,13 @@ Badges have a colorful, bold, and filled style that makes them stand out when ap
 
 ### Basic
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col">
 <h3>Overall Style</h3>
 <p>Badges have a more rounded border radius, similar to labels, to distinguish them from primary buttons.</p>
 <p>Badges are also small enough to fit next to or within another element.</p>
-</ClrCol>
-<ClrCol>
+</div>
+<div class="clr-col">
 <DocInset>
 
 <section class="inline-code">
@@ -46,16 +46,16 @@ Badges have a colorful, bold, and filled style that makes them stand out when ap
     </div>
 </section>
 </DocInset>
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
-<ClrRow class="custom-block">
-<ClrCol>
+<div class="clr-row custom-block">
+<div class="clr-col">
 <h3>Color</h3>
 <p>You can use different colors in badges.</p>
 <p>Stoplight colors are reserved to display a sense of urgency or indicate state.</p>
-</ClrCol>
-<ClrCol>
+</div>
+<div class="clr-col">
 <DocInset height="100" class="custom-block">
 
 <section class="inline-code">
@@ -64,19 +64,19 @@ Badges have a colorful, bold, and filled style that makes them stand out when ap
 </section>
 
 </DocInset>
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 ## Content
 
 Use integers within badges. If you’re attempting to use text, consider using a label instead.
 
-<ClrRow class="custom-block">
-<ClrCol>
+<div class="clr-row custom-block">
+<div class="clr-col">
 <h3>Over 99</h3>
 <p>If a badge needs to display a number above 99, use “99+” instead of the number unless the number is important to the user’s objectives and you are certain there is room in the design to accommodate it.</p>
-</ClrCol>
-<ClrCol>
+</div>
+<div class="clr-col">
 <DocInset height="100" class="custom-block">
 
 <section class="inline-code horizontal">
@@ -93,8 +93,8 @@ Use integers within badges. If you’re attempting to use text, consider using a
 </section>
 
 </DocInset>
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 ## Code & Examples
 

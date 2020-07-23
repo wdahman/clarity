@@ -9,55 +9,55 @@ Buttons allow an application to communicate action and direct user intent.
 
 Clarity comes with three different types of buttons to use. They are provided to give visual distinction between the priority or heirarchy of the buttons in the application.
 
-<ClrRow>
-<ClrCell>
+<div class="clr-row" cds-layout="m-t:md">
+<div class="clr-col-sm-12 clr-col-lg-4">
 <DocInset><button class="btn btn-primary">Solid Button</button></DocInset>
 
 Solid buttons look heavy on purpose. They direct the user’s attention to the **primary action** the application is suggesting that the user take.
 
-</ClrCell>
-<ClrCell>
+</div>
+<div class="clr-col-sm-12 clr-col-lg-4">
 <DocInset><button class="btn">Outline Button</button></DocInset>
 
 Outline buttons provide a lighter weight button style. They are used to indicate a **secondary action** that compliments a primary action or to reduce visual noise when there are many action of **equal** importance on the page.
 
-</ClrCell>
-<ClrCell>
+</div>
+<div class="clr-col-sm-12 clr-col-lg-4">
 <DocInset><button class="btn btn-link">Flat Button</button></DocInset>
 
 Flat buttons are used in multiple scenarios. They are used as **tertiary buttons**. They can also be used inline because they are different from content in style and recognizable as buttons alongside content.
 
-</ClrCell>
-</ClrRow>
+</div>
+</div>
 
 ## Buttons vs Links
 
 While buttons and links can both be given similar visual treatments, it is important that you use a link (or anchor element) for anytime clicking the element will _navigate_ you to a different page. Buttons are for interaction in the current page, such as refreshing the content or submitting a form.
 
-<ClrRow>
-<ClrCell>
+<div class="clr-row" cds-layout="m-t:md">
+<div class="clr-col-sm-12 clr-col-lg-6">
 <DocInset><button class="btn btn-link">Flat Button</button></DocInset>
 
 Use flat buttons when a user is expected to **take an action**.
 
-</ClrCell>
+</div>
 
-<ClrCell>
+<div class="clr-col-sm-12 clr-col-lg-6">
 <DocInset><a href="javascript://" class="btn btn-link">Anchor Link</a></DocInset>
 
 Use a link when a user is expected to be **taken to a different page**.
 
-</ClrCell>
-</ClrRow>
+</div>
+</div>
 
 ## Placement
 
 There are two distinct patterns when it comes to the placement of a button.
 
-<ClrRow>
-<ClrCell>
+<div class="clr-row" cds-layout="m-t:md">
+<div class="clr-col-sm-12 clr-col-lg-6">
 <DocInset height="300">
-<ClrImage title="Z Pattern illustration" src="/images/components/button/z_pattern.svg" />
+<ClrImage cds-layout="m-t@lg:xl p-t@lg:lg" title="Z Pattern illustration" src="/images/components/button/z_pattern.svg" />
 </DocInset>
 
 **Z Pattern**
@@ -66,11 +66,11 @@ The Z-pattern is a natural way for the user to go through content within a **con
 
 <cds-icon shape="bookmark"></cds-icon> Modals and Wizards follow the Z Pattern
 
-</ClrCell>
+</div>
 
-<ClrCell>
+<div class="clr-col-sm-12 clr-col-lg-6">
 <DocInset height="300">
-<ClrImage title="F Pattern illustration" src="/images/components/button/f_pattern.svg" />
+<ClrImage cds-layout="m-t@lg:xl p-t@lg:lg" title="F Pattern illustration" src="/images/components/button/f_pattern.svg" />
 </DocInset>
 
 **F Pattern**
@@ -79,8 +79,8 @@ The F-pattern is a natural way to go through content in an **unconstrained conta
 
 <cds-icon shape="bookmark"></cds-icon> Forms and Cards follow the F Pattern
 
-</ClrCell>
-</ClrRow>
+</div>
+</div>
 
 ## Style
 
@@ -90,28 +90,19 @@ Consistent button styles make it easier for a user to recognize areas to take ac
 
 The text inside of buttons is always **uppercase**. This indicates action by differentiating button text from links and other content on the page. Use descriptive language on buttons relating to the user’s intent.
 
-<ClrRow>
-<ClrCell>
-<ClrDoDont>
-<template v-slot:demo>
-<ClrImage title="Typography Don Example" src="/images/components/button/typography_do.svg" />
-</template>
-<template v-slot:summary>
-Use a call to action on buttons.
-</template>
-</ClrDoDont>
-</ClrCell>
-<ClrCell>
-<ClrDoDont dont>
-<template v-slot:demo>
-<ClrImage title="Typography Don't Example" src="/images/components/button/typography_dont.svg" />
-</template>
-<template v-slot:summary>
+<div class="clr-row" cds-layout="m-t:lg">
+
+<div class="clr-col-sm-12 clr-col-lg-6 doc-dont">
+<ClrImage class="doc-example" title="Typography Don't Example" src="/images/components/button/typography_dont.svg" />
 Use generic language not related to the action and not relating to the intent of the user.
-</template>
-</ClrDoDont>
-</ClrCell>
-</ClrRow>
+</div>
+
+<div class="clr-col-sm-12 clr-col-lg-6 doc-do">
+<ClrImage class="doc-example" title="Typography Do Example" src="/images/components/button/typography_do.svg" />
+Use a call to action on buttons.
+</div>
+
+</div>
 
 ### Visual Style
 
@@ -121,8 +112,8 @@ Clarity buttons have several distinct properties and design considerations.
 
 Clarity buttons have a border radius of 3px.
 
-<ClrRow>
-<ClrCell>
+<div class="clr-row" cds-layout="m-t:md">
+<div class="clr-col-sm-12 clr-col-lg-6">
 
 #### Size
 
@@ -133,37 +124,31 @@ Clarity offers two button sizes:
 
 Compact is used in content areas where smaller buttons are needed to de-emphasize calls to action. This is especially true when multiple actions of equal importance are available.
 
-</ClrCell>
-<ClrCell>
+</div>
+<div class="clr-col-sm-12 clr-col-lg-6">
 
-<ClrImage title="Visualization of button sizes" src="/images/components/button/button_sizes.png" />
+<ClrImage cds-layout="m-t@lg:xl p-t@lg:lg" title="Visualization of button sizes" src="/images/components/button/button_sizes.png" />
 
-</ClrCell>
-</ClrRow>
+</div>
 
-<ClrRow>
-<ClrCell>
+</div>
 
 #### Primary Color
 
 A primary color provides consistency across an application. It trains the user to look for that color when trying to find an action. Clarity defaults to blue. This “action blue” can be found across all types of buttons, tabs, and other action-related components.
 
-</ClrCell>
-<ClrCell />
-</ClrRow>
-
-<ClrRow>
-<ClrCell>
+<div class="clr-row" cds-layout="m-t:md">
+<div class="clr-col-sm-12 clr-col-lg-6">
 
 #### Action-based Color
 
 Different colors may be used based on the severity of an action’s result. For example, using a red button when “deleting” files indicates high severity.
 
-</ClrCell>
-<ClrCell>
-<ClrImage title="Visualization of button colors" src="/images/components/button/action_colors.png" />
-</ClrCell>
-</ClrRow>
+</div>
+<div class="clr-col-sm-12 clr-col-lg-6">
+<ClrImage cds-layout="m-t@lg:xl p-t@lg:lg" title="Visualization of button colors" src="/images/components/button/action_colors.png" />
+</div>
+</div>
 
 ## Icons
 
@@ -171,77 +156,61 @@ Icon buttons are useful where interface space may be limited. If an icon represe
 
 We recommend you **choose an icon that best describes the action** that the user will be doing. Users may avoid unknown or abstract icon buttons.
 
-### Types & Sizes
+#### Types & Sizes
 
-<ClientOnly>
-<ClrRow>
-<ClrCell>
-<ClrDoDont demoHeight="100">
-<template v-slot:demo>
+<div class="clr-row" cds-layout="m-t:lg">
+
+<div class="clr-col-sm-12 clr-col-lg-6 doc-do">
+<div class="doc-example">
 <cds-button size="icon" style="margin-right: 12px"><cds-icon shape="check"></cds-icon></cds-button>
 <cds-button size="icon" action="outline" style="margin-right: 12px"><cds-icon shape="folder"></cds-icon></cds-button>
 <cds-button size="icon" action="flat"><cds-icon shape="cog"></cds-icon></cds-button>
-</template>
-<template v-slot:summary>
+</div>
 Icon buttons are available in the solid, outline, and flat types. It’s also best to use the normal (36px) sized ones. This makes them easier to recognize and to click.
-</template>
-</ClrDoDont>
-</ClrCell>
-<ClrCell>
-<ClrDoDont dont demoHeight="100">
-<template v-slot:demo>
+</div>
+
+<div class="clr-col-sm-12 clr-col-lg-6 doc-dont">
+<div class="doc-example">
 <cds-button size="sm" style="margin-right: 12px"><cds-icon shape="check"></cds-icon></cds-button>
 <cds-button size="sm" action="outline" style="margin-right: 12px"><cds-icon shape="folder"></cds-icon></cds-button>
 <cds-button size="sm" action="flat"><cds-icon shape="cog"></cds-icon></cds-button>
-</template>
-<template v-slot:summary>
+</div>
 Use small icon buttons in most cases. They are difficult to see and distinguish what the icon is or represents. They also create smaller click targets, making them harder to click.
-</template>
-</ClrDoDont>
-</ClrCell>
-</ClrRow>
-</ClientOnly>
+</div>
 
-### With Text
+</div>
 
-<ClientOnly>
-<ClrRow>
-<ClrCell>
-<ClrDoDont demoHeight="100">
-<template v-slot:demo>
+#### With Text
+
+<div class="clr-row" cds-layout="m-t:lg">
+<div class="clr-col-sm-12 clr-col-lg-6 doc-do">
+<div class="doc-example">
 <cds-button size="icon" style="margin-right: 12px"><cds-icon shape="check"></cds-icon> Create</cds-button>
-<cds-button size="icon" action="outline"><cds-icon shape="times"></cds-icon> Delete</cds-button>
-</template>
-<template v-slot:summary>
+<cds-button size="icon" status="danger"><cds-icon shape="times"></cds-icon> Delete</cds-button>
+</div>
 If you have the space, adding text helps users understand the action. Start icon buttons with icons and follow with text.
-</template>
-</ClrDoDont>
-</ClrCell>
-<ClrCell>
-<ClrDoDont dont demoHeight="100">
-<template v-slot:demo>
+</div>
+
+<div class="clr-col-sm-12 clr-col-lg-6 doc-dont">
+<div class="doc-example">
 <cds-button size="icon" style="margin-right: 12px">Create <cds-icon shape="check"></cds-icon></cds-button>
-<cds-button size="icon" action="outline">Delete <cds-icon shape="times"></cds-icon></cds-button>
-</template>
-<template v-slot:summary>
+<cds-button size="icon" status="danger">Delete <cds-icon shape="times"></cds-icon></cds-button>
+</div>
 Start icon buttons with text and follow with icon. This makes them more difficult to scan quickly.
-</template>
-</ClrDoDont>
-</ClrCell>
-</ClrRow>
-</ClientOnly>
+</div>
+</div>
 
-<ClrRow>
-<ClrCell>
+<div class="clr-row" cds-layout="m-t:md">
+<div class="clr-col-sm-12 clr-col-lg-6">
 
-### Title Attribute
+#### Title Attribute
 
 If your icon button is has no text, we recommend adding the `title=""` attribute to your icon buttons. This adds some additional context for users unfamiliar with what action your icon button might produce. Hovering over the icon button for a moment will show a tooltip that has the `title` text. The text should reflect the action being completed.
 
-</ClrCell>
-<ClrCell>
+</div>
+<div class="clr-col-sm-12 clr-col-lg-6">
 
-<ClrImage title="Visualization of button title attributes" src="/images/components/button/icon-button-title-attribute.png" />
+<ClrImage cds-layout="m-t@lg:xl p-t@lg:lg" title="Visualization of button title attributes" src="/images/components/button/icon-button-title-attribute.png" />
 
-</ClrCell>
-</ClrRow>
+</div>
+</div>

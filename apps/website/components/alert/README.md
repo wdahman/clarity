@@ -13,8 +13,8 @@ Use alerts to grab the user’s attention to provide critical information needed
 
 There are two types of alerts, standard alerts and app level alerts.
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col">
 <DocInset>
    <ClrImage alt="Standard Alerts" src="/images/components/alert/standard-alert.png" />
 </DocInset>
@@ -22,55 +22,55 @@ There are two types of alerts, standard alerts and app level alerts.
 <p>Standard alerts are used in the context of an application either in the content area itself or within components.</p>
 <p>There are four different sub-types of standard alerts: error, warning, info, and success.</p>
 <p>Ordered standard alerts by the urgency in which the user needs to pay attention to: error, warning, info, then success. In the case there are multiple of each sub-type all of them are shown before another sub-type is reached. For example, multiple errors are shown before the first warning is.</p>
-</ClrCol>
-<ClrCol>
+</div>
+<div class="clr-col">
 <DocInset>
    <ClrImage title="App Alerts" src="/images/components/alert/app-alert.png" />
 </DocInset>
 <h3>App-Level Alerts</h3>
 <p>App-level alerts are used in the global context of an application. They are placed at the very top of all content and navigation.</p>
 <p>There are three different sub-types of app-level alerts info, warning, and error.</p>
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 ### Sub-types
 
 There are four different sub-types of standard alerts: error, warning, info, and success.
 Order standard alerts by the urgency in which the user needs to pay attention to: error, warning, info, then success. In the case there are multiple of each sub-type, all of them are shown before another sub-type is reached. For example, multiple errors are shown before the first warning is.
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col">
 <DocInset>
 <ClrImage title="Error Alert" src="/images/components/alert/error-alert.png" />
 </DocInset>
 <h4>Error</h4>
 <p>Reserved for errors, malfunctions, as well as critical issues like license expiration.</p>
-</ClrCol>
-<ClrCol>
+</div>
+<div class="clr-col">
 <DocInset>
 <ClrImage title="Warning Alert" src="/images/components/alert/warning-alert.png" />
 </DocInset>
 <h4>Warning</h4>
 <p>Reserved for warnings: a message that needs the user attention and acknowledgment but might not cause errors.</p>
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col">
 <DocInset>
 <ClrImage title="Info Alerts" src="/images/components/alert/info-alert.png" />
 </DocInset>
 <h4>Info</h4>
 <p>Reserved for errors, malfunctions, as well as critical issues like license expiration.</p>
-</ClrCol>
-<ClrCol>
+</div>
+<div class="clr-col">
 <DocInset>
 <ClrImage title="Success Alert" src="/images/components/alert/success-alert.png" />
 </DocInset>
 <h4>Success</h4>
 <p>Reserved to provide to a static persistent success message.</p>
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 ### Anatomy
 
@@ -78,16 +78,16 @@ A standard alert consist of an icon, a message, and optional actions in a contai
 
 ### Size
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col">
 <p>There are two sizes of standard alerts: default and compact. Use the compact alert only in places where vertical space is scarce and information density is needed. Cards provide a good example here.</p>
-</ClrCol>
-<ClrCol>
+</div>
+<div class="clr-col">
 <DocInset>
 <ClrImage title="Success Alert" src="/images/components/alert/sizes.png" />
 </DocInset>
-</ClrCol>
-</CLrRow>
+</div>
+</div>
 
 ### Placement
 
@@ -101,22 +101,22 @@ Alerts could appear within modals. It is recommended that no more than one alert
 
 #### In Cards
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col">
 <p>It is recommended to use concise language as you share an alert within a card. It is also recommended to use a compact-size alert. The focus of the alert should be on its content not on the alert appearing in it.</p>
 
 <p>It is also recommended to have an alert at the very top of a card, on top of its title. An alert is meant to attract the attention of the user.</p>
 
 <p>Using more than one alert within a card distracts the user and dilutes the importance of the alerts displayed.
 There are three sub-types of app-level alerts: error, warning, and info.</p>
-</ClrCol>
-<ClrCol>
+</div>
+<div class="clr-col">
 <DocInset>
 
 <ClrImage title="Alert in card" src="/images/components/alert/card.png" />
 </DocInset>
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 ## App-Level Alerts
 

@@ -43,17 +43,19 @@ Forms should only be as long as absolutely necessary. We recommend reviewing eac
 
 Forms should help users complete their goal as quickly as possible. Column structure can help make it easier for users to complete your form.
 
-::: do Put forms in one column. Multiple columns disrupt users’ vertical rhythm and completion.
+<div class="clr-row" cds-layout="m-t:lg">
 
-![do put forms into one column](./_images/architecture-do.svg)
+<div class="clr-col-sm-12 clr-col-lg-6 doc-do">
+<ClrImage class="doc-example" title="put forms into one column" src="/images/components/form/architecture-do.svg" align="center" />
+Put forms in one column. Multiple columns disrupt users’ vertical rhythm and completion.
+</div>
 
-:::
+<div class="clr-col-sm-12 clr-col-lg-6 doc-dont">
+<ClrImage class="doc-example" title="put forms into multiple columns" src="/images/components/form/architecture-dont.svg" align="center" />
+Create multiple columns of input fields per page, except for small, related inputs like name "first" and "last".
+</div>
 
-::: dont Create multiple columns of input fields per page, except for small, related inputs like name "first" and "last".
-
-![Don't put forms into multiple columns column](./_images/architecture-dont.svg)
-
-:::
+</div>
 
 ### Input Grouping
 
@@ -61,17 +63,19 @@ Grouping will make scanning easier. A form with more than 6 inputs will likely h
 
 For the grouping of labels and their input fields, we recommend grouping labels closely with their respective input fields.
 
-::: do Put labels in close proximity to their input controls.
+<div class="clr-row" cds-layout="m-t:lg">
 
-![do Put labels in close proximity to their input controls](./_images/input-grouping-do.svg)
+<div class="clr-col-sm-12 clr-col-lg-6 doc-do">
+<ClrImage class="doc-example" title="Put labels in close proximity to their input controls" src="/images/components/form/input-grouping-do.svg" align="center" />
+Put labels in close proximity to their input controls.
+</div>
 
-:::
+<div class="clr-col-sm-12 clr-col-lg-6 doc-dont">
+<ClrImage class="doc-example" title="Space labels out far from their input controls" src="/images/components/form/input-grouping-dont.svg" align="center" />
+Space labels out far from their input controls.
+</div>
 
-::: dont Space labels out far from their input controls.
-
-![Don't space labels out far from their inputs.](./_images/input-grouping-dont.svg)
-
-:::
+</div>
 
 ### Form Elements
 
@@ -83,17 +87,19 @@ Radios and checkboxes are used when it is helpful to compare options within the 
 **Error Message Styling**
 When showing error inputs, highlight the input field with red in some way, but also pair the red with another visual indicator, like an icon. This will help with accessibility.
 
-::: do Place icons outside the input field. This will also help avoid browser and third-party app collision conflicts.
+<div class="clr-row" cds-layout="m-t:lg">
 
-![do Place icons outside the input field. This will also help avoid browser and third-party app collision conflicts.](./_images/error-do.svg)
+<div class="clr-col-sm-12 clr-col-lg-6 doc-do">
+<ClrImage class="doc-example" title="Place icons outside the input field" src="/images/components/form/error-do.svg" align="center" />
+Place icons outside the input field. This will also help avoid browser and third-party app collision conflicts.
+</div>
 
-:::
+<div class="clr-col-sm-12 clr-col-lg-6 doc-dont">
+<ClrImage class="doc-example" title="Don't Put icons inside the input field" src="/images/components/form/error-dont.svg" align="center" />
+Don't put icons inside the input field. If inside, account for changing form value space (increase characters).
+</div>
 
-::: dont Put icons inside the input field. If inside, account for changing form value space (increase characters).
-
-![Don't Put icons inside the input field. If inside, account for changing form value space (increase characters).](./_images/error-dont.svg)
-
-:::
+</div>
 
 ## Behavior
 

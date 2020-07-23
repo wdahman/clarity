@@ -19,7 +19,10 @@ Use when a small list of options can be selected from, similar to the Checkbox c
 - user can click the button to select, and click again to deselect
 - can be configured with preselected options
 
-::: do Use option labels that are 1-3 short words.
+<div class="clr-row" cds-layout="m-t:lg">
+
+<div class="clr-col-sm-12 clr-col-lg-6 doc-do">
+<div class="doc-example">
 
 <div class="btn-group">
   <div class="checkbox btn">
@@ -39,9 +42,13 @@ Use when a small list of options can be selected from, similar to the Checkbox c
     <label for="btn-demo-check-4">Pears</label>
   </div>
 </div>
-:::
 
-::: dont Use option labels that are long or more than 3 words.
+</div>
+Use option labels that are 1-3 short words.
+</div>
+
+<div class="clr-col-sm-12 clr-col-lg-6 doc-dont">
+<div class="doc-example">
 
 <div class="btn-group">
   <div class="checkbox btn">
@@ -53,7 +60,12 @@ Use when a small list of options can be selected from, similar to the Checkbox c
     <label for="cb-5">Fresh Local Gold Kiwis</label>
   </div>
 </div>
-:::
+
+</div>
+Use option labels that are long or more than 3 words.
+</div>
+
+</div>
 
 ### Button Groups as Radio Buttons
 
@@ -63,7 +75,10 @@ Use when selecting one option from a small list of options, similar to the Radio
 - user can click the button to select, and click again to deselect
 - can be configured with preselected options
 
-::: do Use option labels that are 1-3 short words.
+<div class="clr-row" cds-layout="m-t:lg">
+
+<div class="clr-col-sm-12 clr-col-lg-6 doc-do">
+<div class="doc-example">
 
 <div class="btn-group">
   <div class="radio btn">
@@ -79,9 +94,13 @@ Use when selecting one option from a small list of options, similar to the Radio
     <label for="btn-radio-3">Oranges</label>
   </div>
 </div>
-:::
 
-::: dont Use option labels that are long or more than 3 words.
+</div>
+Use option labels that are 1-3 short words.
+</div>
+
+<div class="clr-col-sm-12 clr-col-lg-6 doc-dont">
+<div class="doc-example">
 
 <div class="btn-group">
   <div class="radio btn">
@@ -93,13 +112,18 @@ Use when selecting one option from a small list of options, similar to the Radio
     <label for="btn-radio-5">Fresh Local Gold Kiwis</label>
   </div>
 </div>
-:::
+
+</div>
+Use option labels that are long or more than 3 words.
+</div>
+
+</div>
 
 ## Types
 
-<clr-row>
+<div class="clr-row">
 
-::: col Solid button groups direct the user's attention to the _primary actions_ the application is suggesting the user take.
+::: col Solid button groups direct the user's attention to the **primary actions** the application is suggesting the user take.
 
 <div class="btn-group btn-primary">
   <button class="btn">Solid</button>
@@ -107,7 +131,7 @@ Use when selecting one option from a small list of options, similar to the Radio
 </div>
 :::
 
-::: col Outline groups are used to indicate a set of _secondary actions_ or to reduce the visual noise on a page.
+::: col Outline groups are used to indicate a set of **secondary actions** or to reduce the visual noise on a page.
 
 <div class="btn-group">
   <button class="btn">Outline</button>
@@ -115,7 +139,7 @@ Use when selecting one option from a small list of options, similar to the Radio
 </div>
 :::
 
-::: col Flat button groups are used as a set of _tertiary actions_. They are also typically used in Cards and above Datagrids.
+::: col Flat button groups are used as a set of **tertiary actions**. They are also typically used in Cards and above Datagrids.
 
 <div class="btn-group btn-link">
   <button class="btn">Flat</button>
@@ -123,49 +147,73 @@ Use when selecting one option from a small list of options, similar to the Radio
 </div>
 :::
 
-</clr-row>
+</div>
 
 ### Mixed Classes
 
 #### Button Arrangement
 
-::: do Arrange primary actions on the left, followed by secondary actions, and warning actions as the last button in a group.
+<div class="clr-row" cds-layout="m-t:lg">
+
+<div class="clr-col-sm-12 clr-col-lg-6 doc-do">
+<div class="doc-example">
 
 <div class="btn-group btn-primary">
   <button class="btn">Favorite</button>
   <button class="btn btn-success">Add</button>
   <button class="btn btn-danger">Delete</button>
 </div>
-:::
 
-::: dont Arrange warning actions as the first button in a group or have secondary actions before primary actions.
+</div>
+Arrange **primary** actions on the left, followed by **secondary** actions, and **warning** actions as the last button in a group.
+</div>
+
+<div class="clr-col-sm-12 clr-col-lg-6 doc-dont">
+<div class="doc-example">
 
 <div class="btn-group btn-primary">
   <button class="btn btn-danger">Delete</button>
   <button class="btn btn-success">Add</button>
   <button class="btn">Favorite</button>
 </div>
-:::
+
+</div>
+Arrange **warning** actions as the first button in a group or have **secondary** actions before **primary** actions.
+</div>
+
+</div>
 
 #### Group Style
 
-::: do Mix similar styled classes together to suit the solution's needs.
+<div class="clr-row" cds-layout="m-t:lg">
+
+<div class="clr-col-sm-12 clr-col-lg-6 doc-do">
+<div class="doc-example">
 
 <div class="btn-group btn-primary">
   <button class="btn">Create</button>
   <button class="btn">Favorite</button>
   <button class="btn" disabled>Download</button>
 </div>
-:::
 
-::: dont Mix differently styled classes together, like solid and outlined.
+</div>
+Mix similar styled classes together to suit the solution's needs.
+</div>
+
+<div class="clr-col-sm-12 clr-col-lg-6 doc-dont">
+<div class="doc-example">
 
 <div class="btn-group btn-primary">
   <button class="btn">Create</button>
   <button class="btn">Favorite</button>
   <button class="btn btn-outline-success" disabled>Download</button>
 </div>
-:::
+
+</div>
+Mix differently styled classes together, like solid and outlined.
+</div>
+
+</div>
 
 ## Antomy
 
@@ -175,7 +223,10 @@ There are sevel layout options for button groups, including icon button groups, 
 
 #### Types & Sizes
 
-::: do Icon button groups are available in the solid, outline, and flat types. It’s also best to use the normal (36px) sized ones. This makes them easier to recognize and to click.
+<div class="clr-row" cds-layout="m-t:lg">
+
+<div class="clr-col-sm-12 clr-col-lg-6 doc-do">
+<div class="doc-example">
 
 <div class="btn-group btn-primary btn-icon">
   <button class="btn">
@@ -188,9 +239,13 @@ There are sevel layout options for button groups, including icon button groups, 
     <cds-icon inverse shape="user" title="user"></cds-icon>
   </button>
 </div>
-:::
 
-::: dont Use small icon buttons in most cases. They are difficult to see and distinguish what the icon is or represents. They also create smaller click targets, making them harder to click.
+</div>
+Icon button groups are available in the solid, outline, and flat types. It’s also best to use the normal (36px) sized ones. This makes them easier to recognize and to click.
+</div>
+
+<div class="clr-col-sm-12 clr-col-lg-6 doc-dont">
+<div class="doc-example">
 
 <div class="btn-group btn-primary btn-sm btn-icon">
   <button class="btn">
@@ -203,11 +258,20 @@ There are sevel layout options for button groups, including icon button groups, 
     <cds-icon inverse shape="user" title="user"></cds-icon>
   </button>
 </div>
-:::
+
+</div>
+Use small icon buttons in most cases. They are difficult to see and distinguish what the icon is or represents. They also create smaller click targets, making them harder to click.
+
+</div>
+
+</div>
 
 #### With Text
 
-::: do If you have the space, adding text helps users understand the action. Start icon buttons with icons and follow with text.
+<div class="clr-row" cds-layout="m-t:lg">
+
+<div class="clr-col-sm-12 clr-col-lg-6 doc-do">
+<div class="doc-example">
 
 <div class="btn-group btn-primary">
   <button class="btn">
@@ -220,9 +284,13 @@ There are sevel layout options for button groups, including icon button groups, 
     <cds-icon inverse shape="user"></cds-icon> User Profile
   </button>
 </div>
-:::
 
-::: dont Start icon buttons with text and follow with icon. This makes them more difficult to scan quickly.
+</div>
+If you have the space, adding text helps users understand the action. Start icon buttons with icons and follow with text.
+</div>
+
+<div class="clr-col-sm-12 clr-col-lg-6 doc-dont">
+<div class="doc-example">
 
 <div class="btn-group btn-primary">
   <button class="btn">
@@ -235,7 +303,13 @@ There are sevel layout options for button groups, including icon button groups, 
     User Profile <cds-icon inverse shape="user"></cds-icon>
   </button>
 </div>
-:::
+
+</div>
+Start icon buttons with text and follow with icon. This makes them more difficult to scan quickly.
+
+</div>
+
+</div>
 
 ### Button Groups with Overflow
 
@@ -244,7 +318,10 @@ Overflow is used when the button group is larger than its containing space, or u
 - Overflow button is shown below as an ellipsis button in the button group and is the last position to the right
 - Clicking on the ellipsis will show the overflow dropdown menu
 
-::: do Use the overflow as the last item in the button group.
+<div class="clr-row" cds-layout="m-t:lg">
+
+<div class="clr-col-sm-12 clr-col-lg-6 doc-do">
+<div class="doc-example">
 
 <div class="btn-group btn-primary">
   <button class="btn">Create</button>
@@ -259,33 +336,21 @@ Overflow is used when the button group is larger than its containing space, or u
     </div>
   </div>
 </div>
-:::
 
-::: dont Never place the overflow at the beginning or middle of a button group.
-
-<div class="btn-group btn-primary">
-  <div class="btn-group-overflow open">
-    <button class="btn dropdown-toggle">
-      <cds-icon inverse shape="ellipsis-horizontal" title="Expand dropdown"></cds-icon>
-    </button>
-    <div class="dropdown-menu">
-      <button class="btn">Download</button>
-      <button class="btn">Delete</button>
-    </div>
-  </div>
-  <button class="btn">Create</button>
-  <button class="btn">Favorite</button>
 </div>
-:::
+</div>
+
+</div>
 
 #### Icons
 
-Button groups with text and icons, or just icons, will have text show in the dropdown menu
-Text for each action icon is needed for overflow to work properly
+- Button groups with text and icons, or just icons, will have text show in the dropdown menu
+- Text for each action icon is needed for overflow to work properly
 
-<clr-row>
+<div class="clr-row" cds-layout="m-t:lg">
 
-::: col
+<div class="clr-col-sm-12 clr-col-lg-6 doc-do">
+<div class="doc-example">
 
 <div class="btn-group btn-primary">
   <button class="btn">Create</button>
@@ -300,9 +365,13 @@ Text for each action icon is needed for overflow to work properly
     </div>
   </div>
 </div>
-:::
 
-::: col
+</div>
+
+</div>
+
+<div class="clr-col-sm-12 clr-col-lg-6 doc-dont">
+<div class="doc-example">
 
 <div class="btn-group btn-primary btn-icon">
   <button class="btn">
@@ -327,15 +396,21 @@ Text for each action icon is needed for overflow to work properly
     </div>
   </div>
 </div>
-:::
 
-</clr-row>
+</div>
+
+</div>
+
+</div>
 
 ### Multiple Groups
 
 Use when you want similar actions to be grouped together and separated from others.
 
-::: do Lead with primary actions followed by secondary actions.
+<div class="clr-row" cds-layout="m-t:lg">
+
+<div class="clr-col-sm-12 clr-col-lg-6 doc-do">
+<div class="doc-example">
 
 <div class="btn-group btn-primary" style="margin-right: 12px">
   <button class="btn">Create</button>
@@ -345,9 +420,14 @@ Use when you want similar actions to be grouped together and separated from othe
   <button class="btn">Delete</button>
   <button class="btn">Stop</button>
 </div>
-:::
 
-::: dont Lead with secondary actions followed by primary actions.
+</div>
+Lead with primary actions followed by secondary actions.
+
+</div>
+
+<div class="clr-col-sm-12 clr-col-lg-6 doc-dont">
+<div class="doc-example">
 
 <div class="btn-group btn-danger" style="margin-right: 12px">
   <button class="btn">Delete</button>
@@ -357,7 +437,13 @@ Use when you want similar actions to be grouped together and separated from othe
   <button class="btn">Create</button>
   <button class="btn">Edit</button>
 </div>
-:::
+
+</div>
+Lead with secondary actions followed by primary actions.
+
+</div>
+
+</div>
 
 <!-- ## Placement -->
 

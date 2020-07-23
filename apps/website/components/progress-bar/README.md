@@ -11,7 +11,7 @@ Use a progress bar to set expectation of the loading time. Users are more willin
 
 [//] # (DEMO - progress example)
 
-<ClrRow>
+<div class="clr-row">
 <div class="clr-col-12 clr-col-md-6">
 
 ::: inset
@@ -43,7 +43,7 @@ Use a progress bar to set expectation of the loading time. Users are more willin
 
 </div>
 
-</ClrRow>
+</div>
 
 ## Types
 

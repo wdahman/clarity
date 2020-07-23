@@ -15,27 +15,25 @@ Use the vertical navigation:
 - for hierarchical navigation or nested navigation. Up to two tiers of navigation is supported by vertical nav
 - when the user need to collapse and expand the navigation to free up space for the content area
 
-<ClrRow>
+<div class="clr-row">
 
 ![Jigglypuff is active nav](/images/components/vertical-nav/jigglypuff.png)
 
-</ClrRow>
+</div>
 
-<ClrRow>
+<div class="clr-row" cds-layout="m-t:lg">
 
-::: do Use vertical navigation with a header.
+<div class="clr-col-sm-12 clr-col-lg-6 doc-do">
+<ClrImage class="doc-example" title="Use vertical navigation with a header" src="/images/components/vertical-nav/do-header.png" align="center" />
+Use vertical navigation with a header.
+</div>
 
-![Do header](/images/components/vertical-nav/do-header.png)
+<div class="clr-col-sm-12 clr-col-lg-6 doc-dont">
+<ClrImage class="doc-example" title="Don't use vertical navigation with a header and subnav" src="/images/components/vertical-nav/dont-subnav.png" align="center" />
+Don't use vertical navigation with a header and subnav. Having too many places for navigation is confusing for users.
+</div>
 
-:::
-
-::: dont Use vertical navigation with a header and subnav. Having too many places for navigation is confusing for users.
-
-![Dont subnav](/images/components/vertical-nav/dont-subnav.png)
-
-:::
-
-</ClrRow>
+</div>
 
 ## Anatomy
 
@@ -43,7 +41,7 @@ Vertical navigation has a few layout options including dividers and section head
 
 ### Layout
 
-<ClrRow>
+<div class="clr-row">
 
 <div class="clr-col-12 clr-col-md-4">
 
@@ -69,28 +67,26 @@ Vertical navigation has a few layout options including dividers and section head
 **Dividers & Headers**
 
 </div>
-</ClrRow>
+</div>
 
 ### Icons
 
 Icons should be placed to the left of the link label. Active links will display a blue icon. Make sure your icons are distinctive and easily recognizable. Touch targets include the entire width of the navigation including the icon.
 Use icons across all links if you choose to use them. Add icons to some links and not to other links. This becomes difficult to scan and read.
 
-<ClrRow>
+<div class="clr-row" cds-layout="m-t:lg">
 
-::: do Use icons on all nav links
+<div class="clr-col-sm-12 clr-col-lg-6 doc-do">
+<ClrImage class="doc-example" title="Use icons on all nav links" src="/images/components/vertical-nav/icons-do.png" align="center" />
+Use icons on all nav links
+</div>
 
-![Do header](/images/components/vertical-nav/icons-do.png)
+<div class="clr-col-sm-12 clr-col-lg-6 doc-dont">
+<ClrImage class="doc-example" title="Use icons on some nav links and not other nav links" src="/images/components/vertical-nav/icons-dont.png" align="center" />
+Use icons on some nav links and not other nav links
+</div>
 
-:::
-
-::: dont Use icons on some nav links and not other nav links
-
-![Dont subnav](/images/components/vertical-nav/icons-dont.png)
-
-:::
-
-</ClrRow>
+</div>
 
 ### Hierarchy
 
@@ -109,7 +105,7 @@ Hierarchy is used to show parent-child relationship between links. If a child li
     </div>
 </div>
 
-<ClrRow>
+<div class="clr-row">
 
 <div class="clr-col-12 clr-col-md-4">
 
@@ -141,7 +137,7 @@ Icons are only applied to the top level navigation items. They are not applied t
 Navigation links can be mixed with hierarchy and non hierarchy links.
 
 </div>
-</ClrRow>
+</div>
 
 ## Behavior
 
@@ -151,7 +147,7 @@ Collapsing and expanding navigation is used to create more space in content area
 
 #### Basic
 
-<ClrRow>
+<div class="clr-row">
 
 <div class="clr-col-12 clr-col-md-6">
 
@@ -171,11 +167,11 @@ Collapsing and expanding navigation is used to create more space in content area
 When no icons are present, collapsing the navigation will show a basic bar. The entire bar is a click target that can expand the navigation.
 
 </div>
-</ClrRow>
+</div>
 
 #### Basic Icons
 
-<ClrRow>
+<div class="clr-row">
 
 <div class="clr-col-12 clr-col-md-6">
 
@@ -195,13 +191,13 @@ When no icons are present, collapsing the navigation will show a basic bar. The 
 When collapsed, text will disappear and only icons will show. Clicking on an icon will navigate the user. An active link will also show as an active icon when collapsed.
 
 </div>
-</ClrRow>
+</div>
 
 ### Hierarchy
 
 #### Basic
 
-<ClrRow>
+<div class="clr-row">
 
 <div class="clr-col-12 clr-col-md-6">
 
@@ -221,13 +217,13 @@ When collapsed, text will disappear and only icons will show. Clicking on an ico
 When no icons are present, collapsing the navigation will show a basic bar. The entire bar is a click target that can expand the navigation.
 
 </div>
-</ClrRow>
+</div>
 
 #### Icons
 
 Top level hierarchy items will show a caret next to its icon when the navigation is collapsed. Clicking one will expand the navigation its top level item.
 
-<ClrRow>
+<div class="clr-row">
 
 <div class="clr-col-12 clr-col-md-6">
 
@@ -247,13 +243,13 @@ Top level hierarchy items will show a caret next to its icon when the navigation
 When collapsed, text will disappear and only icons will show. Clicking on an icon will navigate the user. An active link will also show as an active icon when collapsed.
 
 </div>
-</ClrRow>
+</div>
 
 ### Mixed
 
 Top level items without children will show no caret next to the icon. Clicking on an icon with no caret will navigate the user to a page.
 
-<ClrRow>
+<div class="clr-row">
 
 <div class="clr-col-12 clr-col-md-6">
 
@@ -273,13 +269,13 @@ Top level items without children will show no caret next to the icon. Clicking o
 When collapsed, text will disappear and only icons will show. Clicking on an icon will navigate the user. An active link will also show as an active icon when collapsed.
 
 </div>
-</ClrRow>
+</div>
 
 ### Smaller Screens - Responsive
 
 When screens drop below 768px wide, the navigation will hide completely and can be shown by clicking on one of the header icons. All normal vertical navigation designs and behaviors are the same in the responsive state. Read about [Responsive Navigation](/foundation/navigation/#responsive-navigation) and the [directives](/foundation/navigation/api.html#clrheader-clrmaincontainer-clrnavlevel) to use for implementation.
 
-<ClrRow>
+<div class="clr-row">
 
 <div class="clr-col-12 clr-col-md-6">
 
@@ -297,13 +293,13 @@ When screens drop below 768px wide, the navigation will hide completely and can 
 **Level 2 Responsive**
 
 </div>
-</ClrRow>
+</div>
 
 ## Content
 
 When labels get too long they will be trimmed and followed by an ellipsis (…). We recommend that navigation labels remain short and concise to prevent an ellipsis from showing.
 
-<ClrRow>
+<div class="clr-row">
 
 <div class="clr-col-12 clr-col-md-4">
 
@@ -331,4 +327,4 @@ When labels get too long they will be trimmed and followed by an ellipsis (…).
 
 </div>
 
-</ClrRow>
+</div>

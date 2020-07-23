@@ -25,21 +25,23 @@ Cards may use have dividers. Flat buttons should be used on cards to keep their 
 
 Place the primary action and a single additional action, if required, in the card footer, left-aligned. This placement supports the F-pattern layout. For more than two actions, use a dropdown. Do not place more than eight items in the dropdown menu.
 
-::: do This card correctly aligns actions to the left.
+<div class="clr-row" cds-layout="m-t:lg">
 
-![Do align card actions to the left](./buttons_in_cards_2.png)
+<div class="clr-col-sm-12 clr-col-lg-6 doc-do">
+<ClrImage class="doc-example" title="Do align card actions to the left" src="/images/components/card/buttons_in_cards_2.png" align="center" />
+This card correctly aligns actions to the left.
+</div>
 
-:::
+<div class="clr-col-sm-12 clr-col-lg-6 doc-dont">
+<ClrImage class="doc-example" title="Don't align buttons to right" src="/images/components/card/buttons_in_cards_1.png" align="center" />
+Users might not scan to the bottom right of wide cards.
+</div>
 
-::: dont Users might not scan to the bottom right of wide cards.
-
-![Don't align buttons to right](./buttons_in_cards_1.png)
-
-:::
+</div>
 
 Progress bars belong at the card top or above the footer, closest to the triggering action. Be consistent with progress bar placement within a card group.
 
-![Cards with Progress Bars](./card_progress.png)
+<ClrImage title="Cards with Progress Bars" src="/images/components/card/card_progress.png" />
 
 ## Behavior
 
