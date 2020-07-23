@@ -1,8 +1,7 @@
 ---
+title: Overview
 toc: true
 ---
-
-# Accessibility
 
 The following guidelines are our interpretation of the official WCAG guidelines. Clarity aims to implement against the WCAG 2.1 AA guideline requirements.
 
@@ -41,5 +40,3 @@ No content provided.
 ### Color
 
 #### Contrast
-
-####
