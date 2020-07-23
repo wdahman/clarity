@@ -1,30 +1,30 @@
 # Designing with Clarity
 
-We provide designers with a number of resources to help them design assets that align with the Clarity Design System.
+Clarity provides design assets that help designers get started. These assets should be used in a design process that aligns with the Clarity Design System. To jump start your project and align with the Clarity Design System you should download the font resources below and have them installed on your computer. Set up a [free tier Figma](https://www.figma.com/pricing/) account to get started with the Clarity themes, icons and color libraries.
 
-Jumpstart your project with our Figma-based design resources. Start by downloading the [Metropolis fonts](https://github.com/chrismsimpson/Metropolis). Then download your resources of choice. We recommend that with your UI Library selection, that you also select the matching Icon Library as the two work together.
+## Primary Font
 
-## Available Resources
+The default font intended for use with Clarity is [Clarity CIty](https://github.com/vmware/clarity-city). Download and install the [font files](https://github.com/vmware/clarity-city/archive/v1.0.0.zip) on your computer to make sure it is available when using the assets below.
 
-Below are several resources that you'll likely want to download or bookmark for your design work.
+## Figma Libraries
 
-#### Metropolis - Primary Font
+Clarity uses the popular design tool [Figma](https://www.figma.com/) when designing and documenting components and foundations. Bookmark these resources to re-use Clarity assets in your design process.
 
-Clarity uses the Metropolis font as a foundation, and you'll want to install it to ensure that the design system looks the same on your designs.
+### Themes
 
-- [Metropolis (R8)](https://github.com/chrismsimpson/Metropolis/archive/r8.zip)
+<cds-button cds-layout="m-t:md"><a target="_blank" href="https://www.figma.com/file/v2mkhzKQdhECXOx8BElgdA/Clarity-UI-Library-light-2.2.0">UI Library - Light (2.2.0)</a></cds-button>
+<cds-button cds-layout="m-t:md"><a target="_blank" href="https://www.figma.com/file/wRYSrWSffZXcdQuiolwkym/Clarity-UI-Library-dark-2.2.0">UI Library - Dark (2.2.0)</a></cds-button>
 
-#### Figma Libraries
+### Icons
 
-Figma is a popular design tool that Clarity uses for designing our assets.
+<cds-button cds-layout="m-t:md"><a target="_blank" href="https://www.figma.com/file/40gaW7S2yP7B0ME6QNDEsR/Clarity-Icons-2.2.0">Icon Library (2.2.0)</a></cds-button>
 
-To help oClarity provides several
+### Colors
 
-- [UI Library - Light (2.2.0)](https://www.figma.com/file/v2mkhzKQdhECXOx8BElgdA/Clarity-UI-Library-light-2.2.0)
-- [UI Library - Dark (2.2.0)](https://www.figma.com/file/wRYSrWSffZXcdQuiolwkym/Clarity-UI-Library-dark-2.2.0)
-- [Icon Library (2.2.0)](https://www.figma.com/file/40gaW7S2yP7B0ME6QNDEsR/Clarity-Icons-2.2.0)
-- [Color Library (2.2.0)](https://www.figma.com/file/mxn3xoLg2mkjMqf5GGYUzw/Clarity-Colors-2.2.0)
+<cds-button cds-layout="m-t:md"><a target="_blank" href="https://www.figma.com/file/mxn3xoLg2mkjMqf5GGYUzw/Clarity-Colors-2.2.0">Color Library (2.2.0)</a></cds-button>
 
-#### Icon Files
+## Icon Files
 
-- [Download all Clarity Icons](https://github.com/vmware/clarity-assets/archive/master.zip)
+We provide a convenient zip of all icon files. This download includes all svg files for the icons available in the library.
+
+<cds-button cds-layout="m-t:md"><a target="_blank" href="https://github.com/vmware/clarity-assets/archive/master.zip">Icon Files (svg)</a></cds-button>

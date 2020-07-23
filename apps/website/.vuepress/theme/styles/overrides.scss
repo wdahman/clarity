@@ -117,3 +117,13 @@ cds-alert-actions {
 .nav-content {
   width: 100%; // this container in @clr/ui is not fully expanding with the @clr/core layout
 }
+
+// cds-buttons (primary, filled) with links inside them need light text color
+// Not sure if this is a bug in core or side effect of combingin @clr/core + @clr/ui
+// TODO: investigate buttons with links inside them for the visited state
+cds-button[is-anchor] > a {
+  color: var(--cds-token-color-neutral-0);
+  &:visited {
+    color: var(--cds-token-color-neutral-0);
+  }
+}
