@@ -17,6 +17,6 @@ ClrSpinner is a visual indicator for an ongoing, user-initiated process.
 <clr-spinner *ngIf="uploadingPhotos">Loading photos</clr-spinner>
 ```
 
-#### Properties
+#### Bindings
 
 <DocComponentApi component="ClrSpinner" item="bindings" />

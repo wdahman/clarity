@@ -70,6 +70,6 @@ One reason to bypass the `*clrIfOpen` directive is when screenreaders need to re
 </clr-tooltip>
 ```
 
-#### Properties
+#### Bindings
 
 <DocComponentApi component="ClrIfOpen" item="bindings" />

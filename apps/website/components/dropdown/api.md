@@ -20,7 +20,7 @@ ClrDropdown is the parent container for all child components and projected conte
 </clr-dropdown>
 ```
 
-#### Properties
+#### Bindings
 
 <DocComponentApi component="ClrDropdown" item="bindings" />
 
@@ -39,7 +39,7 @@ ClrDropdown Menu component holds the menu items and projects group and seperator
 </clr-dropdown>
 ```
 
-#### Properties
+#### Bindings
 
 <DocComponentApi component="ClrDropdownMenu" item="bindings" />
 
@@ -79,7 +79,7 @@ To use them, add an element with the appropriate class.
 </clr-dropdown>
 ```
 
-#### Properties
+#### Bindings
 
 <DocComponentApi component="ClrDropdownItem" item="bindings" />
 
@@ -98,6 +98,6 @@ ClrIfOpen is a structural directive applied to the ClrDropdownMenu element that 
 </clr-dropdown>
 ```
 
-#### Properties
+#### Bindings
 
 <DocComponentApi component="ClrIfOpen" item="bindings" />

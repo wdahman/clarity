@@ -30,7 +30,7 @@ toc: true
 </clr-tree>
 ```
 
-#### Properties
+#### Bindings
 
 <DocComponentApi component="ClrTreeNode" item="bindings" />
 
@@ -44,7 +44,7 @@ toc: true
 
 ```
 
-#### Properties
+#### Bindings
 
 <DocComponentApi component="ClrIfExpanded" item="bindings" />
 
@@ -60,6 +60,6 @@ toc: true
 </clr-tree>
 ```
 
-#### Properties
+#### Bindings
 
 <DocComponentApi component="ClrRecursiveFor" item="bindings" />

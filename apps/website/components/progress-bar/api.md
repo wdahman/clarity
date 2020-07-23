@@ -13,6 +13,6 @@ toc: true
 <clr-progress-bar></clr-progress-bar>
 ```
 
-#### Properties
+#### Bindings
 
 <DocComponentApi component="ClrProgressBar" item="bindings" />

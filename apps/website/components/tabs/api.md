@@ -19,7 +19,7 @@ Tabs structure content into separate views and allow navigation between.
 </clr-tabs>
 ```
 
-#### Properties
+#### Bindings
 
 <DocComponentApi component="ClrTabs" item="bindings" />
 
@@ -56,7 +56,7 @@ ClrTab associates the [ClrTabContent](./api.md#clrtabcontent) component with the
 </clr-tabs>
 ```
 
-#### Properties
+#### Bindings
 
 <DocComponentApi component="ClrTabContent" item="bindings" />
 
@@ -78,7 +78,7 @@ ClrTab associates the [ClrTabContent](./api.md#clrtabcontent) component with the
 </clr-tabs>
 ```
 
-#### Properties
+#### Bindings
 
 <DocComponentApi component="ClrTabLink" item="bindings" />
 
@@ -98,7 +98,7 @@ A structural directive that enables lazy-loading the content for an active tab.
 </clr-tabs>
 ```
 
-#### Properties
+#### Bindings
 
 <DocComponentApi component="ClrIfActive" item="bindings" />
 

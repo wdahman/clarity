@@ -15,7 +15,7 @@ toc: true
 <clr-modal>...</clr-modal>
 ```
 
-#### Properties
+#### Bindings
 
 <DocComponentApi component="ClrModal" item="bindings" />
 

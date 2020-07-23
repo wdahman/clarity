@@ -15,7 +15,7 @@ toc: true
 <clr-datagrid>...</clr-datagrid>
 ```
 
-#### Properties
+#### Bindings
 
 <DocComponentApi component="ClrDatagrid" item="bindings" />
 
@@ -26,7 +26,7 @@ toc: true
 ### ClrDatagridActionBar
 
 Use this component to project buttons with functionality that operate on multiple items at once. There are no
-properties or methods for this class.
+Bindings or methods for this class.
 
 #### Selector & Basic Usage
 
@@ -149,7 +149,7 @@ class MyFilter implements ClrDatagridFilterInterface<User> {
 }
 ```
 
-#### Properties
+#### Bindings
 
 <DocComponentApi component="ClrDatagridFilter" item="bindings" />
 
@@ -355,7 +355,7 @@ Use it on the clr-dg-detail element and use the let keyword to declare a templat
 </clr-datagrid>
 ```
 
-#### Properties
+#### Bindings
 
 <DocComponentApi component="ClrIfDetail" item="bindings" />
 
@@ -387,7 +387,7 @@ interface ClrDatagridStateInterface<T = any> {
 }
 ```
 
-#### Properties
+#### Bindings
 
 <DocComponentApi component="ClrDatagridStateInterface" item="interface" />
 

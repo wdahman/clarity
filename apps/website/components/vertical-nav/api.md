@@ -18,7 +18,7 @@ toc: true
 </clr-vertical-nav>
 ```
 
-#### Properties
+#### Bindings
 
 <DocComponentApi component="ClrCVerticalNav" item="bindings" />
 
@@ -40,7 +40,7 @@ toc: true
 </clr-vertical-nav>
 ```
 
-#### Properties
+#### Bindings
 
 <DocComponentApi component="ClrVerticalNavGroup" item="bindings" />
 
@@ -62,7 +62,7 @@ toc: true
 </clr-vertical-nav>
 ```
 
-#### Properties
+#### Bindings
 
 <DocComponentApi component="ClrNavGroupChildren" item="bindings" />
 

@@ -154,6 +154,6 @@ ClrStepperPanel extends [ClrAccordionPanel](../accordion/api.md#clraccordionpane
 </form>
 ```
 
-#### Properties
+#### Bindings
 
 <DocComponentApi component="ClrStepButton" item="bindings" />

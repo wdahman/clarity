@@ -39,7 +39,7 @@ When using ClrSignpost it can be optimized with the CLrIfOpen structural directi
 </clr-signpost>
 ```
 
-#### Properties
+#### Bindings
 
 <DocComponentApi component="ClrSignpostContent" item="bindings" />
 
@@ -80,7 +80,7 @@ This directive will mark that element as the signpost trigger.
 </clr-signpost>
 ```
 
-#### Properties
+#### Bindings
 
 <DocComponentApi component="ClrIfOpen" item="bindings" />
 

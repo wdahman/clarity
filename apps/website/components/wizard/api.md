@@ -19,7 +19,7 @@ toc: true
 </clr-wizard>
 ```
 
-#### Properties
+#### Bindings
 
 <DocComponentApi component="ClrWizard" item="bindings" />
 
@@ -39,7 +39,7 @@ toc: true
 </clr-wizard>
 ```
 
-#### Properties
+#### Bindings
 
 <DocComponentApi component="ClrWizardButton" item="bindings" />
 
@@ -57,7 +57,7 @@ toc: true
 </clr-wizard>
 ```
 
-#### Properties
+#### Bindings
 
 <DocComponentApi component="ClrWizardHeaderAction" item="bindings" />
 
@@ -77,7 +77,7 @@ toc: true
 </clr-wizard>
 ```
 
-#### Properties
+#### Bindings
 
 <DocComponentApi component="ClrWizardPage" item="bindings" />
 
