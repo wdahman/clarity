@@ -23,9 +23,7 @@ export default ({
     });
 
     router.afterEach((to, from) => {
-      if (to.hash) {
-        scrollToGuard(to, from);
-      }
+      scrollToGuard(to, from);
     });
   }
 };

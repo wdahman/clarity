@@ -10,7 +10,11 @@
 
     <div class="content-container" cds-layout="horizontal align:vertical-stretch no-wrap">
       <Sidebar :items="sidebarItems" :isSidebarOpen="isSidebarOpen" @isSidebarOpenChange="toggleSidebar()" />
-      <div :class="{ 'content-area': true, 'home-page': $page.frontmatter.home }" cds-layout="pl@sm:md">
+      <div
+        id="content-area"
+        :class="{ 'content-area': true, 'home-page': $page.frontmatter.home }"
+        cds-layout="pl@sm:md"
+      >
         <Home v-if="$page.frontmatter.home" class="make-it-scrollable" />
         <div class="page-wrapper" v-else>
           <Page :sidebar-items="sidebarItems">
