@@ -199,10 +199,10 @@ For more information on using CSS custom properties, [see this article on MDN](/
 
 When doing research on how best to deliver a theming solution to our developer community, the Clarity team identified several primary use cases:
 
-- use of a non-default theme, like the dark theme, with no theme switching
-- switching between two themes, like a light/dark theme switcher
-- "whitelabeling"
-- dynamically switching an application between "whitelabeling" options
+- Use of a non-default theme, like the dark theme, with no theme switching
+- Switching between two themes, like a light/dark theme switcher
+- Customized themes
+- Dynamically switching an application between multiple theme options
 
 #### CSS Custom Property Dark Theme
 

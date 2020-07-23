@@ -3,16 +3,18 @@ title: Overview
 toc: true
 ---
 
-A dropdown menu is a contextual list that allows the user to choose an option that take an immediate action or navigate the user to another view. The source of the dropdown is usually a button.
-
-<ClrImage src="/images/components/dropdown/order_details.png" />
-
-## Description
+## Usage
 
 - Default line height is 30 px; 36 px for x-small breakpoint (<544px) touch targets
 - Headers and or dividers may be used to organize a longer list of items
 - Menu width: Minimum 168 px; Maximum 336 px
 - Items in the list have hover and click states
+
+A dropdown menu is a contextual list that allows the user to choose an option that take an immediate action or navigate the user to another view. The source of the dropdown is usually a button.
+
+<ClrImage src="/images/components/dropdown/order_details.png" />
+
+### Dropdown vs Select
 
 <ClrRow class="custom-block">
 <ClrCol>

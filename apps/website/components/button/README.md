@@ -5,7 +5,7 @@ toc: true
 
 Buttons allow an application to communicate action and direct user intent.
 
-## Three different types
+## Usage
 
 Clarity comes with three different types of buttons to use. They are provided to give visual distinction between the priority or heirarchy of the buttons in the application.
 

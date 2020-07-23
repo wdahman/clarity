@@ -36,3 +36,10 @@ You can also load this CSS file from a CDN like you see below. See [unpkg.com](h
 <link rel="stylesheet" href="https://unpkg.com/@clr/ui@3.0.0/clr-ui.min.css" />
 <link rel="stylesheet" href="https://unpkg.com/@clr/icons@3.0.0/clr-icons.min.css" />
 ```
+
+## What's next?
+
+1. Add Clarity components wherever they are needed in your application
+1. Explore the component usage, demo and api sections to learn about specific coomponents
+1. Get help by asking a question on [StackOverflow](https://stackoverflow.com/questions/tagged/vmware-clarity) and tagging it with `vmware-clarity`
+1. Follow [Clarity on Twitter](https://twitter.com/vmwareclarity), stay up to date

@@ -115,4 +115,7 @@ That is all you need to get Clarity installed. To see it running, start your app
 
 ## What's next?
 
-From here, you can begin to add Clarity components into your application anywhere you need them. You can learn more about all of the available [components](/components/), or read up on the various [patterns](/patterns/).
+1. Add Clarity components wherever they are needed in your application
+1. Explore the component usage, demo and api sections to learn about specific coomponents
+1. Get help by asking a question on [StackOverflow](https://stackoverflow.com/questions/tagged/vmware-clarity) and tagging it with `vmware-clarity`
+1. Follow [Clarity on Twitter](https://twitter.com/vmwareclarity), stay up to date
