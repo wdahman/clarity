@@ -11,4 +11,6 @@ export function scrollToGuard(to, from) {
     // In page navigation doesn't work with smooth scrolling behavior
     document.getElementById(to.hash.substring(1)).scrollIntoView(); // TODO: (investigate why the { behavior: 'smooth' } option doesn't work
   }
+  // need to scroll to top if
+  // going to a page to any other page without a hash
 }
