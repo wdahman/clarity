@@ -1,4 +1,7 @@
-# Internationalization
+---
+title: Internationalization
+toc: true
+---
 
 - [Design Guidelines](/documentation/internationalization#top)
 - [Code & Examples](/documentation/internationalization#examples)
@@ -244,23 +247,23 @@ The button that navigates a daypicker to the next month
 
 datepickerPreviousDecade
 
-The button that navigates a yearpicker to previous decade
+The button that navigates a year picker to previous decade
 
 datepickerNextDecade
 
-The button that navigates a yearpicker to next decade
+The button that navigates a year picker to next decade
 
 datepickerCurrentDecade
 
-The button that navigates the yearpicker to current decade
+The button that navigates the year picker to current decade
 
 datepickerSelectMonthText
 
-Populates aria-label and title for monthpicker button. Is concatenated with the (localized) value for calendarMonth as well as this value
+Populates aria-label and title for month picker button. Is concatenated with the (localized) value for calendarMonth as well as this value
 
 datepickerSelectYearText
 
-Populates aria-label and title for yearpicker button. Is concatenated with the (localized) value for calendarYear as well as this value
+Populates aria-label and title for year picker button. Is concatenated with the (localized) value for calendarYear as well as this value
 
 daypickerSRCurrentMonthPhrase
 

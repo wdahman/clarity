@@ -1,4 +1,7 @@
-# Typography
+---
+title: Typography
+toc: true
+---
 
 ![HTML5](assets/images/bugs/badge_html5.svg 'HTML5')![CSS3](assets/images/bugs/badge_css3.svg 'CSS3')
 
@@ -271,7 +274,7 @@ This SASS variable defaults to 600. It is used in very small text (p4 and p6).
 
 ### The Metropolis Font
 
-Metropolis has clear, simple letters with rounded forms.  
+Metropolis has clear, simple letters with rounded forms.
 This gives the font a friendly and modern appearance.
 
 ![Metropolis light, regular, medium, and semibold](assets/images/documentation/typography/Typography-A-Z.png?1481774870417534000)

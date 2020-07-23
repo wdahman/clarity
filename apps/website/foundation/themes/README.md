@@ -1,4 +1,7 @@
-# Themes
+---
+title: Themes
+toc: true
+---
 
 - [Design Guidelines](/documentation/themes#top)
 - [Code & Examples](/documentation/themes#examples)
@@ -25,13 +28,13 @@ Clarity offers two default themes — light and dark. These themes can be used w
 
 ![Light Theme](assets/images/documentation/themes/theme-light.svg)
 
-###### Light Theme
+#### Light Theme
 
 Light theme is Clarity’s default. It is best suited to **content-rich applications** where users will be working with the application in **well-lit conditions** for brief periods of time throughout the day. Light theme can help prevent eye strain in applications where a user is expected to **read a large amount of content** — like documentation or a blog.
 
 ![Dark Theme](assets/images/documentation/themes/theme-dark.svg)
 
-###### Dark Theme
+#### Dark Theme
 
 Dark theme is best suited for applications that are **content-sparse, yet highly interactive**. A dark theme can help with eye strain if a user works with an application over a long span of time but in a way that requires **focus but not a great amount of reading**.
 
@@ -41,7 +44,7 @@ Themes offer a great deal of flexibility — which can be both a good and bad th
 
 **But theming can put some of those benefits at risk**. Please review the following guidelines before building a custom theme.
 
-##### Use color responsibly
+#### Use color responsibly
 
 Use colors that reinforce your brand but in a way that is pleasing.
 
@@ -51,7 +54,7 @@ Harsh colors can cause eye strain for users over time. Avoid using too many brig
 
 ![Do use brand colors in a pleasing manner](assets/images/documentation/themes/theme-responsability.svg)
 
-###### Do
+##### Do
 
 Use brand colors in a pleasing manner, saving bold or saturated colors for highlights or calls to action.
 
@@ -61,7 +64,7 @@ Consider using color to communicate meaning to users. Using colors like red for 
 
 ![Don't use brand colors irrespective of what the color communicates to users.](assets/images/documentation/themes/theme-comms.svg)
 
-###### Don't
+##### Don't
 
 Use brand colors irrespective of what the color communicates to users.
 
