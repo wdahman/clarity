@@ -1,8 +1,7 @@
 ---
 title: Overview
+toc: true
 ---
-
-# Application Layout
 
 - [Design Guidelines](/documentation/app-layout#top)
 - [Code & Examples](/documentation/app-layout#examples)
@@ -166,7 +165,7 @@ In the content area, buttons are left-aligned, with the primary button in the le
 
 Vertical rhythm is the repetition of spatial relationships in a design. A consistent rhythm gives elements a uniform and balanced placement in a design. The more consistent the design, the easier it is for users to read and understand.
 
-###### The Clarity Baseline is 24px
+##### The Clarity Baseline is 24px
 
 All elements in Clarity are _designed_ with a 24px baseline:
 
