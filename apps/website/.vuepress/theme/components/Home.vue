@@ -25,24 +25,20 @@
       <section class="whats-new" cds-layout="grid gap:sm">
         <div cds-layout="col:start-2 col:10">
           <h3 cds-text="heading" cds-layout="m-b:xl">What's New</h3>
-          <h4 cds-text="section" cds-layout="m-b:md">4.0.0</h4>
-          <h5 cds-text="subsection" cds-layout="m-b:md">New - Combobox</h5>
-          <p cds-text="body" cds-layout="m-b:md">
-            We've introduced a new Angular component for combining dropdown lists with text inputs.
-          </p>
+          <WhatsNew version="latest" />
         </div>
         <div cds-layout="col:12">
           <div cds-layout="grid cols:auto align:horizontal-center">
-            <cds-button action="outline" cds-layout="m-t:xl m-b:sm m-b:md">View Details</cds-button>
+            <cds-button class="btn-link" action="outline" cds-layout="m-t:xl m-b:sm m-b:md">
+              <a href="/releases/v4">View Details</a>
+            </cds-button>
           </div>
         </div>
       </section>
-
       <!-- spacer image -->
       <section class="section-spacer" cds-layout="m:none">
         <img cds-layout="container:fill" aria-hidden="true" src="/images/home/bg-graphic2-L-align.svg" />
       </section>
-
       <!-- design+dev section -->
       <section>
         <h3 cds-text="title center" cds-layout="m-b:xl">Build inclusive and intuitive products with Clarity</h3>
@@ -63,7 +59,6 @@
           </div>
         </div>
       </section>
-
       <!-- a11y section -->
       <section>
         <div cds-layout="grid cols@sm:8 cols@xs:12">
@@ -83,7 +78,6 @@
           </div>
         </div>
       </section>
-
       <!-- enterprise section -->
       <section>
         <div cds-layout="grid cols@sm:8 cols@xs:12">
@@ -103,7 +97,6 @@
           </div>
         </div>
       </section>
-
       <!-- open source section -->
       <section>
         <div cds-layout="grid cols@sm:8 cols@xs:12">
@@ -123,7 +116,6 @@
           </div>
         </div>
       </section>
-
       <!-- resources section -->
       <section>
         <div cds-layout="grid cols@sm:8 cols@xs:12">
@@ -148,7 +140,6 @@
         </div>
       </section>
     </div>
-
     <section cds-layout="m-l:lg m-b:lg">
       <Footer></Footer>
     </section>

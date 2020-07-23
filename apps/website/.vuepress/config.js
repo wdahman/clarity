@@ -42,6 +42,12 @@ module.exports = {
         outFile: 'sitemap.xml',
       },
     ],
+    [
+      '@vuepress/google-analytics',
+      {
+        ga: 'UA-86120402-1',
+      },
+    ],
     ...blocks,
   ],
   configureWebpack: {

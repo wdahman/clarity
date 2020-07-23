@@ -119,9 +119,9 @@ cds-alert-actions {
 }
 
 // cds-buttons (primary, filled) with links inside them need light text color
-// Not sure if this is a bug in core or side effect of combingin @clr/core + @clr/ui
+// Not sure if this is a bug in core or side effect of combining @clr/core + @clr/ui
 // TODO: investigate buttons with links inside them for the visited state
-cds-button[is-anchor] > a {
+cds-button[is-anchor]:not([action='outline']) > a {
   color: var(--cds-token-color-neutral-0);
   &:visited {
     color: var(--cds-token-color-neutral-0);
