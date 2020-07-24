@@ -3,9 +3,6 @@ title: Overview
 toc: true
 ---
 
-- [Design Guidelines](/documentation/app-layout#top)
-- [Code & Examples](/documentation/app-layout#examples)
-
 ##### A properly structured layout enforces an optimal, consistent experience across applications.
 
 ### Layout
@@ -14,9 +11,9 @@ toc: true
 
 The `.main-container` is a vertical flexbox which wraps the following components:
 
-- [App-Level Alert](/documentation/alerts)
-- [Header](/documentation/header)
-- [Subnav](/documentation/header)
+- [App-Level Alert](/componenst/alerts)
+- [Header](/components/header)
+- [Subnav](/components/header)
 - Content Container
 
 **Note:** Although Clarity does not have a footer component, a custom footer can be added in the main-container.
@@ -26,68 +23,32 @@ The `.main-container` is a vertical flexbox which wraps the following components
 The `.content-container` is a horizontal flexbox which wraps the following components:
 
 - Content Area
-- [Sidenav](/documentation/sidenav)
+- [Sidenav](/components/sidenav)
 
-App Level Alert
-
-Action
-
-[Project Clarity](#)
-
-- [Subnav Link 1](javascript://)
-- [Subnav Link 2](javascript://)
-- [Subnav Link 3](javascript://)
-- [Subnav Link 4](javascript://)
-- [Subnav Link 5](javascript://)
-
-Content Area
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu odio nisi. Vestibulum dignissim eget massa sit amet feugiat. Quisque auctor mattis quam eu suscipit. Morbi ipsum risus, feugiat vitae sem at, tincidunt elementum magna. Phasellus tristique posuere dui, ut tempus felis sagittis quis. Integer iaculis ultrices elit, sed venenatis eros. Vivamus interdum semper velit eget gravida. Sed finibus eget lacus sed semper. Suspendisse fringilla, tellus in molestie cursus, sapien purus volutpat lacus, eget venenatis erat est vitae libero. Aliquam et orci hendrerit, consequat purus non, imperdiet ipsum.
-
-Sidenav
-
-- Link 1
-- Link 2
-- Link 3
-- Link 4
-- Link 5
-- Link 6
-
-```html
-<div class="main-container">
-  <div class="alert alert-app-level">
-    ...
-  </div>
-  <header class="header header-6">
-    ...
-  </header>
-  <nav class="subnav">
-    ...
-  </nav>
-  <div class="content-container">
-    <div class="content-area">
-      ...
-    </div>
-    <nav class="sidenav">
-      ...
-    </nav>
-  </div>
-</div>
-```
+<doc-demo src="/demos/app-layout/content-container-ng.html" demo="/demos/app-layout/content-container-css.html"></doc-demo>
 
 ### Basic Structure
 
 Two constants of an app built in Clarity are the header and content area. These are the blocks upon which you build your app model.
 
-![Header and Content Area](assets/images/documentation/app-layout/header_contentarea.png?1481674789140619000)
+<ClrRow>
+<ClrCol>
+<ClrImage title="Header navigation pattern" src="/images/foundation/app-layout/header_contentarea.png" />
+</ClrCol>
+<ClrCol>
 
-##### Header
+{.custom-container}
 
-The [header](/documentation/header) is for branding and app-level elements such as navigation, search, and account settings.
+#### Header
 
-##### Content Area
+The [header](/components/header) is for branding and app-level elements such as navigation, search, and account settings.
+
+#### Content Area
 
 The content area is where users focus their attention most of the time, gathering information and performing tasks–it is the canvas for your application. As the largest portion of your app, the content area is always visible.
+
+</ClrCol>
+</ClrRow>
 
 ### Layout
 
@@ -99,15 +60,21 @@ Your layout should reflect the information or workflow of the selected [navigati
 - How to handle large amounts of data
 - Responsive design (if that is part of your product’s goals)
 
-##### Common Layout Patterns
+#### Common Layout Patterns
 
 Content can consist of any of the [Clarity components](/documentation), or no components and just information. Following are common layout patterns and recommended usage. For information on navigation components, header, subnav, and sidenav, see [Navigation](/documentation/navigation).
 
-###### Cards
+##### Cards
 
-![Cards](assets/images/documentation/app-layout/cards.png?1481674789140619000)
+<ClrRow>
+<ClrCol>
+<ClrImage title="Header navigation pattern" src="/images/foundation/app-layout/cards.png" />
+</ClrCol>
+<ClrCol>
 
-[Cards](/documentation/cards) are for presenting high-level information and guiding users to related actions and details. Cards might include a combination of text, images, and data visualizations.
+{.custom-container}
+
+[Cards](/components/card) are for presenting high-level information and guiding users to related actions and details. Cards might include a combination of text, images, and data visualizations.
 
 Benefits of using cards include:
 
@@ -115,51 +82,89 @@ Benefits of using cards include:
 - Facilitates scanning of information
 - Works well across platforms
 
-###### Tables and Datagrids
+</ClrCol>
+</ClrRow>
 
-![Tables and Datagrids](assets/images/documentation/app-layout/tables.png?1481674789140619000)
+##### Tables and Datagrids
 
-[Tables](/documentation/tables) and datagrids are for good for managing large amounts of data. These layouts work well when users need to compare data and perform batch operations.
+<ClrRow>
+<ClrCol>
+<ClrImage title="Header navigation pattern" src="/images/foundation/app-layout/tables.png" />
+</ClrCol>
+<ClrCol>
+
+{.custom-container}
+
+[Tables](/components/table) and datagrids are for good for managing large amounts of data. These layouts work well when users need to compare data and perform batch operations.
 
 A table is a static view. A datagrid provides users flexibility in viewing the data, including filtering and sorting.
 
 Complex tables and datagrids work best on larger screens.
 
+</ClrCol>
+</ClrRow>
+
 ###### Forms
 
-![Forms](assets/images/documentation/app-layout/forms.png?1481674789140619000)
+<ClrRow>
+<ClrCol>
+<ClrImage title="Header navigation pattern" src="/images/foundation/app-layout/forms.png" />
+</ClrCol>
+<ClrCol>
 
-[Forms](/documentation/forms) are for collecting data from users. Forms are comprised of other components, including labels, input fields, labels, checkboxes, radio buttons, and text.
+{.custom-container}
+
+[Forms](/components/forms) are for collecting data from users. Forms are comprised of other components, including labels, input fields, labels, checkboxes, radio buttons, and text.
 
 A benefit of a form is that users can see what information they must provide. Conversely, too many fields can discourage the user.
 
 Inline forms are better than modals in cases where you don't want to block users from performing other actions.
 
+</ClrCol>
+</ClrRow>
+
 ###### Tabs
 
-![Tabs](assets/images/documentation/app-layout/tabs.png?1481674789140619000)
+<ClrRow>
+<ClrCol>
+<ClrImage title="Header navigation pattern" src="/images/foundation/app-layout/tabs.png" />
+</ClrCol>
+<ClrCol>
 
-[Tabs](/documentation/tabs) appear in a single, non-scrollable row, at the top of the content area. They are good for breaking content into separate, related views.
+{.custom-container}
+
+[Tabs](/components/tabs) appear in a single, non-scrollable row, at the top of the content area. They are good for breaking content into separate, related views.
 
 Tabs are not appropriate if users need to compare data across views.
 
+</ClrCol>
+</ClrRow>
+
 ###### White Space and Typography
 
-![White Space and Typography](assets/images/documentation/app-layout/typography.png?1481674789140619000)
+<ClrRow>
+<ClrCol>
+<ClrImage title="Header navigation pattern" src="/images/foundation/app-layout/typography.png" />
+</ClrCol>
+<ClrCol>
 
-White space and [typography](/documentation/typography) are important elements in conveying hierarchy. These elements direct users to what they should view next and make the content and data easier to parse. They also helps bring consistency to an app.
+{.custom-container}
+
+White space and [typography](/foundation/typography) are important elements in conveying hierarchy. These elements direct users to what they should view next and make the content and data easier to parse. They also helps bring consistency to an app.
+
+</ClrCol>
+</ClrRow>
 
 ###### Button Placement
 
 In the content area, buttons are left-aligned, with the primary button in the leftmost position. This placement supports the F-pattern layout.
 
-![Buttons align left in content area](assets/images/documentation/app-layout/do_button_alignment.png?1481674789140619000)
-
-**Do.** Left-alignment puts buttons closest to the content.
-
-![Buttons do not align right in content area](assets/images/documentation/app-layout/dont_button_alignment.png?1481674789140619000)
-
-**Don't.**On the right, buttons might appear separate from content.
+::: do Left-alignment puts buttons closest to the content.
+<ClrImage title="Header navigation pattern" src="/images/foundation/app-layout/do_button_alignment.png" />
+:::
+::: dont On the right, buttons might appear separate from content.
+<ClrImage title="Header navigation pattern" src="/images/foundation/app-layout/dont_button_alignment.png" />
+:::
 
 #### Using Vertical Rhythm for Layout
 
@@ -172,7 +177,7 @@ All elements in Clarity are _designed_ with a 24px baseline:
 - The visual height of all components and text elements is in multiples of 24px.
 - The vertical white space between elements is also in multiples of 24px.
 
-![24px Baseline](assets/images/documentation/app-layout/24_baseline.png?1481674789140619000)
+<ClrImage title="Clarity baseline image" src="/images/foundation/app-layout/24_baseline.png" />
 
 ###### Repeat 24px in Your Layout
 
@@ -232,17 +237,6 @@ Clarity implemented this workaround to make the transition to 3.0 easier on our 
 
 Clarity uses [rem units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Values_and_units) for its whitespace and sizing. If the 24px vertical baseline is too large or too small for your needs, you can edit this globally across a Clarity application by changing the `font-size` style of the `html` element, as in the example below.
 
-```html
-html { /* * the following line of CSS would change pre-3.0 Clarity to a 20px vertical rhythm with a * 5px grid in 2.0
-and * earlier */ font-size: 20px; /* for 3.0 and later versions, divide the preferred root value by 1.2 to get a pixel *
-equivalency */ font-size: calc(20px/1.2); /* ...or do the math yourself so you don't need calc()! */ font-size:
-16.666667px; /* * It's recommended, however, that percentage units be used to allow for accessible browser text *
-resizing. Given that our current 24px baseline lives on top of a 20px (125%) root font size, we * would need to divide
-our preferred baseline by 0.192 to get the percentage we need. * * So the following percentage would produce a UI that
-follows a design with a 20px vertical rhythm * and 5px grid – 20 ÷ 0.192 = 104.166667. */ font-size: 104.1667%; /* * The
-following percentage would produce a UI that follows a design with a 28px vertical rhythm * and 7px grid. * 28 ÷ 0.192 =
-145.83333 */ font-size: 145.83333%; /* * The following percentage would produce a UI that follows a design with a 32px
-vertical rhythm * and 8px grid – 32 ÷ 0.192 = 166.66667. */ font-size: 166.66667%; }
-```
+<doc-demo src="/demos/app-layout/custom-rem-size.css"></doc-demo>
 
 Note that the declaration on the `html` selector needs to happen _after_ the Clarity CSS has been loaded. Also note that the "grid" for Clarity layouts and components is equal to one-fourth of the baseline. So instead of a 6px grid, the example above will put your application on a 5px grid.

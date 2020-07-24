@@ -14,7 +14,9 @@
           Clarity is an open source design system that brings together UX guidelines, an HTML/CSS framework, and Angular
           components. Clarity is for both designers and developers.
         </h2>
-        <cds-button cds-layout="m-t:xl">Get Started</cds-button>
+        <button class="btn dark" cds-layout="m-t:xl">
+          <a href="/get-started">Get Started</a>
+        </button>
         <img aria-hidden="true" cds-layout="m-t:xl container:fill" src="/images/home/img-hero.svg" />
       </section>
       <!-- image spacer -->
@@ -148,6 +150,10 @@
 </template>
 
 <style>
+.dark {
+  color: hsl(198, 0%, 0%);
+  background-color: hsl(198, 69%, 69%);
+}
 .content-cell,
 image-cell {
   height: 100%;
