@@ -10,15 +10,26 @@ toc: true
 
 ### Establish your brand with Clarity
 
-![Color Theming](assets/images/documentation/themes/theme-branding.svg)
+<ClrRow>
+<ClrCol>
+<ClrImage title="Color Theming" src="/images/foundation/themes/theme-branding.svg" />
+</ClrCol>
+<ClrCol>
+Match a company or client’s unique brand identity with **color theming** at **many different levels of granularity** allowing for customization at an application or  component level.
+</ClrCol>
+</ClrRow>
 
-Match a company or client’s unique brand identity with **color theming** at **many different levels of granularity** allowing for customization at an application or component level.
-
-![Clarity Icons API](assets/images/documentation/themes/theme-icons.svg)
-
+<ClrRow>
+<ClrCol>
+<ClrImage title="Clarity Icons API" src="/images/foundation/themes/theme-icons.svg" />
+</ClrCol>
+<ClrCol>
 **Font customization** and the [Clarity Icons API](/icons/api) offer the power to reinforce identity at the most fundamental levels of user experience.
+</ClrCol>
+</ClrRow>
 
-![Theme information density](assets/images/documentation/themes/theme-info.svg)
+
+![Theme information density](/images/foundation/themes/theme-info.svg)
 
 Depending on users’ expectations, different applications may require different degrees of **information density**. Clarity themes can be adjusted to make an application as **sparse or compact** as it needs to be.
 
@@ -26,13 +37,13 @@ Depending on users’ expectations, different applications may require different
 
 Clarity offers two default themes — light and dark. These themes can be used without modification to optimize user experience or they can be used as a guideline for creating custom themes in Clarity.
 
-![Light Theme](assets/images/documentation/themes/theme-light.svg)
+![Light Theme](/images/foundation/themes/theme-light.svg)
 
 #### Light Theme
 
 Light theme is Clarity’s default. It is best suited to **content-rich applications** where users will be working with the application in **well-lit conditions** for brief periods of time throughout the day. Light theme can help prevent eye strain in applications where a user is expected to **read a large amount of content** — like documentation or a blog.
 
-![Dark Theme](assets/images/documentation/themes/theme-dark.svg)
+![Dark Theme](/images/foundation/themes/theme-dark.svg)
 
 #### Dark Theme
 
@@ -52,7 +63,7 @@ Save saturated or bright colors in your palette for highlights. And use them spa
 
 Harsh colors can cause eye strain for users over time. Avoid using too many bright, neon colors and avoid using highly saturated/bold colors as backgrounds over large areas of content.
 
-![Do use brand colors in a pleasing manner](assets/images/documentation/themes/theme-responsability.svg)
+![Do use brand colors in a pleasing manner](/images/foundation/themes/theme-responsability.svg)
 
 ##### Do
 
@@ -62,7 +73,7 @@ Use brand colors in a pleasing manner, saving bold or saturated colors for highl
 
 Consider using color to communicate meaning to users. Using colors like red for warning or danger and green for success or preferred actions reinforces your user experience.
 
-![Don't use brand colors irrespective of what the color communicates to users.](assets/images/documentation/themes/theme-comms.svg)
+![Don't use brand colors irrespective of what the color communicates to users.](/images/foundation/themes/theme-comms.svg)
 
 ##### Don't
 
@@ -73,13 +84,13 @@ Use brand colors irrespective of what the color communicates to users.
 Darker colors recede while lighter and brighter colors push forward. Be mindful of this when working with brand colors to create a custom theme.
 
 ![Use light and dark colors to reinforce visual hierarchy and draw users’
-                                focus.](assets/images/documentation/themes/theme-visual-do.svg)
+                                focus.](/images/foundation/themes/theme-visual-do.svg)
 
 ###### Do
 
 Use light and dark colors to reinforce visual hierarchy and draw users’ focus.
 
-![Don't draw attention to the wrong items with the use of color.](assets/images/documentation/themes/theme-visual-dont.svg)
+![Don't draw attention to the wrong items with the use of color.](/images/foundation/themes/theme-visual-dont.svg)
 
 ###### Don't
 
@@ -89,7 +100,7 @@ Draw attention to the wrong items with the use of color. In this example, the co
 
 Avoid extreme light-on-dark and dark-on-light color combinations that could contribute to eye strain.
 
-![Don't use color combinations that may cause eye-strain.](assets/images/documentation/themes/theme-color-combos.svg)
+![Don't use color combinations that may cause eye-strain.](/images/foundation/themes/theme-color-combos.svg)
 
 ###### Don't
 
