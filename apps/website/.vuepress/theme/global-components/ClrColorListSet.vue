@@ -14,11 +14,11 @@
       </div>
     </div>
     <div v-bind:class="{ 'in-dark-mode': colorListInMode === 'dark' }">
-      <ClrRow>
+      <div class="clr-row">
         <ClrColorList v-for="colorListData in colorListSet" :colorCode="picked" :colorData="colorListData">
           <h5 class="color-list-title">{{ colorListData.name }}</h5>
         </ClrColorList>
-      </ClrRow>
+      </div>
     </div>
   </div>
 </template>

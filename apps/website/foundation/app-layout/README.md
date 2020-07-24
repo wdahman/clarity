@@ -31,11 +31,11 @@ The `.content-container` is a horizontal flexbox which wraps the following compo
 
 Two constants of an app built in Clarity are the header and content area. These are the blocks upon which you build your app model.
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div>
 <ClrImage title="Header navigation pattern" src="/images/foundation/app-layout/header_contentarea.png" />
-</ClrCol>
-<ClrCol>
+</div>
+<div>
 
 {.custom-container}
 
@@ -47,8 +47,8 @@ The [header](/components/header) is for branding and app-level elements such as 
 
 The content area is where users focus their attention most of the time, gathering information and performing tasks–it is the canvas for your application. As the largest portion of your app, the content area is always visible.
 
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 ### Layout
 
@@ -66,11 +66,11 @@ Content can consist of any of the [Clarity components](/documentation), or no co
 
 ##### Cards
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div>
 <ClrImage title="Header navigation pattern" src="/images/foundation/app-layout/cards.png" />
-</ClrCol>
-<ClrCol>
+</div>
+<div>
 
 {.custom-container}
 
@@ -82,16 +82,16 @@ Benefits of using cards include:
 - Facilitates scanning of information
 - Works well across platforms
 
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 ##### Tables and Datagrids
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div>
 <ClrImage title="Header navigation pattern" src="/images/foundation/app-layout/tables.png" />
-</ClrCol>
-<ClrCol>
+</div>
+<div>
 
 {.custom-container}
 
@@ -101,16 +101,16 @@ A table is a static view. A datagrid provides users flexibility in viewing the d
 
 Complex tables and datagrids work best on larger screens.
 
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 ###### Forms
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div>
 <ClrImage title="Header navigation pattern" src="/images/foundation/app-layout/forms.png" />
-</ClrCol>
-<ClrCol>
+</div>
+<div>
 
 {.custom-container}
 
@@ -120,16 +120,16 @@ A benefit of a form is that users can see what information they must provide. Co
 
 Inline forms are better than modals in cases where you don't want to block users from performing other actions.
 
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 ###### Tabs
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div>
 <ClrImage title="Header navigation pattern" src="/images/foundation/app-layout/tabs.png" />
-</ClrCol>
-<ClrCol>
+</div>
+<div>
 
 {.custom-container}
 
@@ -137,34 +137,41 @@ Inline forms are better than modals in cases where you don't want to block users
 
 Tabs are not appropriate if users need to compare data across views.
 
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 ###### White Space and Typography
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div>
 <ClrImage title="Header navigation pattern" src="/images/foundation/app-layout/typography.png" />
-</ClrCol>
-<ClrCol>
+</div>
+<div>
 
 {.custom-container}
 
 White space and [typography](/foundation/typography) are important elements in conveying hierarchy. These elements direct users to what they should view next and make the content and data easier to parse. They also helps bring consistency to an app.
 
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 ###### Button Placement
 
 In the content area, buttons are left-aligned, with the primary button in the leftmost position. This placement supports the F-pattern layout.
 
-::: do Left-alignment puts buttons closest to the content.
-<ClrImage title="Header navigation pattern" src="/images/foundation/app-layout/do_button_alignment.png" />
-:::
-::: dont On the right, buttons might appear separate from content.
-<ClrImage title="Header navigation pattern" src="/images/foundation/app-layout/dont_button_alignment.png" />
-:::
+<div class="clr-row" cds-layout="m-t:lg">
+
+<div class="clr-col-sm-12 clr-col-lg-6 doc-do">
+<ClrImage class="doc-example" title="Left-alignment puts buttons closest to the content" src="/images/foundation/app-layout/do_button_alignment.png" align="center"/>
+Left-alignment puts buttons closest to the content.
+</div>
+
+<div class="clr-col-sm-12 clr-col-lg-6 doc-dont">
+<ClrImage class="doc-example" title="On the right, buttons might appear separate from content" src="/images/foundation/app-layout/dont_button_alignment.png" align="center" />
+On the right, buttons might appear separate from content.
+</div>
+
+</div>
 
 #### Using Vertical Rhythm for Layout
 

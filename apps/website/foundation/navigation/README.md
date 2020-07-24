@@ -213,14 +213,16 @@ Clarity supports responsive navigation as follows:
 ##### Large Screens
 
 <ClrImage cds-layout="m-t:md" title="Large Screen Navigation" src="/images/foundation/navigation/header_sidenav_large.png" />
+
 ##### Small Screens
+
 <div class="clr-row">
 <div class="clr-col">
 
 <ClrImage cds-layout="m-t:md" title="Header navigation on small screens" src="/images/foundation/navigation/navLevel1.gif" />
 <doc-demo src="/demos/navigation/nav-1-css.html" />
 </div>
-<div class="clr-col" cds-layout="m-t:xl">
+<div class="clr-col">
 
 <ClrImage cds-layout="m-t:md" title="Sidnav on small screens" src="/images/foundation/navigation/navLevel2.gif" />
 <doc-demo src="/demos/navigation/nav-2-css.html" />

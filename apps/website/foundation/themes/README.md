@@ -3,44 +3,41 @@ title: Themes
 toc: true
 ---
 
-- [Design Guidelines](/documentation/themes#top)
-- [Code & Examples](/documentation/themes#examples)
-
-##### Themes help you customize the look and feel of your application.
+Themes help you customize the look and feel of your application.
 
 ### Establish your brand with Clarity
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col">
 
 <ClrImage width="100%" alt="Color Theming" src="/images/foundation/themes/theme-branding.svg" />
 
 Match a company or client’s unique brand identity with **color theming** at **many different levels of granularity** allowing for customization at an application or component level.
 
-</ClrCol>
-<ClrCol>
+</div>
+<div class="clr-col">
 
 <ClrImage width="100%" alt="Clarity Icons API" src="/images/foundation/themes/theme-icons.svg" />
 
 **Font customization** and the [Clarity Icons API](/icons/api) offer the power to reinforce identity at the most fundamental levels of user experience.
 
-</ClrCol>
+</div>
 
-<ClrCol>
+<div class="clr-col">
 
 <ClrImage width="100%" alt="Theme information density" src="/images/foundation/themes/theme-info.svg" />
 
 Depending on users’ expectations, different applications may require different degrees of **information density**. Clarity themes can be adjusted to make an application as **sparse or compact** as it needs to be.
 
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 ### Default Themes
 
 Clarity offers two default themes — light and dark. These themes can be used without modification to optimize user experience or they can be used as a guideline for creating custom themes in Clarity.
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col">
 
 <ClrImage width="100%" alt="Light Theme" src="/images/foundation/themes/theme-light.svg" />
 
@@ -48,8 +45,8 @@ Clarity offers two default themes — light and dark. These themes can be used w
 
 Light theme is Clarity’s default. It is best suited to **content-rich applications** where users will be working with the application in **well-lit conditions** for brief periods of time throughout the day. Light theme can help prevent eye strain in applications where a user is expected to **read a large amount of content** — like documentation or a blog.
 
-</ClrCol>
-<ClrCol>
+</div>
+<div class="clr-col">
 
 <ClrImage width="100%" alt="Dark Theme" src="/images/foundation/themes/theme-dark.svg" />
 
@@ -57,8 +54,8 @@ Light theme is Clarity’s default. It is best suited to **content-rich applicat
 
 Dark theme is best suited for applications that are **content-sparse, yet highly interactive**. A dark theme can help with eye strain if a user works with an application over a long span of time but in a way that requires **focus but not a great amount of reading**.
 
-</ClrCol>
-</ClrRow>
+</div>
+</div>
 
 ### Theme Guidelines
 
@@ -66,8 +63,9 @@ Themes offer a great deal of flexibility — which can be both a good and bad th
 
 **But theming can put some of those benefits at risk**. Please review the following guidelines before building a custom theme.
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col-sm-12 clr-col-lg-6">
+
 #### Use color responsibly
 
 Use colors that reinforce your brand but in a way that is pleasing.
@@ -76,66 +74,68 @@ Save saturated or bright colors in your palette for highlights. And use them spa
 
 Harsh colors can cause eye strain for users over time. Avoid using too many bright, neon colors and avoid using highly saturated/bold colors as backgrounds over large areas of content.
 
-</ClrCol>
+</div>
 
-::: do Do use brand colors in a pleasing manner
+<div class="clr-col-sm-12 clr-col-lg-6 doc-do" cds-layout="m-t:lg">
+<ClrImage class="doc-example" title="Do use brand colors in a pleasing manner" src="/images/foundation/themes/theme-responsability.svg" align="center" />
+Use brand colors in a pleasing manner
+</div>
 
-<ClrImage width="100%" alt="Do use brand colors in a pleasing manner" src="/images/foundation/themes/theme-responsability.svg" />
+</div>
 
-:::
+<div class="clr-row">
+<div class="clr-col-sm-12 clr-col-lg-6">
 
-</ClrRow>
-
-<ClrRow>
-<ClrCol>
 #### Communicate with color
+
 Consider using color to communicate meaning to users. Using colors like red for warning or danger and green for success or preferred actions reinforces your user experience.
 
-</ClrCol>
+</div>
 
-::: dont Don't use brand colors irrespective of what the color communicates to users.
+<div class="clr-col-sm-12 clr-col-lg-6 doc-dont" cds-layout="m-t:lg">
+<ClrImage class="doc-example" title="Don't use brand colors irrespective of what the color communicates to users" src="/images/foundation/themes/theme-comms.svg" align="center" />
+Don't use brand colors irrespective of what the color communicates to users
+</div>
 
-<ClrImage width="100%" alt="Don't use brand colors irrespective of what the color communicates to users" src="/images/foundation/themes/theme-comms.svg" />
-
-:::
-</ClrRow>
+</div>
 
 #### Create visual hierarchy
 
 Darker colors recede while lighter and brighter colors push forward. Be mindful of this when working with brand colors to create a custom theme.
 
-::: do Use light and dark colors to reinforce visual hierarchy.
+<div class="clr-row" cds-layout="m-t:lg">
 
-<ClrImage width="100%" alt="Use light and dark colors to reinforce visual hierarchy and draw users’ focus." src="/images/foundation/themes/theme-visual-do.svg" />
+<div class="clr-col-sm-12 clr-col-lg-6 doc-do">
+<ClrImage class="doc-example" title="Use light and dark colors to reinforce visual hierarchy" src="/images/foundation/themes/theme-visual-do.svg" align="center" />
+Use light and dark colors to reinforce visual hierarchy.
+</div>
 
-:::
+<div class="clr-col-sm-12 clr-col-lg-6 doc-dont">
+<ClrImage class="doc-example" title="Draw attention to the wrong items with the use of color" src="/images/foundation/themes/theme-visual-dont.svg" align="center" />
+Draw attention to the wrong items with the use of color.
+</div>
 
-::: dont Draw attention to the wrong items with the use of color.
-
-<ClrImage width="100%" alt="Don't draw attention to the wrong items with the use of color." src="/images/foundation/themes/theme-visual-dont.svg" />
-
-:::
+</div>
 
 Color draws visual focus. Visual hierarchy can be re-inforced or circumvented. Be specfic to where a design guides vidual focus. Observe an unintended effect in the example above where the content in the cards and the datagrid recede into the background while the sidenav and the header draw the visual attention away from the data.
 
-##### Avoid extreme color combinations
+#### Avoid extreme color combinations
 
-<ClrRow>
-<ClrCol>
+<div class="clr-row">
+<div class="clr-col-sm-12 clr-col-lg-6">
 
 Avoid extreme light-on-dark and dark-on-light color combinations that could contribute to eye strain.
 
-</ClrCol>
+</div>
 
-::: dont Use color combinations that may cause eye-strain.
+<div class="clr-col-sm-12 clr-col-lg-6 doc-dont" cds-layout="m-t:lg">
+<ClrImage class="doc-example" title="Don't use color combinations that may cause eye-strain" src="/images/foundation/themes/theme-color-combos.svg" align="center" />
+Don't use color combinations that may cause eye-strain
+</div>
 
-<ClrImage width="100%" alt="Don't use color combinations that may cause eye-strain." src="/images/foundation/themes/theme-color-combos.svg" />
+</div>
 
-:::
-
-</ClrRow>
-
-##### Be Accessible
+#### Be Accessible
 
 Clarity’s color palette is WCAG AA compliant, meaning all color combinations of text-on-background meet the standard for color accessibility for our users. Use [the WebAIM Color Contrast Checker tool](//webaim.org/resources/contrastchecker/) to test text and background colors when deciding how a brand’s color palette will be used in an application.
 
