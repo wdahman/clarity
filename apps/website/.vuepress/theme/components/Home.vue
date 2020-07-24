@@ -1,6 +1,6 @@
 <style>
 .need-style-fix > a {
-  color: #fff !important;
+  color: #fff;
 }
 </style>
 <template>
@@ -18,8 +18,9 @@
             </h2>
           </div>
         </div>
-        <button class="btn dark" cds-layout="m-t:xl">
-          <a href="/get-started">Get Started</a>
+        <button class="btn hero-btn" cds-layout="m-t:xl" style="color: #000;">
+          <!-- hard coded for now, css overrides were not working. Anywhere. -->
+          <router-link style="color: #000;" class="hero-btn-link" to="/get-started">Get Started</router-link>
         </button>
         <img aria-hidden="true" cds-layout="m-t:xl container:fill" src="/images/home/img-hero.svg" />
       </section>
@@ -157,10 +158,6 @@
 </template>
 
 <style>
-.dark {
-  color: hsl(198, 0%, 0%);
-  background-color: hsl(198, 69%, 69%);
-}
 .content-cell,
 image-cell {
   height: 100%;
@@ -168,6 +165,10 @@ image-cell {
 
 .page-home {
   max-width: 960px;
+}
+
+.hero-btn {
+  background-color: hsl(198, 69%, 69%);
 }
 </style>
 
