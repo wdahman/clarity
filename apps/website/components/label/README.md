@@ -49,7 +49,7 @@ Avoid using too many colors within the same context, displaying too many colors 
 
 Differentiate labels from buttons.
 
-<div class="clr-row" cds-layout="m-t:lg">
+<div class="clr-row">
 
 <div class="clr-col-sm-12 clr-col-lg-6 doc-do">
 <div class="doc-example"><span class="label label-orange">London (Location)</span></div>

@@ -159,7 +159,7 @@ White space and [typography](/foundation/typography) are important elements in c
 
 In the content area, buttons are left-aligned, with the primary button in the leftmost position. This placement supports the F-pattern layout.
 
-<div class="clr-row" cds-layout="m-t:lg">
+<div class="clr-row">
 
 <div class="clr-col-sm-12 clr-col-lg-6 doc-do">
 <ClrImage class="doc-example" title="Left-alignment puts buttons closest to the content" src="/images/foundation/app-layout/do_button_alignment.png" align="center"/>

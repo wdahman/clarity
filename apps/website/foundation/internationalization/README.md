@@ -3,7 +3,7 @@ title: Internationalization
 toc: true
 ---
 
-## Easily translate internal Clarity text into multiple languages.
+Easily translate internal Clarity text into multiple languages.
 
 <cds-alert-group status="warning" type="default">
 <cds-alert>There is a breaking change required to fix the language support starting in version 2.1.1 and 1.2.1. The original implementation was broken in a way that could not be fixed with the original API, and due to the importance of this service for localization we opted to introduce a different API. If you have an implementation of a custom language strings before this release, [follow the instructions](/foundation/internationalization#updating) on how to update your code.</cds-alert>

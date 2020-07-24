@@ -57,27 +57,27 @@ There are two distinct patterns when it comes to the placement of a button.
 <div class="clr-row" cds-layout="m-t:md">
 <div class="clr-col-sm-12 clr-col-lg-6">
 <DocInset height="300">
-<ClrImage cds-layout="m-t@lg:xl p-t@lg:lg" title="Z Pattern illustration" src="/images/components/button/z_pattern.svg" />
+<ClrImage title="Z Pattern illustration" src="/images/components/button/z_pattern.svg" />
 </DocInset>
 
 **Z Pattern**
 
 The Z-pattern is a natural way for the user to go through content within a **constrained container** and when tasks are oriented from the top-left and ending with a **primary call to action on the right bottom side** of the container. This pattern is reversed for right to left languages.
 
-<cds-icon shape="bookmark"></cds-icon> Modals and Wizards follow the Z Pattern
+<cds-icon shape="bookmark" size="24"></cds-icon> Modals and Wizards follow the Z Pattern
 
 </div>
 
 <div class="clr-col-sm-12 clr-col-lg-6">
 <DocInset height="300">
-<ClrImage cds-layout="m-t@lg:xl p-t@lg:lg" title="F Pattern illustration" src="/images/components/button/f_pattern.svg" />
+<ClrImage title="F Pattern illustration" src="/images/components/button/f_pattern.svg" />
 </DocInset>
 
 **F Pattern**
 
 The F-pattern is a natural way to go through content in an **unconstrained container**, such as a form on the page itself. The user will go through the content line-by-line, arriving at a call to action at the end.
 
-<cds-icon shape="bookmark"></cds-icon> Forms and Cards follow the F Pattern
+<cds-icon shape="bookmark" size="24"></cds-icon> Forms and Cards follow the F Pattern
 
 </div>
 </div>
@@ -90,15 +90,15 @@ Consistent button styles make it easier for a user to recognize areas to take ac
 
 The text inside of buttons is always **uppercase**. This indicates action by differentiating button text from links and other content on the page. Use descriptive language on buttons relating to the user’s intent.
 
-<div class="clr-row" cds-layout="m-t:lg">
+<div class="clr-row">
 
 <div class="clr-col-sm-12 clr-col-lg-6 doc-dont">
-<ClrImage class="doc-example" title="Typography Don't Example" src="/images/components/button/typography_dont.svg" />
+<ClrImage class="doc-example" title="Typography Don't Example" src="/images/components/button/typography_dont.svg" align="center" />
 Use generic language not related to the action and not relating to the intent of the user.
 </div>
 
 <div class="clr-col-sm-12 clr-col-lg-6 doc-do">
-<ClrImage class="doc-example" title="Typography Do Example" src="/images/components/button/typography_do.svg" />
+<ClrImage class="doc-example" title="Typography Do Example" src="/images/components/button/typography_do.svg" align="center" />
 Use a call to action on buttons.
 </div>
 
@@ -158,7 +158,7 @@ We recommend you **choose an icon that best describes the action** that the user
 
 #### Types & Sizes
 
-<div class="clr-row" cds-layout="m-t:lg">
+<div class="clr-row">
 
 <div class="clr-col-sm-12 clr-col-lg-6 doc-do">
 <div class="doc-example">
@@ -182,7 +182,7 @@ Use small icon buttons in most cases. They are difficult to see and distinguish 
 
 #### With Text
 
-<div class="clr-row" cds-layout="m-t:lg">
+<div class="clr-row">
 <div class="clr-col-sm-12 clr-col-lg-6 doc-do">
 <div class="doc-example">
 <cds-button size="icon" style="margin-right: 12px"><cds-icon shape="check"></cds-icon> Create</cds-button>

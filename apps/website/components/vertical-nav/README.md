@@ -21,7 +21,7 @@ Use the vertical navigation:
 
 </div>
 
-<div class="clr-row" cds-layout="m-t:lg">
+<div class="clr-row">
 
 <div class="clr-col-sm-12 clr-col-lg-6 doc-do">
 <ClrImage class="doc-example" title="Use vertical navigation with a header" src="/images/components/vertical-nav/do-header.png" align="center" />
@@ -74,7 +74,7 @@ Vertical navigation has a few layout options including dividers and section head
 Icons should be placed to the left of the link label. Active links will display a blue icon. Make sure your icons are distinctive and easily recognizable. Touch targets include the entire width of the navigation including the icon.
 Use icons across all links if you choose to use them. Add icons to some links and not to other links. This becomes difficult to scan and read.
 
-<div class="clr-row" cds-layout="m-t:lg">
+<div class="clr-row">
 
 <div class="clr-col-sm-12 clr-col-lg-6 doc-do">
 <ClrImage class="doc-example" title="Use icons on all nav links" src="/images/components/vertical-nav/icons-do.png" align="center" />

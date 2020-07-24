@@ -19,7 +19,7 @@ Use when a small list of options can be selected from, similar to the Checkbox c
 - user can click the button to select, and click again to deselect
 - can be configured with preselected options
 
-<div class="clr-row" cds-layout="m-t:lg">
+<div class="clr-row">
 
 <div class="clr-col-sm-12 clr-col-lg-6 doc-do">
 <div class="doc-example">
@@ -75,7 +75,7 @@ Use when selecting one option from a small list of options, similar to the Radio
 - user can click the button to select, and click again to deselect
 - can be configured with preselected options
 
-<div class="clr-row" cds-layout="m-t:lg">
+<div class="clr-row">
 
 <div class="clr-col-sm-12 clr-col-lg-6 doc-do">
 <div class="doc-example">
@@ -153,7 +153,7 @@ Use option labels that are long or more than 3 words.
 
 #### Button Arrangement
 
-<div class="clr-row" cds-layout="m-t:lg">
+<div class="clr-row">
 
 <div class="clr-col-sm-12 clr-col-lg-6 doc-do">
 <div class="doc-example">
@@ -165,7 +165,9 @@ Use option labels that are long or more than 3 words.
 </div>
 
 </div>
+
 Arrange **primary** actions on the left, followed by **secondary** actions, and **warning** actions as the last button in a group.
+
 </div>
 
 <div class="clr-col-sm-12 clr-col-lg-6 doc-dont">
@@ -178,14 +180,16 @@ Arrange **primary** actions on the left, followed by **secondary** actions, and 
 </div>
 
 </div>
+
 Arrange **warning** actions as the first button in a group or have **secondary** actions before **primary** actions.
+
 </div>
 
 </div>
 
 #### Group Style
 
-<div class="clr-row" cds-layout="m-t:lg">
+<div class="clr-row">
 
 <div class="clr-col-sm-12 clr-col-lg-6 doc-do">
 <div class="doc-example">
@@ -197,7 +201,9 @@ Arrange **warning** actions as the first button in a group or have **secondary**
 </div>
 
 </div>
+
 Mix similar styled classes together to suit the solution's needs.
+
 </div>
 
 <div class="clr-col-sm-12 clr-col-lg-6 doc-dont">
@@ -223,7 +229,7 @@ There are sevel layout options for button groups, including icon button groups, 
 
 #### Types & Sizes
 
-<div class="clr-row" cds-layout="m-t:lg">
+<div class="clr-row">
 
 <div class="clr-col-sm-12 clr-col-lg-6 doc-do">
 <div class="doc-example">
@@ -268,7 +274,7 @@ Use small icon buttons in most cases. They are difficult to see and distinguish 
 
 #### With Text
 
-<div class="clr-row" cds-layout="m-t:lg">
+<div class="clr-row">
 
 <div class="clr-col-sm-12 clr-col-lg-6 doc-do">
 <div class="doc-example">
@@ -318,7 +324,7 @@ Overflow is used when the button group is larger than its containing space, or u
 - Overflow button is shown below as an ellipsis button in the button group and is the last position to the right
 - Clicking on the ellipsis will show the overflow dropdown menu
 
-<div class="clr-row" cds-layout="m-t:lg">
+<div class="clr-row">
 
 <div class="clr-col-sm-12 clr-col-lg-6 doc-do">
 <div class="doc-example">
@@ -347,7 +353,7 @@ Overflow is used when the button group is larger than its containing space, or u
 - Button groups with text and icons, or just icons, will have text show in the dropdown menu
 - Text for each action icon is needed for overflow to work properly
 
-<div class="clr-row" cds-layout="m-t:lg">
+<div class="clr-row">
 
 <div class="clr-col-sm-12 clr-col-lg-6 doc-do">
 <div class="doc-example">
@@ -407,7 +413,7 @@ Overflow is used when the button group is larger than its containing space, or u
 
 Use when you want similar actions to be grouped together and separated from others.
 
-<div class="clr-row" cds-layout="m-t:lg">
+<div class="clr-row">
 
 <div class="clr-col-sm-12 clr-col-lg-6 doc-do">
 <div class="doc-example">

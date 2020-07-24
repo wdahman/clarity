@@ -32,7 +32,7 @@ The step title section has three states: completed, active, to-do. When a step i
 
 The input section has two elements: the form and the buttons. The form is used to collect input from users to finish the step. The buttons section will allow the users to proceed to the next step or finish the workflow. To go back to a previous step, users need to click on the step title of one of the previous steps. That step will become the active step with its input section visible for editing.
 
-<div class="clr-row" cds-layout="m-t:lg">
+<div class="clr-row">
 
 <div class="clr-col-sm-12 clr-col-lg-6 doc-do">
 <ClrImage class="doc-example" title="stepper do" src="/images/components/stepper/stepper-do.png" align="center" />

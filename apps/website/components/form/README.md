@@ -43,7 +43,7 @@ Forms should only be as long as absolutely necessary. We recommend reviewing eac
 
 Forms should help users complete their goal as quickly as possible. Column structure can help make it easier for users to complete your form.
 
-<div class="clr-row" cds-layout="m-t:lg">
+<div class="clr-row">
 
 <div class="clr-col-sm-12 clr-col-lg-6 doc-do">
 <ClrImage class="doc-example" title="put forms into one column" src="/images/components/form/architecture-do.svg" align="center" />
@@ -63,7 +63,7 @@ Grouping will make scanning easier. A form with more than 6 inputs will likely h
 
 For the grouping of labels and their input fields, we recommend grouping labels closely with their respective input fields.
 
-<div class="clr-row" cds-layout="m-t:lg">
+<div class="clr-row">
 
 <div class="clr-col-sm-12 clr-col-lg-6 doc-do">
 <ClrImage class="doc-example" title="Put labels in close proximity to their input controls" src="/images/components/form/input-grouping-do.svg" align="center" />
@@ -87,7 +87,7 @@ Radios and checkboxes are used when it is helpful to compare options within the 
 **Error Message Styling**
 When showing error inputs, highlight the input field with red in some way, but also pair the red with another visual indicator, like an icon. This will help with accessibility.
 
-<div class="clr-row" cds-layout="m-t:lg">
+<div class="clr-row">
 
 <div class="clr-col-sm-12 clr-col-lg-6 doc-do">
 <ClrImage class="doc-example" title="Place icons outside the input field" src="/images/components/form/error-do.svg" align="center" />

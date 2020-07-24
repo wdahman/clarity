@@ -103,7 +103,7 @@ Don't use brand colors irrespective of what the color communicates to users
 
 Darker colors recede while lighter and brighter colors push forward. Be mindful of this when working with brand colors to create a custom theme.
 
-<div class="clr-row" cds-layout="m-t:lg">
+<div class="clr-row">
 
 <div class="clr-col-sm-12 clr-col-lg-6 doc-do">
 <ClrImage class="doc-example" title="Use light and dark colors to reinforce visual hierarchy" src="/images/foundation/themes/theme-visual-do.svg" align="center" />
