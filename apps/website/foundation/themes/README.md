@@ -66,10 +66,9 @@ Themes offer a great deal of flexibility — which can be both a good and bad th
 
 **But theming can put some of those benefits at risk**. Please review the following guidelines before building a custom theme.
 
-#### Use color responsibly
-
 <ClrRow>
 <ClrCol>
+#### Use color responsibly
 
 Use colors that reinforce your brand but in a way that is pleasing.
 
@@ -78,60 +77,46 @@ Save saturated or bright colors in your palette for highlights. And use them spa
 Harsh colors can cause eye strain for users over time. Avoid using too many bright, neon colors and avoid using highly saturated/bold colors as backgrounds over large areas of content.
 
 </ClrCol>
-<ClrCol>
 
 ::: do Do use brand colors in a pleasing manner
 
 <ClrImage width="100%" alt="Do use brand colors in a pleasing manner" src="/images/foundation/themes/theme-responsability.svg" />
 
 :::
-</ClrCol>
-</ClrRow>
 
-###### Communicate with color
+</ClrRow>
 
 <ClrRow>
 <ClrCol>
-
+#### Communicate with color
 Consider using color to communicate meaning to users. Using colors like red for warning or danger and green for success or preferred actions reinforces your user experience.
 
 </ClrCol>
-<ClrCol>
 
 ::: dont Don't use brand colors irrespective of what the color communicates to users.
 
 <ClrImage width="100%" alt="Don't use brand colors irrespective of what the color communicates to users" src="/images/foundation/themes/theme-comms.svg" />
 
 :::
-
-</ClrCol>
 </ClrRow>
 
-##### Create visual hierarchy
+#### Create visual hierarchy
 
 Darker colors recede while lighter and brighter colors push forward. Be mindful of this when working with brand colors to create a custom theme.
 
-<ClrRow>
-<ClrCol>
-
-::: do Use light and dark colors to reinforce visual hierarchy and draw users’ focus.
+::: do Use light and dark colors to reinforce visual hierarchy.
 
 <ClrImage width="100%" alt="Use light and dark colors to reinforce visual hierarchy and draw users’ focus." src="/images/foundation/themes/theme-visual-do.svg" />
 
 :::
 
-</ClrCol>
-
-<ClrCol>
-
-::: dont Draw attention to the wrong items with the use of color. In this example, the content of the cards and datagrid recede into the background while the sidenav and header unnecessarily draw the user’s attention.
+::: dont Draw attention to the wrong items with the use of color.
 
 <ClrImage width="100%" alt="Don't draw attention to the wrong items with the use of color." src="/images/foundation/themes/theme-visual-dont.svg" />
 
 :::
 
-</ClrCol>
-</ClrRow>
+Color draws visual focus. Visual hierarchy can be re-inforced or circumvented. Be specfic to where a design guides vidual focus. Observe an unintended effect in the example above where the content in the cards and the datagrid recede into the background while the sidenav and the header draw the visual attention away from the data.
 
 ##### Avoid extreme color combinations
 
@@ -141,7 +126,6 @@ Darker colors recede while lighter and brighter colors push forward. Be mindful 
 Avoid extreme light-on-dark and dark-on-light color combinations that could contribute to eye strain.
 
 </ClrCol>
-<ClrCol>
 
 ::: dont Use color combinations that may cause eye-strain.
 
@@ -149,7 +133,6 @@ Avoid extreme light-on-dark and dark-on-light color combinations that could cont
 
 :::
 
-</ClrCol>
 </ClrRow>
 
 ##### Be Accessible
