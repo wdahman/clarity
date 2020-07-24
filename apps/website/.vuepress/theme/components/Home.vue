@@ -9,11 +9,15 @@
     <div class="section-wrapper" cds-layout="vertical gap:md gap@sm:xxl">
       <!-- Hero -->
       <section class="home-hero" cds-layout="vertical align:horizontal-center">
-        <h1 cds-text="display center semibold" cds-layout="m-t:x">Design + Build with Clarity</h1>
-        <h2 cds-text="title center medium" cds-layout="m-t:xl m-x@sm:sm">
-          Clarity is an open source design system that brings together UX guidelines, an HTML/CSS framework, and Angular
-          components. Clarity is for both designers and developers.
-        </h2>
+        <h1 cds-text="display center semibold" cds-layout="m-t:x">Meet Clarity</h1>
+        <div cds-layout="grid cols@sm:10 cols@xs:12">
+          <div cds-layout="col@sm:start-2">
+            <h2 cds-text="title center medium" cds-layout="m-t:xl m-x@sm:sm">
+              We didn’t invent design systems - we just made the best one. Clarity is an open source, enterprise-focused
+              design system with a core value of accessibility.
+            </h2>
+          </div>
+        </div>
         <button class="btn dark" cds-layout="m-t:xl">
           <a href="/get-started">Get Started</a>
         </button>
@@ -43,7 +47,7 @@
       <!-- design+dev section -->
       <section>
         <h3 cds-text="display center semibold" cds-layout="m-b:xl">
-          Build inclusive and intuitive products with Clarity
+          Build inclusive and consistent products with Clarity
         </h3>
         <div cds-layout="grid cols@sm:10 cols@xs:12">
           <div cds-layout="col@sm:start-2">
@@ -52,10 +56,11 @@
                 <img cds-layout="container:fill" src="/images/home/img-design-dev.svg" aria-hidden="true" />
               </div>
               <div class="content-cell" cds-layout="vertical gap:sm align:center m@xs:xs">
-                <h4 cds-text="heading" cds-layout="p-b:lg">Design + Development</h4>
+                <h4 cds-text="heading" cds-layout="p-b:lg">Design, Development and Deploy</h4>
                 <p class="section-block" cds-text="message">
-                  Clarity is designed and built by working directly within product teams. We do this to enable
-                  developers and designers to deliver the best experience possible to their end users.
+                  Our design guidelines, component library, and front end assets are built by working directly within
+                  product teams. Use Clarity to enable your developers and designers to deliver the best experience
+                  possible to your users.
                 </p>
               </div>
             </div>
@@ -68,10 +73,10 @@
           <div cds-layout="col@sm:start-2">
             <div cds-layout="grid gap:sm cols@sm:6 cols@xs:12 ">
               <div class="content-cell" cds-layout="vertical gap:sm align:center m@xs:xs">
-                <h4 cds-text="heading" cds-layout="p-b:lg">Fully Accessible</h4>
+                <h4 cds-text="heading" cds-layout="p-b:lg">Accessible</h4>
                 <p class="section-block" cds-text="message">
-                  We are continually investing heavily in the accessibility of Clarity. We do this to set a foundation
-                  for your application to be used by all users.
+                  We are continually investing heavily in accessibility. Use Clarity to address the needs of a large and
+                  diverse user base.
                 </p>
               </div>
               <div class="image-cell" cds-layout="horizontal align:right">
@@ -92,8 +97,8 @@
               <div class="content-cell" cds-layout="vertical gap:sm align:center m@xs:xs">
                 <h4 cds-text="heading" cds-layout="p-b:lg">Enterprise Ready</h4>
                 <p class="section-block" cds-text="message">
-                  Clarity is robust, designed at scale, and high-performance. As we use Clarity within VMware, we’re
-                  building products that most of the Fortune 500 use. Clarity is at the core of VMware’s software.
+                  Many Fortune 500 companies rely on us to support demanding, high-performance environments. Use Clarity
+                  for your high stakes, data intensive applications.
                 </p>
               </div>
             </div>
@@ -108,8 +113,8 @@
               <div class="content-cell" cds-layout="vertical gap:sm align:center m@xs:xs">
                 <h4 cds-text="heading" cds-layout="p-b:lg">Open Source</h4>
                 <p class="section-block" cds-text="message">
-                  We are continually investing heavily in the accessibility of Clarity. We do this to set a foundation
-                  for your application to be used by all users.
+                  Our vision since inception has been focused on supporting a community of designers and developers
+                  working together. Clarity is supported by the community through 15k downloads a week.
                 </p>
               </div>
               <div class="image-cell" cds-layout="horizontal align:right">
