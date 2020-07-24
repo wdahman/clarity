@@ -1,1 +1,15 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1680 236"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#002f44;}.cls-3{fill:url(#linear-gradient);}.cls-4{fill-opacity:0.6;fill:url(#linear-gradient-2);}</style><linearGradient id="linear-gradient" x1="807.86" y1="145.74" x2="1450.44" y2="123.99" gradientTransform="matrix(1, 0, 0, -1, 0, 238)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#c8eaf9"/><stop offset="1" stop-color="#c8eaf9" stop-opacity="0"/></linearGradient><linearGradient id="linear-gradient-2" x1="688.92" y1="5.17" x2="-25.19" y2="115.28" xlink:href="#linear-gradient"/></defs><rect class="cls-1" width="1680" height="236"/><path class="cls-2" d="M0,0H1678L0,236Z"/><path class="cls-3" d="M742.37,131.68,1679.91,0,1456.42,236Z"/><path class="cls-4" d="M0,236,742.37,131.68,0,24Z"/></svg>
+<svg width="1680" height="236" viewBox="0 0 1680 236" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M-1 0H1677L-1 236V0Z" fill="#002F44"/>
+<path d="M740 132.5L1682 0L1471 236L740 132.5Z" fill="url(#paint0_linear)"/>
+<path d="M0 236C272.195 197.338 467.805 171.162 740 132.5L0 24.5V236Z" fill="url(#paint1_linear)" fill-opacity="0.6"/>
+<defs>
+<linearGradient id="paint0_linear" x1="805.403" y1="105" x2="1451.03" y2="126.86" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C8EAF9"/>
+<stop offset="1" stop-color="#C8EAF9" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="689.554" y1="195.001" x2="-19.3309" y2="85.6931" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C8EAF9"/>
+<stop offset="1" stop-color="#C8EAF9" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

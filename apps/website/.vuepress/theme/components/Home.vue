@@ -10,7 +10,7 @@
       <!-- Hero -->
       <section class="home-hero" cds-layout="vertical align:horizontal-center">
         <h1 cds-text="display center semibold" cds-layout="m-t:x">Design + Build with Clarity</h1>
-        <h2 cds-text="title center" cds-layout="m-t:xl m-x@sm:sm">
+        <h2 cds-text="title center medium" cds-layout="m-t:xl m-x@sm:sm">
           Clarity is an open source design system that brings together UX guidelines, an HTML/CSS framework, and Angular
           components. Clarity is for both designers and developers.
         </h2>
@@ -26,7 +26,6 @@
       <!-- whats new -->
       <section class="whats-new" cds-layout="grid gap:sm">
         <div cds-layout="col:start-2 col:10">
-          <h3 cds-text="heading" cds-layout="m-b:xl">What's New</h3>
           <WhatsNew version="latest" />
         </div>
         <div cds-layout="col:12">
@@ -43,16 +42,18 @@
       </section>
       <!-- design+dev section -->
       <section>
-        <h3 cds-text="title center" cds-layout="m-b:xl">Build inclusive and intuitive products with Clarity</h3>
-        <div cds-layout="grid cols@sm:8 cols@xs:12">
-          <div cds-layout="col@sm:start-3">
+        <h3 cds-text="display center semibold" cds-layout="m-b:xl">
+          Build inclusive and intuitive products with Clarity
+        </h3>
+        <div cds-layout="grid cols@sm:10 cols@xs:12">
+          <div cds-layout="col@sm:start-2">
             <div cds-layout="m-t:xl grid gap:sm cols@sm:6 cols@xs:12 ">
               <div class="image-cell" cds-layout="horizontal align:right">
                 <img cds-layout="container:fill" src="/images/home/img-design-dev.svg" aria-hidden="true" />
               </div>
               <div class="content-cell" cds-layout="vertical gap:sm align:center m@xs:xs">
-                <h4 cds-text="section" cds-layout="p-b:lg">Design + Development</h4>
-                <p class="section-block" cds-text="body">
+                <h4 cds-text="heading" cds-layout="p-b:lg">Design + Development</h4>
+                <p class="section-block" cds-text="message">
                   Clarity is designed and built by working directly within product teams. We do this to enable
                   developers and designers to deliver the best experience possible to their end users.
                 </p>
@@ -63,12 +64,12 @@
       </section>
       <!-- a11y section -->
       <section>
-        <div cds-layout="grid cols@sm:8 cols@xs:12">
-          <div cds-layout="col@sm:start-3">
+        <div cds-layout="grid cols@sm:10 cols@xs:12">
+          <div cds-layout="col@sm:start-2">
             <div cds-layout="grid gap:sm cols@sm:6 cols@xs:12 ">
               <div class="content-cell" cds-layout="vertical gap:sm align:center m@xs:xs">
-                <h4 cds-text="section" cds-layout="p-b:lg">Fully Accessible</h4>
-                <p class="section-block" cds-text="body">
+                <h4 cds-text="heading" cds-layout="p-b:lg">Fully Accessible</h4>
+                <p class="section-block" cds-text="message">
                   We are continually investing heavily in the accessibility of Clarity. We do this to set a foundation
                   for your application to be used by all users.
                 </p>
@@ -82,15 +83,15 @@
       </section>
       <!-- enterprise section -->
       <section>
-        <div cds-layout="grid cols@sm:8 cols@xs:12">
-          <div cds-layout="col@sm:start-3">
+        <div cds-layout="grid cols@sm:10 cols@xs:12">
+          <div cds-layout="col@sm:start-2">
             <div cds-layout="grid gap:sm cols@sm:6 cols@xs:12 ">
               <div class="image-cell" cds-layout="horizontal align:right">
                 <img cds-layout="container:fill" src="/images/home/img-enterprise-ready.svg" aria-hidden="true" />
               </div>
               <div class="content-cell" cds-layout="vertical gap:sm align:center m@xs:xs">
-                <h4 cds-text="section" cds-layout="p-b:lg">Enterprise Ready</h4>
-                <p class="section-block" cds-text="body">
+                <h4 cds-text="heading" cds-layout="p-b:lg">Enterprise Ready</h4>
+                <p class="section-block" cds-text="message">
                   Clarity is robust, designed at scale, and high-performance. As we use Clarity within VMware, we’re
                   building products that most of the Fortune 500 use. Clarity is at the core of VMware’s software.
                 </p>
@@ -101,12 +102,12 @@
       </section>
       <!-- open source section -->
       <section>
-        <div cds-layout="grid cols@sm:8 cols@xs:12">
-          <div cds-layout="col@sm:start-3">
+        <div cds-layout="grid cols@sm:10 cols@xs:12">
+          <div cds-layout="col@sm:start-2">
             <div cds-layout="grid gap:sm cols@sm:6 cols@xs:12 ">
               <div class="content-cell" cds-layout="vertical gap:sm align:center m@xs:xs">
-                <h4 cds-text="section" cds-layout="p-b:lg">Open Source</h4>
-                <p class="section-block" cds-text="body">
+                <h4 cds-text="heading" cds-layout="p-b:lg">Open Source</h4>
+                <p class="section-block" cds-text="message">
                   We are continually investing heavily in the accessibility of Clarity. We do this to set a foundation
                   for your application to be used by all users.
                 </p>
@@ -120,20 +121,21 @@
       </section>
       <!-- resources section -->
       <section>
-        <div cds-layout="grid cols@sm:8 cols@xs:12">
-          <div cds-layout="col@sm:start-3">
+        <h3 cds-text="display center medium" cds-layout="m-b:xl">Popular Resources</h3>
+        <div cds-layout="grid cols@sm:10 cols@xs:12">
+          <div cds-layout="col@sm:start-2">
             <div cds-layout="m-y:xl grid gap:sm cols@sm:6 cols@xs:12">
               <div class="image-cell" cds-layout="m-b:xxl m-b@xs:none horizontal align:left">
                 <img cds-layout="container:fill" src="/images/home/img-pr-components.svg" aria-hidden="true" />
-                <h4 cds-text="title" cds-layout="m-t:lg">Components</h4>
-                <p cds-text="body" cds-layout="m-t:md">
+                <h4 cds-text="title medium" cds-layout="m-t:lg">Components</h4>
+                <p cds-text="message medium" cds-layout="m-t:md">
                   Access UX guidelines and developer documentation for interactive components.
                 </p>
               </div>
               <div class="image-cell" cds-layout="horizontal align:left m-t@xs:sm m-t@sm:none">
                 <img cds-layout="container:fill" src="/images/home/img-pr-icons.svg" aria-hidden="true" />
-                <h4 cds-text="title left" cds-layout="m-t:lg">Icons</h4>
-                <p cds-text="body" cds-layout="m-t:md">
+                <h4 cds-text="title medium" cds-layout="m-t:lg">Icons</h4>
+                <p cds-text="message medium" cds-layout="m-t:md">
                   Over 380 flexible and easy to use SVG icons, complete with variations to meet your design needs.
                 </p>
               </div>
