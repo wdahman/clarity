@@ -12,10 +12,8 @@ Date Picker is a popover control for picking a date value for a date input. It's
 <p>Use a Date Picker to select a date when a user needs to understand the date in context with other possible dates. Date choices are influenced by day of the week, or week within a month. It is paired with a text input so that it can send a formatted date value to the input. A Date Picker is also helpful when the formatting of the date is important.</p>
 <p>Date Pickers aren’t helpful when the date is a known value like a birthday. A user will likely want to type that value in versus hunting for it in a Date Picker. In cases where space is limited, it may be a good idea to omit the Date Picker.</p>
 </div>
-<div class="clr-col">
-<DocInset class="custom-block">
+<div class="clr-col doc-wrapper">
 <ClrImage src="/images/components/datepicker/datepicker.png" />
-</DocInset>
 </div>
 </div>
 

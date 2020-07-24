@@ -15,9 +15,10 @@ The header is consistent across all pages of an application. This offers a recog
 
 Include both your application’s name and logo if available. Clicking on the app’s name or logo should take you to the homepage of the application.
 
-::: inset
-
-<header class="header-6" style="min-width: 100%; flex: none">
+<div class="clr-row">
+<div class="clr-col">
+<div class="doc-wrapper">
+<header class="header-6" style="min-width: 96%; flex: none">
   <div class="branding">
       <a class="logo-and-title">
           <clr-icon shape="file"></clr-icon>
@@ -25,7 +26,9 @@ Include both your application’s name and logo if available. Clicking on the ap
       </a>
   </div>
 </header>
-:::
+</div>
+</div>
+</div>
 
 ### Top Level Navigation
 
@@ -35,9 +38,12 @@ Have a maximum of four items in top-level navigation. For more info, take a look
 
 If you’re using icons on their own in the header, using tooltips will help users understand what an icon means. Use clear language for top level navigation items. Do not combine icons and text. Only use a combination of text and icons when the provided text gives additional context specific to the user, for example, the user's username.
 
-::: do Use Text for navigational items.
+<div class="clr-row">
 
-<header class="header-6" style="min-width: 100%; flex: none">
+<div class="clr-col-sm-12 doc-do">
+<div class="doc-example">
+
+<header class="header-6" style="min-width: 96%; flex: none">
   <div class="branding">
       <a class="logo-and-title">
           <clr-icon shape="file"></clr-icon>
@@ -54,11 +60,16 @@ If you’re using icons on their own in the header, using tooltips will help use
   </div>
 </header>
 
-:::
+</div>
 
-::: don't Use icons alone or mix icons and text for top level navigation items.
+Use Text for navigational items.
 
-<header class="header-6" style="min-width: 100%; flex: none">
+</div>
+
+<div class="clr-col-sm-12 doc-dont" cds-layout="m-t:xl">
+<div class="doc-example">
+
+<header class="header-6" style="min-width: 96%; flex: none">
   <div class="branding">
       <a class="logo-and-title">
           <clr-icon shape="file"></clr-icon>
@@ -67,7 +78,7 @@ If you’re using icons on their own in the header, using tooltips will help use
   </div>
   <div class="header-nav">
     <a href="javascript://" class="nav-link">
-      <clr-icon shape="pencil"></clr-icon> Composer
+      <clr-icon shape="pencil" style="position: static; transform: translate3d(0, 0, 0);"></clr-icon> Composer  
     </a>
     <a href="javascript://" class="active nav-link">
       <clr-icon shape="folder"></clr-icon>
@@ -75,7 +86,13 @@ If you’re using icons on their own in the header, using tooltips will help use
   </div>
 </header>
 
-:::
+</div>
+
+Don't use icons alone or mix icons and text for top level navigation items.
+
+</div>
+
+</div>
 
 ### Right Side Action Area
 

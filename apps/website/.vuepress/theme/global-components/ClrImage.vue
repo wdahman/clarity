@@ -19,6 +19,7 @@ export default {
 <style scoped lang="scss">
 .image-wrapper {
   display: flex;
+  margin-top: var(--cds-token-space-size-6);
 }
 img {
   max-width: 100%;

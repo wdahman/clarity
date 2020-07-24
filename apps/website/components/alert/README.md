@@ -95,7 +95,7 @@ Standard alerts are used in the context of an application either in the content 
 
 #### In Modals
 
-![Alert in modal](/images/components/alert/modal.png)
+<ClrImage title="Alert in modal" src="/images/components/alert/modal.png" align="center" />
 
 Alerts could appear within modals. It is recommended that no more than one alert appear within a modal. Their function should not be to validate, validation should be done inline and closer to the error itself.
 

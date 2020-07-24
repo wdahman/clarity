@@ -14,30 +14,26 @@ Use a spinner to offer visual feedback to show users their action is processing.
 <div class="clr-row">
 <div class="clr-col-12 clr-col-md-6">
 
-::: inset
-<DocInset height="100">
+<div class="doc-wrapper">
 
 - When you want to indicate "This will be a moment". Between 1-10 seconds
 - When progress cannot be indicated by percentage
 - When space is limited
 
-</DocInset>
+</div>
 
-:::
 **Spinner Usage**
 
 </div>
 <div class="clr-col-12 clr-col-md-6">
 
-::: inset
-<DocInset height="100">
+<div class="doc-wrapper">
 
 - To want to indicate "This will take awhile, here is an estimate". More than 10 seconds
 - When progress can be indicated by percentage
 - When space permits
 
-</DocInset>
-:::
+</div>
 
 **Progress Bar Usage**
 

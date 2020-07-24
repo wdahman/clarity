@@ -9,11 +9,7 @@ The signpost is a convenient, lightweight way to show contextual help of informa
 
 Use a signpost when you want to show a small amount of contextual help of information without taking the user out of the current context. Use sparingly as a supplemental element and not as a primary method of adding details.
 
-<div class="clr-row">
-
-![Jigglypuff is active nav](/images/components/signpost/basic-and-pie-chart.svg)
-
-</div>
+<ClrImage title="basic and pie chart" src="/images/components/signpost/basic-and-pie-chart.svg" align="cener" />
 
 Use a signpost:
 
@@ -33,11 +29,7 @@ Max-width 360px; Max-height 504px
 
 Clicking the icon triggers the signpost. It remains visible until the user clicks the close icon or clicks anywhere outside of the dialog to dismiss it. To keep the interface uncluttered, only one signpost is displayed at a time. When a dialog is visible, clicking an icon to open another one automatically dismisses the previous dialog.
 
-<div class="clr-row">
-
-![Jigglypuff is active nav](/images/components/signpost/states.svg)
-
-</div>
+<ClrImage title="states" src="/images/components/signpost/states.svg" align="cener" />
 
 ## Placement
 
@@ -45,11 +37,7 @@ Clicking the icon triggers the signpost. It remains visible until the user click
 
 Default position for the dialog is 6px to the right of the trigger icon.
 
-<div class="clr-row">
-
-![Jigglypuff is active nav](/images/components/signpost/positioning.svg)
-
-</div>
+<ClrImage title="Trigger icon and dialog positioning" src="/images/components/signpost/positioning.svg" align="cener" />
 
 [//]: # 'IMAGES x2 - icon position'
 
@@ -57,17 +45,13 @@ Default position for the dialog is 6px to the right of the trigger icon.
 
 <div class="clr-col-12 clr-col-md-6">
 
-::: inset Basic
-![Basic Vertical Navigation](/images/components/signpost/inline-alignment.svg)
-:::
+<ClrImage title="Default position for the dialog is 6px from the end of the text" src="/images/components/signpost/inline-alignment.svg" align="cener" />
 Default position for the dialog is 6px from the end of the text
 
 </div>
 <div class="clr-col-12 clr-col-md-6">
 
-::: inset Dividers
-![Dividers](/images/components/signpost/column-alignment.svg)
-:::
+<ClrImage title="In tables, the icons may be aligned in a column" src="/images/components/signpost/column-alignment.svg" align="cener" />
 In tables, the icons may be aligned in a column
 
 </div>

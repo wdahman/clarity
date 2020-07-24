@@ -60,7 +60,7 @@
     top: 3rem;
     left: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 100000;
     background-color: rgba(0, 0, 0, 0.6);
     will-change: background-color;
   }

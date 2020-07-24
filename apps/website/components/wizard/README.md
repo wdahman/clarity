@@ -15,7 +15,9 @@ Here is when you might want to use a wizard over just a normal form:
 - if the user needs to accomplish a goal that has many steps in it
 - if steps must be completed in a specific sequence
 
+::: inset
 ![Basic Wizard](./_images/basic.png)
+:::
 
 <doc-demo src="/demos/wizard/basic-ng.html" demo="/demos/wizard/basic-css.html"/></doc-demo>
 
