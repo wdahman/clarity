@@ -467,17 +467,64 @@ This is an alert with 24px height.
 
 This class must be applied with `.alert` to render an app-level alert.
 
-Alert Type: Danger
+<br/>
 
-Action
+<div class="alert alert-app-level alert-danger" style="margin-bottom:24px" role="alert">
+  <div class="alert-items">
+    <div class="alert-item static">
+        <div class="alert-icon-wrapper">
+            <clr-icon class="alert-icon" shape="exclamation-circle"></clr-icon>
+        </div>
+        <div class="alert-text">
+            Alert Type: Danger
+        </div>
+        <div class="alert-actions">
+            <button class="btn alert-action">Action</button>
+        </div>
+    </div>
+  </div>
+  <button type="button" class="close" aria-label="Close">
+    <clr-icon aria-hidden="true" shape="close"></clr-icon>
+  </button>
+</div>
 
-Alert Type: Warning
+<div class="alert alert-app-level alert-warning" style="margin-bottom:24px" role="alert">
+    <div class="alert-items">
+        <div class="alert-item static">
+            <div class="alert-icon-wrapper">
+                <clr-icon class="alert-icon" shape="exclamation-triangle"></clr-icon>
+            </div>
+            <div class="alert-text">
+                Alert Type: Warning
+            </div>
+            <div class="alert-actions">
+                <button class="btn alert-action">Action</button>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="close" aria-label="Close">
+        <clr-icon aria-hidden="true" shape="close"></clr-icon>
+    </button>
+</div>
 
-Action
-
-Alert Type: Info
-
-Action
+<div class="alert alert-app-level alert-info" role="alert">
+    <div class="alert-items">
+        <div class="alert-item static">
+            <div class="alert-icon-wrapper">
+                <clr-icon class="alert-icon" shape="info-circle"></clr-icon>
+            </div>
+            <div class="alert-text">
+                Alert Type: Info
+            </div>
+            <div class="alert-actions">
+                <button class="btn alert-action">Action</button>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="close" aria-label="Close">
+        <clr-icon aria-hidden="true" shape="close"></clr-icon>
+    </button>
+</div>
 
 ```html
 <div class="alert alert-app-level alert-danger" style="margin-bottom:24px" role="alert">
