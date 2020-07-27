@@ -148,25 +148,7 @@ Depending on the sub-type of a standard alert, make sure to communicate a clear,
 
 Several classes and elements are required to implement the Clarity alert layout. A table of these classes and elements with a brief description of each follows:
 
-.alert
-
-This class is a wrapper around `.alert-items` and the `.close` button. Place the `.close` button before the alert items.
-
-.alert-items
-
-This class is a wrapper around one or more `.alert-item` elements.
-
-.alert-item
-
-This class is a wrapper around `.alert-text`, `.alert-icon-wrapper`, and `.alert-actions`.
-
-.alert-icon-wrapper
-
-`.alert-icon-wrapper` contains a `clr-icon` with the classname `.alert-icon` applied to it. The icons used for the different alert types of success, danger, warning, and info are, respectively: `check-circle`, `exclamation-circle`, `exclamation-triangle`, and `info-circle`.
-
-.alert-actions
-
-`.alert-actions` can consist of dropdowns or links. Each action should extend the `.alert-action` class.
+<DocAlertClassesTable table="text-styles" />
 
 ### Types
 
