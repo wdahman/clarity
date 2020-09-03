@@ -17,7 +17,7 @@ describe('Migrate Angular alerts to Core alerts', () => {
   });
 
   // Enable to run the migration test
-  xit('should migrate <clr-alert> to <cds-alert-group>', async () => {
+  it('should migrate <clr-alert> to <cds-alert-group>', async () => {
     const fileWithCodeToMigrate = '/src/app/app.component.html';
     const codeToMigrate = `
       <clr-alert [clrAlertClosable]="true">
@@ -35,13 +35,12 @@ describe('Migrate Angular alerts to Core alerts', () => {
     const migratedContent = getFileContent(tree, fileWithCodeToMigrate);
 
     const expectedContent = `
-      <cds-alert-group status="info" *ngIf="coreAlertIsOpen">
-        <cds-alert closable (closeChange)="log($event)">
+      <cds-alert-group status="info">
+        <cds-alert closable>
           This is the cds-alert-group with one cds-alert.
         </cds-alert>
       </cds-alert-group>
     `;
-
     expect(migratedContent).toEqual(expectedContent);
   });
 });

@@ -13,10 +13,14 @@
   "scripts": {
     "build": "npm-run-all schematics:build:ts schematics:build:collection",
     "build:test": "tsc -p tsconfig.test.json",
+    "build:test:watch": "tsc -p tsconfig.test.json --watch",
     "clean": "del src/**/*.{js,js.map}",
     "schematics:build:ts": "tsc -p tsconfig.json",
     "schematics:build:collection": "cpy --parents --cwd='src/' '**/*.json' ../../../dist/clr-angular/schematics",
-    "test": "yarn run build:test && jasmine **/*_spec.js"
+    "test": "yarn run build:test && jasmine **/*_spec.js",
+    "spec": "nodemon --ext ts --exec 'jasmine-ts  --config=./jasmine.json'",
+    "//spec:watch": "yarn build:test:watch && yarn spec",
+    "spec:watch": "stmux -w always -e ERROR -m beep,system [ \"yarn build:test:watch\" : \"yarn spec\" ]"
   },
   "keywords": [
     "angular",
@@ -32,7 +36,13 @@
     "@schematics/angular": "~10.0.7",
     "@types/node": "~12.11.1",
     "@types/jasmine": "~3.5.0",
+    "@types/jsdom": "^16.2.4",
     "jasmine": "~3.5.0",
+    "jasmine-ts": "^0.3.0",
+    "jasmine-ts-console-reporter": "^3.1.1",
+    "jsdom": "^16.4.0",
+    "nodemon": "^2.0.4",
+    "ts-node": "^9.0.0",
     "npm-run-all": "4.1.5",
     "typescript": "~3.9.7"
   },

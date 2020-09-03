@@ -4,11 +4,19 @@
  * The full license information can be found in LICENSE in the root directory of this project.
  */
 
-import { Tree, SchematicContext } from '@angular-devkit/schematics';
+import { Rule, Tree, SchematicContext, chain } from '@angular-devkit/schematics';
+import { updateBasicAlert } from './utils/update-basic-alert-rule';
 
-export function migrateAlert() {
+export function migrateAlert(): Rule {
   return (tree: Tree, context: SchematicContext) => {
+    const rule = chain([updateBasicAlert()]);
     context.logger.info(`Migrating clr-alert to cds-alert-group...`);
-    return tree;
+    return rule(tree, context);
+
+    // const dir = tree.getDir(path);
+    // console.log('tree actions', tree.actions);
+    // console.log('it runs');
+    // updateBasicAlert(options);
+    // return tree;
   };
 }
