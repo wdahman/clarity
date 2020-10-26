@@ -1,0 +1,19 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "plugins": ["@clr/clarity-migration"],
+  "rules": {
+    "@clr/clarity-migration/no-clr-button": "warn",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-unused-vars": "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.html"],
+      "parser": "@clr/eslint-plugin-clarity-migration/dist/src/html-parser"
+    }
+  ]
+}

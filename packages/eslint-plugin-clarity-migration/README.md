@@ -46,7 +46,7 @@ yarn add -D @typescript-eslint/parser eslint
   "overrides": [
     {
       "files": ["*.html"],
-      "parser": "@clr/eslint-plugin-clarity-migration/src/dist/eslint-html-parser"
+      "parser": "@clr/eslint-plugin-clarity-migration/dist/src/html-parser"
     }
   ]
 }

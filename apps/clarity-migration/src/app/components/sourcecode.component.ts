@@ -17,9 +17,9 @@ const MAP_TYPE_HIGHLIGHT = {
 })
 export class SourceCodeComponent {
   @Input() content: string;
-  @Input() language: string = 'html';
-  @Input() src: string = '';
-  formattedContent: string = '';
+  @Input() language = 'html';
+  @Input() src = '';
+  formattedContent = '';
 
   ngOnInit() {
     if (this.content) {
