@@ -6,6 +6,7 @@
   "plugins": ["@clr/clarity-migration"],
   "rules": {
     "@clr/clarity-migration/no-clr-button": "warn",
+    "@clr/clarity-migration/no-clr-alert": "warn",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-unused-vars": "off"
